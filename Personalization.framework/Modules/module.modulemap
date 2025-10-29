@@ -1,0 +1,11 @@
+framework module Personalization {
+  umbrella header "Personalization.h"
+  export *
+
+  module * { export * }
+}
+
+module Personalization.Swift {
+  header "Personalization-Swift.h"
+  requires objc
+}

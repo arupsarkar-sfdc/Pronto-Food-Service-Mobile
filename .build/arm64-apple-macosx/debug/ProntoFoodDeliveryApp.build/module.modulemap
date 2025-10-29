@@ -1,0 +1,4 @@
+module ProntoFoodDeliveryApp {
+    header "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/ProntoFoodDeliveryApp-Swift.h"
+    requires objc
+}

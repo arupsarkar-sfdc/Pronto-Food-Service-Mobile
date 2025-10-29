@@ -1,0 +1,413 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.ProntoFoodDeliveryApp-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/sources",
+      "importPath" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/App/ProntoFoodDeliveryAppApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeBestSellersSection.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeCategoryBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeHeaderView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomePromoCardView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Profile/Views/FavoritesView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Profile/Views/ProfileView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Search/Views/SearchView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/LiquidGlassTabBar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/LiquidGlassTabView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/TabBarButton.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/TabItem.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ProntoFoodDeliveryApp",
+      "moduleOutputPath" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/Modules/ProntoFoodDeliveryApp.swiftmodule",
+      "objects" : [
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/ProntoFoodDeliveryAppApp.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/ContentView.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/HomeBestSellersSection.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/HomeCategoryBarView.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/HomeHeaderView.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/HomePromoCardView.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/HomeView.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/FavoritesView.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/ProfileView.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/SearchView.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/LiquidGlassTabBar.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/LiquidGlassTabView.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/TabBarButton.swift.o",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/TabItem.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/ProntoFoodDeliveryApp-Swift.h",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/ProntoFoodDeliveryAppApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/HomeBestSellersSection.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/HomeCategoryBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/HomeHeaderView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/HomePromoCardView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/HomeView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/FavoritesView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/ProfileView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/SearchView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/LiquidGlassTabBar.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/LiquidGlassTabView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/TabBarButton.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/TabItem.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/Modules/ProntoFoodDeliveryApp.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/App/ProntoFoodDeliveryAppApp.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/ContentView.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeBestSellersSection.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeCategoryBarView.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeHeaderView.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomePromoCardView.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeView.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Profile/Views/FavoritesView.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Profile/Views/ProfileView.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Search/Views/SearchView.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/LiquidGlassTabBar.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/LiquidGlassTabView.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/TabBarButton.swift",
+        "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/TabItem.swift"
+      ],
+      "tempsPath" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "ProntoFoodDeliveryApp" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ProntoFoodDeliveryApp",
+      "-incremental",
+      "-c",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/App/ProntoFoodDeliveryAppApp.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/ContentView.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeBestSellersSection.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeCategoryBarView.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeHeaderView.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomePromoCardView.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeView.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Profile/Views/FavoritesView.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Profile/Views/ProfileView.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Search/Views/SearchView.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/LiquidGlassTabBar.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/LiquidGlassTabView.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/TabBarButton.swift",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/TabItem.swift",
+      "-I",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/ProntoFoodDeliveryApp-Swift.h",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "ProntoFoodDeliveryApp" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/App/ProntoFoodDeliveryAppApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeBestSellersSection.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeCategoryBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeHeaderView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomePromoCardView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Home/Views/HomeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Profile/Views/FavoritesView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Profile/Views/ProfileView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Features/Search/Views/SearchView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/LiquidGlassTabBar.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/LiquidGlassTabView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/TabBarButton.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/Sources/Shared/UI/Components/TabItem.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/ProntoFoodDeliveryApp.build/sources"
+    },
+    "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/arup.sarkar/Projects/Mobile/iOS/ProntoFoodDeliveryApp/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

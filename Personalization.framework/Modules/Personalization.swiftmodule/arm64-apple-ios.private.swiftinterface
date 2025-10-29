@@ -1,0 +1,110 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Personalization
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Cdp
+import Foundation
+@_exported import Personalization
+import SFMCSDK
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFPersonalizationConfig) public class PersonalizationConfig : ObjectiveC.NSObject, SFMCSDK.ModuleConfig {
+  @objc final public let name: SFMCSDK.ModuleName
+  @objc final public let appId: Swift.String
+  @objc final public let trackScreens: Swift.Bool
+  @objc final public let dataspace: Swift.String?
+  @available(*, unavailable, message: "Use the Builder to create an instance.")
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(SFPDecisionsResponsePersonalization) public class DecisionsResponsePersonalization : ObjectiveC.NSObject {
+  @objc final public let personalizationId: Swift.String
+  @objc final public let personalizationPointId: Swift.String
+  @objc final public let personalizationPointName: Swift.String
+  @objc final public let data: [Personalization.DecisionsResponseContentObject]
+  @objc final public let attributes: [Swift.String : Any]
+  @objc final public let rawJson: [Swift.String : Any]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(SFPDecisionsResponseContentObject) public class DecisionsResponseContentObject : ObjectiveC.NSObject {
+  @objc final public let rawJson: [Swift.String : Any]
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFPDecisionsRequestContext) public class DecisionsRequestContext : ObjectiveC.NSObject {
+  @objc public var anchorId: Swift.String? {
+    get
+  }
+  @objc public var anchorDmoName: Swift.String? {
+    get
+  }
+  @objc public var contextualAttributes: [Swift.String : Any] {
+    get
+  }
+  @available(*, unavailable, message: "Use the Builder to create an instance.")
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(SFPDecisionsResponse) public class DecisionsResponse : ObjectiveC.NSObject {
+  @objc final public let requestId: Swift.String?
+  @objc final public let personalizations: [Personalization.DecisionsResponsePersonalization]
+  @objc final public let rawJson: [Swift.String : Any]
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(SFPersonalizationConfigBuilder) public class PersonalizationConfigBuilder : ObjectiveC.NSObject {
+  @objc public func dataspace(_ dspace: Swift.String?) -> Personalization.PersonalizationConfigBuilder
+  @objc public func build() -> Personalization.PersonalizationConfig
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(SFPersonalizationError) public enum PersonalizationError : Swift.Int, Swift.Error {
+  case initialization = 1
+  case cdpModule = 2
+  case consent = 3
+  case requestInvalid = 4
+  case error = 5
+  case responseInvalid = 6
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc(SFPDecisionsRequestContextBuilder) public class DecisionsRequestContextBuilder : ObjectiveC.NSObject {
+  @objc public func anchorId(_ aId: Swift.String?) -> Personalization.DecisionsRequestContextBuilder
+  @objc public func anchorDmoName(_ aDmoName: Swift.String?) -> Personalization.DecisionsRequestContextBuilder
+  @objc public func contextualAttribute(name: Swift.String, string: Swift.String) -> Personalization.DecisionsRequestContextBuilder
+  @objc public func contextualAttribute(name: Swift.String, int: Swift.Int) -> Personalization.DecisionsRequestContextBuilder
+  @objc public func contextualAttribute(name: Swift.String, double: Swift.Double) -> Personalization.DecisionsRequestContextBuilder
+  @objc public func contextualAttribute(name: Swift.String, float: Swift.Float) -> Personalization.DecisionsRequestContextBuilder
+  @objc public func contextualAttribute(name: Swift.String, date: Foundation.Date) -> Personalization.DecisionsRequestContextBuilder
+  @objc public func contextualAttribute(name: Swift.String, bool: Swift.Bool) -> Personalization.DecisionsRequestContextBuilder
+  @objc public func build() -> Personalization.DecisionsRequestContext
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFPersonalizationModule) final public class PersonalizationModule : ObjectiveC.NSObject, SFMCSDK.SFMCModule, SFMCSDK.Publisher {
+  @objc final public let name: SFMCSDK.ModuleName
+  @objc final public var config: Personalization.PersonalizationConfig? {
+    @objc get
+  }
+  @objc public static let moduleVersion: Swift.String
+  @objc public static var stateProperties: [Swift.String : Swift.String]? {
+    @objc get
+    @objc set(props)
+  }
+  @objc public static var shared: Personalization.PersonalizationModule {
+    @objc get
+  }
+  @objc public static func initModule(config: any SFMCSDK.ModuleConfig, components: SFMCSDK.SFMCSdkComponents) -> (any SFMCSDK.SFMCModule)?
+  @objc final public func fetchDecisions(personalizationPointNames: [Swift.String], context: Personalization.DecisionsRequestContext?) async throws -> Personalization.DecisionsResponse
+  @objc deinit
+}
+extension Personalization.PersonalizationError : Swift.Equatable {}
+extension Personalization.PersonalizationError : Swift.Hashable {}
+extension Personalization.PersonalizationError : Swift.RawRepresentable {}

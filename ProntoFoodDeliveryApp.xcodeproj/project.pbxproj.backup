@@ -1,0 +1,1446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E601666D2E85883F00E71CAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60166692E85883F00E71CAD /* ContentView.swift */; };
+		E601666E2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601666B2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift */; };
+		E60166DF2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166862E85892200E71CAD /* .gitkeep */; };
+		E60166E02E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601669E2E85892200E71CAD /* .gitkeep */; };
+		E60166E12E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166A72E85892200E71CAD /* .gitkeep */; };
+		E60166E22E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166BF2E85892200E71CAD /* .gitkeep */; };
+		E60166E32E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166D62E85892200E71CAD /* .gitkeep */; };
+		E60166E42E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166DA2E85892200E71CAD /* .gitkeep */; };
+		E60166E52E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166BC2E85892200E71CAD /* .gitkeep */; };
+		E60166E62E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166A32E85892200E71CAD /* .gitkeep */; };
+		E60166E72E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166D02E85892200E71CAD /* .gitkeep */; };
+		E60166E82E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166842E85892200E71CAD /* .gitkeep */; };
+		E60166E92E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166B12E85892200E71CAD /* .gitkeep */; };
+		E60166EA2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166902E85892200E71CAD /* .gitkeep */; };
+		E60166EB2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166C32E85892200E71CAD /* .gitkeep */; };
+		E60166EC2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166C82E85892200E71CAD /* .gitkeep */; };
+		E60166ED2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166AE2E85892200E71CAD /* .gitkeep */; };
+		E60166EE2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166A52E85892200E71CAD /* .gitkeep */; };
+		E60166EF2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166972E85892200E71CAD /* .gitkeep */; };
+		E60166F02E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166D82E85892200E71CAD /* .gitkeep */; };
+		E60166F12E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166B52E85892200E71CAD /* .gitkeep */; };
+		E60166F22E85892200E71CAD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E60166892E85892200E71CAD /* README.md */; };
+		E60166F32E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166802E85892200E71CAD /* .gitkeep */; };
+		E60166F42E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166B32E85892200E71CAD /* .gitkeep */; };
+		E60166F52E85892200E71CAD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E601667E2E85892200E71CAD /* README.md */; };
+		E60166F62E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166CA2E85892200E71CAD /* .gitkeep */; };
+		E60166F72E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166D42E85892200E71CAD /* .gitkeep */; };
+		E60166F82E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166AC2E85892200E71CAD /* .gitkeep */; };
+		E60166F92E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166C12E85892200E71CAD /* .gitkeep */; };
+		E60166FA2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166762E85892200E71CAD /* .gitkeep */; };
+		E60166FB2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601667A2E85892200E71CAD /* .gitkeep */; };
+		E60166FC2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601668B2E85892200E71CAD /* .gitkeep */; };
+		E60166FD2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601668E2E85892200E71CAD /* .gitkeep */; };
+		E60166FE2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601669C2E85892200E71CAD /* .gitkeep */; };
+		E60166FF2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166B82E85892200E71CAD /* .gitkeep */; };
+		E60167002E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166992E85892200E71CAD /* .gitkeep */; };
+		E60167012E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166BA2E85892200E71CAD /* .gitkeep */; };
+		E60167022E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166782E85892200E71CAD /* .gitkeep */; };
+		E60167032E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166D22E85892200E71CAD /* .gitkeep */; };
+		E60167042E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166922E85892200E71CAD /* .gitkeep */; };
+		E60167052E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166822E85892200E71CAD /* .gitkeep */; };
+		E60167062E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166CE2E85892200E71CAD /* .gitkeep */; };
+		E60167072E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166AA2E85892200E71CAD /* .gitkeep */; };
+		E60167082E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166952E85892200E71CAD /* .gitkeep */; };
+		E60167092E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166C62E85892200E71CAD /* .gitkeep */; };
+		E601670A2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166A02E85892200E71CAD /* .gitkeep */; };
+		E601670B2E85892200E71CAD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E601667C2E85892200E71CAD /* README.md */; };
+		E601674D2E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167452E8589AA00E71CAD /* .gitkeep */; };
+		E601674E2E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167472E8589AA00E71CAD /* .gitkeep */; };
+		E601674F2E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167412E8589AA00E71CAD /* .gitkeep */; };
+		E60167502E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601673F2E8589AA00E71CAD /* .gitkeep */; };
+		E60167512E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167492E8589AA00E71CAD /* .gitkeep */; };
+		E60167522E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601673D2E8589AA00E71CAD /* .gitkeep */; };
+		E60167532E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167432E8589AA00E71CAD /* .gitkeep */; };
+		E601675F2E85917C00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601675A2E85917C00E71CAD /* .gitkeep */; };
+		E60167602E85917C00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167542E85917C00E71CAD /* .gitkeep */; };
+		E60167612E85917C00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167582E85917C00E71CAD /* .gitkeep */; };
+		E60167622E85917C00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601675C2E85917C00E71CAD /* .gitkeep */; };
+		E60167632E85917C00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167562E85917C00E71CAD /* .gitkeep */; };
+		E601676B2E8591A300E71CAD /* MVVM.md in Resources */ = {isa = PBXBuildFile; fileRef = E60167652E8591A300E71CAD /* MVVM.md */; };
+		E601676C2E8591A300E71CAD /* PROJECT_STRUCTURE.md in Resources */ = {isa = PBXBuildFile; fileRef = E60167692E8591A300E71CAD /* PROJECT_STRUCTURE.md */; };
+		E601676D2E8591A300E71CAD /* Salesforce.md in Resources */ = {isa = PBXBuildFile; fileRef = E60167672E8591A300E71CAD /* Salesforce.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6997E0D2E8582CC0039AEBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6997DF52E8582CB0039AEBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6997DFC2E8582CB0039AEBA;
+			remoteInfo = ProntoFoodDeliveryApp;
+		};
+		E6997E172E8582CC0039AEBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6997DF52E8582CB0039AEBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6997DFC2E8582CB0039AEBA;
+			remoteInfo = ProntoFoodDeliveryApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E60166692E85883F00E71CAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E601666B2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProntoFoodDeliveryAppApp.swift; sourceTree = "<group>"; };
+		E60166762E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166782E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E601667A2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E601667C2E85892200E71CAD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E601667E2E85892200E71CAD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E60166802E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166822E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166842E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166862E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166892E85892200E71CAD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E601668B2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E601668E2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166902E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166922E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166952E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166972E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166992E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E601669C2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E601669E2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166A02E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166A32E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166A52E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166A72E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166AA2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166AC2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166AE2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166B12E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166B32E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166B52E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166B82E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166BA2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166BC2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166BF2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166C12E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166C32E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166C62E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166C82E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166CA2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166CE2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166D02E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166D22E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166D42E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166D62E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166D82E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60166DA2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E601673D2E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E601673F2E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60167412E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60167432E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60167452E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60167472E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60167492E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60167542E85917C00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60167562E85917C00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60167582E85917C00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E601675A2E85917C00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E601675C2E85917C00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E60167652E8591A300E71CAD /* MVVM.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MVVM.md; sourceTree = "<group>"; };
+		E60167672E8591A300E71CAD /* Salesforce.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Salesforce.md; sourceTree = "<group>"; };
+		E60167692E8591A300E71CAD /* PROJECT_STRUCTURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PROJECT_STRUCTURE.md; sourceTree = "<group>"; };
+		E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProntoFoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6997E0C2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6997E162E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E6997DFF2E8582CB0039AEBA /* ProntoFoodDeliveryApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ProntoFoodDeliveryApp;
+			sourceTree = "<group>";
+		};
+		E6997E0F2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ProntoFoodDeliveryAppTests;
+			sourceTree = "<group>";
+		};
+		E6997E192E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ProntoFoodDeliveryAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6997DFA2E8582CB0039AEBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6997E092E8582CC0039AEBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6997E132E8582CC0039AEBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E60166772E85892200E71CAD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E601666B2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift */,
+				E60166762E85892200E71CAD /* .gitkeep */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E60166792E85892200E71CAD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E60166782E85892200E71CAD /* .gitkeep */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E601667B2E85892200E71CAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E601667A2E85892200E71CAD /* .gitkeep */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E601667D2E85892200E71CAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E601667C2E85892200E71CAD /* README.md */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E601667F2E85892200E71CAD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E601667E2E85892200E71CAD /* README.md */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E60166812E85892200E71CAD /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				E60166802E85892200E71CAD /* .gitkeep */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		E60166832E85892200E71CAD /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E60166822E85892200E71CAD /* .gitkeep */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E60166852E85892200E71CAD /* DataCloud */ = {
+			isa = PBXGroup;
+			children = (
+				E60166842E85892200E71CAD /* .gitkeep */,
+			);
+			path = DataCloud;
+			sourceTree = "<group>";
+		};
+		E60166872E85892200E71CAD /* Personalization */ = {
+			isa = PBXGroup;
+			children = (
+				E60166862E85892200E71CAD /* .gitkeep */,
+			);
+			path = Personalization;
+			sourceTree = "<group>";
+		};
+		E60166882E85892200E71CAD /* Salesforce */ = {
+			isa = PBXGroup;
+			children = (
+				E60166832E85892200E71CAD /* Authentication */,
+				E60166852E85892200E71CAD /* DataCloud */,
+				E60166872E85892200E71CAD /* Personalization */,
+			);
+			path = Salesforce;
+			sourceTree = "<group>";
+		};
+		E601668A2E85892200E71CAD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E60166882E85892200E71CAD /* Salesforce */,
+				E60166892E85892200E71CAD /* README.md */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E601668C2E85892200E71CAD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E601668B2E85892200E71CAD /* .gitkeep */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E601668D2E85892200E71CAD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E60166792E85892200E71CAD /* Constants */,
+				E601667B2E85892200E71CAD /* Extensions */,
+				E601667D2E85892200E71CAD /* Models */,
+				E601667F2E85892200E71CAD /* Networking */,
+				E60166812E85892200E71CAD /* Persistence */,
+				E601668A2E85892200E71CAD /* Services */,
+				E601668C2E85892200E71CAD /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E601668F2E85892200E71CAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E601668E2E85892200E71CAD /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E60166912E85892200E71CAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E60166902E85892200E71CAD /* .gitkeep */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E60166932E85892200E71CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E60166922E85892200E71CAD /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E60166942E85892200E71CAD /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E601668F2E85892200E71CAD /* Models */,
+				E60166912E85892200E71CAD /* ViewModels */,
+				E60166932E85892200E71CAD /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E60166962E85892200E71CAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E60166952E85892200E71CAD /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E60166982E85892200E71CAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E60166972E85892200E71CAD /* .gitkeep */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E601669A2E85892200E71CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E60166992E85892200E71CAD /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E601669B2E85892200E71CAD /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				E60166962E85892200E71CAD /* Models */,
+				E60166982E85892200E71CAD /* ViewModels */,
+				E601669A2E85892200E71CAD /* Views */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		E601669D2E85892200E71CAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E601669C2E85892200E71CAD /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E601669F2E85892200E71CAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E601669E2E85892200E71CAD /* .gitkeep */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E60166A12E85892200E71CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E60166692E85883F00E71CAD /* ContentView.swift */,
+				E60166A02E85892200E71CAD /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E60166A22E85892200E71CAD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E601669D2E85892200E71CAD /* Models */,
+				E601669F2E85892200E71CAD /* ViewModels */,
+				E60166A12E85892200E71CAD /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E60166A42E85892200E71CAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E60166A32E85892200E71CAD /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E60166A62E85892200E71CAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E60166A52E85892200E71CAD /* .gitkeep */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E60166A82E85892200E71CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E60166A72E85892200E71CAD /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E60166A92E85892200E71CAD /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E60166A42E85892200E71CAD /* Models */,
+				E60166A62E85892200E71CAD /* ViewModels */,
+				E60166A82E85892200E71CAD /* Views */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		E60166AB2E85892200E71CAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E60166AA2E85892200E71CAD /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E60166AD2E85892200E71CAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E60166AC2E85892200E71CAD /* .gitkeep */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E60166AF2E85892200E71CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E60166AE2E85892200E71CAD /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E60166B02E85892200E71CAD /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				E60166AB2E85892200E71CAD /* Models */,
+				E60166AD2E85892200E71CAD /* ViewModels */,
+				E60166AF2E85892200E71CAD /* Views */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		E60166B22E85892200E71CAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E60166B12E85892200E71CAD /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E60166B42E85892200E71CAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E60166B32E85892200E71CAD /* .gitkeep */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E60166B62E85892200E71CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E60166B52E85892200E71CAD /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E60166B72E85892200E71CAD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E60166B22E85892200E71CAD /* Models */,
+				E60166B42E85892200E71CAD /* ViewModels */,
+				E60166B62E85892200E71CAD /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E60166B92E85892200E71CAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E60166B82E85892200E71CAD /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E60166BB2E85892200E71CAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E60166BA2E85892200E71CAD /* .gitkeep */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E60166BD2E85892200E71CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E60166BC2E85892200E71CAD /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E60166BE2E85892200E71CAD /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				E60166B92E85892200E71CAD /* Models */,
+				E60166BB2E85892200E71CAD /* ViewModels */,
+				E60166BD2E85892200E71CAD /* Views */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		E60166C02E85892200E71CAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E60166BF2E85892200E71CAD /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E60166C22E85892200E71CAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E60166C12E85892200E71CAD /* .gitkeep */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E60166C42E85892200E71CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E60166C32E85892200E71CAD /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E60166C52E85892200E71CAD /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E60166C02E85892200E71CAD /* Models */,
+				E60166C22E85892200E71CAD /* ViewModels */,
+				E60166C42E85892200E71CAD /* Views */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E60166C72E85892200E71CAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E60166C62E85892200E71CAD /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E60166C92E85892200E71CAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E60166C82E85892200E71CAD /* .gitkeep */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E60166CB2E85892200E71CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E60166CA2E85892200E71CAD /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E60166CC2E85892200E71CAD /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				E60166C72E85892200E71CAD /* Models */,
+				E60166C92E85892200E71CAD /* ViewModels */,
+				E60166CB2E85892200E71CAD /* Views */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		E60166CD2E85892200E71CAD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E60166942E85892200E71CAD /* Authentication */,
+				E601669B2E85892200E71CAD /* Cart */,
+				E60166A22E85892200E71CAD /* Home */,
+				E60166A92E85892200E71CAD /* Menu */,
+				E60166B02E85892200E71CAD /* Order */,
+				E60166B72E85892200E71CAD /* Profile */,
+				E60166BE2E85892200E71CAD /* Restaurant */,
+				E60166C52E85892200E71CAD /* Search */,
+				E60166CC2E85892200E71CAD /* Tracking */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E60166CF2E85892200E71CAD /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E60166CE2E85892200E71CAD /* .gitkeep */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E60166D12E85892200E71CAD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E60166D02E85892200E71CAD /* .gitkeep */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E60166D32E85892200E71CAD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E60166D22E85892200E71CAD /* .gitkeep */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E60166D52E85892200E71CAD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E60166D42E85892200E71CAD /* .gitkeep */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E60166D72E85892200E71CAD /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				E60166D62E85892200E71CAD /* .gitkeep */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		E60166D92E85892200E71CAD /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				E60166D82E85892200E71CAD /* .gitkeep */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		E60166DB2E85892200E71CAD /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E60166DA2E85892200E71CAD /* .gitkeep */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		E60166DC2E85892200E71CAD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E60166D52E85892200E71CAD /* Components */,
+				E60166D72E85892200E71CAD /* Modifiers */,
+				E60166D92E85892200E71CAD /* Styles */,
+				E60166DB2E85892200E71CAD /* Theme */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E60166DD2E85892200E71CAD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E60166CF2E85892200E71CAD /* Coordinators */,
+				E60166D12E85892200E71CAD /* Managers */,
+				E60166D32E85892200E71CAD /* Protocols */,
+				E60166DC2E85892200E71CAD /* UI */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E60166DE2E85892200E71CAD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E60166772E85892200E71CAD /* App */,
+				E601668D2E85892200E71CAD /* Core */,
+				E60166CD2E85892200E71CAD /* Features */,
+				E60166DD2E85892200E71CAD /* Shared */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E601673E2E8589AA00E71CAD /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E601673D2E8589AA00E71CAD /* .gitkeep */,
+			);
+			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		E60167402E8589AA00E71CAD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E601673F2E8589AA00E71CAD /* .gitkeep */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E60167422E8589AA00E71CAD /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				E60167412E8589AA00E71CAD /* .gitkeep */,
+			);
+			path = TestHelpers;
+			sourceTree = "<group>";
+		};
+		E60167442E8589AA00E71CAD /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E60167432E8589AA00E71CAD /* .gitkeep */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		E60167462E8589AA00E71CAD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E60167452E8589AA00E71CAD /* .gitkeep */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E60167482E8589AA00E71CAD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E60167472E8589AA00E71CAD /* .gitkeep */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E601674A2E8589AA00E71CAD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E60167492E8589AA00E71CAD /* .gitkeep */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E601674B2E8589AA00E71CAD /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				E60167462E8589AA00E71CAD /* Core */,
+				E60167482E8589AA00E71CAD /* Features */,
+				E601674A2E8589AA00E71CAD /* Shared */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		E601674C2E8589AA00E71CAD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E601673E2E8589AA00E71CAD /* IntegrationTests */,
+				E60167402E8589AA00E71CAD /* Mocks */,
+				E60167422E8589AA00E71CAD /* TestHelpers */,
+				E60167442E8589AA00E71CAD /* UITests */,
+				E601674B2E8589AA00E71CAD /* UnitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E60167552E85917C00E71CAD /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				E60167542E85917C00E71CAD /* .gitkeep */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		E60167572E85917C00E71CAD /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E60167562E85917C00E71CAD /* .gitkeep */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E60167592E85917C00E71CAD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E60167582E85917C00E71CAD /* .gitkeep */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E601675B2E85917C00E71CAD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E601675A2E85917C00E71CAD /* .gitkeep */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E601675D2E85917C00E71CAD /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				E601675C2E85917C00E71CAD /* .gitkeep */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		E601675E2E85917C00E71CAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E60167552E85917C00E71CAD /* Colors */,
+				E60167572E85917C00E71CAD /* Configuration */,
+				E60167592E85917C00E71CAD /* Fonts */,
+				E601675B2E85917C00E71CAD /* Images */,
+				E601675D2E85917C00E71CAD /* Localizations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E60167642E8591A300E71CAD /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E60167662E8591A300E71CAD /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				E60167652E8591A300E71CAD /* MVVM.md */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		E60167682E8591A300E71CAD /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				E60167672E8591A300E71CAD /* Salesforce.md */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		E601676A2E8591A300E71CAD /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				E60167642E8591A300E71CAD /* API */,
+				E60167662E8591A300E71CAD /* Architecture */,
+				E60167682E8591A300E71CAD /* Setup */,
+				E60167692E8591A300E71CAD /* PROJECT_STRUCTURE.md */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		E6997DF42E8582CB0039AEBA = {
+			isa = PBXGroup;
+			children = (
+				E601676A2E8591A300E71CAD /* Documentation */,
+				E601675E2E85917C00E71CAD /* Resources */,
+				E601674C2E8589AA00E71CAD /* Tests */,
+				E60166DE2E85892200E71CAD /* Sources */,
+				E6997DFF2E8582CB0039AEBA /* ProntoFoodDeliveryApp */,
+				E6997E0F2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests */,
+				E6997E192E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests */,
+				E6997DFE2E8582CB0039AEBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6997DFE2E8582CB0039AEBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */,
+				E6997E0C2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests.xctest */,
+				E6997E162E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6997DFC2E8582CB0039AEBA /* ProntoFoodDeliveryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6997E202E8582CC0039AEBA /* Build configuration list for PBXNativeTarget "ProntoFoodDeliveryApp" */;
+			buildPhases = (
+				E6997DF92E8582CB0039AEBA /* Sources */,
+				E6997DFA2E8582CB0039AEBA /* Frameworks */,
+				E6997DFB2E8582CB0039AEBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E6997DFF2E8582CB0039AEBA /* ProntoFoodDeliveryApp */,
+			);
+			name = ProntoFoodDeliveryApp;
+			packageProductDependencies = (
+			);
+			productName = ProntoFoodDeliveryApp;
+			productReference = E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6997E0B2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6997E232E8582CC0039AEBA /* Build configuration list for PBXNativeTarget "ProntoFoodDeliveryAppTests" */;
+			buildPhases = (
+				E6997E082E8582CC0039AEBA /* Sources */,
+				E6997E092E8582CC0039AEBA /* Frameworks */,
+				E6997E0A2E8582CC0039AEBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6997E0E2E8582CC0039AEBA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E6997E0F2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests */,
+			);
+			name = ProntoFoodDeliveryAppTests;
+			packageProductDependencies = (
+			);
+			productName = ProntoFoodDeliveryAppTests;
+			productReference = E6997E0C2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6997E152E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6997E262E8582CC0039AEBA /* Build configuration list for PBXNativeTarget "ProntoFoodDeliveryAppUITests" */;
+			buildPhases = (
+				E6997E122E8582CC0039AEBA /* Sources */,
+				E6997E132E8582CC0039AEBA /* Frameworks */,
+				E6997E142E8582CC0039AEBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6997E182E8582CC0039AEBA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E6997E192E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests */,
+			);
+			name = ProntoFoodDeliveryAppUITests;
+			packageProductDependencies = (
+			);
+			productName = ProntoFoodDeliveryAppUITests;
+			productReference = E6997E162E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6997DF52E8582CB0039AEBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					E6997DFC2E8582CB0039AEBA = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					E6997E0B2E8582CC0039AEBA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E6997DFC2E8582CB0039AEBA;
+					};
+					E6997E152E8582CC0039AEBA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E6997DFC2E8582CB0039AEBA;
+					};
+				};
+			};
+			buildConfigurationList = E6997DF82E8582CB0039AEBA /* Build configuration list for PBXProject "ProntoFoodDeliveryApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6997DF42E8582CB0039AEBA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E6997DFE2E8582CB0039AEBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6997DFC2E8582CB0039AEBA /* ProntoFoodDeliveryApp */,
+				E6997E0B2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests */,
+				E6997E152E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6997DFB2E8582CB0039AEBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60166DF2E85892200E71CAD /* .gitkeep in Resources */,
+				E60166E02E85892200E71CAD /* .gitkeep in Resources */,
+				E60166E12E85892200E71CAD /* .gitkeep in Resources */,
+				E601675F2E85917C00E71CAD /* .gitkeep in Resources */,
+				E60167602E85917C00E71CAD /* .gitkeep in Resources */,
+				E60167612E85917C00E71CAD /* .gitkeep in Resources */,
+				E60167622E85917C00E71CAD /* .gitkeep in Resources */,
+				E60167632E85917C00E71CAD /* .gitkeep in Resources */,
+				E60166E22E85892200E71CAD /* .gitkeep in Resources */,
+				E60166E32E85892200E71CAD /* .gitkeep in Resources */,
+				E60166E42E85892200E71CAD /* .gitkeep in Resources */,
+				E60166E52E85892200E71CAD /* .gitkeep in Resources */,
+				E60166E62E85892200E71CAD /* .gitkeep in Resources */,
+				E60166E72E85892200E71CAD /* .gitkeep in Resources */,
+				E60166E82E85892200E71CAD /* .gitkeep in Resources */,
+				E60166E92E85892200E71CAD /* .gitkeep in Resources */,
+				E60166EA2E85892200E71CAD /* .gitkeep in Resources */,
+				E60166EB2E85892200E71CAD /* .gitkeep in Resources */,
+				E60166EC2E85892200E71CAD /* .gitkeep in Resources */,
+				E60166ED2E85892200E71CAD /* .gitkeep in Resources */,
+				E60166EE2E85892200E71CAD /* .gitkeep in Resources */,
+				E60166EF2E85892200E71CAD /* .gitkeep in Resources */,
+				E60166F02E85892200E71CAD /* .gitkeep in Resources */,
+				E60166F12E85892200E71CAD /* .gitkeep in Resources */,
+				E60166F22E85892200E71CAD /* README.md in Resources */,
+				E60166F32E85892200E71CAD /* .gitkeep in Resources */,
+				E60166F42E85892200E71CAD /* .gitkeep in Resources */,
+				E60166F52E85892200E71CAD /* README.md in Resources */,
+				E60166F62E85892200E71CAD /* .gitkeep in Resources */,
+				E60166F72E85892200E71CAD /* .gitkeep in Resources */,
+				E60166F82E85892200E71CAD /* .gitkeep in Resources */,
+				E60166F92E85892200E71CAD /* .gitkeep in Resources */,
+				E60166FA2E85892200E71CAD /* .gitkeep in Resources */,
+				E60166FB2E85892200E71CAD /* .gitkeep in Resources */,
+				E60166FC2E85892200E71CAD /* .gitkeep in Resources */,
+				E601674D2E8589AA00E71CAD /* .gitkeep in Resources */,
+				E601674E2E8589AA00E71CAD /* .gitkeep in Resources */,
+				E601674F2E8589AA00E71CAD /* .gitkeep in Resources */,
+				E60167502E8589AA00E71CAD /* .gitkeep in Resources */,
+				E60167512E8589AA00E71CAD /* .gitkeep in Resources */,
+				E60167522E8589AA00E71CAD /* .gitkeep in Resources */,
+				E60167532E8589AA00E71CAD /* .gitkeep in Resources */,
+				E60166FD2E85892200E71CAD /* .gitkeep in Resources */,
+				E60166FE2E85892200E71CAD /* .gitkeep in Resources */,
+				E60166FF2E85892200E71CAD /* .gitkeep in Resources */,
+				E60167002E85892200E71CAD /* .gitkeep in Resources */,
+				E60167012E85892200E71CAD /* .gitkeep in Resources */,
+				E60167022E85892200E71CAD /* .gitkeep in Resources */,
+				E60167032E85892200E71CAD /* .gitkeep in Resources */,
+				E60167042E85892200E71CAD /* .gitkeep in Resources */,
+				E60167052E85892200E71CAD /* .gitkeep in Resources */,
+				E60167062E85892200E71CAD /* .gitkeep in Resources */,
+				E60167072E85892200E71CAD /* .gitkeep in Resources */,
+				E60167082E85892200E71CAD /* .gitkeep in Resources */,
+				E601676B2E8591A300E71CAD /* MVVM.md in Resources */,
+				E601676C2E8591A300E71CAD /* PROJECT_STRUCTURE.md in Resources */,
+				E601676D2E8591A300E71CAD /* Salesforce.md in Resources */,
+				E60167092E85892200E71CAD /* .gitkeep in Resources */,
+				E601670A2E85892200E71CAD /* .gitkeep in Resources */,
+				E601670B2E85892200E71CAD /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6997E0A2E8582CC0039AEBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6997E142E8582CC0039AEBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6997DF92E8582CB0039AEBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E601666D2E85883F00E71CAD /* ContentView.swift in Sources */,
+				E601666E2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6997E082E8582CC0039AEBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6997E122E8582CC0039AEBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6997E0E2E8582CC0039AEBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6997DFC2E8582CB0039AEBA /* ProntoFoodDeliveryApp */;
+			targetProxy = E6997E0D2E8582CC0039AEBA /* PBXContainerItemProxy */;
+		};
+		E6997E182E8582CC0039AEBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6997DFC2E8582CB0039AEBA /* ProntoFoodDeliveryApp */;
+			targetProxy = E6997E172E8582CC0039AEBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E6997E1E2E8582CC0039AEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QYYB9FH2U5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6997E1F2E8582CC0039AEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QYYB9FH2U5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6997E212E8582CC0039AEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYYB9FH2U5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.pronto.fooddelivery.ProntoFoodDeliveryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6997E222E8582CC0039AEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYYB9FH2U5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.pronto.fooddelivery.ProntoFoodDeliveryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E6997E242E8582CC0039AEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYYB9FH2U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.pronto.fooddelivery.ProntoFoodDeliveryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProntoFoodDeliveryApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProntoFoodDeliveryApp";
+			};
+			name = Debug;
+		};
+		E6997E252E8582CC0039AEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYYB9FH2U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.pronto.fooddelivery.ProntoFoodDeliveryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProntoFoodDeliveryApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProntoFoodDeliveryApp";
+			};
+			name = Release;
+		};
+		E6997E272E8582CC0039AEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYYB9FH2U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.pronto.fooddelivery.ProntoFoodDeliveryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProntoFoodDeliveryApp;
+			};
+			name = Debug;
+		};
+		E6997E282E8582CC0039AEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYYB9FH2U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.pronto.fooddelivery.ProntoFoodDeliveryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProntoFoodDeliveryApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6997DF82E8582CB0039AEBA /* Build configuration list for PBXProject "ProntoFoodDeliveryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6997E1E2E8582CC0039AEBA /* Debug */,
+				E6997E1F2E8582CC0039AEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6997E202E8582CC0039AEBA /* Build configuration list for PBXNativeTarget "ProntoFoodDeliveryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6997E212E8582CC0039AEBA /* Debug */,
+				E6997E222E8582CC0039AEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6997E232E8582CC0039AEBA /* Build configuration list for PBXNativeTarget "ProntoFoodDeliveryAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6997E242E8582CC0039AEBA /* Debug */,
+				E6997E252E8582CC0039AEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6997E262E8582CC0039AEBA /* Build configuration list for PBXNativeTarget "ProntoFoodDeliveryAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6997E272E8582CC0039AEBA /* Debug */,
+				E6997E282E8582CC0039AEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6997DF52E8582CB0039AEBA /* Project object */;
+}
