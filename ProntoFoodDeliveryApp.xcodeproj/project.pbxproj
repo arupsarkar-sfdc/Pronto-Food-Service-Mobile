@@ -54,6 +54,8 @@
 		E657A85D2EB00C2600FBF948 /* IdentityFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A85C2EB00C2600FBF948 /* IdentityFormViewModel.swift */; };
 		E657A85F2EB00C4100FBF948 /* IdentityFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A85E2EB00C4100FBF948 /* IdentityFormView.swift */; };
 		E657A8612EB2669000FBF948 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8602EB2669000FBF948 /* Product.swift */; };
+		E657A8632EB2775400FBF948 /* StoreFronts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8622EB2775400FBF948 /* StoreFronts.swift */; };
+		E657A8652EB2782200FBF948 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8642EB2782200FBF948 /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +134,8 @@
 		E657A85C2EB00C2600FBF948 /* IdentityFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityFormViewModel.swift; sourceTree = "<group>"; };
 		E657A85E2EB00C4100FBF948 /* IdentityFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityFormView.swift; sourceTree = "<group>"; };
 		E657A8602EB2669000FBF948 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		E657A8622EB2775400FBF948 /* StoreFronts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFronts.swift; sourceTree = "<group>"; };
+		E657A8642EB2782200FBF948 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProntoFoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6997E0C2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6997E162E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +225,7 @@
 		E601667D2E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E657A8622EB2775400FBF948 /* StoreFronts.swift */,
 				E657A8602EB2669000FBF948 /* Product.swift */,
 			);
 			path = Models;
@@ -558,6 +563,7 @@
 		E60166C22E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E657A8642EB2782200FBF948 /* SearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -1065,6 +1071,7 @@
 				E60167952E870CE000E71CAD /* CategoryModel.swift in Sources */,
 				E601666D2E85883F00E71CAD /* ContentView.swift in Sources */,
 				E657A7662EAACCCD00FBF948 /* DataCloudService.swift in Sources */,
+				E657A8632EB2775400FBF948 /* StoreFronts.swift in Sources */,
 				E657A7672EAACCCD00FBF948 /* DataCloudTrackable.swift in Sources */,
 				E657A8522EB007D400FBF948 /* ProfileDataService.swift in Sources */,
 				E657A7682EAACCCD00FBF948 /* DataCloudConfiguration.swift in Sources */,
@@ -1091,6 +1098,7 @@
 				E60167922E870CC500E71CAD /* HomeCategoryBarView.swift in Sources */,
 				E657A84E2EB0042D00FBF948 /* EngagementTrackingService.swift in Sources */,
 				E60167932E870CC500E71CAD /* HomePromoCardView.swift in Sources */,
+				E657A8652EB2782200FBF948 /* SearchViewModel.swift in Sources */,
 				E601666E2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift in Sources */,
 				E657A83F2EAFC96100FBF948 /* ConsentView.swift in Sources */,
 				E657A85D2EB00C2600FBF948 /* IdentityFormViewModel.swift in Sources */,
