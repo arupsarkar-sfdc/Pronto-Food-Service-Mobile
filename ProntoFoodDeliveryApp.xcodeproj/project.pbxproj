@@ -44,8 +44,6 @@
 		E657A8402EAFC96100FBF948 /* ConsentStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A83B2EAFC96100FBF948 /* ConsentStatusView.swift */; };
 		E657A8412EAFC96100FBF948 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A83D2EAFC96100FBF948 /* LocationPermissionView.swift */; };
 		E657A8422EAFC96100FBF948 /* LocationStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A83E2EAFC96100FBF948 /* LocationStatusView.swift */; };
-		E657A8492EAFDF0300FBF948 /* Personalization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E657A8472EAFDE7C00FBF948 /* Personalization.framework */; };
-		E657A84A2EAFDF0300FBF948 /* Personalization.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E657A8472EAFDE7C00FBF948 /* Personalization.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E657A84E2EB0042D00FBF948 /* EngagementTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A84D2EB0042D00FBF948 /* EngagementTrackingService.swift */; };
 		E657A8522EB007D400FBF948 /* ProfileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8502EB007D400FBF948 /* ProfileDataService.swift */; };
 		E657A8582EB007E300FBF948 /* LocationTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8572EB007E300FBF948 /* LocationTrackingService.swift */; };
@@ -56,6 +54,10 @@
 		E657A8612EB2669000FBF948 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8602EB2669000FBF948 /* Product.swift */; };
 		E657A8632EB2775400FBF948 /* StoreFronts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8622EB2775400FBF948 /* StoreFronts.swift */; };
 		E657A8652EB2782200FBF948 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8642EB2782200FBF948 /* SearchViewModel.swift */; };
+		E657A87F2EB285AF00FBF948 /* UserDataGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A87E2EB285AF00FBF948 /* UserDataGraphView.swift */; };
+		E657A8B52EB29A7300FBF948 /* UserDataGraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B42EB29A7300FBF948 /* UserDataGraphViewModel.swift */; };
+		E657A8B72EB29A9E00FBF948 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B62EB29A9E00FBF948 /* TokenService.swift */; };
+		E657A8B92EB3A19500FBF948 /* DataGraphProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B82EB3A19500FBF948 /* DataGraphProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,20 +76,6 @@
 			remoteInfo = ProntoFoodDeliveryApp;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		E657A84B2EAFDF0300FBF948 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				E657A84A2EAFDF0300FBF948 /* Personalization.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E60166692E85883F00E71CAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,7 +113,6 @@
 		E657A83C2EAFC96100FBF948 /* ConsentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentView.swift; sourceTree = "<group>"; };
 		E657A83D2EAFC96100FBF948 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
 		E657A83E2EAFC96100FBF948 /* LocationStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStatusView.swift; sourceTree = "<group>"; };
-		E657A8472EAFDE7C00FBF948 /* Personalization.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Personalization.framework; sourceTree = "<group>"; };
 		E657A84D2EB0042D00FBF948 /* EngagementTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngagementTrackingService.swift; sourceTree = "<group>"; };
 		E657A8502EB007D400FBF948 /* ProfileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataService.swift; sourceTree = "<group>"; };
 		E657A8542EB007E300FBF948 /* ConsentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentService.swift; sourceTree = "<group>"; };
@@ -136,6 +123,10 @@
 		E657A8602EB2669000FBF948 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		E657A8622EB2775400FBF948 /* StoreFronts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFronts.swift; sourceTree = "<group>"; };
 		E657A8642EB2782200FBF948 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		E657A87E2EB285AF00FBF948 /* UserDataGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataGraphView.swift; sourceTree = "<group>"; };
+		E657A8B42EB29A7300FBF948 /* UserDataGraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataGraphViewModel.swift; sourceTree = "<group>"; };
+		E657A8B62EB29A9E00FBF948 /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		E657A8B82EB3A19500FBF948 /* DataGraphProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGraphProfile.swift; sourceTree = "<group>"; };
 		E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProntoFoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6997E0C2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6997E162E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E657A8282EAFBE0600FBF948 /* SFMCSDK in Frameworks */,
-				E657A8492EAFDF0300FBF948 /* Personalization.framework in Frameworks */,
 				E657A8262EAFBE0600FBF948 /* Cdp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +245,7 @@
 		E60166852E85892200E71CAD /* DataCloud */ = {
 			isa = PBXGroup;
 			children = (
+				E657A8B62EB29A9E00FBF948 /* TokenService.swift */,
 				E657A8502EB007D400FBF948 /* ProfileDataService.swift */,
 				E657A8542EB007E300FBF948 /* ConsentService.swift */,
 				E657A8562EB007E300FBF948 /* DataCloudLoggingService.swift */,
@@ -484,6 +475,7 @@
 		E60166B22E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E657A8B82EB3A19500FBF948 /* DataGraphProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -491,6 +483,7 @@
 		E60166B42E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E657A8B42EB29A7300FBF948 /* UserDataGraphViewModel.swift */,
 				E657A85C2EB00C2600FBF948 /* IdentityFormViewModel.swift */,
 				E657A77D2EAACE2200FBF948 /* ProfileViewModel.swift */,
 			);
@@ -500,6 +493,7 @@
 		E60166B62E85892200E71CAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E657A87E2EB285AF00FBF948 /* UserDataGraphView.swift */,
 				E657A85E2EB00C4100FBF948 /* IdentityFormView.swift */,
 				E657A83B2EAFC96100FBF948 /* ConsentStatusView.swift */,
 				E657A83C2EAFC96100FBF948 /* ConsentView.swift */,
@@ -900,7 +894,6 @@
 				E6997E192E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests */,
 				E6997DFE2E8582CB0039AEBA /* Products */,
 				E657A8242EAFBE0600FBF948 /* Frameworks */,
-				E657A8472EAFDE7C00FBF948 /* Personalization.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -924,7 +917,6 @@
 				E6997DF92E8582CB0039AEBA /* Sources */,
 				E6997DFA2E8582CB0039AEBA /* Frameworks */,
 				E6997DFB2E8582CB0039AEBA /* Resources */,
-				E657A84B2EAFDF0300FBF948 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1075,6 +1067,7 @@
 				E657A7672EAACCCD00FBF948 /* DataCloudTrackable.swift in Sources */,
 				E657A8522EB007D400FBF948 /* ProfileDataService.swift in Sources */,
 				E657A7682EAACCCD00FBF948 /* DataCloudConfiguration.swift in Sources */,
+				E657A8B52EB29A7300FBF948 /* UserDataGraphViewModel.swift in Sources */,
 				E657A7782EAACDE400FBF948 /* HomeViewModel 2.swift in Sources */,
 				E60167862E870C8000E71CAD /* LiquidGlassTabView.swift in Sources */,
 				E601679A2E870D2E00E71CAD /* FavoritesView.swift in Sources */,
@@ -1085,9 +1078,11 @@
 				E657A85F2EB00C4100FBF948 /* IdentityFormView.swift in Sources */,
 				E60167882E870C8000E71CAD /* TabBarButton.swift in Sources */,
 				E657A77C2EAACE1600FBF948 /* OrderViewModel.swift in Sources */,
+				E657A8B92EB3A19500FBF948 /* DataGraphProfile.swift in Sources */,
 				E657A77A2EAACE0500FBF948 /* CartViewModel.swift in Sources */,
 				E60167892E870C8000E71CAD /* LiquidGlassTabBar.swift in Sources */,
 				E601678F2E870CC500E71CAD /* HomeView.swift in Sources */,
+				E657A8B72EB29A9E00FBF948 /* TokenService.swift in Sources */,
 				E60167902E870CC500E71CAD /* HomeHeaderView.swift in Sources */,
 				E657A8582EB007E300FBF948 /* LocationTrackingService.swift in Sources */,
 				E657A85A2EB007E300FBF948 /* ConsentService.swift in Sources */,
@@ -1095,6 +1090,7 @@
 				E60167912E870CC500E71CAD /* HomeBestSellersSection.swift in Sources */,
 				E60167972E870D1700E71CAD /* SearchView.swift in Sources */,
 				E657A7952EAC027A00FBF948 /* SettingsView.swift in Sources */,
+				E657A87F2EB285AF00FBF948 /* UserDataGraphView.swift in Sources */,
 				E60167922E870CC500E71CAD /* HomeCategoryBarView.swift in Sources */,
 				E657A84E2EB0042D00FBF948 /* EngagementTrackingService.swift in Sources */,
 				E60167932E870CC500E71CAD /* HomePromoCardView.swift in Sources */,
@@ -1274,7 +1270,6 @@
 				DEVELOPMENT_TEAM = QYYB9FH2U5;
 				ENABLE_PREVIEWS = YES;
 				EXCLUDED_ARCHS = "";
-				"EXCLUDED_ARCHS[sdk=iphone*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1289,6 +1284,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1311,7 +1307,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QYYB9FH2U5;
 				ENABLE_PREVIEWS = YES;
-				"EXCLUDED_ARCHS[sdk=iphone*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1326,6 +1321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

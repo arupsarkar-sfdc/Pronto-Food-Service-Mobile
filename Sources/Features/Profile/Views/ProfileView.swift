@@ -14,6 +14,7 @@ struct ProfileView: View {
     @State private var showingIdentityForm = false
     @State private var showingConsentSheet = false
     @State private var showingSettings = false
+    @State private var showingDataGraph = false
     
     var body: some View {
         NavigationView {
@@ -45,6 +46,32 @@ struct ProfileView: View {
             }
             .navigationTitle("Profile")
             .toolbar {
+                // User Data Graph Icon (top-left, only when known user)
+                if profileService.isKnownUser {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button(action: {
+                            showingDataGraph = true
+                        }) {
+                            ZStack {
+                                Circle()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [.blue, .purple],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        )
+                                    )
+                                    .frame(width: 36, height: 36)
+                                
+                                Image(systemName: "person.circle.fill")
+                                    .font(.title3)
+                                    .foregroundColor(.white)
+                            }
+                        }
+                    }
+                }
+                
+                // Settings Icon (top-right)
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         showingSettings = true
@@ -63,6 +90,9 @@ struct ProfileView: View {
             }
             .sheet(isPresented: $showingSettings) {
                 SettingsView()
+            }
+            .sheet(isPresented: $showingDataGraph) {
+                UserDataGraphView()
             }
         }
     }

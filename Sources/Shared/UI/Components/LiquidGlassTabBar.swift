@@ -4,6 +4,7 @@ import SwiftUI
 struct LiquidGlassTabBar: View {
     @Binding var selectedTab: Int
     @Namespace private var tabIndicator
+    @State private var isExpanded = false
     
     private let tabs = [
         TabItem(id: 0, title: "Home", icon: "house.fill", inactiveIcon: "house"),
@@ -13,70 +14,50 @@ struct LiquidGlassTabBar: View {
     ]
     
     var body: some View {
-        HStack(spacing: 0) {
-            ForEach(tabs, id: \.id) { tab in
-                TabBarButton(
-                    tab: tab,
-                    isSelected: selectedTab == tab.id,
-                    namespace: tabIndicator
-                ) {
-                    withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
-                        selectedTab = tab.id
+        HStack(spacing: isExpanded ? 20 : 0) {  // Collapsible spacing
+            // Home button - always visible (triggers expansion)
+            TabBarButton(
+                tab: tabs[0],
+                isSelected: selectedTab == 0,
+                namespace: tabIndicator
+            ) {
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                    if selectedTab == 0 {
+                        // If already on Home, toggle expansion
+                        isExpanded.toggle()
+                    } else {
+                        // Navigate to Home and expand
+                        selectedTab = 0
+                        isExpanded = true
                     }
                 }
             }
-        }
-        .padding(.horizontal, 20)
-        .padding(.vertical, 12)
-        .background(
-            // Liquid glass effect
-            ZStack {
-                // Primary blur background
-                RoundedRectangle(cornerRadius: 28, style: .continuous)
-                    .fill(.ultraThinMaterial)
-                
-                // Subtle border
-                RoundedRectangle(cornerRadius: 28, style: .continuous)
-                    .stroke(
-                        LinearGradient(
-                            colors: [
-                                Color.white.opacity(0.3),
-                                Color.clear,
-                                Color.black.opacity(0.1)
-                            ],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        ),
-                        lineWidth: 0.5
-                    )
-                
-                // Inner shadow for depth
-                RoundedRectangle(cornerRadius: 28, style: .continuous)
-                    .fill(
-                        LinearGradient(
-                            colors: [
-                                Color.black.opacity(0.02),
-                                Color.clear
-                            ],
-                            startPoint: .top,
-                            endPoint: .bottom
-                        )
-                    )
+            
+            
+            // Other tabs - shown only when expanded
+            if isExpanded {
+                ForEach(tabs.dropFirst(), id: \.id) { tab in
+                    TabBarButton(
+                        tab: tab,
+                        isSelected: selectedTab == tab.id,
+                        namespace: tabIndicator
+                    ) {
+                        withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                            selectedTab = tab.id
+                        }
+                    }
+                    .transition(.move(edge: .leading).combined(with: .opacity))
+                    .padding(.horizontal,10)
+                    
+                }
             }
-        )
-        .shadow(
-            color: Color.black.opacity(0.08),
-            radius: 20,
-            x: 0,
-            y: 8
-        )
-        .shadow(
-            color: Color.black.opacity(0.04),
-            radius: 1,
-            x: 0,
-            y: 1
-        )
-        .padding(.horizontal, 20)
-        .padding(.bottom, 8)
+        }
+//        .padding(.horizontal, 12)
+//        .padding(.vertical, 6)
+//        .background(.ultraThinMaterial)
+//        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+//        .shadow(color: .black.opacity(0.07), radius: 4, x: 0, y: 1)
+//        .padding(.bottom, 16)
+        .glassEffect()
     }
 }
