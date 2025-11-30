@@ -25,6 +25,8 @@
 		E60167972E870D1700E71CAD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167962E870D1700E71CAD /* SearchView.swift */; };
 		E601679A2E870D2E00E71CAD /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167982E870D2E00E71CAD /* FavoritesView.swift */; };
 		E601679B2E870D2E00E71CAD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167992E870D2E00E71CAD /* ProfileView.swift */; };
+		E61C15D72ED4F79600968B96 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = E61C15D62ED4F79600968B96 /* Cdp */; };
+		E61C15DA2ED4F96400968B96 /* Personalization in Frameworks */ = {isa = PBXBuildFile; productRef = E61C15D92ED4F96400968B96 /* Personalization */; };
 		E657A7662EAACCCD00FBF948 /* DataCloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7642EAACCCD00FBF948 /* DataCloudService.swift */; };
 		E657A7672EAACCCD00FBF948 /* DataCloudTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7652EAACCCD00FBF948 /* DataCloudTrackable.swift */; };
 		E657A7682EAACCCD00FBF948 /* DataCloudConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7632EAACCCD00FBF948 /* DataCloudConfiguration.swift */; };
@@ -37,8 +39,6 @@
 		E657A77E2EAACE2200FBF948 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A77D2EAACE2200FBF948 /* ProfileViewModel.swift */; };
 		E657A7952EAC027A00FBF948 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7942EAC027A00FBF948 /* SettingsView.swift */; };
 		E657A7972EAC02AE00FBF948 /* CredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7962EAC02AE00FBF948 /* CredentialsManager.swift */; };
-		E657A8262EAFBE0600FBF948 /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = E657A8252EAFBE0600FBF948 /* Cdp */; };
-		E657A8282EAFBE0600FBF948 /* SFMCSDK in Frameworks */ = {isa = PBXBuildFile; productRef = E657A8272EAFBE0600FBF948 /* SFMCSDK */; };
 		E657A83A2EAFC8E900FBF948 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8392EAFC8E900FBF948 /* LocationService.swift */; };
 		E657A83F2EAFC96100FBF948 /* ConsentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A83C2EAFC96100FBF948 /* ConsentView.swift */; };
 		E657A8402EAFC96100FBF948 /* ConsentStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A83B2EAFC96100FBF948 /* ConsentStatusView.swift */; };
@@ -58,6 +58,11 @@
 		E657A8B52EB29A7300FBF948 /* UserDataGraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B42EB29A7300FBF948 /* UserDataGraphViewModel.swift */; };
 		E657A8B72EB29A9E00FBF948 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B62EB29A9E00FBF948 /* TokenService.swift */; };
 		E657A8B92EB3A19500FBF948 /* DataGraphProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B82EB3A19500FBF948 /* DataGraphProfile.swift */; };
+		E6CC71902ED9FF7700BE6895 /* PersonalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC718F2ED9FF7700BE6895 /* PersonalizationService.swift */; };
+		E6CC71922ED9FFCC00BE6895 /* PersonalizationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71912ED9FFCC00BE6895 /* PersonalizationModels.swift */; };
+		E6CC71942ED9FFE800BE6895 /* PersonalizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71932ED9FFE800BE6895 /* PersonalizationViewModel.swift */; };
+		E6CC71962EDB625700BE6895 /* DataGraphQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71952EDB625700BE6895 /* DataGraphQueryService.swift */; };
+		E6CC71982EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71972EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +135,11 @@
 		E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProntoFoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6997E0C2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6997E162E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CC718F2ED9FF7700BE6895 /* PersonalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationService.swift; sourceTree = "<group>"; };
+		E6CC71912ED9FFCC00BE6895 /* PersonalizationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationModels.swift; sourceTree = "<group>"; };
+		E6CC71932ED9FFE800BE6895 /* PersonalizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationViewModel.swift; sourceTree = "<group>"; };
+		E6CC71952EDB625700BE6895 /* DataGraphQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGraphQueryService.swift; sourceTree = "<group>"; };
+		E6CC71972EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationDecisionRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -168,8 +178,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E657A8282EAFBE0600FBF948 /* SFMCSDK in Frameworks */,
-				E657A8262EAFBE0600FBF948 /* Cdp in Frameworks */,
+				E61C15D72ED4F79600968B96 /* Cdp in Frameworks */,
+				E61C15DA2ED4F96400968B96 /* Personalization in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +225,8 @@
 		E601667D2E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E6CC71972EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift */,
+				E6CC71912ED9FFCC00BE6895 /* PersonalizationModels.swift */,
 				E657A8622EB2775400FBF948 /* StoreFronts.swift */,
 				E657A8602EB2669000FBF948 /* Product.swift */,
 			);
@@ -245,6 +257,7 @@
 		E60166852E85892200E71CAD /* DataCloud */ = {
 			isa = PBXGroup;
 			children = (
+				E6CC71952EDB625700BE6895 /* DataGraphQueryService.swift */,
 				E657A8B62EB29A9E00FBF948 /* TokenService.swift */,
 				E657A8502EB007D400FBF948 /* ProfileDataService.swift */,
 				E657A8542EB007E300FBF948 /* ConsentService.swift */,
@@ -262,6 +275,7 @@
 		E60166872E85892200E71CAD /* Personalization */ = {
 			isa = PBXGroup;
 			children = (
+				E6CC718F2ED9FF7700BE6895 /* PersonalizationService.swift */,
 			);
 			path = Personalization;
 			sourceTree = "<group>";
@@ -483,6 +497,7 @@
 		E60166B42E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E6CC71932ED9FFE800BE6895 /* PersonalizationViewModel.swift */,
 				E657A8B42EB29A7300FBF948 /* UserDataGraphViewModel.swift */,
 				E657A85C2EB00C2600FBF948 /* IdentityFormViewModel.swift */,
 				E657A77D2EAACE2200FBF948 /* ProfileViewModel.swift */,
@@ -927,8 +942,8 @@
 			);
 			name = ProntoFoodDeliveryApp;
 			packageProductDependencies = (
-				E657A8252EAFBE0600FBF948 /* Cdp */,
-				E657A8272EAFBE0600FBF948 /* SFMCSDK */,
+				E61C15D62ED4F79600968B96 /* Cdp */,
+				E61C15D92ED4F96400968B96 /* Personalization */,
 			);
 			productName = ProntoFoodDeliveryApp;
 			productReference = E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */;
@@ -1013,8 +1028,8 @@
 			mainGroup = E6997DF42E8582CB0039AEBA;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				E657A8222EAFB7F200FBF948 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */,
-				E657A8232EAFB8C600FBF948 /* XCRemoteSwiftPackageReference "sfmc-sdk-ios" */,
+				E61C15D52ED4F79600968B96 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */,
+				E61C15D82ED4F7BC00968B96 /* XCRemoteSwiftPackageReference "Personalization-IOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E6997DFE2E8582CB0039AEBA /* Products */;
@@ -1080,6 +1095,7 @@
 				E657A77C2EAACE1600FBF948 /* OrderViewModel.swift in Sources */,
 				E657A8B92EB3A19500FBF948 /* DataGraphProfile.swift in Sources */,
 				E657A77A2EAACE0500FBF948 /* CartViewModel.swift in Sources */,
+				E6CC71982EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift in Sources */,
 				E60167892E870C8000E71CAD /* LiquidGlassTabBar.swift in Sources */,
 				E601678F2E870CC500E71CAD /* HomeView.swift in Sources */,
 				E657A8B72EB29A9E00FBF948 /* TokenService.swift in Sources */,
@@ -1087,9 +1103,11 @@
 				E657A8582EB007E300FBF948 /* LocationTrackingService.swift in Sources */,
 				E657A85A2EB007E300FBF948 /* ConsentService.swift in Sources */,
 				E657A85B2EB007E300FBF948 /* DataCloudLoggingService.swift in Sources */,
+				E6CC71962EDB625700BE6895 /* DataGraphQueryService.swift in Sources */,
 				E60167912E870CC500E71CAD /* HomeBestSellersSection.swift in Sources */,
 				E60167972E870D1700E71CAD /* SearchView.swift in Sources */,
 				E657A7952EAC027A00FBF948 /* SettingsView.swift in Sources */,
+				E6CC71942ED9FFE800BE6895 /* PersonalizationViewModel.swift in Sources */,
 				E657A87F2EB285AF00FBF948 /* UserDataGraphView.swift in Sources */,
 				E60167922E870CC500E71CAD /* HomeCategoryBarView.swift in Sources */,
 				E657A84E2EB0042D00FBF948 /* EngagementTrackingService.swift in Sources */,
@@ -1101,9 +1119,11 @@
 				E657A8402EAFC96100FBF948 /* ConsentStatusView.swift in Sources */,
 				E657A8412EAFC96100FBF948 /* LocationPermissionView.swift in Sources */,
 				E657A8422EAFC96100FBF948 /* LocationStatusView.swift in Sources */,
+				E6CC71902ED9FF7700BE6895 /* PersonalizationService.swift in Sources */,
 				E657A7742EAACD9D00FBF948 /* DataCloudEvent.swift in Sources */,
 				E657A7752EAACD9D00FBF948 /* EngagementEvents.swift in Sources */,
 				E657A83A2EAFC8E900FBF948 /* LocationService.swift in Sources */,
+				E6CC71922ED9FFCC00BE6895 /* PersonalizationModels.swift in Sources */,
 				E657A7762EAACD9D00FBF948 /* ProfileEvents.swift in Sources */,
 				E657A8612EB2669000FBF948 /* Product.swift in Sources */,
 			);
@@ -1449,34 +1469,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E657A8222EAFB7F200FBF948 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
+		E61C15D52ED4F79600968B96 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/salesforce-marketingcloud/mobile-sdk-cdp-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.6;
+				minimumVersion = 3.0.0;
 			};
 		};
-		E657A8232EAFB8C600FBF948 /* XCRemoteSwiftPackageReference "sfmc-sdk-ios" */ = {
+		E61C15D82ED4F7BC00968B96 /* XCRemoteSwiftPackageReference "Personalization-IOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/salesforce-marketingcloud/sfmc-sdk-ios";
+			repositoryURL = "https://github.com/salesforce-marketingcloud/Personalization-IOS";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.2;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E657A8252EAFBE0600FBF948 /* Cdp */ = {
+		E61C15D62ED4F79600968B96 /* Cdp */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E657A8222EAFB7F200FBF948 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
+			package = E61C15D52ED4F79600968B96 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
 			productName = Cdp;
 		};
-		E657A8272EAFBE0600FBF948 /* SFMCSDK */ = {
+		E61C15D92ED4F96400968B96 /* Personalization */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E657A8232EAFB8C600FBF948 /* XCRemoteSwiftPackageReference "sfmc-sdk-ios" */;
-			productName = SFMCSDK;
+			package = E61C15D82ED4F7BC00968B96 /* XCRemoteSwiftPackageReference "Personalization-IOS" */;
+			productName = Personalization;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

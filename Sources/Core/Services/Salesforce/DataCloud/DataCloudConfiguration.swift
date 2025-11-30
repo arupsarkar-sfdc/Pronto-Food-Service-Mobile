@@ -29,13 +29,21 @@ public struct DataCloudConfiguration {
     /// Enable debug logging (optional, default: false)
     public let enableLogging: Bool
     
+    /// Enable Personalization SDK (optional, default: true)
+    public let enablePersonalization: Bool
+    
+    /// Personalization dataspace (optional, default: "default")
+    public let personalizationDataspace: String
+    
     public init(
         appId: String,
         endpoint: String,
         trackScreens: Bool = true,
         trackLifecycle: Bool = true,
         sessionTimeoutInSeconds: Int = 1800,
-        enableLogging: Bool = false
+        enableLogging: Bool = false,
+        enablePersonalization: Bool = true,
+        personalizationDataspace: String = "default"
     ) {
         self.appId = appId
         self.endpoint = endpoint
@@ -43,6 +51,8 @@ public struct DataCloudConfiguration {
         self.trackLifecycle = trackLifecycle
         self.sessionTimeoutInSeconds = sessionTimeoutInSeconds
         self.enableLogging = enableLogging
+        self.enablePersonalization = enablePersonalization
+        self.personalizationDataspace = personalizationDataspace
     }
 }
 
@@ -57,7 +67,9 @@ extension DataCloudConfiguration {
             trackScreens: true,
             trackLifecycle: true,
             sessionTimeoutInSeconds: 1800,
-            enableLogging: true
+            enableLogging: true,
+            enablePersonalization: true,
+            personalizationDataspace: "default"
         )
     }
     
@@ -69,7 +81,9 @@ extension DataCloudConfiguration {
             trackScreens: true,
             trackLifecycle: true,
             sessionTimeoutInSeconds: 1800,
-            enableLogging: false
+            enableLogging: false,
+            enablePersonalization: true,
+            personalizationDataspace: "default"
         )
     }
     
@@ -84,7 +98,9 @@ extension DataCloudConfiguration {
                 trackScreens: true,
                 trackLifecycle: true,
                 sessionTimeoutInSeconds: 600,
-                enableLogging: true // Always enable logging when using stored credentials for debugging
+                enableLogging: true, // Always enable logging when using stored credentials for debugging
+                enablePersonalization: true,
+                personalizationDataspace: "default"
             )
         }
         

@@ -10,6 +10,7 @@
 import Foundation
 import Cdp
 import SFMCSDK
+import Personalization
 
 // MARK: - Data Cloud Service Protocol
 
@@ -91,6 +92,8 @@ public final class DataCloudService: DataCloudServiceProtocol {
             print("   Track Screens: \(configuration.trackScreens)")
             print("   Track Lifecycle: \(configuration.trackLifecycle)")
             print("   Session Timeout: \(configuration.sessionTimeoutInSeconds)s")
+            print("   Personalization Enabled: \(configuration.enablePersonalization)")
+            print("   Personalization Dataspace: \(configuration.personalizationDataspace)")
         }
         
         // 1. Enable logging for development
@@ -115,7 +118,7 @@ public final class DataCloudService: DataCloudServiceProtocol {
             if configuration.enableLogging {
                 print("CDP Module result: \(result.rawValue)")
                 print("CDP State: \(CdpModule.shared.state)")
-                print("SFMCSDK MP Status: \(SFMCSdk.mp.getStatus().rawValue)")
+                print("SFMCSDK MP Status: \(SFMCSdk.cdp.getStatus().rawValue)")
             }
             
             switch result {
@@ -151,12 +154,27 @@ public final class DataCloudService: DataCloudServiceProtocol {
             }
         }
         
-        // 4. Build SDK configuration
-        let sdkConfig = ConfigBuilder()
-            .setCdp(config: cdpConfig, onCompletion: completionHandler)
-            .build()
+        // 4. Build Personalization configuration (if enabled)
+        var configBuilder = ConfigBuilder().setCdp(config: cdpConfig)
         
-        // 5. Initialize SDK
+        if configuration.enablePersonalization {
+            let personalizationConfig = PersonalizationConfigBuilder()
+                .dataspace(configuration.personalizationDataspace)
+                .build()
+            
+            configBuilder = configBuilder.setPersonalization(config: personalizationConfig)
+            
+            if configuration.enableLogging {
+                print("🎨 Personalization SDK enabled")
+                print("   Dataspace: \(configuration.personalizationDataspace)")
+            }
+        }
+        
+        // 5. Build SDK configuration
+        let sdkConfig = configBuilder.build()
+        
+        // 6. Initialize SDK
+        //SFMCSdk.initializeSdk(sdkConfig, completion: completionHandler)
         SFMCSdk.initializeSdk(sdkConfig)
         
         if configuration.enableLogging {
@@ -171,7 +189,7 @@ public final class DataCloudService: DataCloudServiceProtocol {
         
         if configuration.enableLogging {
             print("✅ CDP Module is now OPERATIONAL")
-            print("   Module Status: \(SFMCSdk.mp.getStatus().rawValue)")
+            print("   Module Status: \(SFMCSdk.cdp.getStatus().rawValue)")
         }
         
         // Apply saved consent
@@ -217,7 +235,7 @@ public final class DataCloudService: DataCloudServiceProtocol {
                 }
                 
                 pollCount += 1
-                let status = SFMCSdk.mp.getStatus()
+                let status = SFMCSdk.cdp.getStatus()
                 
                 if self.currentConfiguration?.enableLogging == true {
                     print("⏳ Poll #\(pollCount)")
@@ -253,7 +271,7 @@ public final class DataCloudService: DataCloudServiceProtocol {
     
     /// Check if CDP module is operational
     public func isCdpModuleOperational() -> Bool {
-        return SFMCSdk.mp.getStatus() == .operational
+        return SFMCSdk.cdp.getStatus() == .operational
     }
     
     /// Apply saved consent from UserDefaults
