@@ -144,6 +144,14 @@ public final class LocationTrackingService: NSObject, ObservableObject {
     /// Update location in CDP Module
     /// - Parameter location: CLLocation object from location manager
     private func updateCDPLocation(_ location: CLLocation) {
+        // Check if Data Cloud is configured before using CdpModule
+        guard DataCloudConfiguration.isConfigured else {
+            if enableLogging {
+                print("⚠️ LocationTrackingService: Data Cloud not configured - skipping location update")
+            }
+            return
+        }
+        
         guard let coordinates = CdpCoordinates(
             latitude: location.coordinate.latitude,
             longitude: location.coordinate.longitude
@@ -182,6 +190,14 @@ public final class LocationTrackingService: NSObject, ObservableObject {
     
     /// Clear location from CDP Module
     private func clearCDPLocation() {
+        // Check if Data Cloud is configured before using CdpModule
+        guard DataCloudConfiguration.isConfigured else {
+            if enableLogging {
+                print("⚠️ LocationTrackingService: Data Cloud not configured - skipping location clear")
+            }
+            return
+        }
+        
         CdpModule.shared.setLocation(coordinates: nil, expiresIn: 0)
         
         if enableLogging {
@@ -197,6 +213,12 @@ public final class LocationTrackingService: NSObject, ObservableObject {
     ///   - latitude: Latitude coordinate
     ///   - longitude: Longitude coordinate
     public func simulateLocation(latitude: Double, longitude: Double) {
+        // Check if Data Cloud is configured before using CdpModule
+        guard DataCloudConfiguration.isConfigured else {
+            print("⚠️ LocationTrackingService: Data Cloud not configured - cannot simulate location")
+            return
+        }
+        
         guard let coordinates = CdpCoordinates(latitude: latitude, longitude: longitude) else {
             print("❌ LocationTrackingService: Failed to create simulated coordinates")
             return

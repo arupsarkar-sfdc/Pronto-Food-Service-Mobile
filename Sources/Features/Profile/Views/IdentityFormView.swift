@@ -38,6 +38,8 @@ struct IdentityFormView: View {
                     Button("Cancel") {
                         dismiss()
                     }
+                    .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 15))
+                    .tint(.red)
                 }
             }
             .alert("Error", isPresented: $viewModel.showingError) {
@@ -92,6 +94,9 @@ struct IdentityFormView: View {
                     .textFieldStyle(.roundedBorder)
                     .textContentType(.givenName)
                     .autocapitalization(.words)
+                    .autocorrectionDisabled()
+                    .glassEffect()
+                    .tint(.purple)
             }
             
             // Last Name
@@ -104,6 +109,7 @@ struct IdentityFormView: View {
                     .textFieldStyle(.roundedBorder)
                     .textContentType(.familyName)
                     .autocapitalization(.words)
+                    .glassEffect()
             }
             
             // Email
@@ -117,6 +123,7 @@ struct IdentityFormView: View {
                     .textContentType(.emailAddress)
                     .keyboardType(.emailAddress)
                     .autocapitalization(.none)
+                    .glassEffect()
             }
         }
         .padding()
@@ -142,6 +149,7 @@ struct IdentityFormView: View {
                     .textFieldStyle(.roundedBorder)
                     .textContentType(.telephoneNumber)
                     .keyboardType(.phonePad)
+                    .glassEffect()
             }
             
             Divider()
@@ -160,6 +168,7 @@ struct IdentityFormView: View {
                 TextField("123 Main Street", text: $viewModel.addressLine)
                     .textFieldStyle(.roundedBorder)
                     .textContentType(.streetAddressLine1)
+                    .glassEffect()
             }
             
             // City
@@ -172,6 +181,7 @@ struct IdentityFormView: View {
                 TextField("San Francisco", text: $viewModel.city)
                     .textFieldStyle(.roundedBorder)
                     .textContentType(.addressCity)
+                    .glassEffect()
             }
             
             // State & Postal Code
@@ -186,6 +196,7 @@ struct IdentityFormView: View {
                         .textFieldStyle(.roundedBorder)
                         .textContentType(.addressState)
                         .autocapitalization(.allCharacters)
+                        .glassEffect()
                 }
                 
                 VStack(alignment: .leading, spacing: 4) {
@@ -198,6 +209,7 @@ struct IdentityFormView: View {
                         .textFieldStyle(.roundedBorder)
                         .textContentType(.postalCode)
                         .keyboardType(.numberPad)
+                        .glassEffect()
                 }
             }
             
@@ -211,6 +223,7 @@ struct IdentityFormView: View {
                 TextField("USA", text: $viewModel.country)
                     .textFieldStyle(.roundedBorder)
                     .textContentType(.countryName)
+                    .glassEffect()
             }
         }
         .padding()
@@ -236,11 +249,14 @@ struct IdentityFormView: View {
             }
             .frame(maxWidth: .infinity)
             .padding()
-            .background(viewModel.isFormValid ? Color.blue : Color.gray)
+//            .background(viewModel.isFormValid ? Color.blue : Color.gray)
             .foregroundColor(.white)
             .cornerRadius(12)
         }
         .disabled(!viewModel.isFormValid || viewModel.isSubmitting)
+        .buttonStyle(.glassProminent)
+        .tint(.blue)
+        
     }
     
     // MARK: - Helper Views

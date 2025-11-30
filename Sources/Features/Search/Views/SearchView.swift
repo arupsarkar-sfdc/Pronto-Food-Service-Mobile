@@ -143,7 +143,7 @@ struct StoreFrontMarker: View {
         VStack(spacing: 4) {
             ZStack {
                 Circle()
-                    .fill(Color.white)
+                    .fill(Color(.systemBackground))
                     .frame(width: 50, height: 50)
                     .shadow(color: Color.black.opacity(0.2), radius: 6, x: 0, y: 2)
                 
@@ -156,7 +156,7 @@ struct StoreFrontMarker: View {
                 .foregroundColor(.primary)
                 .padding(.horizontal, 8)
                 .padding(.vertical, 4)
-                .background(Color.white)
+                .background(Color(.systemBackground))
                 .cornerRadius(8)
                 .shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: 1)
         }

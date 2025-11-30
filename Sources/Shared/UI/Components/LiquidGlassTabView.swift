@@ -6,7 +6,7 @@ struct LiquidGlassTabView: View {
     @State private var dragOffset: CGSize = .zero
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .bottom) {
             // Background gradient
             LinearGradient(
                 colors: [
@@ -18,27 +18,26 @@ struct LiquidGlassTabView: View {
             )
             .ignoresSafeArea()
             
-            VStack(spacing: 0) {
-                // Main Content Area
-                Group {
-                    switch selectedTab {
-                    case 0:
-                        HomeView()
-                    case 1:
-                        SearchView()
-                    case 2:
-                        FavoritesView()
-                    case 3:
-                        ProfileView()
-                    default:
-                        HomeView()
-                    }
+            // Main Content Area
+            Group {
+                switch selectedTab {
+                case 0:
+                    HomeView()
+                case 1:
+                    SearchView()
+                case 2:
+                    FavoritesView()
+                case 3:
+                    ProfileView()
+                default:
+                    HomeView()
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                
-                // Custom Liquid Glass Tab Bar
-                LiquidGlassTabBar(selectedTab: $selectedTab)
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .ignoresSafeArea(edges: .bottom)  // Allow content to extend to bottom
+            
+            // Custom Liquid Glass Tab Bar (floating above content)
+            LiquidGlassTabBar(selectedTab: $selectedTab)
         }
     }
 }

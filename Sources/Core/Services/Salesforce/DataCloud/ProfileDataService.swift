@@ -196,8 +196,10 @@ public final class ProfileDataService: ObservableObject {
         }
         
         // 5. Send ALL attributes to Data Cloud in a single call
-        SFMCSdk.identity.setProfileAttributes(attributes)
-        
+        SFMCSdk.identity.edit { modifier in
+            modifier.addAttributes(attributes: attributes)
+            return modifier
+        }
         if enableLogging {
             print("   ✅ Profile attributes sent to Data Cloud")
             print("   Total attributes: \(attributes.count)")
@@ -233,7 +235,10 @@ public final class ProfileDataService: ObservableObject {
             return
         }
         
-        SFMCSdk.identity.setProfileAttributes(attributes)
+        SFMCSdk.identity.edit { modifier in
+            modifier.addAttributes(attributes: attributes)
+            return modifier
+        }
         
         if enableLogging {
             print("👤 ProfileDataService: Profile attributes updated")
@@ -289,7 +294,10 @@ public final class ProfileDataService: ObservableObject {
         }
         
         // Send device attributes to Data Cloud
-        SFMCSdk.identity.setProfileAttributes(deviceAttributes)
+        SFMCSdk.identity.edit { modifier in
+            modifier.addAttributes(attributes: deviceAttributes)
+            return modifier
+        }
         
         if enableLogging {
             print("📱 ProfileDataService: Device information captured")
@@ -362,7 +370,10 @@ public final class ProfileDataService: ObservableObject {
         
         // Send to Data Cloud if we have any attributes
         if !contactAttributes.isEmpty {
-            SFMCSdk.identity.setProfileAttributes(contactAttributes)
+            SFMCSdk.identity.edit { modifier in
+                modifier.addAttributes(attributes: contactAttributes)
+                return modifier
+            }
             
             if enableLogging {
                 print("👤 ProfileDataService: Contact information updated")

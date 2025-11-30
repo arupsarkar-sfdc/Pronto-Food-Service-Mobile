@@ -113,9 +113,9 @@ struct HomeBestSellerCard: View {
         EngagementTrackingService.shared.trackEvent(
             type: .catalog(.view),
             attributes: [
-                "catalogObjectId": product.id,
+                "catalogObjectId": product.name,
                 "type": "ProductBrowse",
-                "name": product.name,
+                "name": product.id,
                 "price": product.price,
                 "category": product.category.rawValue,
                 "sizes": ["Small", "Medium", "Large"],

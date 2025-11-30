@@ -14,6 +14,7 @@ struct SettingsView: View {
     
     @State private var appId: String = ""
     @State private var endpoint: String = ""
+    @State private var tokenEndpoint: String = ""
     @State private var showSuccessAlert = false
     @State private var showErrorAlert = false
     @State private var errorMessage = ""
@@ -86,6 +87,29 @@ struct SettingsView: View {
                     }
                 }
                 
+                Section("Data Graph Token Service") {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Token Endpoint URL")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                        
+                        TextField("https://your-app.herokuapp.com/get-token", text: $tokenEndpoint)
+                            .textFieldStyle(.plain)
+                            .font(.system(.body, design: .monospaced))
+                            .autocorrectionDisabled()
+                            .textInputAutocapitalization(.never)
+                            .keyboardType(.URL)
+                    }
+                    
+                    HStack {
+                        Image(systemName: "key.fill")
+                            .foregroundStyle(.green)
+                        Text("Used for fetching JWT tokens to access Data Graph API")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                
                 Section {
                     VStack(alignment: .leading, spacing: 12) {
                         Label("How to get credentials:", systemImage: "info.circle")
@@ -155,6 +179,7 @@ struct SettingsView: View {
     private func loadCurrentCredentials() {
         appId = CredentialsManager.shared.appId ?? ""
         endpoint = CredentialsManager.shared.endpoint ?? ""
+        tokenEndpoint = UserDefaults.standard.string(forKey: "com.pronto.tokenEndpoint") ?? ""
     }
     
     private func saveCredentials() {
@@ -168,6 +193,12 @@ struct SettingsView: View {
                 appId: appId,
                 endpoint: endpoint
             )
+            
+            // Save token endpoint
+            if !tokenEndpoint.isEmpty {
+                TokenService.shared.configure(endpoint: tokenEndpoint)
+            }
+            
             showSuccessAlert = true
         } else {
             errorMessage = validation.error ?? "Invalid credentials"
@@ -177,8 +208,10 @@ struct SettingsView: View {
     
     private func clearCredentials() {
         CredentialsManager.shared.clearCredentials()
+        TokenService.shared.clearCache()
         appId = ""
         endpoint = ""
+        tokenEndpoint = ""
     }
     
     private func maskAppId(_ id: String) -> String {

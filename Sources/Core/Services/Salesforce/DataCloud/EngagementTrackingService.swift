@@ -10,6 +10,7 @@
 import Foundation
 import Cdp
 import SFMCSDK
+import Personalization
 
 // MARK: - Event Type Enums
 

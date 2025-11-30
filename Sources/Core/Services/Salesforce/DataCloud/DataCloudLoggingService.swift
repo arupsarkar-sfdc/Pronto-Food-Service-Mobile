@@ -185,13 +185,13 @@ public final class DataCloudLoggingService {
     /// Get current CDP module status
     /// - Returns: CDP module status
     public func getCdpModuleStatus() -> ModuleStatus {
-        return SFMCSdk.mp.getStatus()
+        return SFMCSdk.cdp.getStatus()
     }
     
     /// Check if CDP module is operational
     /// - Returns: true if operational, false otherwise
     public func isCdpModuleOperational() -> Bool {
-        return SFMCSdk.mp.getStatus() == .operational
+        return SFMCSdk.cdp.getStatus() == .operational
     }
     
     /// Print comprehensive SDK status

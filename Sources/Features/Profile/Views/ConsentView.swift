@@ -15,9 +15,17 @@ struct ConsentView: View {
     private func setConsentWithDelay(_ status: ConsentStatus) {
         userConsentStatus = status == .optIn ? "optIn" : "optOut"
         hasConsented = true
+        
+        // ✅ FIX: Update ConsentService immediately so UI updates
+        if status == .optIn {
+            ConsentService.shared.optIn()
+        } else {
+            ConsentService.shared.optOut()
+        }
+        
         dismiss()
         
-        // Wait for SDK to be operational, then set consent
+        // Wait for SDK to be operational, then set consent in DataCloudService
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             if DataCloudService.shared.isCdpModuleOperational() {
                 DataCloudService.shared.setConsent(status)
