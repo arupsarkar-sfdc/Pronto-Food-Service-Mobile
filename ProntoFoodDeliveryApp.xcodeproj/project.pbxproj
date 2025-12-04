@@ -13,9 +13,6 @@
 		E601676C2E8591A300E71CAD /* PROJECT_STRUCTURE.md in Resources */ = {isa = PBXBuildFile; fileRef = E60167692E8591A300E71CAD /* PROJECT_STRUCTURE.md */; };
 		E601676D2E8591A300E71CAD /* Salesforce.md in Resources */ = {isa = PBXBuildFile; fileRef = E60167672E8591A300E71CAD /* Salesforce.md */; };
 		E60167862E870C8000E71CAD /* LiquidGlassTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167832E870C8000E71CAD /* LiquidGlassTabView.swift */; };
-		E60167872E870C8000E71CAD /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167852E870C8000E71CAD /* TabItem.swift */; };
-		E60167882E870C8000E71CAD /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167842E870C8000E71CAD /* TabBarButton.swift */; };
-		E60167892E870C8000E71CAD /* LiquidGlassTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167822E870C8000E71CAD /* LiquidGlassTabBar.swift */; };
 		E601678F2E870CC500E71CAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678E2E870CC500E71CAD /* HomeView.swift */; };
 		E60167902E870CC500E71CAD /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678C2E870CC500E71CAD /* HomeHeaderView.swift */; };
 		E60167912E870CC500E71CAD /* HomeBestSellersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678A2E870CC500E71CAD /* HomeBestSellersSection.swift */; };
@@ -88,10 +85,7 @@
 		E60167652E8591A300E71CAD /* MVVM.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MVVM.md; sourceTree = "<group>"; };
 		E60167672E8591A300E71CAD /* Salesforce.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Salesforce.md; sourceTree = "<group>"; };
 		E60167692E8591A300E71CAD /* PROJECT_STRUCTURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PROJECT_STRUCTURE.md; sourceTree = "<group>"; };
-		E60167822E870C8000E71CAD /* LiquidGlassTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassTabBar.swift; sourceTree = "<group>"; };
 		E60167832E870C8000E71CAD /* LiquidGlassTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassTabView.swift; sourceTree = "<group>"; };
-		E60167842E870C8000E71CAD /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
-		E60167852E870C8000E71CAD /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		E601678A2E870CC500E71CAD /* HomeBestSellersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBestSellersSection.swift; sourceTree = "<group>"; };
 		E601678B2E870CC500E71CAD /* HomeCategoryBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryBarView.swift; sourceTree = "<group>"; };
 		E601678C2E870CC500E71CAD /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
@@ -666,10 +660,7 @@
 		E60166D52E85892200E71CAD /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E60167822E870C8000E71CAD /* LiquidGlassTabBar.swift */,
 				E60167832E870C8000E71CAD /* LiquidGlassTabView.swift */,
-				E60167842E870C8000E71CAD /* TabBarButton.swift */,
-				E60167852E870C8000E71CAD /* TabItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1089,14 +1080,11 @@
 				E601679B2E870D2E00E71CAD /* ProfileView.swift in Sources */,
 				E657A77E2EAACE2200FBF948 /* ProfileViewModel.swift in Sources */,
 				E657A7972EAC02AE00FBF948 /* CredentialsManager.swift in Sources */,
-				E60167872E870C8000E71CAD /* TabItem.swift in Sources */,
 				E657A85F2EB00C4100FBF948 /* IdentityFormView.swift in Sources */,
-				E60167882E870C8000E71CAD /* TabBarButton.swift in Sources */,
 				E657A77C2EAACE1600FBF948 /* OrderViewModel.swift in Sources */,
 				E657A8B92EB3A19500FBF948 /* DataGraphProfile.swift in Sources */,
 				E657A77A2EAACE0500FBF948 /* CartViewModel.swift in Sources */,
 				E6CC71982EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift in Sources */,
-				E60167892E870C8000E71CAD /* LiquidGlassTabBar.swift in Sources */,
 				E601678F2E870CC500E71CAD /* HomeView.swift in Sources */,
 				E657A8B72EB29A9E00FBF948 /* TokenService.swift in Sources */,
 				E60167902E870CC500E71CAD /* HomeHeaderView.swift in Sources */,

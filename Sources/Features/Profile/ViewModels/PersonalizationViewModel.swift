@@ -521,28 +521,35 @@ public class PersonalizationViewModel: ObservableObject {
             }
             
             // Step 3: Fetch real-time click counts from Data Graph
-            let counts = try await fetchClickCountsFromDataGraph()
-            self.clickCounts = counts
-            
-            if enableLogging {
-                print("✅ Click counts from Data Graph:")
-                counts.forEach { print("   - \($0.key): \($0.value) clicks") }
-            }
-            
-            // Step 4: Select winner (highest click count)
-            let winner = selectWinner(decisions: decisions, clickCounts: counts)
-            self.winningDecision = winner
-            
-            if let winner = winner {
-                // Update UI properties with winner's data
-                self.backgroundImageUrl = winner.backgroundImageUrl
+//            let counts = try await fetchClickCountsFromDataGraph()
+//            self.clickCounts = counts
+//            
+//            if enableLogging {
+//                print("✅ Click counts from Data Graph:")
+//                counts.forEach { print("   - \($0.key): \($0.value) clicks") }
+//            }
+//            
+//            // Step 4: Select winner (highest click count)
+//            let winner = selectWinner(decisions: decisions, clickCounts: counts)
+//            self.winningDecision = winner
+//            
+//            if let winner = winner {
+//                // Update UI properties with winner's data
+//                self.backgroundImageUrl = winner.backgroundImageUrl
+//                self.hasData = true
+//                
+//                if enableLogging {
+//                    print("🏆 WINNER SELECTED: \(winner.name) with \(winner.clickCount) clicks")
+//                    print("   Background Image: \(winner.backgroundImageUrl ?? "nil")")
+//                    print("   CTA: \(winner.callToActionText ?? "nil")")
+//                }
+//            }
+
+            // Set the winning decision (first decision from SDK is the winner selected by Data Cloud)
+            if let firstDecision = decisions.first {
+                self.winningDecision = firstDecision
+                self.backgroundImageUrl = firstDecision.backgroundImageUrl
                 self.hasData = true
-                
-                if enableLogging {
-                    print("🏆 WINNER SELECTED: \(winner.name) with \(winner.clickCount) clicks")
-                    print("   Background Image: \(winner.backgroundImageUrl ?? "nil")")
-                    print("   CTA: \(winner.callToActionText ?? "nil")")
-                }
             }
             
             isLoading = false
@@ -614,7 +621,11 @@ public class PersonalizationViewModel: ObservableObject {
         return records
     }
     
+    // MARK: - Data Graph Functions (COMMENTED OUT - Using Personalization SDK only)
+    
     /// Fetch real-time click counts from Data Graph
+    // COMMENTED OUT: No longer using Data Graph - rendering Personalization SDK result directly
+    /*
     private func fetchClickCountsFromDataGraph() async throws -> [String: Int] {
         if enableLogging {
             print("📊 Fetching click counts from Data Graph...")
@@ -672,8 +683,11 @@ public class PersonalizationViewModel: ObservableObject {
         
         return counts
     }
+    */
     
     /// Select winner based on highest click count
+    // COMMENTED OUT: No longer using client-side winner selection - Personalization SDK returns the winner
+    /*
     private func selectWinner(decisions: [PersonalizationDecisionRecord], clickCounts: [String: Int]) -> PersonalizationDecisionRecord? {
         guard !decisions.isEmpty else { return nil }
         
@@ -732,5 +746,6 @@ public class PersonalizationViewModel: ObservableObject {
         
         return decisionsWithCounts.first
     }
+    */
 }
 

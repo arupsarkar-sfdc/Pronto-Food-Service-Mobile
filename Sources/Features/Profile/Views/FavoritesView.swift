@@ -224,46 +224,46 @@ struct FavoritesView: View {
                         .cornerRadius(20)
                     }
                     
-                    // Technology badges
-                    HStack(spacing: 6) {
-                        // Data Graph badge (clickable)
-                        Button(action: {
-                            Task {
-                                await fetchDataGraphData()
-                            }
-                        }) {
-                            Text("Data Graph")
-                                .font(.system(size: 10, weight: .medium))
-                                .foregroundColor(.white)
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 5)
-                                .background(
-                                    Capsule()
-                                        .fill(Color.blue.opacity(0.9))
-                                )
-                        }
-                        .buttonStyle(.borderless)
+//                    // Technology badges
+//                    HStack(spacing: 6) {
+//                        // Data Graph badge (clickable)
+//                        Button(action: {
+//                            Task {
+//                                await fetchDataGraphData()
+//                            }
+//                        }) {
+//                            Text("Data Graph")
+//                                .font(.system(size: 10, weight: .medium))
+//                                .foregroundColor(.white)
+//                                .padding(.horizontal, 10)
+//                                .padding(.vertical, 5)
+//                                .background(
+//                                    Capsule()
+//                                        .fill(Color.blue.opacity(0.9))
+//                                )
+//                        }
+//                        .buttonStyle(.borderless)
                         
-                        // SDK badge (clickable)
-                        Button(action: {
-                            print("═══════════════════════════════════════════")
-                            print("🟣 SDK badge tapped!")
-                            print("   Context: Using Salesforce Personalization SDK")
-                            print("   Timestamp: \(Date())")
-                            print("═══════════════════════════════════════════")
-                        }) {
-                            Text("SDK")
-                                .font(.system(size: 10, weight: .medium))
-                                .foregroundColor(.white)
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 5)
-                                .background(
-                                    Capsule()
-                                        .fill(Color.purple.opacity(0.9))
-                                )
-                        }
-                        .buttonStyle(.borderless)
-                    }
+//                        // SDK badge (clickable)
+//                        Button(action: {
+//                            print("═══════════════════════════════════════════")
+//                            print("🟣 SDK badge tapped!")
+//                            print("   Context: Using Salesforce Personalization SDK")
+//                            print("   Timestamp: \(Date())")
+//                            print("═══════════════════════════════════════════")
+//                        }) {
+//                            Text("SDK")
+//                                .font(.system(size: 10, weight: .medium))
+//                                .foregroundColor(.white)
+//                                .padding(.horizontal, 10)
+//                                .padding(.vertical, 5)
+//                                .background(
+//                                    Capsule()
+//                                        .fill(Color.purple.opacity(0.9))
+//                                )
+//                        }
+//                        .buttonStyle(.borderless)
+//                    }
                 }
                 .padding(.top, 12)
                 .padding(.trailing, 12)
@@ -281,27 +281,10 @@ struct FavoritesView: View {
                     
                     // Winner Information
                     VStack(alignment: .leading, spacing: 12) {
-                        HStack {
-                            Text("🏆 Top Choice for You")
-                                .font(.system(size: 14, weight: .semibold, design: .rounded))
-                                .foregroundColor(.secondary)
-                            
-                            Spacer()
-                            
-                            // Click count badge
-                            HStack(spacing: 4) {
-                                Image(systemName: "hand.tap.fill")
-                                    .font(.system(size: 10))
-                                Text("\(winner.clickCount) clicks")
-                                    .font(.system(size: 11, weight: .medium, design: .rounded))
-                            }
-                            .foregroundColor(.white)
-                            .padding(.horizontal, 10)
-                            .padding(.vertical, 5)
-                            .background(Color.purple)
-                            .cornerRadius(12)
-                        }
-                        .padding(.horizontal)
+                        Text("🏆 Recommended for You")
+                            .font(.system(size: 14, weight: .semibold, design: .rounded))
+                            .foregroundColor(.secondary)
+                            .padding(.horizontal)
                         
                         // Winner Card
                         VStack(alignment: .leading, spacing: 12) {
@@ -351,48 +334,6 @@ struct FavoritesView: View {
                     }
                     .padding(.top, 8)
                     
-                    // All Decisions Summary
-                    if !viewModel.allDecisionRecords.isEmpty {
-                        VStack(alignment: .leading, spacing: 12) {
-                            Text("All Options")
-                                .font(.system(size: 14, weight: .semibold, design: .rounded))
-                                .foregroundColor(.secondary)
-                                .padding(.horizontal)
-                            
-                            ForEach(viewModel.allDecisionRecords) { decision in
-                                HStack(spacing: 12) {
-                                    Text(decision.emoji)
-                                        .font(.system(size: 24))
-                                    
-                                    VStack(alignment: .leading, spacing: 2) {
-                                        Text(decision.name)
-                                            .font(.system(size: 15, weight: .medium, design: .rounded))
-                                        
-                                        Text("\(decision.clickCount) clicks")
-                                            .font(.system(size: 12, design: .rounded))
-                                            .foregroundColor(.secondary)
-                                    }
-                                    
-                                    Spacer()
-                                    
-                                    if decision.id == winner.id {
-                                        Image(systemName: "crown.fill")
-                                            .font(.system(size: 16))
-                                            .foregroundColor(.yellow)
-                                    }
-                                }
-                                .padding()
-                                .background(Color(.systemBackground))
-                                .cornerRadius(12)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .stroke(decision.id == winner.id ? Color.purple : Color.gray.opacity(0.2), lineWidth: decision.id == winner.id ? 2 : 1)
-                                )
-                                .padding(.horizontal)
-                            }
-                        }
-                        .padding(.top, 8)
-                    }
                 }
                 .padding(.bottom, 16)
             } else if viewModel.isLoading {
@@ -429,8 +370,8 @@ struct FavoritesView: View {
                 // No data state
                 VStack(spacing: 12) {
                     Divider()
-            .padding(.horizontal)
-            
+                        .padding(.horizontal)
+                    
                     Text("No personalization data available yet.\nBrowse the app to get personalized recommendations.")
                         .font(.system(size: 13, design: .rounded))
                         .foregroundColor(.secondary)
@@ -477,43 +418,43 @@ struct FavoritesView: View {
     
     // MARK: - Data Graph Query
     
-    @MainActor
-    private func fetchDataGraphData() async {
-        print("═══════════════════════════════════════════")
-        print("🔵 Data Graph badge tapped!")
-        print("   Starting Data Graph API query...")
-        print("═══════════════════════════════════════════")
-        
-        self.isLoadingDataGraph = true
-        
-        do {
-            let result = try await DataGraphQueryService.shared.queryDataGraph(
-                dataGraphName: "C360_Contact_RT",
-                dmoName: "UnifiedLinkssotIndividualI1__dlm",
-                fieldName: "UnifiedRecordId__c",
-                value: "9ea2aa85ce5b5a1e15498c204306aa76",
-                live: true
-            )
-            
-            // Parse and structure the product browse engagement data
-            let structuredData = parseProductBrowseEngagement(from: result, individualId: "4be44eaae0770cdd")
-            self.dataGraphResult = structuredData
-            
-            print("✅ Data Graph API Response parsed and structured")
-            print(structuredData)
-            
-            self.showingDataGraphResult = true
-            
-        } catch {
-            print("❌ Data Graph query failed: \(error.localizedDescription)")
-            self.dataGraphResult = "Error: \(error.localizedDescription)"
-            self.showingDataGraphResult = true
-        }
-        
-        self.isLoadingDataGraph = false
-        
-        print("═══════════════════════════════════════════")
-    }
+//    @MainActor
+//    private func fetchDataGraphData() async {
+//        print("═══════════════════════════════════════════")
+//        print("🔵 Data Graph badge tapped!")
+//        print("   Starting Data Graph API query...")
+//        print("═══════════════════════════════════════════")
+//        
+//        self.isLoadingDataGraph = true
+//        
+//        do {
+//            let result = try await DataGraphQueryService.shared.queryDataGraph(
+//                dataGraphName: "C360_Contact_RT",
+//                dmoName: "UnifiedLinkssotIndividualI1__dlm",
+//                fieldName: "UnifiedRecordId__c",
+//                value: "9ea2aa85ce5b5a1e15498c204306aa76",
+//                live: true
+//            )
+//            
+//            // Parse and structure the product browse engagement data
+//            let structuredData = parseProductBrowseEngagement(from: result, individualId: "4be44eaae0770cdd")
+//            self.dataGraphResult = structuredData
+//            
+//            print("✅ Data Graph API Response parsed and structured")
+//            print(structuredData)
+//            
+//            self.showingDataGraphResult = true
+//            
+//        } catch {
+//            print("❌ Data Graph query failed: \(error.localizedDescription)")
+//            self.dataGraphResult = "Error: \(error.localizedDescription)"
+//            self.showingDataGraphResult = true
+//        }
+//        
+//        self.isLoadingDataGraph = false
+//        
+//        print("═══════════════════════════════════════════")
+//    }
     
     // MARK: - Parse Product Browse Engagement
     

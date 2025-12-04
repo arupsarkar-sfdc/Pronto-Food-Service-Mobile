@@ -1,43 +1,27 @@
 import SwiftUI
 
-// MARK: - Liquid Glass Tab View
+// MARK: - Liquid Glass Tab View (Native iOS TabView with Glass styling)
 struct LiquidGlassTabView: View {
     @Binding var selectedTab: Int
-    @State private var dragOffset: CGSize = .zero
     
     var body: some View {
-        ZStack(alignment: .bottom) {
-            // Background gradient
-            LinearGradient(
-                colors: [
-                    Color(.systemBackground),
-                    Color(.secondarySystemBackground)
-                ],
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .ignoresSafeArea()
-            
-            // Main Content Area
-            Group {
-                switch selectedTab {
-                case 0:
-                    HomeView()
-                case 1:
-                    SearchView()
-                case 2:
-                    FavoritesView()
-                case 3:
-                    ProfileView()
-                default:
-                    HomeView()
-                }
+        TabView(selection: $selectedTab) {
+            Tab("", systemImage: "house", value: 0) {
+                HomeView()
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .ignoresSafeArea(edges: .bottom)  // Allow content to extend to bottom
             
-            // Custom Liquid Glass Tab Bar (floating above content)
-            LiquidGlassTabBar(selectedTab: $selectedTab)
+            Tab("", systemImage: "magnifyingglass", value: 1) {
+                SearchView()
+            }
+            
+            Tab("", systemImage: "heart", value: 2) {
+                FavoritesView()
+            }
+            
+            Tab("", systemImage: "person", value: 3) {
+                ProfileView()
+            }
         }
+        .tabBarMinimizeBehavior(.onScrollDown)
     }
 }

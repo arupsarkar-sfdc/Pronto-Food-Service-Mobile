@@ -333,7 +333,6 @@ struct UserDataGraphView: View {
         .background(Color(.systemBackground))
         .cornerRadius(12)
         .shadow(color: Color.black.opacity(0.05), radius: 4, x: 0, y: 2)
-        .glassEffect()
     }
     
     // MARK: - Identity Resolution Section
@@ -396,14 +395,12 @@ struct UserDataGraphView: View {
                             )
                         )
                 )
-                .glassEffect()
             }
         }
         .padding()
         .background(Color(.systemBackground))
         .cornerRadius(12)
         .shadow(color: Color.black.opacity(0.05), radius: 4, x: 0, y: 2)
-        .glassEffect()
     }
     
     // MARK: - Data Graph Section
@@ -444,7 +441,6 @@ struct UserDataGraphView: View {
         .background(Color(.systemBackground))
         .cornerRadius(12)
         .shadow(color: Color.black.opacity(0.05), radius: 4, x: 0, y: 2)
-        .glassEffect()
     }
     
     // MARK: - API Response Cards
@@ -603,7 +599,6 @@ struct UserDataGraphView: View {
         .cornerRadius(16)
         .shadow(color: Color.black.opacity(0.05), radius: 8, x: 0, y: 4)
         .padding(.horizontal)
-        .glassEffect()
     }
     
     // MARK: - Profile Summary Row
