@@ -235,7 +235,7 @@ public class PersonalizationViewModel: ObservableObject {
         
         // Extract call to action
         let callToActionText = attributes["CallToActionText"] as? String
-        let callToActionUrl = attributes["CallToActionUrl"] as? String
+        let _ = attributes["CallToActionUrl"] as? String
         
         // Check for click count (might be in attributes)
         let clickCount = attributes["clickCount"] as? Int 

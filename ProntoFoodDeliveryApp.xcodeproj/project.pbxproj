@@ -1284,6 +1284,8 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProntoFoodDeliveryApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pronto Food Delivery App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location to provide personalized recommendations even when the app is in background.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We use your location to personalize content and improve your experience.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to provide personalized recommendations even when the app is in background.";
@@ -1297,7 +1299,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.pronto.fooddelivery.ProntoFoodDeliveryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1321,6 +1323,8 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProntoFoodDeliveryApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pronto Food Delivery App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location to provide personalized recommendations even when the app is in background.";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We use your location to personalize content and improve your experience.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to provide personalized recommendations even when the app is in background.";
@@ -1334,7 +1338,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.pronto.fooddelivery.ProntoFoodDeliveryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

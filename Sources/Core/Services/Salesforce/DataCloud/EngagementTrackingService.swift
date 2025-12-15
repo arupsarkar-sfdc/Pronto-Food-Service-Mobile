@@ -60,6 +60,19 @@ public final class EngagementTrackingService {
         #endif
     }
     
+    /// Track if SDK has been successfully initialized
+    private static var sdkInitialized = false
+    
+    /// Mark SDK as initialized (call this after SFMCSdk.initModule completes)
+    public static func markSdkInitialized() {
+        sdkInitialized = true
+    }
+    
+    /// Check if SFMC SDK has been initialized
+    private func isSdkInitialized() -> Bool {
+        return EngagementTrackingService.sdkInitialized
+    }
+    
     // MARK: - Public Tracking Methods
     
     /// Track any type of engagement event with attributes
@@ -67,12 +80,29 @@ public final class EngagementTrackingService {
     ///   - type: The type of event to track
     ///   - attributes: Event-specific attributes
     public func trackEvent(type: EngagementEventType, attributes: [String: Any] = [:]) {
-        // Check consent before tracking
-        guard CdpModule.shared.getConsent() == .optIn else {
+        // Safety check: Ensure SDK is initialized before accessing any SDK modules
+        guard isSdkInitialized() else {
             if enableLogging {
-                print("⚠️ EngagementTrackingService: Event not tracked - user has not opted in to consent")
+                print("⚠️ EngagementTrackingService: SFMC SDK not initialized yet - skipping event")
+                print("   Event type: \(type)")
             }
             return
+        }
+        
+        // Safely check consent - wrap in do-catch to prevent crashes
+        do {
+            let consent = CdpModule.shared.getConsent()
+            guard consent == .optIn else {
+                if enableLogging {
+                    print("⚠️ EngagementTrackingService: Event not tracked - user has not opted in to consent")
+                }
+                return
+            }
+        } catch {
+            if enableLogging {
+                print("⚠️ EngagementTrackingService: Could not check consent - \(error)")
+            }
+            // Continue anyway if consent check fails but SDK is initialized
         }
         
         switch type {

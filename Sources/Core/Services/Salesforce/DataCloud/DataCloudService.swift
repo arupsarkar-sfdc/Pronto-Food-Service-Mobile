@@ -187,6 +187,9 @@ public final class DataCloudService: DataCloudServiceProtocol {
     private func markAsOperational(configuration: DataCloudConfiguration) {
         self.isConfigured = true
         
+        // Mark EngagementTrackingService as ready
+        EngagementTrackingService.markSdkInitialized()
+        
         if configuration.enableLogging {
             print("✅ CDP Module is now OPERATIONAL")
             print("   Module Status: \(SFMCSdk.cdp.getStatus().rawValue)")
