@@ -575,9 +575,6 @@ From the Agentic Web Framework:
 
 ---
 
-*Submitted for TrailblazerDX 2026 Call for Papers*
+*TrailheadDX 2026 Call for Papers - Salesforce Personalization*
 
 ---
-
-> **Forward-Looking Statement:** This submission describes a reference implementation using current Salesforce technologies. Product features mentioned may evolve. Implementation details should be validated against current documentation at time of development.
-
