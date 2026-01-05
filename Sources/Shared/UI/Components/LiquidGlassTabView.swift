@@ -21,6 +21,12 @@ struct LiquidGlassTabView: View {
             Tab("", systemImage: "person", value: 3) {
                 ProfileView()
             }
+            
+            // Agentforce Chat Tab
+            // Using system symbol - replace with custom "AgentforceIcon" image when available
+            Tab("", systemImage: "bubble.left.and.bubble.right.fill", value: 4) {
+                AgentforceView()
+            }
         }
         .tabBarMinimizeBehavior(.onScrollDown)
     }

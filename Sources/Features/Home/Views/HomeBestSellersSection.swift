@@ -71,12 +71,18 @@ struct HomeBestSellersSection: View {
         print("   Category: \(product.category.rawValue)")
         print("   Rating: \(product.rating)")
         
+        // Track to Data Cloud via EngagementTrackingService
+        // Mobile SDK CatalogObject mapping:
+        //   - "catalogObjectId" → CatalogObject.id → catalogObjectId in wire format (use name, not ID)
+        //   - "type" → CatalogObject.type → catalogObjectType in wire format
+        //   - "interactionName" + other attrs → CatalogObject.attributes → flow through to payload
         EngagementTrackingService.shared.trackEvent(
             type: .catalog(.view),
             attributes: [
-                "catalogObjectId": product.name,
-                "type": "ProductBrowse",
-                "name": product.id,
+                "catalogObjectId": product.name,  // Use product name (e.g., "Margherita Pizza")
+                "type": "Product",
+                "interactionName": "View Product \(product.name)",
+                "name": product.name,
                 "price": product.price,
                 "category": product.category.rawValue,
                 "sizes": ["Small", "Medium", "Large"],

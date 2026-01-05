@@ -30,7 +30,6 @@
 		E657A7742EAACD9D00FBF948 /* DataCloudEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7702EAACD9D00FBF948 /* DataCloudEvent.swift */; };
 		E657A7752EAACD9D00FBF948 /* EngagementEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7712EAACD9D00FBF948 /* EngagementEvents.swift */; };
 		E657A7762EAACD9D00FBF948 /* ProfileEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7722EAACD9D00FBF948 /* ProfileEvents.swift */; };
-		E657A7782EAACDE400FBF948 /* HomeViewModel 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7772EAACDE400FBF948 /* HomeViewModel 2.swift */; };
 		E657A77A2EAACE0500FBF948 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7792EAACE0500FBF948 /* CartViewModel.swift */; };
 		E657A77C2EAACE1600FBF948 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A77B2EAACE1600FBF948 /* OrderViewModel.swift */; };
 		E657A77E2EAACE2200FBF948 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A77D2EAACE2200FBF948 /* ProfileViewModel.swift */; };
@@ -55,11 +54,15 @@
 		E657A8B52EB29A7300FBF948 /* UserDataGraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B42EB29A7300FBF948 /* UserDataGraphViewModel.swift */; };
 		E657A8B72EB29A9E00FBF948 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B62EB29A9E00FBF948 /* TokenService.swift */; };
 		E657A8B92EB3A19500FBF948 /* DataGraphProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B82EB3A19500FBF948 /* DataGraphProfile.swift */; };
+		E67AA2E02EF075D600EC5B23 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AA2DF2EF075D600EC5B23 /* HomeViewModel.swift */; };
 		E6CC71902ED9FF7700BE6895 /* PersonalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC718F2ED9FF7700BE6895 /* PersonalizationService.swift */; };
 		E6CC71922ED9FFCC00BE6895 /* PersonalizationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71912ED9FFCC00BE6895 /* PersonalizationModels.swift */; };
 		E6CC71942ED9FFE800BE6895 /* PersonalizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71932ED9FFE800BE6895 /* PersonalizationViewModel.swift */; };
 		E6CC71962EDB625700BE6895 /* DataGraphQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71952EDB625700BE6895 /* DataGraphQueryService.swift */; };
 		E6CC71982EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71972EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift */; };
+		E6D3A75D2F0C23480010D3F1 /* AgentforceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D3A75A2F0C23480010D3F1 /* AgentforceView.swift */; };
+		E6D3A7EB2F0C24AE0010D3F1 /* Swift-InAppMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E6D3A7EA2F0C24AE0010D3F1 /* Swift-InAppMessaging */; };
+		E6D3A7EC2F0C26670010D3F1 /* AgentforceConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = E6D3A75E2F0C23670010D3F1 /* AgentforceConfig.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +104,6 @@
 		E657A7702EAACD9D00FBF948 /* DataCloudEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCloudEvent.swift; sourceTree = "<group>"; };
 		E657A7712EAACD9D00FBF948 /* EngagementEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngagementEvents.swift; sourceTree = "<group>"; };
 		E657A7722EAACD9D00FBF948 /* ProfileEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEvents.swift; sourceTree = "<group>"; };
-		E657A7772EAACDE400FBF948 /* HomeViewModel 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel 2.swift"; sourceTree = "<group>"; };
 		E657A7792EAACE0500FBF948 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		E657A77B2EAACE1600FBF948 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		E657A77D2EAACE2200FBF948 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		E657A8B42EB29A7300FBF948 /* UserDataGraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataGraphViewModel.swift; sourceTree = "<group>"; };
 		E657A8B62EB29A9E00FBF948 /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
 		E657A8B82EB3A19500FBF948 /* DataGraphProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGraphProfile.swift; sourceTree = "<group>"; };
+		E67AA2DF2EF075D600EC5B23 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProntoFoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6997E0C2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6997E162E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +137,8 @@
 		E6CC71932ED9FFE800BE6895 /* PersonalizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationViewModel.swift; sourceTree = "<group>"; };
 		E6CC71952EDB625700BE6895 /* DataGraphQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGraphQueryService.swift; sourceTree = "<group>"; };
 		E6CC71972EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationDecisionRecord.swift; sourceTree = "<group>"; };
+		E6D3A75A2F0C23480010D3F1 /* AgentforceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentforceView.swift; sourceTree = "<group>"; };
+		E6D3A75E2F0C23670010D3F1 /* AgentforceConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AgentforceConfig.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -174,6 +179,7 @@
 			files = (
 				E61C15D72ED4F79600968B96 /* Cdp in Frameworks */,
 				E61C15DA2ED4F96400968B96 /* Personalization in Frameworks */,
+				E6D3A7EB2F0C24AE0010D3F1 /* Swift-InAppMessaging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +395,7 @@
 		E601669F2E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E657A7772EAACDE400FBF948 /* HomeViewModel 2.swift */,
+				E67AA2DF2EF075D600EC5B23 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -623,6 +629,7 @@
 		E60166CD2E85892200E71CAD /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E6D3A75C2F0C23480010D3F1 /* Chat */,
 				E60166942E85892200E71CAD /* Authentication */,
 				E601669B2E85892200E71CAD /* Cart */,
 				E60166A22E85892200E71CAD /* Home */,
@@ -800,6 +807,7 @@
 		E60167572E85917C00E71CAD /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				E6D3A75E2F0C23670010D3F1 /* AgentforceConfig.json */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -913,6 +921,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E6D3A75B2F0C23480010D3F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6D3A75A2F0C23480010D3F1 /* AgentforceView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6D3A75C2F0C23480010D3F1 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E6D3A75B2F0C23480010D3F1 /* Views */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -935,6 +959,7 @@
 			packageProductDependencies = (
 				E61C15D62ED4F79600968B96 /* Cdp */,
 				E61C15D92ED4F96400968B96 /* Personalization */,
+				E6D3A7EA2F0C24AE0010D3F1 /* Swift-InAppMessaging */,
 			);
 			productName = ProntoFoodDeliveryApp;
 			productReference = E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */;
@@ -1021,6 +1046,7 @@
 			packageReferences = (
 				E61C15D52ED4F79600968B96 /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */,
 				E61C15D82ED4F7BC00968B96 /* XCRemoteSwiftPackageReference "Personalization-IOS" */,
+				E6D3A7E92F0C24260010D3F1 /* XCRemoteSwiftPackageReference "Swift-Package-InAppMessaging" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E6997DFE2E8582CB0039AEBA /* Products */;
@@ -1039,6 +1065,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6D3A7EC2F0C26670010D3F1 /* AgentforceConfig.json in Resources */,
 				E601676B2E8591A300E71CAD /* MVVM.md in Resources */,
 				E601676C2E8591A300E71CAD /* PROJECT_STRUCTURE.md in Resources */,
 				E601676D2E8591A300E71CAD /* Salesforce.md in Resources */,
@@ -1074,13 +1101,13 @@
 				E657A8522EB007D400FBF948 /* ProfileDataService.swift in Sources */,
 				E657A7682EAACCCD00FBF948 /* DataCloudConfiguration.swift in Sources */,
 				E657A8B52EB29A7300FBF948 /* UserDataGraphViewModel.swift in Sources */,
-				E657A7782EAACDE400FBF948 /* HomeViewModel 2.swift in Sources */,
 				E60167862E870C8000E71CAD /* LiquidGlassTabView.swift in Sources */,
 				E601679A2E870D2E00E71CAD /* FavoritesView.swift in Sources */,
 				E601679B2E870D2E00E71CAD /* ProfileView.swift in Sources */,
 				E657A77E2EAACE2200FBF948 /* ProfileViewModel.swift in Sources */,
 				E657A7972EAC02AE00FBF948 /* CredentialsManager.swift in Sources */,
 				E657A85F2EB00C4100FBF948 /* IdentityFormView.swift in Sources */,
+				E6D3A75D2F0C23480010D3F1 /* AgentforceView.swift in Sources */,
 				E657A77C2EAACE1600FBF948 /* OrderViewModel.swift in Sources */,
 				E657A8B92EB3A19500FBF948 /* DataGraphProfile.swift in Sources */,
 				E657A77A2EAACE0500FBF948 /* CartViewModel.swift in Sources */,
@@ -1089,6 +1116,7 @@
 				E657A8B72EB29A9E00FBF948 /* TokenService.swift in Sources */,
 				E60167902E870CC500E71CAD /* HomeHeaderView.swift in Sources */,
 				E657A8582EB007E300FBF948 /* LocationTrackingService.swift in Sources */,
+				E67AA2E02EF075D600EC5B23 /* HomeViewModel.swift in Sources */,
 				E657A85A2EB007E300FBF948 /* ConsentService.swift in Sources */,
 				E657A85B2EB007E300FBF948 /* DataCloudLoggingService.swift in Sources */,
 				E6CC71962EDB625700BE6895 /* DataGraphQueryService.swift in Sources */,
@@ -1477,6 +1505,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		E6D3A7E92F0C24260010D3F1 /* XCRemoteSwiftPackageReference "Swift-Package-InAppMessaging" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Salesforce-Async-Messaging/Swift-Package-InAppMessaging";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1489,6 +1525,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E61C15D82ED4F7BC00968B96 /* XCRemoteSwiftPackageReference "Personalization-IOS" */;
 			productName = Personalization;
+		};
+		E6D3A7EA2F0C24AE0010D3F1 /* Swift-InAppMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6D3A7E92F0C24260010D3F1 /* XCRemoteSwiftPackageReference "Swift-Package-InAppMessaging" */;
+			productName = "Swift-InAppMessaging";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -54,20 +54,19 @@ final class HomeViewModel: ObservableObject, DataCloudTrackable, ScreenNameProvi
     // MARK: - User Actions with Tracking
     
     func didTapCategory(_ category: String) {
-        // Track catalog interaction
+        // Track catalog interaction - use category name as catalogObjectId
         trackItemView(
-            itemId: category.lowercased(),
-            itemType: "category",
-            itemName: category
+            itemName: category,  // Name is used as catalogObjectId
+            itemType: "Category"
         )
     }
     
     func didTapMenuItem(_ item: MenuItem) {
-        // Track menu item view
+        // Track menu item view - use item name as catalogObjectId
         trackItemView(
-            itemId: item.id,
-            itemType: "menuItem",
-            itemName: item.name
+            itemName: item.name,  // Name is used as catalogObjectId
+            itemType: "Product",
+            price: item.price
         )
     }
     

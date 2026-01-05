@@ -38,14 +38,18 @@ struct HomeCategoryBarView: View {
         print("   Icon: \(category.emoji)")
         
         // Track to Data Cloud via EngagementTrackingService
+        // Mobile SDK CatalogObject mapping:
+        //   - "catalogObjectId" → CatalogObject.id → catalogObjectId in wire format (use name, not ID)
+        //   - "type" → CatalogObject.type → catalogObjectType in wire format
+        //   - "interactionName" + other attrs → CatalogObject.attributes → flow through to payload
         EngagementTrackingService.shared.trackEvent(
             type: .catalog(.view),
             attributes: [
-                "catalogObjectId": category.catalogId,
+                "catalogObjectId": category.rawValue,  // Use category name (e.g., "Pizza", "Sushi")
                 "type": "Category",
+                "interactionName": "View Category \(category.rawValue)",
                 "name": category.rawValue,
-                "icon": category.emoji,
-                "viewType": "categoryBrowse"
+                "icon": category.emoji
             ]
         )
     }

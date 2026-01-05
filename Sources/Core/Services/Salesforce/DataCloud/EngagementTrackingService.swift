@@ -489,11 +489,32 @@ public final class EngagementTrackingService {
 
 public extension EngagementTrackingService {
     
+    /// Track category view with full details
+    /// - Parameter categoryName: The category name (e.g., "Pizza", "Sushi") - used as catalogObjectId
+    /// - Note: Matches web SDK payload structure with interactionName for Data Cloud parity
+    func trackCategoryView(
+        categoryName: String,
+        additionalAttributes: [String: Any] = [:]
+    ) {
+        var attributes: [String: Any] = [
+            "catalogObjectId": categoryName,  // Use name as ID (e.g., "Pizza", "Sushi")
+            "type": "Category",
+            "interactionName": "View Category \(categoryName)",
+            "name": categoryName
+        ]
+        
+        // Merge additional attributes
+        attributes.merge(additionalAttributes) { (_, new) in new }
+        
+        trackEvent(type: .catalog(.view), attributes: attributes)
+    }
+    
     /// Track product view with full details
+    /// - Parameter productName: The product name (e.g., "Margherita Pizza") - used as catalogObjectId
+    /// - Note: Matches web SDK payload structure with interactionName for Data Cloud parity
     func trackProductView(
-        productId: String,
         productName: String,
-        productType: String = "ProductBrowse",
+        productType: String = "Product",
         price: Double? = nil,
         category: String? = nil,
         promoCode: String? = nil,
@@ -502,8 +523,9 @@ public extension EngagementTrackingService {
         additionalAttributes: [String: Any] = [:]
     ) {
         var attributes: [String: Any] = [
-            "catalogObjectId": productId,
+            "catalogObjectId": productName,  // Use name as ID (e.g., "Margherita Pizza")
             "type": productType,
+            "interactionName": "View Product \(productName)",
             "name": productName
         ]
         

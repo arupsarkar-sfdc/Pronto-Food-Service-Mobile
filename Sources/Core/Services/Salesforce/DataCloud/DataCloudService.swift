@@ -111,50 +111,7 @@ public final class DataCloudService: DataCloudServiceProtocol {
         .sessionTimeout(configuration.sessionTimeoutInSeconds)
         .build()
         
-        // 3. Set completion handler for initialization status  
-        let completionHandler: (OperationResult) -> () = { [weak self] result in
-            guard let self = self else { return }
-            
-            if configuration.enableLogging {
-                print("CDP Module result: \(result.rawValue)")
-                print("CDP State: \(CdpModule.shared.state)")
-                print("SFMCSDK MP Status: \(SFMCSdk.cdp.getStatus().rawValue)")
-            }
-            
-            switch result {
-            case .success:
-                if configuration.enableLogging {
-                    print("✅ CDP module initialization successful")
-                    print("CDP State: \(CdpModule.shared.state)")
-                }
-                
-                // CDP module is ready to use immediately after success
-                // Note: mp.getStatus() is for MobilePush module, not CDP
-                self.markAsOperational(configuration: configuration)
-                
-            case .error:
-                print("❌ CDP Module initialization error")
-                print("   CDP State: \(CdpModule.shared.state)")
-                NotificationCenter.default.post(
-                    name: NSNotification.Name("DataCloudFailed"),
-                    object: nil
-                )
-                
-            case .cancelled:
-                print("⚠️ CDP Module initialization cancelled")
-                print("   CDP State: \(CdpModule.shared.state)")
-                
-            case .timeout:
-                print("⏱️ CDP Module initialization timed out")
-                print("   CDP State: \(CdpModule.shared.state)")
-                
-            @unknown default:
-                print("⚠️ Unknown initialization result: \(result)")
-                print("   CDP State: \(CdpModule.shared.state)")
-            }
-        }
-        
-        // 4. Build Personalization configuration (if enabled)
+        // 3. Build Personalization configuration (if enabled)
         var configBuilder = ConfigBuilder().setCdp(config: cdpConfig)
         
         if configuration.enablePersonalization {
@@ -173,9 +130,29 @@ public final class DataCloudService: DataCloudServiceProtocol {
         // 5. Build SDK configuration
         let sdkConfig = configBuilder.build()
         
-        // 6. Initialize SDK
-        //SFMCSdk.initializeSdk(sdkConfig, completion: completionHandler)
-        SFMCSdk.initializeSdk(sdkConfig)
+        // 6. Initialize SDK with completion handler to mark as operational
+        SFMCSdk.initializeSdk(sdkConfig) { [weak self] moduleStatuses in
+            guard let self = self else { return }
+            
+            if configuration.enableLogging {
+                print("📡 SDK initialization completed")
+                for status in moduleStatuses {
+                    print("   Module: \(status.moduleName.rawValue), Status: \(status.initStatus.rawValue)")
+                }
+            }
+            
+            // Check if CDP module initialized successfully
+            let cdpStatus = moduleStatuses.first { $0.moduleName == .cdp }
+            if cdpStatus?.initStatus == .success {
+                self.markAsOperational(configuration: configuration)
+            } else {
+                print("❌ CDP Module initialization failed")
+                NotificationCenter.default.post(
+                    name: NSNotification.Name("DataCloudFailed"),
+                    object: nil
+                )
+            }
+        }
         
         if configuration.enableLogging {
             print("📡 SDK initialization called")

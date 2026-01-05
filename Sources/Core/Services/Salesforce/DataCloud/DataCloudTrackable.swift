@@ -39,10 +39,10 @@ public extension DataCloudTrackable {
     // MARK: - Catalog & Product Tracking
     
     /// Track when user views a product/item
-    func trackItemView(itemId: String, itemType: String, itemName: String, price: Double? = nil, category: String? = nil) {
+    /// - Parameter itemName: The item name (e.g., "Margherita Pizza") - used as catalogObjectId to match web SDK
+    func trackItemView(itemName: String, itemType: String, price: Double? = nil, category: String? = nil) {
         engagementService.trackProductView(
-            productId: itemId,
-            productName: itemName,
+            productName: itemName,  // Name is used as catalogObjectId
             productType: itemType,
             price: price,
             category: category
