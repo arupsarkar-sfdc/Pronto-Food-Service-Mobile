@@ -63,6 +63,8 @@
 		E6D3A75D2F0C23480010D3F1 /* AgentforceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D3A75A2F0C23480010D3F1 /* AgentforceView.swift */; };
 		E6D3A7EB2F0C24AE0010D3F1 /* Swift-InAppMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E6D3A7EA2F0C24AE0010D3F1 /* Swift-InAppMessaging */; };
 		E6D3A7EC2F0C26670010D3F1 /* AgentforceConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = E6D3A75E2F0C23670010D3F1 /* AgentforceConfig.json */; };
+		E6D3A7F22F0F06DA0010D3F1 /* ChatPersonalizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D3A7F02F0F06DA0010D3F1 /* ChatPersonalizationViewModel.swift */; };
+		E6D3A7F42F0F06F50010D3F1 /* ChatPersonalizationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D3A7F32F0F06F50010D3F1 /* ChatPersonalizationWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +141,8 @@
 		E6CC71972EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationDecisionRecord.swift; sourceTree = "<group>"; };
 		E6D3A75A2F0C23480010D3F1 /* AgentforceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentforceView.swift; sourceTree = "<group>"; };
 		E6D3A75E2F0C23670010D3F1 /* AgentforceConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AgentforceConfig.json; sourceTree = "<group>"; };
+		E6D3A7F02F0F06DA0010D3F1 /* ChatPersonalizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPersonalizationViewModel.swift; sourceTree = "<group>"; };
+		E6D3A7F32F0F06F50010D3F1 /* ChatPersonalizationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPersonalizationWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -924,6 +928,7 @@
 		E6D3A75B2F0C23480010D3F1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E6D3A7F32F0F06F50010D3F1 /* ChatPersonalizationWidget.swift */,
 				E6D3A75A2F0C23480010D3F1 /* AgentforceView.swift */,
 			);
 			path = Views;
@@ -932,9 +937,18 @@
 		E6D3A75C2F0C23480010D3F1 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				E6D3A7F12F0F06DA0010D3F1 /* ViewModels */,
 				E6D3A75B2F0C23480010D3F1 /* Views */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		E6D3A7F12F0F06DA0010D3F1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E6D3A7F02F0F06DA0010D3F1 /* ChatPersonalizationViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1129,10 +1143,12 @@
 				E657A84E2EB0042D00FBF948 /* EngagementTrackingService.swift in Sources */,
 				E60167932E870CC500E71CAD /* HomePromoCardView.swift in Sources */,
 				E657A8652EB2782200FBF948 /* SearchViewModel.swift in Sources */,
+				E6D3A7F42F0F06F50010D3F1 /* ChatPersonalizationWidget.swift in Sources */,
 				E601666E2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift in Sources */,
 				E657A83F2EAFC96100FBF948 /* ConsentView.swift in Sources */,
 				E657A85D2EB00C2600FBF948 /* IdentityFormViewModel.swift in Sources */,
 				E657A8402EAFC96100FBF948 /* ConsentStatusView.swift in Sources */,
+				E6D3A7F22F0F06DA0010D3F1 /* ChatPersonalizationViewModel.swift in Sources */,
 				E657A8412EAFC96100FBF948 /* LocationPermissionView.swift in Sources */,
 				E657A8422EAFC96100FBF948 /* LocationStatusView.swift in Sources */,
 				E6CC71902ED9FF7700BE6895 /* PersonalizationService.swift in Sources */,

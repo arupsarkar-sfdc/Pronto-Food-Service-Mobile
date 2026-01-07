@@ -154,7 +154,15 @@ PersonalizationService.fetchDecisions("Pronto") →
 "🏆 Recommended for You: Pizza" appears instantly
 ```
 
-**Step 3: Agentforce Context-Aware Conversation**
+**Step 3: Agentforce with Dynamic Personalization Widget**
+```
+User taps ✨ sparkle button → Types "pizza" or taps chip →
+ChatPersonalizationViewModel.fetchPersonalization("pizza") →
+PersonalizationService.fetchDecisions(["Pronto"], context: {searchKeyword: "pizza"}) →
+Widget appears: "🍕 Pizza - 15% OFF - Order Now"
+```
+
+**Step 4: Agentforce Context-Aware Conversation**
 ```
 User: "What do you recommend?"
 Agent: "I noticed you've shown consistent interest in our pizza selection. 
@@ -176,21 +184,45 @@ EngagementTrackingService.shared.trackEvent(
 )
 ```
 
-**Code Walkthrough - Fetching Personalization:**
+**Code Walkthrough - Fetching Personalization (Favorites View):**
 
 ```swift
-// PersonalizationViewModel.swift
+// PersonalizationViewModel.swift - Used in FavoritesView
 let result = try await personalizationService.fetchDecisions(
     personalizationPointNames: ["Pronto"],
     context: nil,
     timeoutSeconds: 10
 )
 
-// Winner selection based on engagement data
-let winner = selectWinner(decisions: result.decisions, clickCounts: counts)
+// Parse and display personalized content directly
+if let decision = result.personalizations["Pronto"] {
+    self.backgroundImageUrl = decision.attributes["BackgroundImageUrl"] as? String
+    self.headerText = decision.attributes["Header"] as? String  // "Pizza"
+}
+```
 
-// Display personalized content
-self.winningDecision = winner  // Shows Pizza with custom image, CTA
+**Code Walkthrough - Dynamic Chat Widget (Agentforce):**
+
+```swift
+// ChatPersonalizationViewModel.swift - Used in AgentforceView
+// Directly calls Personalization SDK based on user keyword input
+let context = PersonalizationRequestContext(
+    contextualAttributes: [
+        "searchKeyword": keyword,       // e.g., "pizza"
+        "channel": "agentforce_chat"
+    ]
+)
+
+let result = try await PersonalizationService.shared.fetchDecisions(
+    personalizationPointNames: ["Pronto"],
+    context: context,
+    timeoutSeconds: 10
+)
+
+// Parse decision and update widget immediately
+guard let decision = result.personalizations["Pronto"] else { return }
+self.currentDecision = parseDecisionToChat(decision, keyword: keyword)
+self.isWidgetVisible = true  // Widget appears with personalized content
 ```
 
 **Code Walkthrough - Agentforce Integration:**
@@ -223,13 +255,15 @@ Ensure web and mobile send identical event structures:
 
 **Pattern 2: Real-Time Decision Fetching**
 
+**A) On View Load (FavoritesView):**
 ```
-Mobile App Launch
+Mobile App → FavoritesView.onAppear
        │
        ▼
 ┌─────────────────────────────────┐
-│  PersonalizationModule          │
+│  PersonalizationService         │
 │  .fetchDecisions(["Pronto"])    │
+│  (no context - uses profile)    │
 └─────────────────────────────────┘
        │
        ▼
@@ -237,14 +271,40 @@ Mobile App Launch
 │  Data Cloud Evaluates:          │
 │  - Unified Profile              │
 │  - Web + Mobile Engagement      │
-│  - Personalization Rules        │
 └─────────────────────────────────┘
        │
        ▼
 ┌─────────────────────────────────┐
-│  Returns Decision:              │
-│  - Pizza (highest engagement)   │
-│  - With image, CTA, subheader   │
+│  Returns Decision based on      │
+│  cross-channel behavior         │
+└─────────────────────────────────┘
+```
+
+**B) On User Input (Agentforce Chat Widget):**
+```
+User types "pizza" in chat
+       │
+       ▼
+┌─────────────────────────────────┐
+│  PersonalizationService         │
+│  .fetchDecisions(["Pronto"],    │
+│    context: {                   │
+│      searchKeyword: "pizza",    │
+│      channel: "agentforce_chat" │
+│    })                           │
+└─────────────────────────────────┘
+       │
+       ▼
+┌─────────────────────────────────┐
+│  Data Cloud Evaluates:          │
+│  - Context attributes           │
+│  - Profile engagement data      │
+└─────────────────────────────────┘
+       │
+       ▼
+┌─────────────────────────────────┐
+│  Returns Decision for keyword   │
+│  Widget appears immediately     │
 └─────────────────────────────────┘
 ```
 
@@ -567,9 +627,12 @@ From the Agentic Web Framework:
 | File | Purpose |
 |------|---------|
 | `EngagementTrackingService.swift` | Centralized event tracking with payload parity |
-| `PersonalizationViewModel.swift` | Decision fetching and winner selection logic |
+| `PersonalizationService.swift` | Core wrapper for Salesforce Personalization SDK |
+| `PersonalizationViewModel.swift` | Decision fetching for FavoritesView |
+| `ChatPersonalizationViewModel.swift` | **Dynamic SDK calls for Agentforce chat widget** |
+| `ChatPersonalizationWidget.swift` | **Real-time personalization widget in chat UI** |
 | `DataCloudService.swift` | SFMC SDK initialization and configuration |
-| `AgentforceView.swift` | Messaging for In-App SDK integration |
+| `AgentforceView.swift` | Messaging for In-App SDK integration with personalization overlay |
 | `FavoritesView.swift` | Displays personalization decisions with Data Graph verification |
 | `HomeCategoryBarView.swift` | Category tap tracking with correct catalogObjectId |
 
