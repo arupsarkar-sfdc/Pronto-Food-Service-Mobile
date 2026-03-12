@@ -17,8 +17,9 @@
 5. [Challenge 4: Anonymous Initialization Pattern](#5-challenge-4-anonymous-initialization-pattern)
 6. [Challenge 5: Login Flow Decoupling](#6-challenge-5-login-flow-decoupling)
 7. [Challenge 6: Parallel Identity Resolution Systems](#7-challenge-6-parallel-identity-resolution-systems)
-8. [Complete Implementation Reference](#8-complete-implementation-reference)
-9. [SDK Capabilities Reference](#9-sdk-capabilities-reference)
+8. [**Alternative: No Data Cloud IR (SOK IR Only)**](#8-alternative-no-data-cloud-ir-sok-ir-only)
+9. [Complete Implementation Reference](#9-complete-implementation-reference)
+10. [SDK Capabilities Reference](#10-sdk-capabilities-reference)
 
 ---
 
@@ -1659,7 +1660,520 @@ class DataCloudIRIntegration {
 
 ---
 
-## 8. Complete Implementation Reference
+## 8. Alternative: No Data Cloud IR (SOK IR Only)
+
+### Scenario
+
+> "SOK does not want to use Data Cloud's Identity Resolution at all. They want to rely entirely on their existing identity system."
+
+### Why SOK Might Choose This
+
+| Reason | Explanation |
+|--------|-------------|
+| **Existing investment** | SOK has built and maintained their IR for years |
+| **Simplicity** | One IR system to manage, not two |
+| **Control** | Full control over identity matching logic |
+| **Compliance** | Finnish data residency or privacy requirements |
+| **Trust** | Their system is battle-tested with 4M+ users |
+
+### Architecture: Data Cloud as Event Store Only
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│           ARCHITECTURE: NO DATA CLOUD IR (SOK IR ONLY)             │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│   In this model:                                                    │
+│   - Data Cloud is an EVENT STORE only                              │
+│   - NO Identity Resolution rules in Data Cloud                     │
+│   - SOK's backend handles ALL identity matching                    │
+│   - Events are tagged with sokId for later joining                 │
+│                                                                     │
+│   ┌─────────────────────────────────────────────────────────────┐  │
+│   │                      MOBILE APP                              │  │
+│   ├─────────────────────────────────────────────────────────────┤  │
+│   │                                                              │  │
+│   │   App Launch                                                 │  │
+│   │       │                                                      │  │
+│   │       ▼                                                      │  │
+│   │   ┌─────────────────────────────────────────────────────┐   │  │
+│   │   │ Initialize SDK                                       │   │  │
+│   │   │  - deviceId auto-generated                           │   │  │
+│   │   │  - Anonymous user                                    │   │  │
+│   │   └─────────────────────────────────────────────────────┘   │  │
+│   │       │                                                      │  │
+│   │       ▼                                                      │  │
+│   │   User Logs In                                               │  │
+│   │       │                                                      │  │
+│   │       ▼                                                      │  │
+│   │   ┌─────────────────────────────────────────────────────┐   │  │
+│   │   │ Set Profile Attributes (NOT for IR, just tagging)   │   │  │
+│   │   │  - sokId: "12345"                                    │   │  │
+│   │   │  - deviceId: "abc..."                                │   │  │
+│   │   │                                                      │   │  │
+│   │   │ All events now contain sokId as an attribute         │   │  │
+│   │   └─────────────────────────────────────────────────────┘   │  │
+│   │                                                              │  │
+│   └──────────────────────────┬──────────────────────────────────┘  │
+│                              │                                      │
+│                              │ Events with sokId attribute          │
+│                              ▼                                      │
+│   ┌─────────────────────────────────────────────────────────────┐  │
+│   │                    DATA CLOUD                                │  │
+│   ├─────────────────────────────────────────────────────────────┤  │
+│   │                                                              │  │
+│   │   Configuration:                                             │  │
+│   │   ┌─────────────────────────────────────────────────────┐   │  │
+│   │   │ ❌ NO Identity Resolution Rules                      │   │  │
+│   │   │ ❌ NO Unified Individual creation                    │   │  │
+│   │   │ ✅ Raw event storage only                            │   │  │
+│   │   │ ✅ Events contain sokId as attribute                 │   │  │
+│   │   └─────────────────────────────────────────────────────┘   │  │
+│   │                                                              │  │
+│   │   Data Model:                                                │  │
+│   │   ┌─────────────────────────────────────────────────────┐   │  │
+│   │   │ Mobile_App_Event__dlm                                │   │  │
+│   │   │  - eventId (PK)                                      │   │  │
+│   │   │  - deviceId                                          │   │  │
+│   │   │  - sokId (attribute, NOT identity field)             │   │  │
+│   │   │  - eventType                                         │   │  │
+│   │   │  - eventData                                         │   │  │
+│   │   │  - timestamp                                         │   │  │
+│   │   └─────────────────────────────────────────────────────┘   │  │
+│   │                                                              │  │
+│   └──────────────────────────┬──────────────────────────────────┘  │
+│                              │                                      │
+│                              │ Export/Query events by sokId         │
+│                              ▼                                      │
+│   ┌─────────────────────────────────────────────────────────────┐  │
+│   │                    SOK BACKEND                               │  │
+│   ├─────────────────────────────────────────────────────────────┤  │
+│   │                                                              │  │
+│   │   SOK's Identity Resolution System:                         │  │
+│   │   ┌─────────────────────────────────────────────────────┐   │  │
+│   │   │                                                      │   │  │
+│   │   │   Query Data Cloud events WHERE sokId = '12345'      │   │  │
+│   │   │                    │                                 │   │  │
+│   │   │                    ▼                                 │   │  │
+│   │   │   Join with SOK master customer table:               │   │  │
+│   │   │    - Hotel reservations                              │   │  │
+│   │   │    - Banking transactions                            │   │  │
+│   │   │    - Fuel purchases                                  │   │  │
+│   │   │    - Retail history                                  │   │  │
+│   │   │                    │                                 │   │  │
+│   │   │                    ▼                                 │   │  │
+│   │   │   Complete customer 360 view (in SOK's system)       │   │  │
+│   │   │                                                      │   │  │
+│   │   └─────────────────────────────────────────────────────┘   │  │
+│   │                                                              │  │
+│   └─────────────────────────────────────────────────────────────┘  │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Key Differences from IR-Enabled Architecture
+
+| Aspect | With Data Cloud IR | Without Data Cloud IR |
+|--------|-------------------|----------------------|
+| **Unified Individual** | Created automatically | Not created |
+| **Identity matching** | Data Cloud matches sokId/email/deviceId | SOK backend matches sokId |
+| **Cross-device linking** | Data Cloud links devices | SOK backend links devices |
+| **Personalization SDK** | Uses Unified Individual | Must query by sokId |
+| **Segments** | Built on Unified Individual | Built on raw events + sokId |
+| **Data model** | Identity-centric DMOs | Event-centric DMOs |
+
+### Code Implementation: Event Store Mode
+
+```swift
+// MARK: - Data Cloud as Event Store Only (No IR)
+
+import SFMCSDK
+import Cdp
+
+class EventStoreOnlyManager {
+    
+    static let shared = EventStoreOnlyManager()
+    
+    /// Initialize SDK - same as before
+    /// The SDK doesn't know/care about IR configuration
+    func initializeSDK() {
+        let cdpConfig = CdpConfigBuilder()
+            .appId("sok-mobile-connector-id")
+            .endpoint("sok-cdp-endpoint")
+            .trackScreens(true)
+            .trackLifecycle(true)
+            .build()
+        
+        let config = ConfigBuilder()
+            .setCdp(config: cdpConfig)
+            .build()
+        
+        SFMCSdk.initializeSdk(config) { statuses in
+            for status in statuses {
+                if status.moduleName == .cdp && status.initStatus == .success {
+                    print("✅ SDK initialized (Event Store mode)")
+                    SFMCSdk.cdp.setConsent(consent: .optIn)
+                }
+            }
+        }
+    }
+    
+    /// On login, set sokId as an EVENT ATTRIBUTE (not identity)
+    /// 
+    /// KEY DIFFERENCE: We're NOT using this for IR in Data Cloud.
+    /// We're just tagging events so SOK can query them later.
+    func onUserLogin(sokId: String) {
+        // Still transition to known (for consent/tracking purposes)
+        CdpModule.shared.setProfileToKnown()
+        
+        // Set sokId as profile attribute
+        // This will be included in all subsequent events
+        // SOK's backend will use this to join with their data
+        SFMCSdk.identity.edit { modifier in
+            modifier.addAttributes(attributes: [
+                "sokId": sokId,
+                "isAnonymous": "0"
+            ])
+            return modifier
+        }
+        
+        print("✅ sokId set as event attribute: \(sokId)")
+        print("   Events will be tagged for SOK backend querying")
+        print("   NO Data Cloud IR will process these events")
+    }
+    
+    /// Track event with sokId included as attribute
+    /// SOK backend will query events by sokId
+    func trackProductView(sokId: String?, productId: String, productName: String) {
+        var attributes: [String: Any] = [
+            "productId": productId,
+            "productName": productName
+        ]
+        
+        // Include sokId in event attributes for backend querying
+        if let sokId = sokId {
+            attributes["sokId"] = sokId
+        }
+        
+        let catalogObject = CatalogObject(
+            type: "Product",
+            id: productId,
+            attributes: attributes
+        )
+        
+        let event = ViewCatalogObjectEvent(catalogObject: catalogObject)
+        SFMCSdk.track(event: event)
+        
+        print("📊 Event tracked with sokId attribute")
+        print("   SOK backend can query: WHERE sokId = '\(sokId ?? "anonymous")'")
+    }
+}
+```
+
+### Data Cloud Configuration: Event Store Mode
+
+```yaml
+# Data Cloud Setup for Event Store Mode (No IR)
+
+Mobile Connector Configuration:
+  - App ID: sok-mobile-app
+  - Endpoint: sok-cdp-endpoint
+  - Events: Enabled
+  - Identity Resolution: DISABLED  # Key difference
+
+Data Model Objects (DMOs):
+  
+  # Store raw events - no identity linking
+  Mobile_App_Event__dlm:
+    Fields:
+      - eventId__c (Primary Key)
+      - deviceId__c (Text)
+      - sokId__c (Text)           # Just an attribute, NOT identity field
+      - eventType__c (Text)
+      - eventTimestamp__c (DateTime)
+      - eventPayload__c (JSON)
+    
+    # NO relationship to Unified Individual
+    # Events are standalone records
+
+  # Optional: Catalog objects
+  Product_View__dlm:
+    Fields:
+      - id__c (Primary Key)
+      - deviceId__c (Text)
+      - sokId__c (Text)           # For SOK backend querying
+      - productId__c (Text)
+      - productName__c (Text)
+      - viewTimestamp__c (DateTime)
+
+# NO Identity Resolution Ruleset
+# NO Unified Individual mapping
+# NO Contact Point linking
+```
+
+### SOK Backend: Querying Events by sokId
+
+```python
+# SOK Backend: Query Data Cloud events and join with internal data
+
+import requests
+
+class DataCloudEventQuery:
+    
+    def __init__(self, access_token, instance_url):
+        self.token = access_token
+        self.instance_url = instance_url
+    
+    def get_mobile_events_for_customer(self, sok_id: str) -> list:
+        """
+        Query Data Cloud for all mobile events for a given SOK ID.
+        
+        Since we're not using Data Cloud IR, we query events directly
+        by the sokId attribute we included in each event.
+        """
+        
+        # Data Cloud Query API
+        query = f"""
+        SELECT 
+            eventId__c,
+            deviceId__c,
+            eventType__c,
+            eventPayload__c,
+            eventTimestamp__c
+        FROM Mobile_App_Event__dlm
+        WHERE sokId__c = '{sok_id}'
+        ORDER BY eventTimestamp__c DESC
+        LIMIT 1000
+        """
+        
+        response = requests.post(
+            f"{self.instance_url}/services/data/v58.0/query",
+            headers={
+                "Authorization": f"Bearer {self.token}",
+                "Content-Type": "application/json"
+            },
+            json={"query": query}
+        )
+        
+        return response.json().get("records", [])
+    
+    def build_customer_360(self, sok_id: str) -> dict:
+        """
+        Build complete customer 360 view using SOK's identity system.
+        
+        This is where SOK's IR takes over - joining mobile events
+        with all their internal systems.
+        """
+        
+        # Get mobile events from Data Cloud
+        mobile_events = self.get_mobile_events_for_customer(sok_id)
+        
+        # Get hotel data from SOK's hotel system
+        hotel_data = self.query_hotel_system(sok_id)
+        
+        # Get banking data from SOK's banking system
+        banking_data = self.query_banking_system(sok_id)
+        
+        # Get fuel data from SOK's fuel system
+        fuel_data = self.query_fuel_system(sok_id)
+        
+        # Get retail data from SOK's retail system
+        retail_data = self.query_retail_system(sok_id)
+        
+        # SOK's IR joins everything by sok_id
+        return {
+            "sokId": sok_id,
+            "mobileEvents": mobile_events,
+            "hotelReservations": hotel_data,
+            "bankingTransactions": banking_data,
+            "fuelPurchases": fuel_data,
+            "retailPurchases": retail_data,
+            "totalLoyaltyPoints": self.calculate_loyalty_points(sok_id)
+        }
+    
+    def query_hotel_system(self, sok_id: str) -> list:
+        # SOK's internal hotel system query
+        pass
+    
+    def query_banking_system(self, sok_id: str) -> list:
+        # SOK's internal banking system query
+        pass
+    
+    def query_fuel_system(self, sok_id: str) -> list:
+        # SOK's internal fuel system query
+        pass
+    
+    def query_retail_system(self, sok_id: str) -> list:
+        # SOK's internal retail system query
+        pass
+```
+
+### Personalization Without Data Cloud IR
+
+```swift
+// MARK: - Personalization in Event Store Mode
+
+/// IMPORTANT: Without Data Cloud IR, the Personalization SDK has limitations
+/// 
+/// Option A: Use Personalization SDK with explicit sokId context
+/// Option B: Build personalization in SOK's backend
+
+class PersonalizationWithoutIR {
+    
+    /// Option A: Personalization SDK with sokId context
+    /// 
+    /// The Personalization SDK can still work, but you must pass
+    /// sokId as a contextual attribute since there's no Unified Individual
+    func fetchPersonalizationWithContext(sokId: String) async throws -> PersonalizationDecision? {
+        
+        let context = PersonalizationRequestContext(
+            anchorId: nil,
+            anchorDmoName: nil,
+            contextualAttributes: [
+                "sokId": sokId  // Pass sokId explicitly since no IR
+            ]
+        )
+        
+        // Personalization rules in Data Cloud must be configured to use
+        // sokId contextual attribute instead of Unified Individual
+        return try await PersonalizationService.shared.fetchDecision(
+            personalizationPointName: "MobileHome",
+            context: context,
+            timeoutSeconds: 10
+        )
+    }
+    
+    /// Option B: SOK Backend handles personalization
+    /// 
+    /// If Personalization SDK doesn't work well without IR,
+    /// SOK's backend can build and serve personalization
+    func fetchPersonalizationFromSOKBackend(sokId: String) async throws -> SOKPersonalization {
+        
+        let url = URL(string: "https://api.sok.fi/personalization/\(sokId)")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        
+        let (data, _) = try await URLSession.shared.data(for: request)
+        return try JSONDecoder().decode(SOKPersonalization.self, from: data)
+    }
+}
+
+struct SOKPersonalization: Codable {
+    let recommendations: [ProductRecommendation]
+    let offers: [PersonalizedOffer]
+    let loyaltyStatus: LoyaltyStatus
+}
+```
+
+### Trade-offs: With IR vs. Without IR
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    TRADE-OFF ANALYSIS                               │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│   CAPABILITY                  WITH DC IR       WITHOUT DC IR        │
+│   ──────────────────────────  ────────────     ─────────────        │
+│                                                                     │
+│   ┌─────────────────────────────────────────────────────────────┐  │
+│   │ Event Tracking            ✅ Yes           ✅ Yes            │  │
+│   │ Anonymous Tracking        ✅ Yes           ✅ Yes            │  │
+│   │ Cross-device Linking      ✅ Automatic     ❌ SOK must build │  │
+│   │ Unified Individual        ✅ Created       ❌ Not created    │  │
+│   │ Segments on UI            ✅ Easy          ⚠️ Complex        │  │
+│   │ Personalization SDK       ✅ Full support  ⚠️ Limited        │  │
+│   │ Journey Builder           ✅ Uses UI       ⚠️ Needs sokId    │  │
+│   │ Einstein Features         ✅ Full support  ❌ Not available  │  │
+│   │ Data Cloud Analytics      ✅ Identity-based ⚠️ Event-based   │  │
+│   └─────────────────────────────────────────────────────────────┘  │
+│                                                                     │
+│   RECOMMENDATION:                                                   │
+│   ───────────────                                                   │
+│                                                                     │
+│   If SOK wants to use Data Cloud features (Personalization,        │
+│   Segments, Journeys, Einstein), they should enable minimal IR:    │
+│                                                                     │
+│   ┌─────────────────────────────────────────────────────────────┐  │
+│   │ MINIMAL IR CONFIG:                                           │  │
+│   │                                                              │  │
+│   │ Single Rule: Match on sokId (Exact)                         │  │
+│   │                                                              │  │
+│   │ This creates Unified Individuals but doesn't conflict       │  │
+│   │ with SOK's IR - it just enables Data Cloud features.        │  │
+│   │                                                              │  │
+│   │ SOK's backend remains the source of truth for               │  │
+│   │ cross-system identity (hotel, bank, fuel, retail).          │  │
+│   └─────────────────────────────────────────────────────────────┘  │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Recommendation Summary
+
+| SOK's Goal | Recommended Approach |
+|------------|---------------------|
+| **Just event storage** | No IR needed, query by sokId attribute |
+| **Use Personalization SDK** | Minimal IR (single sokId rule) |
+| **Use Journey Builder** | Minimal IR (single sokId rule) |
+| **Use Einstein features** | Full IR required |
+| **Build everything in SOK backend** | No IR needed |
+
+### Code: Minimal IR Configuration
+
+```swift
+// If SOK wants Data Cloud features but minimal IR involvement
+
+/*
+Data Cloud Setup - Minimal IR:
+
+Identity Resolution Ruleset: SOK_Minimal_IR
+  
+  Rule 1 (Only Rule):
+    Match Field: sokId
+    Match Type: Exact
+    Priority: 1
+    Description: "Simple exact match on SOK ID - no fuzzy logic"
+
+This creates Unified Individuals based solely on sokId.
+- No email matching
+- No phone matching  
+- No fuzzy logic
+- No address matching
+
+SOK's backend remains authoritative for:
+- sokId → hotelId mapping
+- sokId → bankingId mapping
+- sokId → fuelId mapping
+- sokId → contactId mapping
+
+Data Cloud just knows: "These events belong to sokId 12345"
+*/
+
+class MinimalIRManager {
+    
+    func onUserLogin(sokId: String) {
+        CdpModule.shared.setProfileToKnown()
+        
+        // Set sokId - this is the ONLY field used for IR
+        // No email, phone, or other PII sent for matching
+        SFMCSdk.identity.edit { modifier in
+            modifier.addAttributes(attributes: [
+                "sokId": sokId,  // Only identifier for IR
+                "isAnonymous": "0"
+            ])
+            return modifier
+        }
+        
+        print("✅ Minimal IR: sokId set for identity resolution")
+        print("   Data Cloud will create Unified Individual based on sokId only")
+        print("   No fuzzy matching, no PII-based matching")
+    }
+}
+```
+
+---
+
+## 9. Complete Implementation Reference
 
 ### Full Integration Example
 
@@ -1815,7 +2329,7 @@ class SOKDataCloudManager {
 
 ---
 
-## 9. SDK Capabilities Reference
+## 10. SDK Capabilities Reference
 
 ### Quick Reference Table
 
