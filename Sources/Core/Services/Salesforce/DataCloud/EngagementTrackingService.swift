@@ -229,6 +229,7 @@ public final class EngagementTrackingService {
             event = ViewCatalogObjectEvent(catalogObject: catalogObject)
             
             if enableLogging {
+                
                 print("📦 ViewCatalogObjectEvent created")
                 print("   🆔 Event ID: \(event.id)")
                 print("   📝 Event Name: \(event.name)")
