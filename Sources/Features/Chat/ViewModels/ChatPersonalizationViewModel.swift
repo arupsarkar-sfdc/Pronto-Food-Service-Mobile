@@ -82,6 +82,29 @@ class ChatPersonalizationViewModel: ObservableObject {
         #if DEBUG
         print("📊 ChatPersonalizationViewModel: Initialized")
         #endif
+        
+        // Listen for profile state changes (login/logout)
+        NotificationCenter.default.addObserver(
+            forName: .profileStateChanged,
+            object: nil,
+            queue: .main
+        ) { [weak self] notification in
+            guard let self = self else { return }
+            
+            // Check if user became anonymous
+            if let state = notification.userInfo?["state"] as? ProfileState,
+               state == .anonymous {
+                #if DEBUG
+                print("🔄 ChatPersonalizationViewModel: User logged out - clearing personalization data")
+                #endif
+                // Clear all cached personalization data
+                self.clearDecision()
+            }
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     // MARK: - Public Methods
@@ -103,7 +126,17 @@ class ChatPersonalizationViewModel: ObservableObject {
     
     /// Manually fetch personalization for a specific keyword
     /// - Parameter keyword: The keyword/category to fetch recommendations for
+    /// Note: Only fetches for logged-in (known) users
     func fetchPersonalization(for keyword: String) {
+        // Guard: Only fetch personalization for known (logged-in) users
+        guard ProfileDataService.shared.isKnownUser else {
+            #if DEBUG
+            print("⚠️ ChatPersonalizationViewModel: Skipping fetch - user is anonymous")
+            print("   User must log in to receive personalized chat recommendations")
+            #endif
+            return
+        }
+        
         let normalizedKeyword = keyword.lowercased()
         
         guard monitoredKeywords.contains(normalizedKeyword) else {

@@ -45,17 +45,54 @@ public class PersonalizationViewModel: ObservableObject {
                 await self?.fetchPersonalization()
             }
         }
+        
+        // Listen for profile state changes (login/logout)
+        NotificationCenter.default.addObserver(
+            forName: .profileStateChanged,
+            object: nil,
+            queue: .main
+        ) { [weak self] notification in
+            guard let self = self else { return }
+            
+            // Check if user became anonymous
+            if let state = notification.userInfo?["state"] as? ProfileState,
+               state == .anonymous {
+                if self.enableLogging {
+                    print("🔄 PersonalizationViewModel: User logged out - clearing personalization data")
+                }
+                // Clear all cached personalization data
+                self.clear()
+                self.errorMessage = "Log in to see personalized recommendations"
+            }
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     // MARK: - Fetch Personalization
     
     /// Fetch personalized content based on user behavior
+    /// Note: Only fetches for logged-in (known) users
     public func fetchPersonalization() async {
+        // Guard: Only fetch personalization for known (logged-in) users
+        guard ProfileDataService.shared.isKnownUser else {
+            if enableLogging {
+                print("⚠️ PersonalizationViewModel: Skipping fetch - user is anonymous")
+                print("   User must log in to receive personalized recommendations")
+            }
+            errorMessage = "Log in to see personalized recommendations"
+            isLoading = false
+            hasData = false
+            return
+        }
+        
         isLoading = true
         errorMessage = nil
         
         if enableLogging {
-            print("🎨 PersonalizationViewModel: Fetching personalization...")
+            print("🎨 PersonalizationViewModel: Fetching personalization for known user...")
         }
         
         do {
@@ -495,12 +532,26 @@ public class PersonalizationViewModel: ObservableObject {
     // MARK: - Decision Records & Winner Selection
     
     /// Fetch personalization and select winner based on real-time click counts
+    /// Note: Only fetches for logged-in (known) users
     public func fetchPersonalizationWithWinner() async {
+        // Guard: Only fetch personalization for known (logged-in) users
+        guard ProfileDataService.shared.isKnownUser else {
+            if enableLogging {
+                print("⚠️ PersonalizationViewModel: Skipping winner fetch - user is anonymous")
+                print("   User must log in to receive personalized recommendations")
+            }
+            errorMessage = "Log in to see personalized recommendations"
+            isLoading = false
+            hasData = false
+            winningDecision = nil
+            return
+        }
+        
         isLoading = true
         errorMessage = nil
         
         if enableLogging {
-            print("🏆 PersonalizationViewModel: Fetching personalization with winner selection...")
+            print("🏆 PersonalizationViewModel: Fetching personalization with winner selection for known user...")
         }
         
         do {
