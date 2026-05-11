@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/salesforce-marketingcloud/mobile-sdk-cdp-ios",
       "state" : {
-        "revision" : "c97dd5e82da4339d00a5c6ce4e22e11cb839f21e",
-        "version" : "3.0.0"
+        "revision" : "c5d02dbcebcebd7d088e46611bd3aa5a00ff9781",
+        "version" : "3.0.1"
       }
     },
     {
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/salesforce-marketingcloud/sfmc-sdk-ios",
       "state" : {
-        "revision" : "a6866530dac422ad0cedaa0e096110b8a4add0cb",
-        "version" : "3.0.0"
+        "revision" : "b79e7ab104d995d58f3440328be358f2f22477b2",
+        "version" : "3.0.1"
       }
     },
     {
