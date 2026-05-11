@@ -249,9 +249,7 @@ struct ModernProductCard: View {
                     .foregroundColor(.primary)
                     .padding(.top, 4)
             }
-            .padding(.horizontal, 4)
-            .padding(.top, 12)
-            .padding(.bottom, 4)
+            .padding(.all, 12)
         }
         .background(Color(.systemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
