@@ -1,4 +1,5 @@
 import SwiftUI
+import Personalization
 
 // MARK: - Home View
 struct HomeView: View {
@@ -18,13 +19,30 @@ struct HomeView: View {
                         HomeCategoryBarView()
                             .padding(.top, 24)
                         
-                        // Promo Card
-                        HomePromoCardView()
-                            .padding(.top, 32)
+                        // Content Zone for Personalized Promo Card
+                        ContentZone(
+                            name: "Promo_Card",
+                            allowedComponents: [Banner()],
+                            loading: { ProgressView() },
+                            failed: { error in
+                                HomePromoCardView()
+                            }
+                        )
+                        .padding(.top, 32)
+                        
+                        // Content Zone for Personalized Product Recommendations
+                        ContentZone(
+                            name: "Product_Recommendations",
+                            allowedComponents: [Recommendations()],
+                            loading: { ProgressView() },
+                            failed: { error in
+                                HomeBestSellersSection()
+                            }
+                        )
+                        .padding(.top, 32)
                         
                         // Best Sellers Section
-                        HomeBestSellersSection()
-                            .padding(.top, 32)
+
                         
                         // Bottom spacing for tab bar
                         Spacer()
