@@ -9,66 +9,66 @@
 /* Begin PBXBuildFile section */
 		E601666D2E85883F00E71CAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60166692E85883F00E71CAD /* ContentView.swift */; };
 		E601666E2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601666B2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift */; };
-		E60166DF2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166862E85892200E71CAD /* .gitkeep */; };
-		E60166E02E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601669E2E85892200E71CAD /* .gitkeep */; };
-		E60166E12E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166A72E85892200E71CAD /* .gitkeep */; };
-		E60166E22E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166BF2E85892200E71CAD /* .gitkeep */; };
-		E60166E32E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166D62E85892200E71CAD /* .gitkeep */; };
-		E60166E42E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166DA2E85892200E71CAD /* .gitkeep */; };
-		E60166E52E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166BC2E85892200E71CAD /* .gitkeep */; };
-		E60166E62E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166A32E85892200E71CAD /* .gitkeep */; };
-		E60166E72E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166D02E85892200E71CAD /* .gitkeep */; };
-		E60166E82E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166842E85892200E71CAD /* .gitkeep */; };
-		E60166E92E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166B12E85892200E71CAD /* .gitkeep */; };
-		E60166EA2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166902E85892200E71CAD /* .gitkeep */; };
-		E60166EB2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166C32E85892200E71CAD /* .gitkeep */; };
-		E60166EC2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166C82E85892200E71CAD /* .gitkeep */; };
-		E60166ED2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166AE2E85892200E71CAD /* .gitkeep */; };
-		E60166EE2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166A52E85892200E71CAD /* .gitkeep */; };
-		E60166EF2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166972E85892200E71CAD /* .gitkeep */; };
-		E60166F02E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166D82E85892200E71CAD /* .gitkeep */; };
-		E60166F12E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166B52E85892200E71CAD /* .gitkeep */; };
-		E60166F22E85892200E71CAD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E60166892E85892200E71CAD /* README.md */; };
-		E60166F32E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166802E85892200E71CAD /* .gitkeep */; };
-		E60166F42E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166B32E85892200E71CAD /* .gitkeep */; };
-		E60166F52E85892200E71CAD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E601667E2E85892200E71CAD /* README.md */; };
-		E60166F62E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166CA2E85892200E71CAD /* .gitkeep */; };
-		E60166F72E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166D42E85892200E71CAD /* .gitkeep */; };
-		E60166F82E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166AC2E85892200E71CAD /* .gitkeep */; };
-		E60166F92E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166C12E85892200E71CAD /* .gitkeep */; };
-		E60166FA2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166762E85892200E71CAD /* .gitkeep */; };
-		E60166FB2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601667A2E85892200E71CAD /* .gitkeep */; };
-		E60166FC2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601668B2E85892200E71CAD /* .gitkeep */; };
-		E60166FD2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601668E2E85892200E71CAD /* .gitkeep */; };
-		E60166FE2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601669C2E85892200E71CAD /* .gitkeep */; };
-		E60166FF2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166B82E85892200E71CAD /* .gitkeep */; };
-		E60167002E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166992E85892200E71CAD /* .gitkeep */; };
-		E60167012E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166BA2E85892200E71CAD /* .gitkeep */; };
-		E60167022E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166782E85892200E71CAD /* .gitkeep */; };
-		E60167032E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166D22E85892200E71CAD /* .gitkeep */; };
-		E60167042E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166922E85892200E71CAD /* .gitkeep */; };
-		E60167052E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166822E85892200E71CAD /* .gitkeep */; };
-		E60167062E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166CE2E85892200E71CAD /* .gitkeep */; };
-		E60167072E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166AA2E85892200E71CAD /* .gitkeep */; };
-		E60167082E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166952E85892200E71CAD /* .gitkeep */; };
-		E60167092E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166C62E85892200E71CAD /* .gitkeep */; };
-		E601670A2E85892200E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60166A02E85892200E71CAD /* .gitkeep */; };
-		E601670B2E85892200E71CAD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E601667C2E85892200E71CAD /* README.md */; };
-		E601674D2E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167452E8589AA00E71CAD /* .gitkeep */; };
-		E601674E2E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167472E8589AA00E71CAD /* .gitkeep */; };
-		E601674F2E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167412E8589AA00E71CAD /* .gitkeep */; };
-		E60167502E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601673F2E8589AA00E71CAD /* .gitkeep */; };
-		E60167512E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167492E8589AA00E71CAD /* .gitkeep */; };
-		E60167522E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601673D2E8589AA00E71CAD /* .gitkeep */; };
-		E60167532E8589AA00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167432E8589AA00E71CAD /* .gitkeep */; };
-		E601675F2E85917C00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601675A2E85917C00E71CAD /* .gitkeep */; };
-		E60167602E85917C00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167542E85917C00E71CAD /* .gitkeep */; };
-		E60167612E85917C00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167582E85917C00E71CAD /* .gitkeep */; };
-		E60167622E85917C00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E601675C2E85917C00E71CAD /* .gitkeep */; };
-		E60167632E85917C00E71CAD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E60167562E85917C00E71CAD /* .gitkeep */; };
 		E601676B2E8591A300E71CAD /* MVVM.md in Resources */ = {isa = PBXBuildFile; fileRef = E60167652E8591A300E71CAD /* MVVM.md */; };
 		E601676C2E8591A300E71CAD /* PROJECT_STRUCTURE.md in Resources */ = {isa = PBXBuildFile; fileRef = E60167692E8591A300E71CAD /* PROJECT_STRUCTURE.md */; };
 		E601676D2E8591A300E71CAD /* Salesforce.md in Resources */ = {isa = PBXBuildFile; fileRef = E60167672E8591A300E71CAD /* Salesforce.md */; };
+		E60167862E870C8000E71CAD /* LiquidGlassTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167832E870C8000E71CAD /* LiquidGlassTabView.swift */; };
+		E601678F2E870CC500E71CAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678E2E870CC500E71CAD /* HomeView.swift */; };
+		E60167902E870CC500E71CAD /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678C2E870CC500E71CAD /* HomeHeaderView.swift */; };
+		E60167912E870CC500E71CAD /* HomeBestSellersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678A2E870CC500E71CAD /* HomeBestSellersSection.swift */; };
+		E60167922E870CC500E71CAD /* HomeCategoryBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678B2E870CC500E71CAD /* HomeCategoryBarView.swift */; };
+		E60167932E870CC500E71CAD /* HomePromoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678D2E870CC500E71CAD /* HomePromoCardView.swift */; };
+		E60167952E870CE000E71CAD /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167942E870CE000E71CAD /* CategoryModel.swift */; };
+		E60167972E870D1700E71CAD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167962E870D1700E71CAD /* SearchView.swift */; };
+		E601679A2E870D2E00E71CAD /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167982E870D2E00E71CAD /* FavoritesView.swift */; };
+		E601679B2E870D2E00E71CAD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167992E870D2E00E71CAD /* ProfileView.swift */; };
+		E63AB23B2FB18986003893C3 /* Cdp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2382FB18986003893C3 /* Cdp.xcframework */; };
+		E63AB23C2FB18986003893C3 /* Cdp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2382FB18986003893C3 /* Cdp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E63AB23D2FB18986003893C3 /* Personalization.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; };
+		E63AB23E2FB18986003893C3 /* Personalization.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E63AB23F2FB18986003893C3 /* SFMCSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB23A2FB18986003893C3 /* SFMCSDK.xcframework */; };
+		E63AB2402FB18986003893C3 /* SFMCSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB23A2FB18986003893C3 /* SFMCSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E657A7662EAACCCD00FBF948 /* DataCloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7642EAACCCD00FBF948 /* DataCloudService.swift */; };
+		E657A7672EAACCCD00FBF948 /* DataCloudTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7652EAACCCD00FBF948 /* DataCloudTrackable.swift */; };
+		E657A7682EAACCCD00FBF948 /* DataCloudConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7632EAACCCD00FBF948 /* DataCloudConfiguration.swift */; };
+		E657A7742EAACD9D00FBF948 /* DataCloudEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7702EAACD9D00FBF948 /* DataCloudEvent.swift */; };
+		E657A7752EAACD9D00FBF948 /* EngagementEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7712EAACD9D00FBF948 /* EngagementEvents.swift */; };
+		E657A7762EAACD9D00FBF948 /* ProfileEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7722EAACD9D00FBF948 /* ProfileEvents.swift */; };
+		E657A77A2EAACE0500FBF948 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7792EAACE0500FBF948 /* CartViewModel.swift */; };
+		E657A77C2EAACE1600FBF948 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A77B2EAACE1600FBF948 /* OrderViewModel.swift */; };
+		E657A77E2EAACE2200FBF948 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A77D2EAACE2200FBF948 /* ProfileViewModel.swift */; };
+		E657A7952EAC027A00FBF948 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7942EAC027A00FBF948 /* SettingsView.swift */; };
+		E657A7972EAC02AE00FBF948 /* CredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7962EAC02AE00FBF948 /* CredentialsManager.swift */; };
+		E657A83A2EAFC8E900FBF948 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8392EAFC8E900FBF948 /* LocationService.swift */; };
+		E657A83F2EAFC96100FBF948 /* ConsentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A83C2EAFC96100FBF948 /* ConsentView.swift */; };
+		E657A8402EAFC96100FBF948 /* ConsentStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A83B2EAFC96100FBF948 /* ConsentStatusView.swift */; };
+		E657A8412EAFC96100FBF948 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A83D2EAFC96100FBF948 /* LocationPermissionView.swift */; };
+		E657A8422EAFC96100FBF948 /* LocationStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A83E2EAFC96100FBF948 /* LocationStatusView.swift */; };
+		E657A84E2EB0042D00FBF948 /* EngagementTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A84D2EB0042D00FBF948 /* EngagementTrackingService.swift */; };
+		E657A8522EB007D400FBF948 /* ProfileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8502EB007D400FBF948 /* ProfileDataService.swift */; };
+		E657A8582EB007E300FBF948 /* LocationTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8572EB007E300FBF948 /* LocationTrackingService.swift */; };
+		E657A85A2EB007E300FBF948 /* ConsentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8542EB007E300FBF948 /* ConsentService.swift */; };
+		E657A85B2EB007E300FBF948 /* DataCloudLoggingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8562EB007E300FBF948 /* DataCloudLoggingService.swift */; };
+		E657A85D2EB00C2600FBF948 /* IdentityFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A85C2EB00C2600FBF948 /* IdentityFormViewModel.swift */; };
+		E657A85F2EB00C4100FBF948 /* IdentityFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A85E2EB00C4100FBF948 /* IdentityFormView.swift */; };
+		E657A8612EB2669000FBF948 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8602EB2669000FBF948 /* Product.swift */; };
+		E657A8632EB2775400FBF948 /* StoreFronts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8622EB2775400FBF948 /* StoreFronts.swift */; };
+		E657A8652EB2782200FBF948 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8642EB2782200FBF948 /* SearchViewModel.swift */; };
+		E657A87F2EB285AF00FBF948 /* UserDataGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A87E2EB285AF00FBF948 /* UserDataGraphView.swift */; };
+		E657A8B52EB29A7300FBF948 /* UserDataGraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B42EB29A7300FBF948 /* UserDataGraphViewModel.swift */; };
+		E657A8B72EB29A9E00FBF948 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B62EB29A9E00FBF948 /* TokenService.swift */; };
+		E657A8B92EB3A19500FBF948 /* DataGraphProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A8B82EB3A19500FBF948 /* DataGraphProfile.swift */; };
+		E67AA2E02EF075D600EC5B23 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67AA2DF2EF075D600EC5B23 /* HomeViewModel.swift */; };
+		E6CC71902ED9FF7700BE6895 /* PersonalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC718F2ED9FF7700BE6895 /* PersonalizationService.swift */; };
+		E6CC71922ED9FFCC00BE6895 /* PersonalizationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71912ED9FFCC00BE6895 /* PersonalizationModels.swift */; };
+		E6CC71942ED9FFE800BE6895 /* PersonalizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71932ED9FFE800BE6895 /* PersonalizationViewModel.swift */; };
+		E6CC71962EDB625700BE6895 /* DataGraphQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71952EDB625700BE6895 /* DataGraphQueryService.swift */; };
+		E6CC71982EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC71972EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift */; };
+		E6D3A75D2F0C23480010D3F1 /* AgentforceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D3A75A2F0C23480010D3F1 /* AgentforceView.swift */; };
+		E6D3A7EB2F0C24AE0010D3F1 /* Swift-InAppMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E6D3A7EA2F0C24AE0010D3F1 /* Swift-InAppMessaging */; };
+		E6D3A7EC2F0C26670010D3F1 /* AgentforceConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = E6D3A75E2F0C23670010D3F1 /* AgentforceConfig.json */; };
+		E6D3A7F22F0F06DA0010D3F1 /* ChatPersonalizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D3A7F02F0F06DA0010D3F1 /* ChatPersonalizationViewModel.swift */; };
+		E6D3A7F42F0F06F50010D3F1 /* ChatPersonalizationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D3A7F32F0F06F50010D3F1 /* ChatPersonalizationWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,77 +88,102 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E63AB2412FB18986003893C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E63AB2402FB18986003893C3 /* SFMCSDK.xcframework in Embed Frameworks */,
+				E63AB23E2FB18986003893C3 /* Personalization.xcframework in Embed Frameworks */,
+				E63AB23C2FB18986003893C3 /* Cdp.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E60166692E85883F00E71CAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E601666B2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProntoFoodDeliveryAppApp.swift; sourceTree = "<group>"; };
-		E60166762E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166782E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E601667A2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E601667C2E85892200E71CAD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E601667E2E85892200E71CAD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E60166802E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166822E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166842E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166862E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166892E85892200E71CAD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E601668B2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E601668E2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166902E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166922E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166952E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166972E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166992E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E601669C2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E601669E2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166A02E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166A32E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166A52E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166A72E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166AA2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166AC2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166AE2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166B12E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166B32E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166B52E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166B82E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166BA2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166BC2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166BF2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166C12E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166C32E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166C62E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166C82E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166CA2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166CE2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166D02E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166D22E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166D42E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166D62E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166D82E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60166DA2E85892200E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E601673D2E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E601673F2E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60167412E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60167432E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60167452E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60167472E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60167492E8589AA00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60167542E85917C00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60167562E85917C00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E60167582E85917C00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E601675A2E85917C00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		E601675C2E85917C00E71CAD /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		E60167652E8591A300E71CAD /* MVVM.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MVVM.md; sourceTree = "<group>"; };
 		E60167672E8591A300E71CAD /* Salesforce.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Salesforce.md; sourceTree = "<group>"; };
 		E60167692E8591A300E71CAD /* PROJECT_STRUCTURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PROJECT_STRUCTURE.md; sourceTree = "<group>"; };
+		E60167832E870C8000E71CAD /* LiquidGlassTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassTabView.swift; sourceTree = "<group>"; };
+		E601678A2E870CC500E71CAD /* HomeBestSellersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBestSellersSection.swift; sourceTree = "<group>"; };
+		E601678B2E870CC500E71CAD /* HomeCategoryBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryBarView.swift; sourceTree = "<group>"; };
+		E601678C2E870CC500E71CAD /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		E601678D2E870CC500E71CAD /* HomePromoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePromoCardView.swift; sourceTree = "<group>"; };
+		E601678E2E870CC500E71CAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E60167942E870CE000E71CAD /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		E60167962E870D1700E71CAD /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		E60167982E870D2E00E71CAD /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		E60167992E870D2E00E71CAD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E63AB2382FB18986003893C3 /* Cdp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cdp.xcframework; path = Frameworks/Cdp.xcframework; sourceTree = "<group>"; };
+		E63AB2392FB18986003893C3 /* Personalization.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Personalization.xcframework; path = Frameworks/Personalization.xcframework; sourceTree = "<group>"; };
+		E63AB23A2FB18986003893C3 /* SFMCSDK.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:RNQ52E7G3P:ExactTarget, Inc"; lastKnownFileType = wrapper.xcframework; name = SFMCSDK.xcframework; path = Frameworks/SFMCSDK.xcframework; sourceTree = "<group>"; };
+		E657A7632EAACCCD00FBF948 /* DataCloudConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCloudConfiguration.swift; sourceTree = "<group>"; };
+		E657A7642EAACCCD00FBF948 /* DataCloudService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCloudService.swift; sourceTree = "<group>"; };
+		E657A7652EAACCCD00FBF948 /* DataCloudTrackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCloudTrackable.swift; sourceTree = "<group>"; };
+		E657A7702EAACD9D00FBF948 /* DataCloudEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCloudEvent.swift; sourceTree = "<group>"; };
+		E657A7712EAACD9D00FBF948 /* EngagementEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngagementEvents.swift; sourceTree = "<group>"; };
+		E657A7722EAACD9D00FBF948 /* ProfileEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEvents.swift; sourceTree = "<group>"; };
+		E657A7792EAACE0500FBF948 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		E657A77B2EAACE1600FBF948 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		E657A77D2EAACE2200FBF948 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		E657A7942EAC027A00FBF948 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E657A7962EAC02AE00FBF948 /* CredentialsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsManager.swift; sourceTree = "<group>"; };
+		E657A8392EAFC8E900FBF948 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		E657A83B2EAFC96100FBF948 /* ConsentStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentStatusView.swift; sourceTree = "<group>"; };
+		E657A83C2EAFC96100FBF948 /* ConsentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentView.swift; sourceTree = "<group>"; };
+		E657A83D2EAFC96100FBF948 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
+		E657A83E2EAFC96100FBF948 /* LocationStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStatusView.swift; sourceTree = "<group>"; };
+		E657A84D2EB0042D00FBF948 /* EngagementTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngagementTrackingService.swift; sourceTree = "<group>"; };
+		E657A8502EB007D400FBF948 /* ProfileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataService.swift; sourceTree = "<group>"; };
+		E657A8542EB007E300FBF948 /* ConsentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentService.swift; sourceTree = "<group>"; };
+		E657A8562EB007E300FBF948 /* DataCloudLoggingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCloudLoggingService.swift; sourceTree = "<group>"; };
+		E657A8572EB007E300FBF948 /* LocationTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackingService.swift; sourceTree = "<group>"; };
+		E657A85C2EB00C2600FBF948 /* IdentityFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityFormViewModel.swift; sourceTree = "<group>"; };
+		E657A85E2EB00C4100FBF948 /* IdentityFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityFormView.swift; sourceTree = "<group>"; };
+		E657A8602EB2669000FBF948 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		E657A8622EB2775400FBF948 /* StoreFronts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFronts.swift; sourceTree = "<group>"; };
+		E657A8642EB2782200FBF948 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		E657A87E2EB285AF00FBF948 /* UserDataGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataGraphView.swift; sourceTree = "<group>"; };
+		E657A8B42EB29A7300FBF948 /* UserDataGraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataGraphViewModel.swift; sourceTree = "<group>"; };
+		E657A8B62EB29A9E00FBF948 /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		E657A8B82EB3A19500FBF948 /* DataGraphProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGraphProfile.swift; sourceTree = "<group>"; };
+		E67AA2DF2EF075D600EC5B23 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProntoFoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6997E0C2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6997E162E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProntoFoodDeliveryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CC718F2ED9FF7700BE6895 /* PersonalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationService.swift; sourceTree = "<group>"; };
+		E6CC71912ED9FFCC00BE6895 /* PersonalizationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationModels.swift; sourceTree = "<group>"; };
+		E6CC71932ED9FFE800BE6895 /* PersonalizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationViewModel.swift; sourceTree = "<group>"; };
+		E6CC71952EDB625700BE6895 /* DataGraphQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGraphQueryService.swift; sourceTree = "<group>"; };
+		E6CC71972EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationDecisionRecord.swift; sourceTree = "<group>"; };
+		E6D3A75A2F0C23480010D3F1 /* AgentforceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentforceView.swift; sourceTree = "<group>"; };
+		E6D3A75E2F0C23670010D3F1 /* AgentforceConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AgentforceConfig.json; sourceTree = "<group>"; };
+		E6D3A7F02F0F06DA0010D3F1 /* ChatPersonalizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPersonalizationViewModel.swift; sourceTree = "<group>"; };
+		E6D3A7F32F0F06F50010D3F1 /* ChatPersonalizationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPersonalizationWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E657A82C2EAFC6D700FBF948 /* Exceptions for "ProntoFoodDeliveryApp" folder in "ProntoFoodDeliveryApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E6997DFC2E8582CB0039AEBA /* ProntoFoodDeliveryApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E6997DFF2E8582CB0039AEBA /* ProntoFoodDeliveryApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E657A82C2EAFC6D700FBF948 /* Exceptions for "ProntoFoodDeliveryApp" folder in "ProntoFoodDeliveryApp" target */,
+			);
 			path = ProntoFoodDeliveryApp;
 			sourceTree = "<group>";
 		};
@@ -179,6 +204,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6D3A7EB2F0C24AE0010D3F1 /* Swift-InAppMessaging in Frameworks */,
+				E63AB23F2FB18986003893C3 /* SFMCSDK.xcframework in Frameworks */,
+				E63AB23D2FB18986003893C3 /* Personalization.xcframework in Frameworks */,
+				E63AB23B2FB18986003893C3 /* Cdp.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				E601666B2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift */,
-				E60166762E85892200E71CAD /* .gitkeep */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -211,7 +239,6 @@
 		E60166792E85892200E71CAD /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				E60166782E85892200E71CAD /* .gitkeep */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -219,7 +246,6 @@
 		E601667B2E85892200E71CAD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E601667A2E85892200E71CAD /* .gitkeep */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -227,7 +253,10 @@
 		E601667D2E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E601667C2E85892200E71CAD /* README.md */,
+				E6CC71972EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift */,
+				E6CC71912ED9FFCC00BE6895 /* PersonalizationModels.swift */,
+				E657A8622EB2775400FBF948 /* StoreFronts.swift */,
+				E657A8602EB2669000FBF948 /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,7 +264,6 @@
 		E601667F2E85892200E71CAD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				E601667E2E85892200E71CAD /* README.md */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -243,7 +271,6 @@
 		E60166812E85892200E71CAD /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				E60166802E85892200E71CAD /* .gitkeep */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -251,7 +278,6 @@
 		E60166832E85892200E71CAD /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				E60166822E85892200E71CAD /* .gitkeep */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -259,7 +285,17 @@
 		E60166852E85892200E71CAD /* DataCloud */ = {
 			isa = PBXGroup;
 			children = (
-				E60166842E85892200E71CAD /* .gitkeep */,
+				E6CC71952EDB625700BE6895 /* DataGraphQueryService.swift */,
+				E657A8B62EB29A9E00FBF948 /* TokenService.swift */,
+				E657A8502EB007D400FBF948 /* ProfileDataService.swift */,
+				E657A8542EB007E300FBF948 /* ConsentService.swift */,
+				E657A8562EB007E300FBF948 /* DataCloudLoggingService.swift */,
+				E657A8572EB007E300FBF948 /* LocationTrackingService.swift */,
+				E657A84D2EB0042D00FBF948 /* EngagementTrackingService.swift */,
+				E657A7732EAACD9D00FBF948 /* Models */,
+				E657A7632EAACCCD00FBF948 /* DataCloudConfiguration.swift */,
+				E657A7642EAACCCD00FBF948 /* DataCloudService.swift */,
+				E657A7652EAACCCD00FBF948 /* DataCloudTrackable.swift */,
 			);
 			path = DataCloud;
 			sourceTree = "<group>";
@@ -267,7 +303,7 @@
 		E60166872E85892200E71CAD /* Personalization */ = {
 			isa = PBXGroup;
 			children = (
-				E60166862E85892200E71CAD /* .gitkeep */,
+				E6CC718F2ED9FF7700BE6895 /* PersonalizationService.swift */,
 			);
 			path = Personalization;
 			sourceTree = "<group>";
@@ -286,7 +322,6 @@
 			isa = PBXGroup;
 			children = (
 				E60166882E85892200E71CAD /* Salesforce */,
-				E60166892E85892200E71CAD /* README.md */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -294,7 +329,8 @@
 		E601668C2E85892200E71CAD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				E601668B2E85892200E71CAD /* .gitkeep */,
+				E657A8392EAFC8E900FBF948 /* LocationService.swift */,
+				E657A7962EAC02AE00FBF948 /* CredentialsManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -316,7 +352,6 @@
 		E601668F2E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E601668E2E85892200E71CAD /* .gitkeep */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -324,7 +359,6 @@
 		E60166912E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E60166902E85892200E71CAD /* .gitkeep */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -332,7 +366,6 @@
 		E60166932E85892200E71CAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E60166922E85892200E71CAD /* .gitkeep */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -350,7 +383,6 @@
 		E60166962E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E60166952E85892200E71CAD /* .gitkeep */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -358,7 +390,7 @@
 		E60166982E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E60166972E85892200E71CAD /* .gitkeep */,
+				E657A7792EAACE0500FBF948 /* CartViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -366,7 +398,6 @@
 		E601669A2E85892200E71CAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E60166992E85892200E71CAD /* .gitkeep */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,7 +415,7 @@
 		E601669D2E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E601669C2E85892200E71CAD /* .gitkeep */,
+				E60167942E870CE000E71CAD /* CategoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -392,7 +423,7 @@
 		E601669F2E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E601669E2E85892200E71CAD /* .gitkeep */,
+				E67AA2DF2EF075D600EC5B23 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -400,8 +431,12 @@
 		E60166A12E85892200E71CAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E601678A2E870CC500E71CAD /* HomeBestSellersSection.swift */,
+				E601678B2E870CC500E71CAD /* HomeCategoryBarView.swift */,
+				E601678C2E870CC500E71CAD /* HomeHeaderView.swift */,
+				E601678D2E870CC500E71CAD /* HomePromoCardView.swift */,
+				E601678E2E870CC500E71CAD /* HomeView.swift */,
 				E60166692E85883F00E71CAD /* ContentView.swift */,
-				E60166A02E85892200E71CAD /* .gitkeep */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -419,7 +454,6 @@
 		E60166A42E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E60166A32E85892200E71CAD /* .gitkeep */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -427,7 +461,6 @@
 		E60166A62E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E60166A52E85892200E71CAD /* .gitkeep */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -435,7 +468,6 @@
 		E60166A82E85892200E71CAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E60166A72E85892200E71CAD /* .gitkeep */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -453,7 +485,6 @@
 		E60166AB2E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E60166AA2E85892200E71CAD /* .gitkeep */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -461,7 +492,7 @@
 		E60166AD2E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E60166AC2E85892200E71CAD /* .gitkeep */,
+				E657A77B2EAACE1600FBF948 /* OrderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -469,7 +500,6 @@
 		E60166AF2E85892200E71CAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E60166AE2E85892200E71CAD /* .gitkeep */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -487,7 +517,7 @@
 		E60166B22E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E60166B12E85892200E71CAD /* .gitkeep */,
+				E657A8B82EB3A19500FBF948 /* DataGraphProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -495,7 +525,10 @@
 		E60166B42E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E60166B32E85892200E71CAD /* .gitkeep */,
+				E6CC71932ED9FFE800BE6895 /* PersonalizationViewModel.swift */,
+				E657A8B42EB29A7300FBF948 /* UserDataGraphViewModel.swift */,
+				E657A85C2EB00C2600FBF948 /* IdentityFormViewModel.swift */,
+				E657A77D2EAACE2200FBF948 /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -503,7 +536,15 @@
 		E60166B62E85892200E71CAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E60166B52E85892200E71CAD /* .gitkeep */,
+				E657A87E2EB285AF00FBF948 /* UserDataGraphView.swift */,
+				E657A85E2EB00C4100FBF948 /* IdentityFormView.swift */,
+				E657A83B2EAFC96100FBF948 /* ConsentStatusView.swift */,
+				E657A83C2EAFC96100FBF948 /* ConsentView.swift */,
+				E657A83D2EAFC96100FBF948 /* LocationPermissionView.swift */,
+				E657A83E2EAFC96100FBF948 /* LocationStatusView.swift */,
+				E657A7942EAC027A00FBF948 /* SettingsView.swift */,
+				E60167982E870D2E00E71CAD /* FavoritesView.swift */,
+				E60167992E870D2E00E71CAD /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -521,7 +562,6 @@
 		E60166B92E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E60166B82E85892200E71CAD /* .gitkeep */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -529,7 +569,6 @@
 		E60166BB2E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E60166BA2E85892200E71CAD /* .gitkeep */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -537,7 +576,6 @@
 		E60166BD2E85892200E71CAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E60166BC2E85892200E71CAD /* .gitkeep */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -555,7 +593,6 @@
 		E60166C02E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E60166BF2E85892200E71CAD /* .gitkeep */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -563,7 +600,7 @@
 		E60166C22E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E60166C12E85892200E71CAD /* .gitkeep */,
+				E657A8642EB2782200FBF948 /* SearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -571,7 +608,7 @@
 		E60166C42E85892200E71CAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E60166C32E85892200E71CAD /* .gitkeep */,
+				E60167962E870D1700E71CAD /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -589,7 +626,6 @@
 		E60166C72E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E60166C62E85892200E71CAD /* .gitkeep */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -597,7 +633,6 @@
 		E60166C92E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E60166C82E85892200E71CAD /* .gitkeep */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -605,7 +640,6 @@
 		E60166CB2E85892200E71CAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E60166CA2E85892200E71CAD /* .gitkeep */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -623,6 +657,7 @@
 		E60166CD2E85892200E71CAD /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E6D3A75C2F0C23480010D3F1 /* Chat */,
 				E60166942E85892200E71CAD /* Authentication */,
 				E601669B2E85892200E71CAD /* Cart */,
 				E60166A22E85892200E71CAD /* Home */,
@@ -639,7 +674,6 @@
 		E60166CF2E85892200E71CAD /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				E60166CE2E85892200E71CAD /* .gitkeep */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -647,7 +681,6 @@
 		E60166D12E85892200E71CAD /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				E60166D02E85892200E71CAD /* .gitkeep */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -655,7 +688,6 @@
 		E60166D32E85892200E71CAD /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E60166D22E85892200E71CAD /* .gitkeep */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -663,7 +695,7 @@
 		E60166D52E85892200E71CAD /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E60166D42E85892200E71CAD /* .gitkeep */,
+				E60167832E870C8000E71CAD /* LiquidGlassTabView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -671,7 +703,6 @@
 		E60166D72E85892200E71CAD /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				E60166D62E85892200E71CAD /* .gitkeep */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -679,7 +710,6 @@
 		E60166D92E85892200E71CAD /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				E60166D82E85892200E71CAD /* .gitkeep */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -687,7 +717,6 @@
 		E60166DB2E85892200E71CAD /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				E60166DA2E85892200E71CAD /* .gitkeep */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -728,7 +757,6 @@
 		E601673E2E8589AA00E71CAD /* IntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				E601673D2E8589AA00E71CAD /* .gitkeep */,
 			);
 			path = IntegrationTests;
 			sourceTree = "<group>";
@@ -736,7 +764,6 @@
 		E60167402E8589AA00E71CAD /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				E601673F2E8589AA00E71CAD /* .gitkeep */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -744,7 +771,6 @@
 		E60167422E8589AA00E71CAD /* TestHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				E60167412E8589AA00E71CAD /* .gitkeep */,
 			);
 			path = TestHelpers;
 			sourceTree = "<group>";
@@ -752,7 +778,6 @@
 		E60167442E8589AA00E71CAD /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				E60167432E8589AA00E71CAD /* .gitkeep */,
 			);
 			path = UITests;
 			sourceTree = "<group>";
@@ -760,7 +785,6 @@
 		E60167462E8589AA00E71CAD /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E60167452E8589AA00E71CAD /* .gitkeep */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -768,7 +792,6 @@
 		E60167482E8589AA00E71CAD /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				E60167472E8589AA00E71CAD /* .gitkeep */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -776,7 +799,6 @@
 		E601674A2E8589AA00E71CAD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E60167492E8589AA00E71CAD /* .gitkeep */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -806,7 +828,6 @@
 		E60167552E85917C00E71CAD /* Colors */ = {
 			isa = PBXGroup;
 			children = (
-				E60167542E85917C00E71CAD /* .gitkeep */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -814,7 +835,7 @@
 		E60167572E85917C00E71CAD /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				E60167562E85917C00E71CAD /* .gitkeep */,
+				E6D3A75E2F0C23670010D3F1 /* AgentforceConfig.json */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -822,7 +843,6 @@
 		E60167592E85917C00E71CAD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				E60167582E85917C00E71CAD /* .gitkeep */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -830,7 +850,6 @@
 		E601675B2E85917C00E71CAD /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				E601675A2E85917C00E71CAD /* .gitkeep */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -838,7 +857,6 @@
 		E601675D2E85917C00E71CAD /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
-				E601675C2E85917C00E71CAD /* .gitkeep */,
 			);
 			path = Localizations;
 			sourceTree = "<group>";
@@ -889,6 +907,26 @@
 			path = Documentation;
 			sourceTree = "<group>";
 		};
+		E63AB2372FB18985003893C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E63AB2382FB18986003893C3 /* Cdp.xcframework */,
+				E63AB2392FB18986003893C3 /* Personalization.xcframework */,
+				E63AB23A2FB18986003893C3 /* SFMCSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E657A7732EAACD9D00FBF948 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E657A7702EAACD9D00FBF948 /* DataCloudEvent.swift */,
+				E657A7712EAACD9D00FBF948 /* EngagementEvents.swift */,
+				E657A7722EAACD9D00FBF948 /* ProfileEvents.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E6997DF42E8582CB0039AEBA = {
 			isa = PBXGroup;
 			children = (
@@ -899,6 +937,7 @@
 				E6997DFF2E8582CB0039AEBA /* ProntoFoodDeliveryApp */,
 				E6997E0F2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests */,
 				E6997E192E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests */,
+				E63AB2372FB18985003893C3 /* Frameworks */,
 				E6997DFE2E8582CB0039AEBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -913,6 +952,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E6D3A75B2F0C23480010D3F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6D3A7F32F0F06F50010D3F1 /* ChatPersonalizationWidget.swift */,
+				E6D3A75A2F0C23480010D3F1 /* AgentforceView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6D3A75C2F0C23480010D3F1 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E6D3A7F12F0F06DA0010D3F1 /* ViewModels */,
+				E6D3A75B2F0C23480010D3F1 /* Views */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		E6D3A7F12F0F06DA0010D3F1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E6D3A7F02F0F06DA0010D3F1 /* ChatPersonalizationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -923,6 +988,7 @@
 				E6997DF92E8582CB0039AEBA /* Sources */,
 				E6997DFA2E8582CB0039AEBA /* Frameworks */,
 				E6997DFB2E8582CB0039AEBA /* Resources */,
+				E63AB2412FB18986003893C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -933,6 +999,7 @@
 			);
 			name = ProntoFoodDeliveryApp;
 			packageProductDependencies = (
+				E6D3A7EA2F0C24AE0010D3F1 /* Swift-InAppMessaging */,
 			);
 			productName = ProntoFoodDeliveryApp;
 			productReference = E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */;
@@ -1016,6 +1083,9 @@
 			);
 			mainGroup = E6997DF42E8582CB0039AEBA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E6D3A7E92F0C24260010D3F1 /* XCRemoteSwiftPackageReference "Swift-Package-InAppMessaging" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E6997DFE2E8582CB0039AEBA /* Products */;
 			projectDirPath = "";
@@ -1033,66 +1103,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E60166DF2E85892200E71CAD /* .gitkeep in Resources */,
-				E60166E02E85892200E71CAD /* .gitkeep in Resources */,
-				E60166E12E85892200E71CAD /* .gitkeep in Resources */,
-				E601675F2E85917C00E71CAD /* .gitkeep in Resources */,
-				E60167602E85917C00E71CAD /* .gitkeep in Resources */,
-				E60167612E85917C00E71CAD /* .gitkeep in Resources */,
-				E60167622E85917C00E71CAD /* .gitkeep in Resources */,
-				E60167632E85917C00E71CAD /* .gitkeep in Resources */,
-				E60166E22E85892200E71CAD /* .gitkeep in Resources */,
-				E60166E32E85892200E71CAD /* .gitkeep in Resources */,
-				E60166E42E85892200E71CAD /* .gitkeep in Resources */,
-				E60166E52E85892200E71CAD /* .gitkeep in Resources */,
-				E60166E62E85892200E71CAD /* .gitkeep in Resources */,
-				E60166E72E85892200E71CAD /* .gitkeep in Resources */,
-				E60166E82E85892200E71CAD /* .gitkeep in Resources */,
-				E60166E92E85892200E71CAD /* .gitkeep in Resources */,
-				E60166EA2E85892200E71CAD /* .gitkeep in Resources */,
-				E60166EB2E85892200E71CAD /* .gitkeep in Resources */,
-				E60166EC2E85892200E71CAD /* .gitkeep in Resources */,
-				E60166ED2E85892200E71CAD /* .gitkeep in Resources */,
-				E60166EE2E85892200E71CAD /* .gitkeep in Resources */,
-				E60166EF2E85892200E71CAD /* .gitkeep in Resources */,
-				E60166F02E85892200E71CAD /* .gitkeep in Resources */,
-				E60166F12E85892200E71CAD /* .gitkeep in Resources */,
-				E60166F22E85892200E71CAD /* README.md in Resources */,
-				E60166F32E85892200E71CAD /* .gitkeep in Resources */,
-				E60166F42E85892200E71CAD /* .gitkeep in Resources */,
-				E60166F52E85892200E71CAD /* README.md in Resources */,
-				E60166F62E85892200E71CAD /* .gitkeep in Resources */,
-				E60166F72E85892200E71CAD /* .gitkeep in Resources */,
-				E60166F82E85892200E71CAD /* .gitkeep in Resources */,
-				E60166F92E85892200E71CAD /* .gitkeep in Resources */,
-				E60166FA2E85892200E71CAD /* .gitkeep in Resources */,
-				E60166FB2E85892200E71CAD /* .gitkeep in Resources */,
-				E60166FC2E85892200E71CAD /* .gitkeep in Resources */,
-				E601674D2E8589AA00E71CAD /* .gitkeep in Resources */,
-				E601674E2E8589AA00E71CAD /* .gitkeep in Resources */,
-				E601674F2E8589AA00E71CAD /* .gitkeep in Resources */,
-				E60167502E8589AA00E71CAD /* .gitkeep in Resources */,
-				E60167512E8589AA00E71CAD /* .gitkeep in Resources */,
-				E60167522E8589AA00E71CAD /* .gitkeep in Resources */,
-				E60167532E8589AA00E71CAD /* .gitkeep in Resources */,
-				E60166FD2E85892200E71CAD /* .gitkeep in Resources */,
-				E60166FE2E85892200E71CAD /* .gitkeep in Resources */,
-				E60166FF2E85892200E71CAD /* .gitkeep in Resources */,
-				E60167002E85892200E71CAD /* .gitkeep in Resources */,
-				E60167012E85892200E71CAD /* .gitkeep in Resources */,
-				E60167022E85892200E71CAD /* .gitkeep in Resources */,
-				E60167032E85892200E71CAD /* .gitkeep in Resources */,
-				E60167042E85892200E71CAD /* .gitkeep in Resources */,
-				E60167052E85892200E71CAD /* .gitkeep in Resources */,
-				E60167062E85892200E71CAD /* .gitkeep in Resources */,
-				E60167072E85892200E71CAD /* .gitkeep in Resources */,
-				E60167082E85892200E71CAD /* .gitkeep in Resources */,
+				E6D3A7EC2F0C26670010D3F1 /* AgentforceConfig.json in Resources */,
 				E601676B2E8591A300E71CAD /* MVVM.md in Resources */,
 				E601676C2E8591A300E71CAD /* PROJECT_STRUCTURE.md in Resources */,
 				E601676D2E8591A300E71CAD /* Salesforce.md in Resources */,
-				E60167092E85892200E71CAD /* .gitkeep in Resources */,
-				E601670A2E85892200E71CAD /* .gitkeep in Resources */,
-				E601670B2E85892200E71CAD /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1117,8 +1131,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60167952E870CE000E71CAD /* CategoryModel.swift in Sources */,
 				E601666D2E85883F00E71CAD /* ContentView.swift in Sources */,
+				E657A7662EAACCCD00FBF948 /* DataCloudService.swift in Sources */,
+				E657A8632EB2775400FBF948 /* StoreFronts.swift in Sources */,
+				E657A7672EAACCCD00FBF948 /* DataCloudTrackable.swift in Sources */,
+				E657A8522EB007D400FBF948 /* ProfileDataService.swift in Sources */,
+				E657A7682EAACCCD00FBF948 /* DataCloudConfiguration.swift in Sources */,
+				E657A8B52EB29A7300FBF948 /* UserDataGraphViewModel.swift in Sources */,
+				E60167862E870C8000E71CAD /* LiquidGlassTabView.swift in Sources */,
+				E601679A2E870D2E00E71CAD /* FavoritesView.swift in Sources */,
+				E601679B2E870D2E00E71CAD /* ProfileView.swift in Sources */,
+				E657A77E2EAACE2200FBF948 /* ProfileViewModel.swift in Sources */,
+				E657A7972EAC02AE00FBF948 /* CredentialsManager.swift in Sources */,
+				E657A85F2EB00C4100FBF948 /* IdentityFormView.swift in Sources */,
+				E6D3A75D2F0C23480010D3F1 /* AgentforceView.swift in Sources */,
+				E657A77C2EAACE1600FBF948 /* OrderViewModel.swift in Sources */,
+				E657A8B92EB3A19500FBF948 /* DataGraphProfile.swift in Sources */,
+				E657A77A2EAACE0500FBF948 /* CartViewModel.swift in Sources */,
+				E6CC71982EDBDFB500BE6895 /* PersonalizationDecisionRecord.swift in Sources */,
+				E601678F2E870CC500E71CAD /* HomeView.swift in Sources */,
+				E657A8B72EB29A9E00FBF948 /* TokenService.swift in Sources */,
+				E60167902E870CC500E71CAD /* HomeHeaderView.swift in Sources */,
+				E657A8582EB007E300FBF948 /* LocationTrackingService.swift in Sources */,
+				E67AA2E02EF075D600EC5B23 /* HomeViewModel.swift in Sources */,
+				E657A85A2EB007E300FBF948 /* ConsentService.swift in Sources */,
+				E657A85B2EB007E300FBF948 /* DataCloudLoggingService.swift in Sources */,
+				E6CC71962EDB625700BE6895 /* DataGraphQueryService.swift in Sources */,
+				E60167912E870CC500E71CAD /* HomeBestSellersSection.swift in Sources */,
+				E60167972E870D1700E71CAD /* SearchView.swift in Sources */,
+				E657A7952EAC027A00FBF948 /* SettingsView.swift in Sources */,
+				E6CC71942ED9FFE800BE6895 /* PersonalizationViewModel.swift in Sources */,
+				E657A87F2EB285AF00FBF948 /* UserDataGraphView.swift in Sources */,
+				E60167922E870CC500E71CAD /* HomeCategoryBarView.swift in Sources */,
+				E657A84E2EB0042D00FBF948 /* EngagementTrackingService.swift in Sources */,
+				E60167932E870CC500E71CAD /* HomePromoCardView.swift in Sources */,
+				E657A8652EB2782200FBF948 /* SearchViewModel.swift in Sources */,
+				E6D3A7F42F0F06F50010D3F1 /* ChatPersonalizationWidget.swift in Sources */,
 				E601666E2E85883F00E71CAD /* ProntoFoodDeliveryAppApp.swift in Sources */,
+				E657A83F2EAFC96100FBF948 /* ConsentView.swift in Sources */,
+				E657A85D2EB00C2600FBF948 /* IdentityFormViewModel.swift in Sources */,
+				E657A8402EAFC96100FBF948 /* ConsentStatusView.swift in Sources */,
+				E6D3A7F22F0F06DA0010D3F1 /* ChatPersonalizationViewModel.swift in Sources */,
+				E657A8412EAFC96100FBF948 /* LocationPermissionView.swift in Sources */,
+				E657A8422EAFC96100FBF948 /* LocationStatusView.swift in Sources */,
+				E6CC71902ED9FF7700BE6895 /* PersonalizationService.swift in Sources */,
+				E657A7742EAACD9D00FBF948 /* DataCloudEvent.swift in Sources */,
+				E657A7752EAACD9D00FBF948 /* EngagementEvents.swift in Sources */,
+				E657A83A2EAFC8E900FBF948 /* LocationService.swift in Sources */,
+				E6CC71922ED9FFCC00BE6895 /* PersonalizationModels.swift in Sources */,
+				E657A7762EAACD9D00FBF948 /* ProfileEvents.swift in Sources */,
+				E657A8612EB2669000FBF948 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1282,17 +1345,29 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QYYB9FH2U5;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProntoFoodDeliveryApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pronto Food Delivery App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location to provide personalized recommendations even when the app is in background.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We use your location to personalize content and improve your experience.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to provide personalized recommendations even when the app is in background.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.pronto.fooddelivery.ProntoFoodDeliveryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1310,17 +1385,28 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QYYB9FH2U5;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProntoFoodDeliveryApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pronto Food Delivery App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location to provide personalized recommendations even when the app is in background.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We use your location to personalize content and improve your experience.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to provide personalized recommendations even when the app is in background.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.pronto.fooddelivery.ProntoFoodDeliveryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1441,6 +1527,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E6D3A7E92F0C24260010D3F1 /* XCRemoteSwiftPackageReference "Swift-Package-InAppMessaging" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Salesforce-Async-Messaging/Swift-Package-InAppMessaging";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E6D3A7EA2F0C24AE0010D3F1 /* Swift-InAppMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6D3A7E92F0C24260010D3F1 /* XCRemoteSwiftPackageReference "Swift-Package-InAppMessaging" */;
+			productName = "Swift-InAppMessaging";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E6997DF52E8582CB0039AEBA /* Project object */;
 }

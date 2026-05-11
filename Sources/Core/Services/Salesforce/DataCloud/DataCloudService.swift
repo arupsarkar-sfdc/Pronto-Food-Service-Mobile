@@ -117,6 +117,7 @@ public final class DataCloudService: DataCloudServiceProtocol {
         if configuration.enablePersonalization {
             let personalizationConfig = PersonalizationConfigBuilder()
                 .dataspace(configuration.personalizationDataspace)
+                .cdnUrl(configuration.cdpUrl)
                 .build()
             
             configBuilder = configBuilder.setPersonalization(config: personalizationConfig)

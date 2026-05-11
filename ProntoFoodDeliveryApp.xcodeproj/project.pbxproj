@@ -236,20 +236,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		E60166792E85892200E71CAD /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		E601667B2E85892200E71CAD /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		E601667D2E85892200E71CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,20 +252,6 @@
 			children = (
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		E60166812E85892200E71CAD /* Persistence */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Persistence;
-			sourceTree = "<group>";
-		};
-		E60166832E85892200E71CAD /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Authentication;
 			sourceTree = "<group>";
 		};
 		E60166852E85892200E71CAD /* DataCloud */ = {
@@ -311,7 +283,6 @@
 		E60166882E85892200E71CAD /* Salesforce */ = {
 			isa = PBXGroup;
 			children = (
-				E60166832E85892200E71CAD /* Authentication */,
 				E60166852E85892200E71CAD /* DataCloud */,
 				E60166872E85892200E71CAD /* Personalization */,
 			);
@@ -338,11 +309,8 @@
 		E601668D2E85892200E71CAD /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E60166792E85892200E71CAD /* Constants */,
-				E601667B2E85892200E71CAD /* Extensions */,
 				E601667D2E85892200E71CAD /* Models */,
 				E601667F2E85892200E71CAD /* Networking */,
-				E60166812E85892200E71CAD /* Persistence */,
 				E601668A2E85892200E71CAD /* Services */,
 				E601668C2E85892200E71CAD /* Utilities */,
 			);
@@ -380,13 +348,6 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		E60166962E85892200E71CAD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		E60166982E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,19 +356,10 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		E601669A2E85892200E71CAD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		E601669B2E85892200E71CAD /* Cart */ = {
 			isa = PBXGroup;
 			children = (
-				E60166962E85892200E71CAD /* Models */,
 				E60166982E85892200E71CAD /* ViewModels */,
-				E601669A2E85892200E71CAD /* Views */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -451,44 +403,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		E60166A42E85892200E71CAD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E60166A62E85892200E71CAD /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		E60166A82E85892200E71CAD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		E60166A92E85892200E71CAD /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				E60166A42E85892200E71CAD /* Models */,
-				E60166A62E85892200E71CAD /* ViewModels */,
-				E60166A82E85892200E71CAD /* Views */,
-			);
-			path = Menu;
-			sourceTree = "<group>";
-		};
-		E60166AB2E85892200E71CAD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		E60166AD2E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -497,19 +411,10 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		E60166AF2E85892200E71CAD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		E60166B02E85892200E71CAD /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				E60166AB2E85892200E71CAD /* Models */,
 				E60166AD2E85892200E71CAD /* ViewModels */,
-				E60166AF2E85892200E71CAD /* Views */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -559,44 +464,6 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		E60166B92E85892200E71CAD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E60166BB2E85892200E71CAD /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		E60166BD2E85892200E71CAD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		E60166BE2E85892200E71CAD /* Restaurant */ = {
-			isa = PBXGroup;
-			children = (
-				E60166B92E85892200E71CAD /* Models */,
-				E60166BB2E85892200E71CAD /* ViewModels */,
-				E60166BD2E85892200E71CAD /* Views */,
-			);
-			path = Restaurant;
-			sourceTree = "<group>";
-		};
-		E60166C02E85892200E71CAD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		E60166C22E85892200E71CAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -616,42 +483,10 @@
 		E60166C52E85892200E71CAD /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				E60166C02E85892200E71CAD /* Models */,
 				E60166C22E85892200E71CAD /* ViewModels */,
 				E60166C42E85892200E71CAD /* Views */,
 			);
 			path = Search;
-			sourceTree = "<group>";
-		};
-		E60166C72E85892200E71CAD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E60166C92E85892200E71CAD /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		E60166CB2E85892200E71CAD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		E60166CC2E85892200E71CAD /* Tracking */ = {
-			isa = PBXGroup;
-			children = (
-				E60166C72E85892200E71CAD /* Models */,
-				E60166C92E85892200E71CAD /* ViewModels */,
-				E60166CB2E85892200E71CAD /* Views */,
-			);
-			path = Tracking;
 			sourceTree = "<group>";
 		};
 		E60166CD2E85892200E71CAD /* Features */ = {
@@ -661,35 +496,11 @@
 				E60166942E85892200E71CAD /* Authentication */,
 				E601669B2E85892200E71CAD /* Cart */,
 				E60166A22E85892200E71CAD /* Home */,
-				E60166A92E85892200E71CAD /* Menu */,
 				E60166B02E85892200E71CAD /* Order */,
 				E60166B72E85892200E71CAD /* Profile */,
-				E60166BE2E85892200E71CAD /* Restaurant */,
 				E60166C52E85892200E71CAD /* Search */,
-				E60166CC2E85892200E71CAD /* Tracking */,
 			);
 			path = Features;
-			sourceTree = "<group>";
-		};
-		E60166CF2E85892200E71CAD /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		E60166D12E85892200E71CAD /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		E60166D32E85892200E71CAD /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		E60166D52E85892200E71CAD /* Components */ = {
@@ -707,27 +518,11 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
-		E60166D92E85892200E71CAD /* Styles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Styles;
-			sourceTree = "<group>";
-		};
-		E60166DB2E85892200E71CAD /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Theme;
-			sourceTree = "<group>";
-		};
 		E60166DC2E85892200E71CAD /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				E60166D52E85892200E71CAD /* Components */,
 				E60166D72E85892200E71CAD /* Modifiers */,
-				E60166D92E85892200E71CAD /* Styles */,
-				E60166DB2E85892200E71CAD /* Theme */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -735,9 +530,6 @@
 		E60166DD2E85892200E71CAD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E60166CF2E85892200E71CAD /* Coordinators */,
-				E60166D12E85892200E71CAD /* Managers */,
-				E60166D32E85892200E71CAD /* Protocols */,
 				E60166DC2E85892200E71CAD /* UI */,
 			);
 			path = Shared;
@@ -752,34 +544,6 @@
 				E60166DD2E85892200E71CAD /* Shared */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		E601673E2E8589AA00E71CAD /* IntegrationTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = IntegrationTests;
-			sourceTree = "<group>";
-		};
-		E60167402E8589AA00E71CAD /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		E60167422E8589AA00E71CAD /* TestHelpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TestHelpers;
-			sourceTree = "<group>";
-		};
-		E60167442E8589AA00E71CAD /* UITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UITests;
 			sourceTree = "<group>";
 		};
 		E60167462E8589AA00E71CAD /* Core */ = {
@@ -816,20 +580,9 @@
 		E601674C2E8589AA00E71CAD /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E601673E2E8589AA00E71CAD /* IntegrationTests */,
-				E60167402E8589AA00E71CAD /* Mocks */,
-				E60167422E8589AA00E71CAD /* TestHelpers */,
-				E60167442E8589AA00E71CAD /* UITests */,
 				E601674B2E8589AA00E71CAD /* UnitTests */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		E60167552E85917C00E71CAD /* Colors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Colors;
 			sourceTree = "<group>";
 		};
 		E60167572E85917C00E71CAD /* Configuration */ = {
@@ -840,35 +593,10 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		E60167592E85917C00E71CAD /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		E601675B2E85917C00E71CAD /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		E601675D2E85917C00E71CAD /* Localizations */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Localizations;
-			sourceTree = "<group>";
-		};
 		E601675E2E85917C00E71CAD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E60167552E85917C00E71CAD /* Colors */,
 				E60167572E85917C00E71CAD /* Configuration */,
-				E60167592E85917C00E71CAD /* Fonts */,
-				E601675B2E85917C00E71CAD /* Images */,
-				E601675D2E85917C00E71CAD /* Localizations */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

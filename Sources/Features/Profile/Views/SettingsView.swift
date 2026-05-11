@@ -14,6 +14,7 @@ struct SettingsView: View {
     
     @State private var appId: String = ""
     @State private var endpoint: String = ""
+    @State private var cdpUrl: String = ""
     @State private var tokenEndpoint: String = ""
     @State private var showSuccessAlert = false
     @State private var showErrorAlert = false
@@ -39,20 +40,33 @@ struct SettingsView: View {
                         Text("App ID")
                             .font(.caption)
                             .foregroundStyle(.secondary)
-                        
+
                         TextField("Enter App ID from Mobile Connector", text: $appId)
                             .textFieldStyle(.plain)
                             .font(.system(.body, design: .monospaced))
                             .autocorrectionDisabled()
                             .textInputAutocapitalization(.never)
                     }
-                    
+
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Endpoint")
                             .font(.caption)
                             .foregroundStyle(.secondary)
-                        
+
                         TextField("your-org.marketing.salesforce.com", text: $endpoint)
+                            .textFieldStyle(.plain)
+                            .font(.system(.body, design: .monospaced))
+                            .autocorrectionDisabled()
+                            .textInputAutocapitalization(.never)
+                            .keyboardType(.URL)
+                    }
+
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("CDP URL")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+
+                        TextField("https://your-org.data.com", text: $cdpUrl)
                             .textFieldStyle(.plain)
                             .font(.system(.body, design: .monospaced))
                             .autocorrectionDisabled()
@@ -153,7 +167,7 @@ struct SettingsView: View {
                         saveCredentials()
                     }
                     .fontWeight(.semibold)
-                    .disabled(appId.isEmpty || endpoint.isEmpty)
+                    .disabled(appId.isEmpty || endpoint.isEmpty || cdpUrl.isEmpty)
                 }
             }
             .alert("Success", isPresented: $showSuccessAlert) {
@@ -179,26 +193,29 @@ struct SettingsView: View {
     private func loadCurrentCredentials() {
         appId = CredentialsManager.shared.appId ?? ""
         endpoint = CredentialsManager.shared.endpoint ?? ""
+        cdpUrl = CredentialsManager.shared.cdpUrl ?? ""
         tokenEndpoint = UserDefaults.standard.string(forKey: "com.pronto.tokenEndpoint") ?? ""
     }
     
     private func saveCredentials() {
         let validation = CredentialsManager.shared.validateCredentials(
             appId: appId,
-            endpoint: endpoint
+            endpoint: endpoint,
+            cdpUrl: cdpUrl
         )
-        
+
         if validation.isValid {
             CredentialsManager.shared.saveCredentials(
                 appId: appId,
-                endpoint: endpoint
+                endpoint: endpoint,
+                cdpUrl: cdpUrl
             )
-            
+
             // Save token endpoint
             if !tokenEndpoint.isEmpty {
                 TokenService.shared.configure(endpoint: tokenEndpoint)
             }
-            
+
             showSuccessAlert = true
         } else {
             errorMessage = validation.error ?? "Invalid credentials"
@@ -211,6 +228,7 @@ struct SettingsView: View {
         TokenService.shared.clearCache()
         appId = ""
         endpoint = ""
+        cdpUrl = ""
         tokenEndpoint = ""
     }
     

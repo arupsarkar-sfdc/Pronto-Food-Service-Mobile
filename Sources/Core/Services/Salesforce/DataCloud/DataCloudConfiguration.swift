@@ -16,7 +16,10 @@ public struct DataCloudConfiguration {
     
     /// Endpoint URL obtained from Mobile Connector in Salesforce
     public let endpoint: String
-    
+
+    /// CDP URL for Data Cloud Platform services
+    public let cdpUrl: String
+
     /// Enable automatic screen tracking (optional, default: true)
     public let trackScreens: Bool
     
@@ -38,6 +41,7 @@ public struct DataCloudConfiguration {
     public init(
         appId: String,
         endpoint: String,
+        cdpUrl: String,
         trackScreens: Bool = true,
         trackLifecycle: Bool = true,
         sessionTimeoutInSeconds: Int = 1800,
@@ -47,6 +51,7 @@ public struct DataCloudConfiguration {
     ) {
         self.appId = appId
         self.endpoint = endpoint
+        self.cdpUrl = cdpUrl
         self.trackScreens = trackScreens
         self.trackLifecycle = trackLifecycle
         self.sessionTimeoutInSeconds = sessionTimeoutInSeconds
@@ -64,6 +69,7 @@ extension DataCloudConfiguration {
         DataCloudConfiguration(
             appId: "YOUR_DEV_APP_ID", // Fallback - configure via Settings
             endpoint: "YOUR_DEV_ENDPOINT", // Fallback - configure via Settings
+            cdpUrl: "YOUR_DEV_CDP_URL", // Fallback - configure via Settings
             trackScreens: true,
             trackLifecycle: true,
             sessionTimeoutInSeconds: 1800,
@@ -78,6 +84,7 @@ extension DataCloudConfiguration {
         DataCloudConfiguration(
             appId: "YOUR_PROD_APP_ID", // Fallback - configure via Settings
             endpoint: "YOUR_PROD_ENDPOINT", // Fallback - configure via Settings
+            cdpUrl: "YOUR_PROD_CDP_URL", // Fallback - configure via Settings
             trackScreens: true,
             trackLifecycle: true,
             sessionTimeoutInSeconds: 1800,
@@ -91,10 +98,12 @@ extension DataCloudConfiguration {
     public static var current: DataCloudConfiguration {
         // Check if credentials are stored via CredentialsManager
         if let appId = CredentialsManager.shared.appId,
-           let endpoint = CredentialsManager.shared.endpoint {
+           let endpoint = CredentialsManager.shared.endpoint,
+           let cdpUrl = CredentialsManager.shared.cdpUrl {
             return DataCloudConfiguration(
                 appId: appId,
                 endpoint: endpoint,
+                cdpUrl: cdpUrl,
                 trackScreens: true,
                 trackLifecycle: true,
                 sessionTimeoutInSeconds: 600,
@@ -103,7 +112,7 @@ extension DataCloudConfiguration {
                 personalizationDataspace: "default"
             )
         }
-        
+
         // Fallback to environment-based config
         #if DEBUG
         return .development

@@ -23,6 +23,7 @@ public final class CredentialsManager {
     private enum Keys {
         static let appId = "com.pronto.salesforce.appId"
         static let endpoint = "com.pronto.salesforce.endpoint"
+        static let cdpUrl = "com.pronto.salesforce.cdpUrl"
         static let hasConfigured = "com.pronto.salesforce.hasConfigured"
     }
     
@@ -58,15 +59,29 @@ public final class CredentialsManager {
             }
         }
     }
-    
+
+    /// Get stored CDP URL
+    public var cdpUrl: String? {
+        get {
+            UserDefaults.standard.string(forKey: Keys.cdpUrl)
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: Keys.cdpUrl)
+            if newValue != nil {
+                UserDefaults.standard.set(true, forKey: Keys.hasConfigured)
+            }
+        }
+    }
+
     // MARK: - Methods
     
     /// Save credentials
-    public func saveCredentials(appId: String, endpoint: String) {
+    public func saveCredentials(appId: String, endpoint: String, cdpUrl: String) {
         self.appId = appId.trimmingCharacters(in: .whitespacesAndNewlines)
         self.endpoint = endpoint.trimmingCharacters(in: .whitespacesAndNewlines)
+        self.cdpUrl = cdpUrl.trimmingCharacters(in: .whitespacesAndNewlines)
         UserDefaults.standard.set(true, forKey: Keys.hasConfigured)
-        
+
         // Post notification that credentials were updated
         NotificationCenter.default.post(
             name: NSNotification.Name("CredentialsUpdated"),
@@ -78,8 +93,9 @@ public final class CredentialsManager {
     public func clearCredentials() {
         UserDefaults.standard.removeObject(forKey: Keys.appId)
         UserDefaults.standard.removeObject(forKey: Keys.endpoint)
+        UserDefaults.standard.removeObject(forKey: Keys.cdpUrl)
         UserDefaults.standard.removeObject(forKey: Keys.hasConfigured)
-        
+
         // Post notification that credentials were cleared
         NotificationCenter.default.post(
             name: NSNotification.Name("CredentialsCleared"),
@@ -88,29 +104,39 @@ public final class CredentialsManager {
     }
     
     /// Validate credentials format
-    public func validateCredentials(appId: String, endpoint: String) -> (isValid: Bool, error: String?) {
+    public func validateCredentials(appId: String, endpoint: String, cdpUrl: String) -> (isValid: Bool, error: String?) {
         let trimmedAppId = appId.trimmingCharacters(in: .whitespacesAndNewlines)
         let trimmedEndpoint = endpoint.trimmingCharacters(in: .whitespacesAndNewlines)
-        
+        let trimmedCdpUrl = cdpUrl.trimmingCharacters(in: .whitespacesAndNewlines)
+
         // Validate App ID (should be a UUID-like string)
         if trimmedAppId.isEmpty {
             return (false, "App ID cannot be empty")
         }
-        
+
         if trimmedAppId.count < 8 {
             return (false, "App ID seems too short")
         }
-        
+
         // Validate Endpoint
         if trimmedEndpoint.isEmpty {
             return (false, "Endpoint cannot be empty")
         }
-        
+
         // Basic validation - just check it's not empty and has reasonable length
         if trimmedEndpoint.count < 3 {
             return (false, "Endpoint seems too short")
         }
-        
+
+        // Validate CDP URL
+        if trimmedCdpUrl.isEmpty {
+            return (false, "CDP URL cannot be empty")
+        }
+
+        if trimmedCdpUrl.count < 3 {
+            return (false, "CDP URL seems too short")
+        }
+
         return (true, nil)
     }
 }
