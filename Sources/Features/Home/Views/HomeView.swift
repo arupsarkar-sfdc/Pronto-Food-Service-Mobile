@@ -22,7 +22,7 @@ struct HomeView: View {
                         // Content Zone for Personalized Promo Card
                         ContentZone(
                             name: "Promo_Card",
-                            allowedComponents: [Banner()],
+                            allowedComponents: [Banner(), PromoCard()],
                             loading: { ProgressView() },
                             failed: { error in
                                 HomePromoCardView()
@@ -53,5 +53,9 @@ struct HomeView: View {
             }
             .navigationBarHidden(true)
         }
+        .refreshable {
+            print("refreshing...")
+        }
     }
+
 }

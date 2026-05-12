@@ -181,6 +181,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		51EAFF9A2FB36AE200C0B70C /* Components */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E6997DFF2E8582CB0039AEBA /* ProntoFoodDeliveryApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -277,6 +282,7 @@
 		E60166872E85892200E71CAD /* Personalization */ = {
 			isa = PBXGroup;
 			children = (
+				51EAFF9A2FB36AE200C0B70C /* Components */,
 				E6CC718F2ED9FF7700BE6895 /* PersonalizationService.swift */,
 				51EAFF982FB325D700C0B70C /* SalesforceHelpers.swift */,
 			);
@@ -694,6 +700,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				51EAFF9A2FB36AE200C0B70C /* Components */,
 				E6997DFF2E8582CB0039AEBA /* ProntoFoodDeliveryApp */,
 			);
 			name = ProntoFoodDeliveryApp;
