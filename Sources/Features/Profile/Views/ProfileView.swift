@@ -298,9 +298,11 @@ struct ProfileView: View {
                 
                 VStack(alignment: .leading, spacing: 8) {
                     // Greeting with first name
-                    Text("Hello, \(profileService.firstName)!")
-                        .font(.title2)
-                        .fontWeight(.bold)
+                    if profileService.firstName != "" {
+                        Text("Hello, \(profileService.firstName)!")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                    }
                     
                     // "Known User" badge
                     HStack(spacing: 6) {
@@ -368,7 +370,7 @@ struct ProfileView: View {
         guard !emailInput.isEmpty else { return }
 
         // Extract first name from email (part before @)
-        let firstName = "John"
+        let firstName = ""
 
         SalesforceHelpers.SendContactPointEmailEvent(
             emailAddress: emailInput,
