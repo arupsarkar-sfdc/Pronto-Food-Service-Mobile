@@ -203,7 +203,7 @@ public final class ProfileDataService: ObservableObject {
         if enableLogging {
             print("   ✅ Profile attributes sent to Data Cloud")
             print("   Total attributes: \(attributes.count)")
-        }
+        }        
         
         // 6. Capture device information
         captureDeviceInformation()

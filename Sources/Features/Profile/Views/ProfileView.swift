@@ -15,6 +15,7 @@ struct ProfileView: View {
     @State private var showingConsentSheet = false
     @State private var showingSettings = false
     @State private var showingDataGraph = false
+    @State private var emailInput: String = ""
     
     var body: some View {
         NavigationView {
@@ -22,7 +23,10 @@ struct ProfileView: View {
                 VStack(spacing: 20) {
                     // Data Cloud Status Widget
                     dataCloudStatusWidget
-                    
+
+                    // Quick Login Section
+                    authenticationSubview
+
                     // Identity Section
                     if profileService.isKnownUser {
                         knownUserSection
@@ -97,8 +101,83 @@ struct ProfileView: View {
         }
     }
     
+    // MARK: - Authentication Subview
+
+    private var authenticationSubview: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            if profileService.isKnownUser {
+                // Logged In State
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("Email Address")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+
+                    TextField("Email", text: .constant(profileService.email))
+                        .textFieldStyle(.roundedBorder)
+                        .disabled(true)
+                        .opacity(0.7)
+
+                    Button(action: {
+                        SalesforceHelpers.ResetProfileAttributes()
+                        
+                        profileService.logout()
+                        
+                    }) {
+                        HStack {
+                            Image(systemName: "rectangle.portrait.and.arrow.right")
+                                .font(.headline)
+                            Text("LOGOUT")
+                                .fontWeight(.semibold)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .cornerRadius(12)
+                    }
+                }
+            } else {
+                // Logged Out State
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("Email Address")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+
+                    TextField("Enter your email", text: $emailInput)
+                        .textFieldStyle(.roundedBorder)
+                        .keyboardType(.emailAddress)
+                        .autocapitalization(.none)
+                        .autocorrectionDisabled()
+
+                    Button(action: {
+                        handleLogin()
+                    }) {
+                        HStack {
+                            Image(systemName: "person.fill")
+                                .font(.headline)
+                            Text("LOGIN")
+                                .fontWeight(.semibold)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(12)
+                    }
+                    .disabled(emailInput.isEmpty)
+                    .opacity(emailInput.isEmpty ? 0.5 : 1.0)
+                }
+            }
+        }
+        .padding()
+        .background(Color(.systemBackground))
+        .cornerRadius(16)
+        .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 2)
+        .padding(.horizontal)
+    }
+
     // MARK: - Data Cloud Status Widget
-    
+
     private var dataCloudStatusWidget: some View {
         HStack(spacing: 12) {
             if CredentialsManager.shared.hasConfiguredCredentials {
@@ -281,6 +360,30 @@ struct ProfileView: View {
         )
         .shadow(color: Color.blue.opacity(0.1), radius: 5, x: 0, y: 2)
         .padding(.horizontal)
+    }
+
+    // MARK: - Helper Methods
+
+    private func handleLogin() {
+        guard !emailInput.isEmpty else { return }
+
+        // Extract first name from email (part before @)
+        let firstName = "John"
+
+        SalesforceHelpers.SendContactPointEmailEvent(
+            emailAddress: emailInput,
+            firstName: firstName
+        )
+        
+        // Call ProfileDataService to mark user as known
+        profileService.setKnownProfile(
+            firstName: firstName,
+            lastName: "",
+            email: emailInput
+        )
+
+        // Clear the input field
+        emailInput = ""
     }
 }
 

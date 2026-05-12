@@ -97,17 +97,18 @@ public final class DataCloudService: DataCloudServiceProtocol {
         }
         
         // 1. Enable logging for development
-        if configuration.enableLogging {
+        // Always have loggin ON
+        // if configuration.enableLogging {
             SFMCSdk.setLogger(logLevel: .debug)
-        }
+        // }
         
         // 2. Build the CDP module configuration
         let cdpConfig = CdpConfigBuilder(
             appId: configuration.appId,
             endpoint: configuration.endpoint
         )
-        .trackLifecycle(configuration.trackLifecycle)
-        .trackScreens(configuration.trackScreens)
+        .trackLifecycle(false)
+        .trackScreens(false)
         .sessionTimeout(configuration.sessionTimeoutInSeconds)
         .build()
         
@@ -288,7 +289,7 @@ public final class DataCloudService: DataCloudServiceProtocol {
             print("   SDK consent status: \(currentConsent.rawValue)")
         }
     }
-    
+
     // MARK: - Event Tracking
     
     public func track(event: DataCloudEvent) {
@@ -309,6 +310,8 @@ public final class DataCloudService: DataCloudServiceProtocol {
         
         if let customEvent = CustomEvent(name: event.eventType, attributes: eventData) {
             SFMCSdk.track(event: customEvent)
+            
+            SalesforceHelpers.ForceEventsToBeSent()
             
             if currentConfiguration?.enableLogging == true {
                 print("📊 Event tracked to Data Cloud: '\(event.eventType)'")
@@ -339,6 +342,8 @@ public final class DataCloudService: DataCloudServiceProtocol {
                 print("   Email: \(email)")
             }
         }
+        
+        SalesforceHelpers.ForceEventsToBeSent()
     }
     
     // MARK: - Consent Management
@@ -369,6 +374,8 @@ public final class DataCloudService: DataCloudServiceProtocol {
                 print("🔒 Consent status not set")
             }
         }
+        
+        SalesforceHelpers.ForceEventsToBeSent()
     }
     
     // MARK: - Location Management
