@@ -42,7 +42,17 @@ struct HomeCategoryBarView: View {
         //   - "catalogObjectId" → CatalogObject.id → catalogObjectId in wire format (use name, not ID)
         //   - "type" → CatalogObject.type → catalogObjectType in wire format
         //   - "interactionName" + other attrs → CatalogObject.attributes → flow through to payload
+        
         EngagementTrackingService.shared.trackEvent(
+            type: .custom("categoryEngagement"),
+            attributes: [
+                "categoryId": category.rawValue,
+                "interactionName": "View Category"
+            ]
+        )
+        
+        
+        /*EngagementTrackingService.shared.trackEvent(
             type: .catalog(.view),
             attributes: [
                 "catalogObjectId": category.rawValue,  // Use category name (e.g., "Pizza", "Sushi")
@@ -51,7 +61,7 @@ struct HomeCategoryBarView: View {
                 "name": category.rawValue,
                 "icon": category.emoji
             ]
-        )
+        )*/
     }
 }
 
