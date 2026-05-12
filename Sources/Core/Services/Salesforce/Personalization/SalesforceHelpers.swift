@@ -21,12 +21,7 @@ final class SalesforceHelpers {
     
     static func ResetProfileAttributes(){
         SFMCSdk.identity.edit { identityModifier in
-            identityModifier.addAttributes(attributes: [
-                "email": "",
-                "firstName": "",
-                "lastName": "",
-                "isAnonymous": "1"
-            ])
+            identityModifier.clearAllAttributes()
             return identityModifier
         }
         
@@ -40,6 +35,7 @@ final class SalesforceHelpers {
         SFMCSdk.cdp.setConsent(consent: Consent.optIn)
         
         SFMCSdk.identity.edit { identityModifier in
+
             identityModifier.addAttributes(attributes: [
                 "email": emailAddress,
                 "firstName": firstName,
