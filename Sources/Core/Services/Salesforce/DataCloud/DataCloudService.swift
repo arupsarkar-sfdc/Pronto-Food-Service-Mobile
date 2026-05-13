@@ -310,8 +310,8 @@ public final class DataCloudService: DataCloudServiceProtocol {
         
         if let customEvent = CustomEvent(name: event.eventType, attributes: eventData) {
             SFMCSdk.track(event: customEvent)
-            
-            SalesforceHelpers.ForceEventsToBeSent()
+
+            //SalesforceHelpers.ForceEventsToBeSent()
             
             if currentConfiguration?.enableLogging == true {
                 print("📊 Event tracked to Data Cloud: '\(event.eventType)'")
@@ -342,10 +342,10 @@ public final class DataCloudService: DataCloudServiceProtocol {
                 print("   Email: \(email)")
             }
         }
-        
-        SalesforceHelpers.ForceEventsToBeSent()
+
+        //SalesforceHelpers.ForceEventsToBeSent()
     }
-    
+
     // MARK: - Consent Management
     
     public func setConsent(_ status: ConsentStatus) {
@@ -374,10 +374,10 @@ public final class DataCloudService: DataCloudServiceProtocol {
                 print("🔒 Consent status not set")
             }
         }
-        
-        SalesforceHelpers.ForceEventsToBeSent()
+
+        //SalesforceHelpers.ForceEventsToBeSent()
     }
-    
+
     // MARK: - Location Management
     
     public func setLocation(_ location: LocationConfiguration) {

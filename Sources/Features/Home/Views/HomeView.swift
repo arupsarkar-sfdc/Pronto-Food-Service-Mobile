@@ -3,23 +3,21 @@ import Personalization
 
 // MARK: - Home View
 struct HomeView: View {
+    @State private var selectedCuisine: String? = nil
+
     var body: some View {
         NavigationView {
             ZStack {
-                // Background
                 Color(.systemGroupedBackground)
                     .ignoresSafeArea()
-                
+
                 ScrollView {
                     LazyVStack(spacing: 0) {
-                        // Header
                         HomeHeaderView()
-                        
-                        // Category Bar
-                        HomeCategoryBarView()
+
+                        HomeCuisineFilterBar(selectedCuisine: $selectedCuisine)
                             .padding(.top, 24)
-                        
-                        // Content Zone for Personalized Promo Card
+
                         ContentZone(
                             name: "Promo_Card",
                             allowedComponents: [Banner(), PromoCard()],
@@ -28,23 +26,11 @@ struct HomeView: View {
                                 HomePromoCardView()
                             }
                         )
-                        .padding(.top, 32)
-                        
-                        // Content Zone for Personalized Product Recommendations
-                        ContentZone(
-                            name: "Product_Recommendations",
-                            allowedComponents: [Recommendations()],
-                            loading: { ProgressView() },
-                            failed: { error in
-                                HomeBestSellersSection()
-                            }
-                        )
-                        .padding(.top, 32)
-                        
-                        // Best Sellers Section
+                        .padding(.top, 24)
 
-                        
-                        // Bottom spacing for tab bar
+                        HomeRestaurantGrid(selectedCuisine: selectedCuisine)
+                            .padding(.top, 32)
+
                         Spacer()
                             .frame(height: 100)
                     }

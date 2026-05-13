@@ -157,9 +157,9 @@ public final class EngagementTrackingService {
         }
         
         SFMCSdk.track(event: event)
-        
-        SalesforceHelpers.ForceEventsToBeSent()
-        
+
+        //SalesforceHelpers.ForceEventsToBeSent()
+
         if enableLogging {
             print("✅ AddToCartEvent tracked to Data Cloud")
             print("   🔑 Product ID: \(attributes["catalogObjectId"] ?? "N/A")")
@@ -188,9 +188,9 @@ public final class EngagementTrackingService {
         }
         
         SFMCSdk.track(event: event)
-        
-        SalesforceHelpers.ForceEventsToBeSent()
-        
+
+        //SalesforceHelpers.ForceEventsToBeSent()
+
         if enableLogging {
             print("✅ RemoveFromCartEvent tracked to Data Cloud")
             print("   🔑 Product ID: \(attributes["catalogObjectId"] ?? "N/A")")
@@ -263,9 +263,9 @@ public final class EngagementTrackingService {
         
         // Track event to SFMC SDK
         SFMCSdk.track(event: event)
-        
-        SalesforceHelpers.ForceEventsToBeSent()
-        
+
+        //SalesforceHelpers.ForceEventsToBeSent()
+
         if enableLogging {
             print("✅ Event tracked to Data Cloud")
             print("   🆔 Event ID: \(event.id)")
@@ -299,9 +299,9 @@ public final class EngagementTrackingService {
         }
         
         SFMCSdk.track(event: event)
-        
-        SalesforceHelpers.ForceEventsToBeSent()
-        
+
+        //SalesforceHelpers.ForceEventsToBeSent()
+
         if enableLogging {
             print("✅ CustomEvent '\(name)' tracked to Data Cloud")
             print("   📡 Status: Sent to SFMC SDK successfully")

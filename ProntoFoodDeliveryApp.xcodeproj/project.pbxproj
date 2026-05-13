@@ -16,8 +16,10 @@
 		E60167862E870C8000E71CAD /* LiquidGlassTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167832E870C8000E71CAD /* LiquidGlassTabView.swift */; };
 		E601678F2E870CC500E71CAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678E2E870CC500E71CAD /* HomeView.swift */; };
 		E60167902E870CC500E71CAD /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678C2E870CC500E71CAD /* HomeHeaderView.swift */; };
-		E60167912E870CC500E71CAD /* HomeBestSellersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678A2E870CC500E71CAD /* HomeBestSellersSection.swift */; };
 		E60167922E870CC500E71CAD /* HomeCategoryBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678B2E870CC500E71CAD /* HomeCategoryBarView.swift */; };
+		AA0100012E000001E71CAD01 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100002E000000E71CAD01 /* Restaurant.swift */; };
+		AA0100032E000003E71CAD03 /* HomeCuisineFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100022E000002E71CAD02 /* HomeCuisineFilterBar.swift */; };
+		AA0100052E000005E71CAD05 /* HomeRestaurantGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100042E000004E71CAD04 /* HomeRestaurantGrid.swift */; };
 		E60167932E870CC500E71CAD /* HomePromoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601678D2E870CC500E71CAD /* HomePromoCardView.swift */; };
 		E60167952E870CE000E71CAD /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167942E870CE000E71CAD /* CategoryModel.swift */; };
 		E60167972E870D1700E71CAD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167962E870D1700E71CAD /* SearchView.swift */; };
@@ -113,8 +115,10 @@
 		E60167672E8591A300E71CAD /* Salesforce.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Salesforce.md; sourceTree = "<group>"; };
 		E60167692E8591A300E71CAD /* PROJECT_STRUCTURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PROJECT_STRUCTURE.md; sourceTree = "<group>"; };
 		E60167832E870C8000E71CAD /* LiquidGlassTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassTabView.swift; sourceTree = "<group>"; };
-		E601678A2E870CC500E71CAD /* HomeBestSellersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBestSellersSection.swift; sourceTree = "<group>"; };
 		E601678B2E870CC500E71CAD /* HomeCategoryBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryBarView.swift; sourceTree = "<group>"; };
+		AA0100002E000000E71CAD01 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		AA0100022E000002E71CAD02 /* HomeCuisineFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCuisineFilterBar.swift; sourceTree = "<group>"; };
+		AA0100042E000004E71CAD04 /* HomeRestaurantGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRestaurantGrid.swift; sourceTree = "<group>"; };
 		E601678C2E870CC500E71CAD /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		E601678D2E870CC500E71CAD /* HomePromoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePromoCardView.swift; sourceTree = "<group>"; };
 		E601678E2E870CC500E71CAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -204,6 +208,11 @@
 			path = ProntoFoodDeliveryAppUITests;
 			sourceTree = "<group>";
 		};
+		E6EC831C2FB4152B00539918 /* Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +259,7 @@
 				E6CC71912ED9FFCC00BE6895 /* PersonalizationModels.swift */,
 				E657A8622EB2775400FBF948 /* StoreFronts.swift */,
 				E657A8602EB2669000FBF948 /* Product.swift */,
+				AA0100002E000000E71CAD01 /* Restaurant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -361,11 +371,12 @@
 		E60166A12E85892200E71CAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E601678A2E870CC500E71CAD /* HomeBestSellersSection.swift */,
 				E601678B2E870CC500E71CAD /* HomeCategoryBarView.swift */,
 				E601678C2E870CC500E71CAD /* HomeHeaderView.swift */,
 				E601678D2E870CC500E71CAD /* HomePromoCardView.swift */,
 				E601678E2E870CC500E71CAD /* HomeView.swift */,
+				AA0100022E000002E71CAD02 /* HomeCuisineFilterBar.swift */,
+				AA0100042E000004E71CAD04 /* HomeRestaurantGrid.swift */,
 				E60166692E85883F00E71CAD /* ContentView.swift */,
 			);
 			path = Views;
@@ -523,45 +534,6 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		E60167462E8589AA00E71CAD /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		E60167482E8589AA00E71CAD /* Features */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		E601674A2E8589AA00E71CAD /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		E601674B2E8589AA00E71CAD /* UnitTests */ = {
-			isa = PBXGroup;
-			children = (
-				E60167462E8589AA00E71CAD /* Core */,
-				E60167482E8589AA00E71CAD /* Features */,
-				E601674A2E8589AA00E71CAD /* Shared */,
-			);
-			path = UnitTests;
-			sourceTree = "<group>";
-		};
-		E601674C2E8589AA00E71CAD /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E601674B2E8589AA00E71CAD /* UnitTests */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		E60167572E85917C00E71CAD /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -637,13 +609,13 @@
 			children = (
 				E601676A2E8591A300E71CAD /* Documentation */,
 				E601675E2E85917C00E71CAD /* Resources */,
-				E601674C2E8589AA00E71CAD /* Tests */,
 				E60166DE2E85892200E71CAD /* Sources */,
 				E6997DFF2E8582CB0039AEBA /* ProntoFoodDeliveryApp */,
 				E6997E0F2E8582CC0039AEBA /* ProntoFoodDeliveryAppTests */,
 				E6997E192E8582CC0039AEBA /* ProntoFoodDeliveryAppUITests */,
 				E63AB2372FB18985003893C3 /* Frameworks */,
 				E6997DFE2E8582CB0039AEBA /* Products */,
+				E6EC831C2FB4152B00539918 /* Data */,
 			);
 			sourceTree = "<group>";
 		};
@@ -702,6 +674,7 @@
 			fileSystemSynchronizedGroups = (
 				51EAFF9A2FB36AE200C0B70C /* Components */,
 				E6997DFF2E8582CB0039AEBA /* ProntoFoodDeliveryApp */,
+				E6EC831C2FB4152B00539918 /* Data */,
 			);
 			name = ProntoFoodDeliveryApp;
 			packageProductDependencies = (
@@ -864,7 +837,9 @@
 				E657A85A2EB007E300FBF948 /* ConsentService.swift in Sources */,
 				E657A85B2EB007E300FBF948 /* DataCloudLoggingService.swift in Sources */,
 				E6CC71962EDB625700BE6895 /* DataGraphQueryService.swift in Sources */,
-				E60167912E870CC500E71CAD /* HomeBestSellersSection.swift in Sources */,
+				AA0100012E000001E71CAD01 /* Restaurant.swift in Sources */,
+				AA0100032E000003E71CAD03 /* HomeCuisineFilterBar.swift in Sources */,
+				AA0100052E000005E71CAD05 /* HomeRestaurantGrid.swift in Sources */,
 				E60167972E870D1700E71CAD /* SearchView.swift in Sources */,
 				E657A7952EAC027A00FBF948 /* SettingsView.swift in Sources */,
 				E6CC71942ED9FFE800BE6895 /* PersonalizationViewModel.swift in Sources */,
