@@ -311,7 +311,7 @@ public final class DataCloudService: DataCloudServiceProtocol {
         if let customEvent = CustomEvent(name: event.eventType, attributes: eventData) {
             SFMCSdk.track(event: customEvent)
 
-            //SalesforceHelpers.ForceEventsToBeSent()
+            SalesforceHelpers.ForceEventsToBeSent()
             
             if currentConfiguration?.enableLogging == true {
                 print("📊 Event tracked to Data Cloud: '\(event.eventType)'")
@@ -343,7 +343,7 @@ public final class DataCloudService: DataCloudServiceProtocol {
             }
         }
 
-        //SalesforceHelpers.ForceEventsToBeSent()
+        SalesforceHelpers.ForceEventsToBeSent()
     }
 
     // MARK: - Consent Management
@@ -375,7 +375,7 @@ public final class DataCloudService: DataCloudServiceProtocol {
             }
         }
 
-        //SalesforceHelpers.ForceEventsToBeSent()
+        SalesforceHelpers.ForceEventsToBeSent()
     }
 
     // MARK: - Location Management
