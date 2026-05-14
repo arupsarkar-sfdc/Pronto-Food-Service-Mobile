@@ -17,20 +17,34 @@ struct HomeView: View {
 
                         HomeCuisineFilterBar(selectedCuisine: $selectedCuisine)
                             .padding(.top, 24)
+                            .padding(.bottom, 24)
 
                         ContentZone(
                             name: "Promo_Card",
-                            allowedComponents: [Banner(), PromoCard()],
+                            allowedComponents: [PromoCard()],
                             loading: { ProgressView() },
                             failed: { error in
                                 HomePromoCardView()
                             }
                         )
                         .padding(.top, 24)
+                        .padding(.bottom, 10)
+
+                        ContentZone(
+                            name: "Product_Recommendations",
+                            allowedComponents: [ProductRecommendations()],
+                            loading: { ProgressView() },
+                            failed: { error in
+                                
+                            }
+                        )
+                        .padding(.top, 32)
+                        .padding(.top, 10)
 
                         HomeRestaurantGrid(selectedCuisine: selectedCuisine)
-                            .padding(.top, 32)
-
+                        .padding(.top, 32)
+                        .padding(.top, 10)
+                        
                         Spacer()
                             .frame(height: 100)
                     }

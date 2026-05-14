@@ -22,5 +22,11 @@ public struct PromoCardModel: Personalization.ComponentModel {
     }
     
 
-    internal func validate() throws { }
+    internal func validate() throws {
+        if header ?? "" == "" {
+            throw PersonalizationError.responseInvalid(
+                "SFPBanner: Header if provided cannot be blank"
+            )
+        }
+    }
 }

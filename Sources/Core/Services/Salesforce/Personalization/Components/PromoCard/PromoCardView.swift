@@ -34,7 +34,7 @@ public struct PromoCardView: View {
                     )
                 )
             
-            HStack {
+
                 VStack(alignment: .leading, spacing: 12) {
                     Text(model.header ?? "")
                         .font(.system(size: 16, weight: .semibold, design: .rounded))
@@ -48,25 +48,29 @@ public struct PromoCardView: View {
                         .font(.system(size: 12, weight: .medium, design: .rounded))
                         .foregroundStyle(.white.opacity(0.8))
                     
-                    Button(model.ctaText ?? "") {
-                        // Handle promo action
+                    
+                    HStack {
+                        Button(model.ctaText ?? "") {
+                            // Handle promo action
+                        }
+                        .font(.system(size: 14, weight: .semibold, design: .rounded))
+                        .foregroundStyle(color)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 10)
+                        .background(.white, in: Capsule())
+                        .shadow(color: .black.opacity(0.1), radius: 2, x: 0, y: 1)
+                        
+                        Spacer()
+                        
+                        Text(model.imageUrl ?? "")
+                            .font(.system(size: 40))
+                            .rotationEffect(.degrees(15))
                     }
-                    .font(.system(size: 14, weight: .semibold, design: .rounded))
-                    .foregroundStyle(color)
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 10)
-                    .background(.white, in: Capsule())
-                    .shadow(color: .black.opacity(0.1), radius: 2, x: 0, y: 1)
+
                 }
-                
-                Spacer()
-                
-                Text(model.imageUrl ?? "")
-                    .font(.system(size: 64))
-                    .rotationEffect(.degrees(15))
-            }
-            .padding(.horizontal, 24)
-            .padding(.vertical, 28)
+                .padding(.horizontal, 24)
+                .padding(.vertical, 28)
+
         }
         .frame(height: 160)
         .shadow(color: color.opacity(0.2), radius: 12, x: 0, y: 6)

@@ -168,6 +168,24 @@ struct ProfileView: View {
                     .opacity(emailInput.isEmpty ? 0.5 : 1.0)
                 }
             }
+            
+            
+            Button(action: {
+                SalesforceHelpers.ResetProfileAttributes()
+                
+            }) {
+                HStack {
+                    Image(systemName: "rectangle.portrait.and.arrow.right")
+                        .font(.headline)
+                    Text("RESET USER")
+                        .fontWeight(.semibold)
+                }
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(Color.red)
+                .foregroundColor(.white)
+                .cornerRadius(12)
+            }
         }
         .padding()
         .background(Color(.systemBackground))
