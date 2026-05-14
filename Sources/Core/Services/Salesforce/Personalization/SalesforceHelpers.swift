@@ -27,8 +27,6 @@ final class SalesforceHelpers {
         
         SFMCSdk.cdp.setConsent(consent: .optOut)
         SFMCSdk.cdp.setConsent(consent: .optIn)
-
-        //ForceEventsToBeSent()
     }
 
     static func SendContactPointEmailEvent(emailAddress: String, firstName: String) {
@@ -44,8 +42,6 @@ final class SalesforceHelpers {
             ])
             return identityModifier
         }
-
-        //ForceEventsToBeSent()
     }
 
     static func SendCustomEngagementEvent(eventType: String, interactionName: String = "engagement", item: Item? = nil, itemType: String = "", personalizationId: String = "", personalizationContentId: String = ""){
@@ -59,7 +55,5 @@ final class SalesforceHelpers {
                 "type": itemType
             ]
         )!)
-        
-        //ForceEventsToBeSent()
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		51EAFF992FB325E500C0B70C /* SalesforceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EAFF982FB325D700C0B70C /* SalesforceHelpers.swift */; };
+		51EAFFC52FB6521200C0B70C /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = 51EAFFC42FB6521200C0B70C /* Cdp */; };
 		AA0100012E000001E71CAD01 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100002E000000E71CAD01 /* Restaurant.swift */; };
 		AA0100032E000003E71CAD03 /* HomeCuisineFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100022E000002E71CAD02 /* HomeCuisineFilterBar.swift */; };
 		AA0100052E000005E71CAD05 /* HomeRestaurantGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100042E000004E71CAD04 /* HomeRestaurantGrid.swift */; };
@@ -25,12 +26,8 @@
 		E60167972E870D1700E71CAD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167962E870D1700E71CAD /* SearchView.swift */; };
 		E601679A2E870D2E00E71CAD /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167982E870D2E00E71CAD /* FavoritesView.swift */; };
 		E601679B2E870D2E00E71CAD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167992E870D2E00E71CAD /* ProfileView.swift */; };
-		E63AB23B2FB18986003893C3 /* Cdp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2382FB18986003893C3 /* Cdp.xcframework */; };
-		E63AB23C2FB18986003893C3 /* Cdp.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2382FB18986003893C3 /* Cdp.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E63AB23D2FB18986003893C3 /* Personalization.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; };
 		E63AB23E2FB18986003893C3 /* Personalization.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E63AB23F2FB18986003893C3 /* SFMCSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB23A2FB18986003893C3 /* SFMCSDK.xcframework */; };
-		E63AB2402FB18986003893C3 /* SFMCSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB23A2FB18986003893C3 /* SFMCSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E657A7662EAACCCD00FBF948 /* DataCloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7642EAACCCD00FBF948 /* DataCloudService.swift */; };
 		E657A7672EAACCCD00FBF948 /* DataCloudTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7652EAACCCD00FBF948 /* DataCloudTrackable.swift */; };
 		E657A7682EAACCCD00FBF948 /* DataCloudConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7632EAACCCD00FBF948 /* DataCloudConfiguration.swift */; };
@@ -98,9 +95,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E63AB2402FB18986003893C3 /* SFMCSDK.xcframework in Embed Frameworks */,
 				E63AB23E2FB18986003893C3 /* Personalization.xcframework in Embed Frameworks */,
-				E63AB23C2FB18986003893C3 /* Cdp.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,9 +121,7 @@
 		E60167962E870D1700E71CAD /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E60167982E870D2E00E71CAD /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		E60167992E870D2E00E71CAD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		E63AB2382FB18986003893C3 /* Cdp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cdp.xcframework; path = Frameworks/Cdp.xcframework; sourceTree = "<group>"; };
 		E63AB2392FB18986003893C3 /* Personalization.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Personalization.xcframework; path = Frameworks/Personalization.xcframework; sourceTree = "<group>"; };
-		E63AB23A2FB18986003893C3 /* SFMCSDK.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:RNQ52E7G3P:ExactTarget, Inc"; lastKnownFileType = wrapper.xcframework; name = SFMCSDK.xcframework; path = Frameworks/SFMCSDK.xcframework; sourceTree = "<group>"; };
 		E657A7632EAACCCD00FBF948 /* DataCloudConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCloudConfiguration.swift; sourceTree = "<group>"; };
 		E657A7642EAACCCD00FBF948 /* DataCloudService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCloudService.swift; sourceTree = "<group>"; };
 		E657A7652EAACCCD00FBF948 /* DataCloudTrackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCloudTrackable.swift; sourceTree = "<group>"; };
@@ -220,10 +213,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51EAFFC52FB6521200C0B70C /* Cdp in Frameworks */,
 				E6D3A7EB2F0C24AE0010D3F1 /* Swift-InAppMessaging in Frameworks */,
-				E63AB23F2FB18986003893C3 /* SFMCSDK.xcframework in Frameworks */,
 				E63AB23D2FB18986003893C3 /* Personalization.xcframework in Frameworks */,
-				E63AB23B2FB18986003893C3 /* Cdp.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,9 +579,7 @@
 		E63AB2372FB18985003893C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E63AB2382FB18986003893C3 /* Cdp.xcframework */,
 				E63AB2392FB18986003893C3 /* Personalization.xcframework */,
-				E63AB23A2FB18986003893C3 /* SFMCSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -679,6 +669,7 @@
 			name = ProntoFoodDeliveryApp;
 			packageProductDependencies = (
 				E6D3A7EA2F0C24AE0010D3F1 /* Swift-InAppMessaging */,
+				51EAFFC42FB6521200C0B70C /* Cdp */,
 			);
 			productName = ProntoFoodDeliveryApp;
 			productReference = E6997DFD2E8582CB0039AEBA /* ProntoFoodDeliveryApp.app */;
@@ -764,6 +755,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				E6D3A7E92F0C24260010D3F1 /* XCRemoteSwiftPackageReference "Swift-Package-InAppMessaging" */,
+				51EAFFC32FB651CD00C0B70C /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E6997DFE2E8582CB0039AEBA /* Products */;
@@ -1213,6 +1205,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		51EAFFC32FB651CD00C0B70C /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/salesforce-marketingcloud/mobile-sdk-cdp-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
 		E6D3A7E92F0C24260010D3F1 /* XCRemoteSwiftPackageReference "Swift-Package-InAppMessaging" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Salesforce-Async-Messaging/Swift-Package-InAppMessaging";
@@ -1224,6 +1224,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		51EAFFC42FB6521200C0B70C /* Cdp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51EAFFC32FB651CD00C0B70C /* XCRemoteSwiftPackageReference "mobile-sdk-cdp-ios" */;
+			productName = Cdp;
+		};
 		E6D3A7EA2F0C24AE0010D3F1 /* Swift-InAppMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E6D3A7E92F0C24260010D3F1 /* XCRemoteSwiftPackageReference "Swift-Package-InAppMessaging" */;

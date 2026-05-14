@@ -1,6 +1,24 @@
 {
-  "originHash" : "3525fa2a617b17b01413d2f792637dbc784bae6670f8790cfcccd66d64c8218a",
+  "originHash" : "d385e9d1ed08c3ab85f68e10cc99f84e81dcd39f2a3826ced849894e3d1b1cf9",
   "pins" : [
+    {
+      "identity" : "mobile-sdk-cdp-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/salesforce-marketingcloud/mobile-sdk-cdp-ios",
+      "state" : {
+        "revision" : "a5be38813f6fe38f2e857c6066d2aeb19a4c8976",
+        "version" : "3.0.2"
+      }
+    },
+    {
+      "identity" : "sfmc-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/salesforce-marketingcloud/sfmc-sdk-ios",
+      "state" : {
+        "revision" : "f4a6a4a8a8f8103452c62a4ccbf2c6c9bf39e25f",
+        "version" : "4.0.1"
+      }
+    },
     {
       "identity" : "swift-package-inappmessaging",
       "kind" : "remoteSourceControl",

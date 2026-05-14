@@ -102,6 +102,8 @@ public final class DataCloudService: DataCloudServiceProtocol {
             SFMCSdk.setLogger(logLevel: .debug)
         // }
         
+        let flushRate = EventFlushRateQuantity(quantity: 1)
+        
         // 2. Build the CDP module configuration
         let cdpConfig = CdpConfigBuilder(
             appId: configuration.appId,
@@ -110,6 +112,7 @@ public final class DataCloudService: DataCloudServiceProtocol {
         .trackLifecycle(false)
         .trackScreens(false)
         .sessionTimeout(configuration.sessionTimeoutInSeconds)
+        .eventFlushRate(flushRate)
         .build()
         
         // 3. Build Personalization configuration (if enabled)
@@ -310,8 +313,6 @@ public final class DataCloudService: DataCloudServiceProtocol {
         
         if let customEvent = CustomEvent(name: event.eventType, attributes: eventData) {
             SFMCSdk.track(event: customEvent)
-
-            SalesforceHelpers.ForceEventsToBeSent()
             
             if currentConfiguration?.enableLogging == true {
                 print("📊 Event tracked to Data Cloud: '\(event.eventType)'")
@@ -342,8 +343,6 @@ public final class DataCloudService: DataCloudServiceProtocol {
                 print("   Email: \(email)")
             }
         }
-
-        SalesforceHelpers.ForceEventsToBeSent()
     }
 
     // MARK: - Consent Management
@@ -374,8 +373,6 @@ public final class DataCloudService: DataCloudServiceProtocol {
                 print("🔒 Consent status not set")
             }
         }
-
-        SalesforceHelpers.ForceEventsToBeSent()
     }
 
     // MARK: - Location Management
