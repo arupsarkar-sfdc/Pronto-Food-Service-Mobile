@@ -37,19 +37,6 @@ public struct ProductRecommendationsView: View {
                     .foregroundStyle(.primary)
                     .tracking(-0.5)
 
-                Spacer()
-
-                Button(action: {}) {
-                    Text("See All")
-                        .font(.system(size: 14, weight: .bold, design: .rounded))
-                        .foregroundColor(Color(red: 1.0, green: 0.27, blue: 0))
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 8)
-                        .background(
-                            Capsule()
-                                .fill(Color(red: 1.0, green: 0.27, blue: 0).opacity(0.1))
-                        )
-                }
             }
 
             LazyVGrid(columns: columns, spacing: 16) {

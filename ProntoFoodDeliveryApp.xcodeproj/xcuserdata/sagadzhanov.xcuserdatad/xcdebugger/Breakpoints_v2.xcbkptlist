@@ -30,8 +30,8 @@
             filePath = "Sources/Core/Services/Salesforce/Personalization/Components/ProductRecommendations/ProductRecommendationsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99">
+            startingLineNumber = "86"
+            endingLineNumber = "86">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
