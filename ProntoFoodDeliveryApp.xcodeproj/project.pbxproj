@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		51EAFF992FB325E500C0B70C /* SalesforceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EAFF982FB325D700C0B70C /* SalesforceHelpers.swift */; };
 		51EAFFC52FB6521200C0B70C /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = 51EAFFC42FB6521200C0B70C /* Cdp */; };
+		51EAFFD02FBC4C8000C0B70C /* LowCodeMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EAFFCF2FBC4C8000C0B70C /* LowCodeMobile.xcframework */; };
+		51EAFFD12FBC4C8000C0B70C /* LowCodeMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51EAFFCF2FBC4C8000C0B70C /* LowCodeMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51EAFFD32FBC4C8E00C0B70C /* Personalization.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; };
+		51EAFFD42FBC4C8E00C0B70C /* Personalization.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA0100012E000001E71CAD01 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100002E000000E71CAD01 /* Restaurant.swift */; };
 		AA0100032E000003E71CAD03 /* HomeCuisineFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100022E000002E71CAD02 /* HomeCuisineFilterBar.swift */; };
 		AA0100052E000005E71CAD05 /* HomeRestaurantGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100042E000004E71CAD04 /* HomeRestaurantGrid.swift */; };
@@ -26,8 +30,6 @@
 		E60167972E870D1700E71CAD /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167962E870D1700E71CAD /* SearchView.swift */; };
 		E601679A2E870D2E00E71CAD /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167982E870D2E00E71CAD /* FavoritesView.swift */; };
 		E601679B2E870D2E00E71CAD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60167992E870D2E00E71CAD /* ProfileView.swift */; };
-		E63AB23D2FB18986003893C3 /* Personalization.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; };
-		E63AB23E2FB18986003893C3 /* Personalization.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E657A7662EAACCCD00FBF948 /* DataCloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7642EAACCCD00FBF948 /* DataCloudService.swift */; };
 		E657A7672EAACCCD00FBF948 /* DataCloudTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7652EAACCCD00FBF948 /* DataCloudTrackable.swift */; };
 		E657A7682EAACCCD00FBF948 /* DataCloudConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657A7632EAACCCD00FBF948 /* DataCloudConfiguration.swift */; };
@@ -89,13 +91,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E63AB2412FB18986003893C3 /* Embed Frameworks */ = {
+		51EAFFD22FBC4C8000C0B70C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E63AB23E2FB18986003893C3 /* Personalization.xcframework in Embed Frameworks */,
+				51EAFFD42FBC4C8E00C0B70C /* Personalization.xcframework in Embed Frameworks */,
+				51EAFFD12FBC4C8000C0B70C /* LowCodeMobile.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +107,7 @@
 
 /* Begin PBXFileReference section */
 		51EAFF982FB325D700C0B70C /* SalesforceHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesforceHelpers.swift; sourceTree = "<group>"; };
+		51EAFFCF2FBC4C8000C0B70C /* LowCodeMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LowCodeMobile.xcframework; path = Frameworks/LowCodeMobile.xcframework; sourceTree = "<group>"; };
 		AA0100002E000000E71CAD01 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		AA0100022E000002E71CAD02 /* HomeCuisineFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCuisineFilterBar.swift; sourceTree = "<group>"; };
 		AA0100042E000004E71CAD04 /* HomeRestaurantGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRestaurantGrid.swift; sourceTree = "<group>"; };
@@ -213,9 +217,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51EAFFD32FBC4C8E00C0B70C /* Personalization.xcframework in Frameworks */,
+				51EAFFD02FBC4C8000C0B70C /* LowCodeMobile.xcframework in Frameworks */,
 				51EAFFC52FB6521200C0B70C /* Cdp in Frameworks */,
 				E6D3A7EB2F0C24AE0010D3F1 /* Swift-InAppMessaging in Frameworks */,
-				E63AB23D2FB18986003893C3 /* Personalization.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +584,7 @@
 		E63AB2372FB18985003893C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51EAFFCF2FBC4C8000C0B70C /* LowCodeMobile.xcframework */,
 				E63AB2392FB18986003893C3 /* Personalization.xcframework */,
 			);
 			name = Frameworks;
@@ -655,7 +661,7 @@
 				E6997DF92E8582CB0039AEBA /* Sources */,
 				E6997DFA2E8582CB0039AEBA /* Frameworks */,
 				E6997DFB2E8582CB0039AEBA /* Resources */,
-				E63AB2412FB18986003893C3 /* Embed Frameworks */,
+				51EAFFD22FBC4C8000C0B70C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

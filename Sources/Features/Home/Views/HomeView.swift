@@ -1,14 +1,24 @@
 import SwiftUI
 import Personalization
+import LowCodeMobile
 
 // MARK: - Home View
 struct HomeView: View {
     @State private var selectedCuisine: String? = nil
-    @State private var showSecondZone = false
+
+    @State private var promoBannerZoneViewModel = ContentZoneViewModel(
+        contentZoneName: "Promo_Card",
+        allowedComponents: [PromoCard()]
+    )
+    
+    @State private var productRecsZoneViewModel = ContentZoneViewModel(
+        contentZoneName: "Product_Recommendations",
+        allowedComponents: [ProductRecommendations()]
+    )
+    
     
     var body: some View {
         NavigationView {
-            if showSecondZone {
                 ZStack {
                     Color(.systemGroupedBackground)
                         .ignoresSafeArea()
@@ -22,8 +32,7 @@ struct HomeView: View {
                                 .padding(.bottom, 24)
                             
                             ContentZone(
-                                name: "Promo_Card",
-                                allowedComponents: [PromoCard()],
+                                viewModel: promoBannerZoneViewModel,
                                 loading: { ProgressView() },
                                 failed: { error in
                                     HomePromoCardView()
@@ -33,8 +42,7 @@ struct HomeView: View {
                             .padding(.bottom, 10)
                             
                             ContentZone(
-                                name: "Product_Recommendations",
-                                allowedComponents: [ProductRecommendations()],
+                                viewModel: productRecsZoneViewModel,
                                 loading: { ProgressView() },
                                 failed: { error in
                                     
@@ -51,7 +59,7 @@ struct HomeView: View {
                                 .frame(height: 100)
                         }
                         .padding(.horizontal, 20)
-                    }
+
                 }
                 .navigationBarHidden(true)
                 
@@ -60,12 +68,10 @@ struct HomeView: View {
             
             
         }
-        .task {
-            try? await Task.sleep(nanoseconds: 2_000_000_000)
-            showSecondZone = true
-        }
+
         .refreshable {
-            print("refreshing...")
+            await promoBannerZoneViewModel.reload()
+            await productRecsZoneViewModel.reload()
         }
     }
 

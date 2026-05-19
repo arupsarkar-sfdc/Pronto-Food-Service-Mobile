@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import Personalization
 
 @main
 struct ProntoFoodDeliveryAppApp: App {
@@ -22,6 +23,8 @@ struct ProntoFoodDeliveryAppApp: App {
         
         // Listen for credentials updates
         setupCredentialsListener()
+        
+        
     }
     
     // MARK: - Properties
@@ -42,6 +45,9 @@ struct ProntoFoodDeliveryAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            .onOpenURL { url in
+              PersonalizationModule.handlePreviewURL(url)
+            }
         }
         .modelContainer(sharedModelContainer)
     }

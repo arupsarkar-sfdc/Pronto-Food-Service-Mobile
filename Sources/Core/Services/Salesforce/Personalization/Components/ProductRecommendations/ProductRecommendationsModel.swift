@@ -1,8 +1,8 @@
 import Foundation
 import Personalization
+import LowCodeMobile
 
-
-public struct ProductRecommendationsModel: Personalization.ComponentModel {
+public struct ProductRecommendationsModel: ComponentModel {
 
     public let sectionHeader: String?
     public let items: [RecommendedProduct]

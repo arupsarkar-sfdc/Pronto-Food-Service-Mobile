@@ -1,7 +1,8 @@
 import SwiftUI
 import Personalization
+import LowCodeMobile
 
-public class PromoCard: Personalization.Component {
+public class PromoCard:Component {
     public static let name = "PromoCard"
     
     public typealias Content = PromoCardView

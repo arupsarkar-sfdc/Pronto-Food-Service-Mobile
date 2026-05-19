@@ -1,0 +1,5181 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "LowCodeMobile",
+    "printedName": "LowCodeMobile",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecommendationTapEvent",
+        "printedName": "RecommendationTapEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "item",
+            "printedName": "item",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ContentItem",
+                "printedName": "LowCodeMobile.ContentItem",
+                "usr": "s:13LowCodeMobile11ContentItemV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile22RecommendationTapEventV4itemAA11ContentItemVvp",
+            "mangledName": "$s13LowCodeMobile22RecommendationTapEventV4itemAA11ContentItemVvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentItem",
+                    "printedName": "LowCodeMobile.ContentItem",
+                    "usr": "s:13LowCodeMobile11ContentItemV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile22RecommendationTapEventV4itemAA11ContentItemVvg",
+                "mangledName": "$s13LowCodeMobile22RecommendationTapEventV4itemAA11ContentItemVvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "index",
+            "printedName": "index",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile22RecommendationTapEventV5indexSivp",
+            "mangledName": "$s13LowCodeMobile22RecommendationTapEventV5indexSivp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile22RecommendationTapEventV5indexSivg",
+                "mangledName": "$s13LowCodeMobile22RecommendationTapEventV5indexSivg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(item:index:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecommendationTapEvent",
+                "printedName": "LowCodeMobile.RecommendationTapEvent",
+                "usr": "s:13LowCodeMobile22RecommendationTapEventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContentItem",
+                "printedName": "LowCodeMobile.ContentItem",
+                "usr": "s:13LowCodeMobile11ContentItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile22RecommendationTapEventV4item5indexAcA11ContentItemV_Sitcfc",
+            "mangledName": "$s13LowCodeMobile22RecommendationTapEventV4item5indexAcA11ContentItemV_Sitcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LowCodeMobile22RecommendationTapEventV",
+        "mangledName": "$s13LowCodeMobile22RecommendationTapEventV",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ContentCardStyle",
+        "printedName": "ContentCardStyle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "backgroundColor",
+            "printedName": "backgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile16ContentCardStyleV15backgroundColor7SwiftUI0H0VSgvp",
+            "mangledName": "$s13LowCodeMobile16ContentCardStyleV15backgroundColor7SwiftUI0H0VSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SwiftUI.Color?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Color",
+                        "printedName": "SwiftUI.Color",
+                        "usr": "s:7SwiftUI5ColorV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile16ContentCardStyleV15backgroundColor7SwiftUI0H0VSgvg",
+                "mangledName": "$s13LowCodeMobile16ContentCardStyleV15backgroundColor7SwiftUI0H0VSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headerTextColor",
+            "printedName": "headerTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile16ContentCardStyleV15headerTextColor7SwiftUI0I0VSgvp",
+            "mangledName": "$s13LowCodeMobile16ContentCardStyleV15headerTextColor7SwiftUI0I0VSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SwiftUI.Color?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Color",
+                        "printedName": "SwiftUI.Color",
+                        "usr": "s:7SwiftUI5ColorV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile16ContentCardStyleV15headerTextColor7SwiftUI0I0VSgvg",
+                "mangledName": "$s13LowCodeMobile16ContentCardStyleV15headerTextColor7SwiftUI0I0VSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "subheaderTextColor",
+            "printedName": "subheaderTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile16ContentCardStyleV18subheaderTextColor7SwiftUI0I0VSgvp",
+            "mangledName": "$s13LowCodeMobile16ContentCardStyleV18subheaderTextColor7SwiftUI0I0VSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SwiftUI.Color?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Color",
+                        "printedName": "SwiftUI.Color",
+                        "usr": "s:7SwiftUI5ColorV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile16ContentCardStyleV18subheaderTextColor7SwiftUI0I0VSgvg",
+                "mangledName": "$s13LowCodeMobile16ContentCardStyleV18subheaderTextColor7SwiftUI0I0VSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ctaTextColor",
+            "printedName": "ctaTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile16ContentCardStyleV12ctaTextColor7SwiftUI0I0VSgvp",
+            "mangledName": "$s13LowCodeMobile16ContentCardStyleV12ctaTextColor7SwiftUI0I0VSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SwiftUI.Color?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Color",
+                        "printedName": "SwiftUI.Color",
+                        "usr": "s:7SwiftUI5ColorV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile16ContentCardStyleV12ctaTextColor7SwiftUI0I0VSgvg",
+                "mangledName": "$s13LowCodeMobile16ContentCardStyleV12ctaTextColor7SwiftUI0I0VSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentPadding",
+            "printedName": "contentPadding",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile16ContentCardStyleV14contentPadding14CoreFoundation7CGFloatVSgvp",
+            "mangledName": "$s13LowCodeMobile16ContentCardStyleV14contentPadding12CoreGraphics7CGFloatVSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile16ContentCardStyleV14contentPadding14CoreFoundation7CGFloatVSgvg",
+                "mangledName": "$s13LowCodeMobile16ContentCardStyleV14contentPadding12CoreGraphics7CGFloatVSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageWidthFraction",
+            "printedName": "imageWidthFraction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile16ContentCardStyleV18imageWidthFractionSfSgvp",
+            "mangledName": "$s13LowCodeMobile16ContentCardStyleV18imageWidthFractionSfSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile16ContentCardStyleV18imageWidthFractionSfSgvg",
+                "mangledName": "$s13LowCodeMobile16ContentCardStyleV18imageWidthFractionSfSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxImageSize",
+            "printedName": "maxImageSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile16ContentCardStyleV12maxImageSize14CoreFoundation7CGFloatVSgvp",
+            "mangledName": "$s13LowCodeMobile16ContentCardStyleV12maxImageSize12CoreGraphics7CGFloatVSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile16ContentCardStyleV12maxImageSize14CoreFoundation7CGFloatVSgvg",
+                "mangledName": "$s13LowCodeMobile16ContentCardStyleV12maxImageSize12CoreGraphics7CGFloatVSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(backgroundColor:headerTextColor:subheaderTextColor:ctaTextColor:contentPadding:imageWidthFraction:maxImageSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ContentCardStyle",
+                "printedName": "LowCodeMobile.ContentCardStyle",
+                "usr": "s:13LowCodeMobile16ContentCardStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile16ContentCardStyleV15backgroundColor010headerTextH009subheaderjH003ctajH014contentPadding18imageWidthFraction12maxImageSizeAC7SwiftUI0H0VSg_A3N14CoreFoundation7CGFloatVSgSfSgARtcfc",
+            "mangledName": "$s13LowCodeMobile16ContentCardStyleV15backgroundColor010headerTextH009subheaderjH003ctajH014contentPadding18imageWidthFraction12maxImageSizeAC7SwiftUI0H0VSg_A3N12CoreGraphics7CGFloatVSgSfSgARtcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LowCodeMobile16ContentCardStyleV",
+        "mangledName": "$s13LowCodeMobile16ContentCardStyleV",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SectionHeaderStyle",
+        "printedName": "SectionHeaderStyle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "textColor",
+            "printedName": "textColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile18SectionHeaderStyleV9textColor7SwiftUI0H0VSgvp",
+            "mangledName": "$s13LowCodeMobile18SectionHeaderStyleV9textColor7SwiftUI0H0VSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SwiftUI.Color?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Color",
+                        "printedName": "SwiftUI.Color",
+                        "usr": "s:7SwiftUI5ColorV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile18SectionHeaderStyleV9textColor7SwiftUI0H0VSgvg",
+                "mangledName": "$s13LowCodeMobile18SectionHeaderStyleV9textColor7SwiftUI0H0VSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "padding",
+            "printedName": "padding",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile18SectionHeaderStyleV7padding14CoreFoundation7CGFloatVSgvp",
+            "mangledName": "$s13LowCodeMobile18SectionHeaderStyleV7padding12CoreGraphics7CGFloatVSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile18SectionHeaderStyleV7padding14CoreFoundation7CGFloatVSgvg",
+                "mangledName": "$s13LowCodeMobile18SectionHeaderStyleV7padding12CoreGraphics7CGFloatVSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "textStyle",
+            "printedName": "textStyle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Font?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile18SectionHeaderStyleV04textF07SwiftUI4FontVSgvp",
+            "mangledName": "$s13LowCodeMobile18SectionHeaderStyleV04textF07SwiftUI4FontVSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SwiftUI.Font?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Font",
+                        "printedName": "SwiftUI.Font",
+                        "usr": "s:7SwiftUI4FontV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile18SectionHeaderStyleV04textF07SwiftUI4FontVSgvg",
+                "mangledName": "$s13LowCodeMobile18SectionHeaderStyleV04textF07SwiftUI4FontVSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(textColor:padding:textStyle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SectionHeaderStyle",
+                "printedName": "LowCodeMobile.SectionHeaderStyle",
+                "usr": "s:13LowCodeMobile18SectionHeaderStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Color?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Font?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile18SectionHeaderStyleV9textColor7padding0gF0AC7SwiftUI0H0VSg_14CoreFoundation7CGFloatVSgAG4FontVSgtcfc",
+            "mangledName": "$s13LowCodeMobile18SectionHeaderStyleV9textColor7padding0gF0AC7SwiftUI0H0VSg_12CoreGraphics7CGFloatVSgAG4FontVSgtcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LowCodeMobile18SectionHeaderStyleV",
+        "mangledName": "$s13LowCodeMobile18SectionHeaderStyleV",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecommendationsStyle",
+        "printedName": "RecommendationsStyle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sectionHeader",
+            "printedName": "sectionHeader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LowCodeMobile.SectionHeaderStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SectionHeaderStyle",
+                    "printedName": "LowCodeMobile.SectionHeaderStyle",
+                    "usr": "s:13LowCodeMobile18SectionHeaderStyleV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile20RecommendationsStyleV13sectionHeaderAA07SectiongE0VSgvp",
+            "mangledName": "$s13LowCodeMobile20RecommendationsStyleV13sectionHeaderAA07SectiongE0VSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LowCodeMobile.SectionHeaderStyle?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SectionHeaderStyle",
+                        "printedName": "LowCodeMobile.SectionHeaderStyle",
+                        "usr": "s:13LowCodeMobile18SectionHeaderStyleV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile20RecommendationsStyleV13sectionHeaderAA07SectiongE0VSgvg",
+                "mangledName": "$s13LowCodeMobile20RecommendationsStyleV13sectionHeaderAA07SectiongE0VSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardSpacing",
+            "printedName": "cardSpacing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile20RecommendationsStyleV11cardSpacing14CoreFoundation7CGFloatVSgvp",
+            "mangledName": "$s13LowCodeMobile20RecommendationsStyleV11cardSpacing12CoreGraphics7CGFloatVSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile20RecommendationsStyleV11cardSpacing14CoreFoundation7CGFloatVSgvg",
+                "mangledName": "$s13LowCodeMobile20RecommendationsStyleV11cardSpacing12CoreGraphics7CGFloatVSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "card",
+            "printedName": "card",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LowCodeMobile.ContentCardStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentCardStyle",
+                    "printedName": "LowCodeMobile.ContentCardStyle",
+                    "usr": "s:13LowCodeMobile16ContentCardStyleV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile20RecommendationsStyleV4cardAA011ContentCardE0VSgvp",
+            "mangledName": "$s13LowCodeMobile20RecommendationsStyleV4cardAA011ContentCardE0VSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LowCodeMobile.ContentCardStyle?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContentCardStyle",
+                        "printedName": "LowCodeMobile.ContentCardStyle",
+                        "usr": "s:13LowCodeMobile16ContentCardStyleV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile20RecommendationsStyleV4cardAA011ContentCardE0VSgvg",
+                "mangledName": "$s13LowCodeMobile20RecommendationsStyleV4cardAA011ContentCardE0VSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sectionHeader:cardSpacing:card:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecommendationsStyle",
+                "printedName": "LowCodeMobile.RecommendationsStyle",
+                "usr": "s:13LowCodeMobile20RecommendationsStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LowCodeMobile.SectionHeaderStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SectionHeaderStyle",
+                    "printedName": "LowCodeMobile.SectionHeaderStyle",
+                    "usr": "s:13LowCodeMobile18SectionHeaderStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LowCodeMobile.ContentCardStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentCardStyle",
+                    "printedName": "LowCodeMobile.ContentCardStyle",
+                    "usr": "s:13LowCodeMobile16ContentCardStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile20RecommendationsStyleV13sectionHeader11cardSpacing0H0AcA07SectiongE0VSg_14CoreFoundation7CGFloatVSgAA011ContentCardE0VSgtcfc",
+            "mangledName": "$s13LowCodeMobile20RecommendationsStyleV13sectionHeader11cardSpacing0H0AcA07SectiongE0VSg_12CoreGraphics7CGFloatVSgAA011ContentCardE0VSgtcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LowCodeMobile20RecommendationsStyleV",
+        "mangledName": "$s13LowCodeMobile20RecommendationsStyleV",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Personalization",
+        "printedName": "Personalization",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BannerModel",
+        "printedName": "BannerModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "header",
+            "printedName": "header",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11BannerModelV6headerSSvp",
+            "mangledName": "$s13LowCodeMobile11BannerModelV6headerSSvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11BannerModelV6headerSSvg",
+                "mangledName": "$s13LowCodeMobile11BannerModelV6headerSSvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "subheader",
+            "printedName": "subheader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11BannerModelV9subheaderSSSgvp",
+            "mangledName": "$s13LowCodeMobile11BannerModelV9subheaderSSSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11BannerModelV9subheaderSSSgvg",
+                "mangledName": "$s13LowCodeMobile11BannerModelV9subheaderSSSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageUrl",
+            "printedName": "imageUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11BannerModelV8imageUrlSSvp",
+            "mangledName": "$s13LowCodeMobile11BannerModelV8imageUrlSSvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11BannerModelV8imageUrlSSvg",
+                "mangledName": "$s13LowCodeMobile11BannerModelV8imageUrlSSvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ctaText",
+            "printedName": "ctaText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11BannerModelV7ctaTextSSSgvp",
+            "mangledName": "$s13LowCodeMobile11BannerModelV7ctaTextSSSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11BannerModelV7ctaTextSSSgvg",
+                "mangledName": "$s13LowCodeMobile11BannerModelV7ctaTextSSSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ctaUrl",
+            "printedName": "ctaUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11BannerModelV6ctaUrlSSSgvp",
+            "mangledName": "$s13LowCodeMobile11BannerModelV6ctaUrlSSSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11BannerModelV6ctaUrlSSSgvg",
+                "mangledName": "$s13LowCodeMobile11BannerModelV6ctaUrlSSSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(header:subheader:imageUrl:ctaText:ctaUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerModel",
+                "printedName": "LowCodeMobile.BannerModel",
+                "usr": "s:13LowCodeMobile11BannerModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile11BannerModelV6header9subheader8imageUrl7ctaText0jI0ACSS_SSSgSSA2Itcfc",
+            "mangledName": "$s13LowCodeMobile11BannerModelV6header9subheader8imageUrl7ctaText0jI0ACSS_SSSgSSA2Itcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerModel",
+                "printedName": "LowCodeMobile.BannerModel",
+                "usr": "s:13LowCodeMobile11BannerModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile11BannerModelV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LowCodeMobile11BannerModelV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LowCodeMobile",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LowCodeMobile11BannerModelV",
+        "mangledName": "$s13LowCodeMobile11BannerModelV",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ComponentModel",
+            "printedName": "ComponentModel",
+            "usr": "s:13LowCodeMobile14ComponentModelP",
+            "mangledName": "$s13LowCodeMobile14ComponentModelP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Recommendations",
+        "printedName": "Recommendations",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile15RecommendationsC4nameSSvpZ",
+            "mangledName": "$s13LowCodeMobile15RecommendationsC4nameSSvpZ",
+            "moduleName": "LowCodeMobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile15RecommendationsC4nameSSvgZ",
+                "mangledName": "$s13LowCodeMobile15RecommendationsC4nameSSvgZ",
+                "moduleName": "LowCodeMobile",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(style:onTap:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Recommendations",
+                "printedName": "LowCodeMobile.Recommendations",
+                "usr": "s:13LowCodeMobile15RecommendationsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LowCodeMobile.RecommendationsStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecommendationsStyle",
+                    "printedName": "LowCodeMobile.RecommendationsStyle",
+                    "usr": "s:13LowCodeMobile20RecommendationsStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((LowCodeMobile.RecommendationTapEvent) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LowCodeMobile.RecommendationTapEvent) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RecommendationTapEvent",
+                        "printedName": "LowCodeMobile.RecommendationTapEvent",
+                        "usr": "s:13LowCodeMobile22RecommendationTapEventV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile15RecommendationsC5style5onTapAcA0D5StyleVSg_yAA014RecommendationG5EventVcSgtcfc",
+            "mangledName": "$s13LowCodeMobile15RecommendationsC5style5onTapAcA0D5StyleVSg_yAA014RecommendationG5EventVcSgtcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "validateAndCreateComponentModel",
+            "printedName": "validateAndCreateComponentModel(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecommendationsModel",
+                "printedName": "LowCodeMobile.RecommendationsModel",
+                "usr": "s:13LowCodeMobile20RecommendationsModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LowCodeMobile15RecommendationsC31validateAndCreateComponentModel4fromAA0dI0V10Foundation4DataV_tKF",
+            "mangledName": "$s13LowCodeMobile15RecommendationsC31validateAndCreateComponentModel4fromAA0dI0V10Foundation4DataV_tKF",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "compose",
+            "printedName": "compose(model:isPreview:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecommendationsView",
+                "printedName": "LowCodeMobile.RecommendationsView",
+                "usr": "s:13LowCodeMobile19RecommendationsViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RecommendationsModel",
+                "printedName": "LowCodeMobile.RecommendationsModel",
+                "usr": "s:13LowCodeMobile20RecommendationsModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LowCodeMobile15RecommendationsC7compose5model9isPreviewAA0D4ViewVAA0D5ModelV_SbtF",
+            "mangledName": "$s13LowCodeMobile15RecommendationsC7compose5model9isPreviewAA0D4ViewVAA0D5ModelV_SbtF",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13LowCodeMobile15RecommendationsC",
+        "mangledName": "$s13LowCodeMobile15RecommendationsC",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Component",
+            "printedName": "Component",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Content",
+                "printedName": "Content",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecommendationsView",
+                    "printedName": "LowCodeMobile.RecommendationsView",
+                    "usr": "s:13LowCodeMobile19RecommendationsViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Model",
+                "printedName": "Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecommendationsModel",
+                    "printedName": "LowCodeMobile.RecommendationsModel",
+                    "usr": "s:13LowCodeMobile20RecommendationsModelV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:13LowCodeMobile9ComponentP",
+            "mangledName": "$s13LowCodeMobile9ComponentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecommendationsView",
+        "printedName": "RecommendationsView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(model:style:onTap:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecommendationsView",
+                "printedName": "LowCodeMobile.RecommendationsView",
+                "usr": "s:13LowCodeMobile19RecommendationsViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RecommendationsModel",
+                "printedName": "LowCodeMobile.RecommendationsModel",
+                "usr": "s:13LowCodeMobile20RecommendationsModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LowCodeMobile.RecommendationsStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecommendationsStyle",
+                    "printedName": "LowCodeMobile.RecommendationsStyle",
+                    "usr": "s:13LowCodeMobile20RecommendationsStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((LowCodeMobile.RecommendationTapEvent) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LowCodeMobile.RecommendationTapEvent) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RecommendationTapEvent",
+                        "printedName": "LowCodeMobile.RecommendationTapEvent",
+                        "usr": "s:13LowCodeMobile22RecommendationTapEventV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile19RecommendationsViewV5model5style5onTapAcA0D5ModelV_AA0D5StyleVSgyAA014RecommendationI5EventVcSgtcfc",
+            "mangledName": "$s13LowCodeMobile19RecommendationsViewV5model5style5onTapAcA0D5ModelV_AA0D5StyleVSgyAA014RecommendationI5EventVcSgtcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile19RecommendationsViewV4bodyQrvp",
+            "mangledName": "$s13LowCodeMobile19RecommendationsViewV4bodyQrvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile19RecommendationsViewV4bodyQrvg",
+                "mangledName": "$s13LowCodeMobile19RecommendationsViewV4bodyQrvg",
+                "moduleName": "LowCodeMobile",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LowCodeMobile19RecommendationsViewV",
+        "mangledName": "$s13LowCodeMobile19RecommendationsViewV",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Personalization",
+        "printedName": "Personalization",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecommendationsModel",
+        "printedName": "RecommendationsModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sectionHeader",
+            "printedName": "sectionHeader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile20RecommendationsModelV13sectionHeaderSSSgvp",
+            "mangledName": "$s13LowCodeMobile20RecommendationsModelV13sectionHeaderSSSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile20RecommendationsModelV13sectionHeaderSSSgvg",
+                "mangledName": "$s13LowCodeMobile20RecommendationsModelV13sectionHeaderSSSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "items",
+            "printedName": "items",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[LowCodeMobile.ContentItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentItem",
+                    "printedName": "LowCodeMobile.ContentItem",
+                    "usr": "s:13LowCodeMobile11ContentItemV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile20RecommendationsModelV5itemsSayAA11ContentItemVGvp",
+            "mangledName": "$s13LowCodeMobile20RecommendationsModelV5itemsSayAA11ContentItemVGvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LowCodeMobile.ContentItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ContentItem",
+                        "printedName": "LowCodeMobile.ContentItem",
+                        "usr": "s:13LowCodeMobile11ContentItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile20RecommendationsModelV5itemsSayAA11ContentItemVGvg",
+                "mangledName": "$s13LowCodeMobile20RecommendationsModelV5itemsSayAA11ContentItemVGvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sectionHeader:items:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecommendationsModel",
+                "printedName": "LowCodeMobile.RecommendationsModel",
+                "usr": "s:13LowCodeMobile20RecommendationsModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[LowCodeMobile.ContentItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentItem",
+                    "printedName": "LowCodeMobile.ContentItem",
+                    "usr": "s:13LowCodeMobile11ContentItemV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile20RecommendationsModelV13sectionHeader5itemsACSSSg_SayAA11ContentItemVGtcfc",
+            "mangledName": "$s13LowCodeMobile20RecommendationsModelV13sectionHeader5itemsACSSSg_SayAA11ContentItemVGtcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RecommendationsModel",
+                "printedName": "LowCodeMobile.RecommendationsModel",
+                "usr": "s:13LowCodeMobile20RecommendationsModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile20RecommendationsModelV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LowCodeMobile20RecommendationsModelV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LowCodeMobile",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LowCodeMobile20RecommendationsModelV",
+        "mangledName": "$s13LowCodeMobile20RecommendationsModelV",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ComponentModel",
+            "printedName": "ComponentModel",
+            "usr": "s:13LowCodeMobile14ComponentModelP",
+            "mangledName": "$s13LowCodeMobile14ComponentModelP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Personalization",
+        "printedName": "Personalization",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ContentZoneViewModel",
+        "printedName": "ContentZoneViewModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "contentZoneName",
+            "printedName": "contentZoneName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile20ContentZoneViewModelC07contentE4NameSSvp",
+            "mangledName": "$s13LowCodeMobile20ContentZoneViewModelC07contentE4NameSSvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile20ContentZoneViewModelC07contentE4NameSSvg",
+                "mangledName": "$s13LowCodeMobile20ContentZoneViewModelC07contentE4NameSSvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allowedComponents",
+            "printedName": "allowedComponents",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any LowCodeMobile.Component]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Component",
+                    "printedName": "any LowCodeMobile.Component",
+                    "usr": "s:13LowCodeMobile9ComponentP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile20ContentZoneViewModelC17allowedComponentsSayAA9Component_pGvp",
+            "mangledName": "$s13LowCodeMobile20ContentZoneViewModelC17allowedComponentsSayAA9Component_pGvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[any LowCodeMobile.Component]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Component",
+                        "printedName": "any LowCodeMobile.Component",
+                        "usr": "s:13LowCodeMobile9ComponentP"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile20ContentZoneViewModelC17allowedComponentsSayAA9Component_pGvg",
+                "mangledName": "$s13LowCodeMobile20ContentZoneViewModelC17allowedComponentsSayAA9Component_pGvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutSeconds",
+            "printedName": "timeoutSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile20ContentZoneViewModelC14timeoutSecondsSdvp",
+            "mangledName": "$s13LowCodeMobile20ContentZoneViewModelC14timeoutSecondsSdvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile20ContentZoneViewModelC14timeoutSecondsSdvg",
+                "mangledName": "$s13LowCodeMobile20ContentZoneViewModelC14timeoutSecondsSdvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(contentZoneName:allowedComponents:timeoutSeconds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ContentZoneViewModel",
+                "printedName": "LowCodeMobile.ContentZoneViewModel",
+                "usr": "s:13LowCodeMobile20ContentZoneViewModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any LowCodeMobile.Component]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Component",
+                    "printedName": "any LowCodeMobile.Component",
+                    "usr": "s:13LowCodeMobile9ComponentP"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile20ContentZoneViewModelC07contentE4Name17allowedComponents14timeoutSecondsACSS_SayAA9Component_pGSdtcfc",
+            "mangledName": "$s13LowCodeMobile20ContentZoneViewModelC07contentE4Name17allowedComponents14timeoutSecondsACSS_SayAA9Component_pGSdtcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "reload",
+            "printedName": "reload()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LowCodeMobile20ContentZoneViewModelC6reloadyyYaF",
+            "mangledName": "$s13LowCodeMobile20ContentZoneViewModelC6reloadyyYaF",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13LowCodeMobile20ContentZoneViewModelC",
+        "mangledName": "$s13LowCodeMobile20ContentZoneViewModelC",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MockDataContentZoneViewModel",
+        "printedName": "MockDataContentZoneViewModel",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(contentZoneName:allowedComponents:mockContent:mockLoadingSeconds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MockDataContentZoneViewModel",
+                "printedName": "LowCodeMobile.MockDataContentZoneViewModel",
+                "usr": "s:13LowCodeMobile28MockDataContentZoneViewModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any LowCodeMobile.Component]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Component",
+                    "printedName": "any LowCodeMobile.Component",
+                    "usr": "s:13LowCodeMobile9ComponentP"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() throws -> any LowCodeMobile.ComponentModel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ComponentModel",
+                    "printedName": "any LowCodeMobile.ComponentModel",
+                    "usr": "s:13LowCodeMobile14ComponentModelP"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile28MockDataContentZoneViewModelC07contentG4Name17allowedComponents04mockF00N14LoadingSecondsACSS_SayAA9Component_pGAA0qI0_pyKcSdtcfc",
+            "mangledName": "$s13LowCodeMobile28MockDataContentZoneViewModelC07contentG4Name17allowedComponents04mockF00N14LoadingSecondsACSS_SayAA9Component_pGAA0qI0_pyKcSdtcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(contentZoneName:allowedComponents:timeoutSeconds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MockDataContentZoneViewModel",
+                "printedName": "LowCodeMobile.MockDataContentZoneViewModel",
+                "usr": "s:13LowCodeMobile28MockDataContentZoneViewModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any LowCodeMobile.Component]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Component",
+                    "printedName": "any LowCodeMobile.Component",
+                    "usr": "s:13LowCodeMobile9ComponentP"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile28MockDataContentZoneViewModelC07contentG4Name17allowedComponents14timeoutSecondsACSS_SayAA9Component_pGSdtcfc",
+            "mangledName": "$s13LowCodeMobile28MockDataContentZoneViewModelC07contentG4Name17allowedComponents14timeoutSecondsACSS_SayAA9Component_pGSdtcfc",
+            "moduleName": "LowCodeMobile",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13LowCodeMobile28MockDataContentZoneViewModelC",
+        "mangledName": "$s13LowCodeMobile28MockDataContentZoneViewModelC",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:13LowCodeMobile20ContentZoneViewModelC",
+        "superclassNames": [
+          "LowCodeMobile.ContentZoneViewModel"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Personalization",
+        "printedName": "Personalization",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ComponentModel",
+        "printedName": "ComponentModel",
+        "declKind": "Protocol",
+        "usr": "s:13LowCodeMobile14ComponentModelP",
+        "mangledName": "$s13LowCodeMobile14ComponentModelP",
+        "moduleName": "LowCodeMobile",
+        "genericSig": "<τ_0_0 : Swift.Decodable>",
+        "sugared_genericSig": "<Self : Swift.Decodable>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Component",
+        "printedName": "Component",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile9ComponentP4nameSSvpZ",
+            "mangledName": "$s13LowCodeMobile9ComponentP4nameSSvpZ",
+            "moduleName": "LowCodeMobile",
+            "static": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile9ComponentP4nameSSvgZ",
+                "mangledName": "$s13LowCodeMobile9ComponentP4nameSSvgZ",
+                "moduleName": "LowCodeMobile",
+                "genericSig": "<τ_0_0 where τ_0_0 : LowCodeMobile.Component>",
+                "sugared_genericSig": "<Self where Self : LowCodeMobile.Component>",
+                "static": true,
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "AssociatedType",
+            "name": "Content",
+            "printedName": "Content",
+            "declKind": "AssociatedType",
+            "usr": "s:13LowCodeMobile9ComponentP7ContentQa",
+            "mangledName": "$s13LowCodeMobile9ComponentP7ContentQa",
+            "moduleName": "LowCodeMobile",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "AssociatedType",
+            "name": "Model",
+            "printedName": "Model",
+            "declKind": "AssociatedType",
+            "usr": "s:13LowCodeMobile9ComponentP5ModelQa",
+            "mangledName": "$s13LowCodeMobile9ComponentP5ModelQa",
+            "moduleName": "LowCodeMobile",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "validateAndCreateComponentModel",
+            "printedName": "validateAndCreateComponentModel(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Model"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LowCodeMobile9ComponentP017validateAndCreateD5Model4from0H0Qz10Foundation4DataV_tKF",
+            "mangledName": "$s13LowCodeMobile9ComponentP017validateAndCreateD5Model4from0H0Qz10Foundation4DataV_tKF",
+            "moduleName": "LowCodeMobile",
+            "genericSig": "<τ_0_0 where τ_0_0 : LowCodeMobile.Component>",
+            "sugared_genericSig": "<Self where Self : LowCodeMobile.Component>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "compose",
+            "printedName": "compose(model:isPreview:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Content"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Model"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LowCodeMobile9ComponentP7compose5model9isPreview7ContentQz5ModelQz_SbtF",
+            "mangledName": "$s13LowCodeMobile9ComponentP7compose5model9isPreview7ContentQz5ModelQz_SbtF",
+            "moduleName": "LowCodeMobile",
+            "genericSig": "<τ_0_0 where τ_0_0 : LowCodeMobile.Component>",
+            "sugared_genericSig": "<Self where Self : LowCodeMobile.Component>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13LowCodeMobile9ComponentP",
+        "mangledName": "$s13LowCodeMobile9ComponentP",
+        "moduleName": "LowCodeMobile",
+        "genericSig": "<τ_0_0.Content : SwiftUI.View, τ_0_0.Model : LowCodeMobile.ComponentModel>",
+        "sugared_genericSig": "<Self.Content : SwiftUI.View, Self.Model : LowCodeMobile.ComponentModel>",
+        "declAttributes": [
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ContentItem",
+        "printedName": "ContentItem",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11ContentItemV2idSSvp",
+            "mangledName": "$s13LowCodeMobile11ContentItemV2idSSvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11ContentItemV2idSSvg",
+                "mangledName": "$s13LowCodeMobile11ContentItemV2idSSvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "header",
+            "printedName": "header",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11ContentItemV6headerSSvp",
+            "mangledName": "$s13LowCodeMobile11ContentItemV6headerSSvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11ContentItemV6headerSSvg",
+                "mangledName": "$s13LowCodeMobile11ContentItemV6headerSSvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "subheader",
+            "printedName": "subheader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11ContentItemV9subheaderSSSgvp",
+            "mangledName": "$s13LowCodeMobile11ContentItemV9subheaderSSSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11ContentItemV9subheaderSSSgvg",
+                "mangledName": "$s13LowCodeMobile11ContentItemV9subheaderSSSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageUrl",
+            "printedName": "imageUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11ContentItemV8imageUrlSSvp",
+            "mangledName": "$s13LowCodeMobile11ContentItemV8imageUrlSSvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11ContentItemV8imageUrlSSvg",
+                "mangledName": "$s13LowCodeMobile11ContentItemV8imageUrlSSvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ctaText",
+            "printedName": "ctaText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11ContentItemV7ctaTextSSSgvp",
+            "mangledName": "$s13LowCodeMobile11ContentItemV7ctaTextSSSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11ContentItemV7ctaTextSSSgvg",
+                "mangledName": "$s13LowCodeMobile11ContentItemV7ctaTextSSSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ctaUrl",
+            "printedName": "ctaUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11ContentItemV6ctaUrlSSSgvp",
+            "mangledName": "$s13LowCodeMobile11ContentItemV6ctaUrlSSSgvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11ContentItemV6ctaUrlSSSgvg",
+                "mangledName": "$s13LowCodeMobile11ContentItemV6ctaUrlSSSgvg",
+                "moduleName": "LowCodeMobile",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:header:subheader:imageUrl:ctaText:ctaUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ContentItem",
+                "printedName": "LowCodeMobile.ContentItem",
+                "usr": "s:13LowCodeMobile11ContentItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile11ContentItemV2id6header9subheader8imageUrl7ctaText0kJ0ACSS_S2SSgSSA2Jtcfc",
+            "mangledName": "$s13LowCodeMobile11ContentItemV2id6header9subheader8imageUrl7ctaText0kJ0ACSS_S2SSgSSA2Jtcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ContentItem",
+                "printedName": "LowCodeMobile.ContentItem",
+                "usr": "s:13LowCodeMobile11ContentItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile11ContentItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LowCodeMobile11ContentItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LowCodeMobile",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LowCodeMobile11ContentItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13LowCodeMobile11ContentItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "LowCodeMobile",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LowCodeMobile11ContentItemV",
+        "mangledName": "$s13LowCodeMobile11ContentItemV",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Banner",
+        "printedName": "Banner",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile6BannerC4nameSSvpZ",
+            "mangledName": "$s13LowCodeMobile6BannerC4nameSSvpZ",
+            "moduleName": "LowCodeMobile",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile6BannerC4nameSSvgZ",
+                "mangledName": "$s13LowCodeMobile6BannerC4nameSSvgZ",
+                "moduleName": "LowCodeMobile",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(style:onTap:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Banner",
+                "printedName": "LowCodeMobile.Banner",
+                "usr": "s:13LowCodeMobile6BannerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LowCodeMobile.ContentCardStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentCardStyle",
+                    "printedName": "LowCodeMobile.ContentCardStyle",
+                    "usr": "s:13LowCodeMobile16ContentCardStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((LowCodeMobile.BannerModel) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LowCodeMobile.BannerModel) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannerModel",
+                        "printedName": "LowCodeMobile.BannerModel",
+                        "usr": "s:13LowCodeMobile11BannerModelV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile6BannerC5style5onTapAcA16ContentCardStyleVSg_yAA0D5ModelVcSgtcfc",
+            "mangledName": "$s13LowCodeMobile6BannerC5style5onTapAcA16ContentCardStyleVSg_yAA0D5ModelVcSgtcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "validateAndCreateComponentModel",
+            "printedName": "validateAndCreateComponentModel(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerModel",
+                "printedName": "LowCodeMobile.BannerModel",
+                "usr": "s:13LowCodeMobile11BannerModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LowCodeMobile6BannerC31validateAndCreateComponentModel4fromAA0dI0V10Foundation4DataV_tKF",
+            "mangledName": "$s13LowCodeMobile6BannerC31validateAndCreateComponentModel4fromAA0dI0V10Foundation4DataV_tKF",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "compose",
+            "printedName": "compose(model:isPreview:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "LowCodeMobile.BannerView",
+                "usr": "s:13LowCodeMobile10BannerViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerModel",
+                "printedName": "LowCodeMobile.BannerModel",
+                "usr": "s:13LowCodeMobile11BannerModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LowCodeMobile6BannerC7compose5model9isPreviewAA0D4ViewVAA0D5ModelV_SbtF",
+            "mangledName": "$s13LowCodeMobile6BannerC7compose5model9isPreviewAA0D4ViewVAA0D5ModelV_SbtF",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13LowCodeMobile6BannerC",
+        "mangledName": "$s13LowCodeMobile6BannerC",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Component",
+            "printedName": "Component",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Content",
+                "printedName": "Content",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerView",
+                    "printedName": "LowCodeMobile.BannerView",
+                    "usr": "s:13LowCodeMobile10BannerViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Model",
+                "printedName": "Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerModel",
+                    "printedName": "LowCodeMobile.BannerModel",
+                    "usr": "s:13LowCodeMobile11BannerModelV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:13LowCodeMobile9ComponentP",
+            "mangledName": "$s13LowCodeMobile9ComponentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ContentZone",
+        "printedName": "ContentZone",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:allowedComponents:timeoutSeconds:loading:failed:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ContentZone",
+                "printedName": "LowCodeMobile.ContentZone<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:13LowCodeMobile11ContentZoneV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any LowCodeMobile.Component]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Component",
+                    "printedName": "any LowCodeMobile.Component",
+                    "usr": "s:13LowCodeMobile9ComponentP"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "hasDefaultArg": true
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> τ_0_1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile11ContentZoneV4name17allowedComponents14timeoutSeconds7loading6failedACyxq_GSS_SayAA9Component_pGSdxycq_s5Error_pctcfc",
+            "mangledName": "$s13LowCodeMobile11ContentZoneV4name17allowedComponents14timeoutSeconds7loading6failedACyxq_GSS_SayAA9Component_pGSdxycq_s5Error_pctcfc",
+            "moduleName": "LowCodeMobile",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : SwiftUI.View, τ_0_1 : SwiftUI.View>",
+            "sugared_genericSig": "<Loading, Failed where Loading : SwiftUI.View, Failed : SwiftUI.View>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(viewModel:loading:failed:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ContentZone",
+                "printedName": "LowCodeMobile.ContentZone<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:13LowCodeMobile11ContentZoneV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ContentZoneViewModel",
+                "printedName": "LowCodeMobile.ContentZoneViewModel",
+                "usr": "s:13LowCodeMobile20ContentZoneViewModelC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "hasDefaultArg": true
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> τ_0_1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile11ContentZoneV9viewModel7loading6failedACyxq_GAA0de4ViewG0C_xycq_s5Error_pctcfc",
+            "mangledName": "$s13LowCodeMobile11ContentZoneV9viewModel7loading6failedACyxq_GAA0de4ViewG0C_xycq_s5Error_pctcfc",
+            "moduleName": "LowCodeMobile",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : SwiftUI.View, τ_0_1 : SwiftUI.View>",
+            "sugared_genericSig": "<Loading, Failed where Loading : SwiftUI.View, Failed : SwiftUI.View>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile11ContentZoneV4bodyQrvp",
+            "mangledName": "$s13LowCodeMobile11ContentZoneV4bodyQrvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile11ContentZoneV4bodyQrvg",
+                "mangledName": "$s13LowCodeMobile11ContentZoneV4bodyQrvg",
+                "moduleName": "LowCodeMobile",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : SwiftUI.View, τ_0_1 : SwiftUI.View>",
+                "sugared_genericSig": "<Loading, Failed where Loading : SwiftUI.View, Failed : SwiftUI.View>",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LowCodeMobile11ContentZoneV",
+        "mangledName": "$s13LowCodeMobile11ContentZoneV",
+        "moduleName": "LowCodeMobile",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : SwiftUI.View, τ_0_1 : SwiftUI.View>",
+        "sugared_genericSig": "<Loading, Failed where Loading : SwiftUI.View, Failed : SwiftUI.View>",
+        "declAttributes": [
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MockDataContentZone",
+        "printedName": "MockDataContentZone",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:allowedComponents:mockContent:mockLoadingSeconds:loading:failed:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MockDataContentZone",
+                "printedName": "LowCodeMobile.MockDataContentZone<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:13LowCodeMobile19MockDataContentZoneV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any LowCodeMobile.Component]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Component",
+                    "printedName": "any LowCodeMobile.Component",
+                    "usr": "s:13LowCodeMobile9ComponentP"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() throws -> any LowCodeMobile.ComponentModel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ComponentModel",
+                    "printedName": "any LowCodeMobile.ComponentModel",
+                    "usr": "s:13LowCodeMobile14ComponentModelP"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "hasDefaultArg": true
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> τ_0_1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile19MockDataContentZoneV4name17allowedComponents04mockF00K14LoadingSeconds7loading6failedACyxq_GSS_SayAA9Component_pGAA0P5Model_pyKcSdxycq_s5Error_pctcfc",
+            "mangledName": "$s13LowCodeMobile19MockDataContentZoneV4name17allowedComponents04mockF00K14LoadingSeconds7loading6failedACyxq_GSS_SayAA9Component_pGAA0P5Model_pyKcSdxycq_s5Error_pctcfc",
+            "moduleName": "LowCodeMobile",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : SwiftUI.View, τ_0_1 : SwiftUI.View>",
+            "sugared_genericSig": "<Loading, Failed where Loading : SwiftUI.View, Failed : SwiftUI.View>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(viewModel:loading:failed:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MockDataContentZone",
+                "printedName": "LowCodeMobile.MockDataContentZone<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:13LowCodeMobile19MockDataContentZoneV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MockDataContentZoneViewModel",
+                "printedName": "LowCodeMobile.MockDataContentZoneViewModel",
+                "usr": "s:13LowCodeMobile28MockDataContentZoneViewModelC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "hasDefaultArg": true
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> τ_0_1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile19MockDataContentZoneV9viewModel7loading6failedACyxq_GAA0defg4ViewI0C_xycq_s5Error_pctcfc",
+            "mangledName": "$s13LowCodeMobile19MockDataContentZoneV9viewModel7loading6failedACyxq_GAA0defg4ViewI0C_xycq_s5Error_pctcfc",
+            "moduleName": "LowCodeMobile",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : SwiftUI.View, τ_0_1 : SwiftUI.View>",
+            "sugared_genericSig": "<Loading, Failed where Loading : SwiftUI.View, Failed : SwiftUI.View>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile19MockDataContentZoneV4bodyQrvp",
+            "mangledName": "$s13LowCodeMobile19MockDataContentZoneV4bodyQrvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile19MockDataContentZoneV4bodyQrvg",
+                "mangledName": "$s13LowCodeMobile19MockDataContentZoneV4bodyQrvg",
+                "moduleName": "LowCodeMobile",
+                "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : SwiftUI.View, τ_0_1 : SwiftUI.View>",
+                "sugared_genericSig": "<Loading, Failed where Loading : SwiftUI.View, Failed : SwiftUI.View>",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LowCodeMobile19MockDataContentZoneV",
+        "mangledName": "$s13LowCodeMobile19MockDataContentZoneV",
+        "moduleName": "LowCodeMobile",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : SwiftUI.View, τ_0_1 : SwiftUI.View>",
+        "sugared_genericSig": "<Loading, Failed where Loading : SwiftUI.View, Failed : SwiftUI.View>",
+        "declAttributes": [
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BannerView",
+        "printedName": "BannerView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(model:style:onTap:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "LowCodeMobile.BannerView",
+                "usr": "s:13LowCodeMobile10BannerViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerModel",
+                "printedName": "LowCodeMobile.BannerModel",
+                "usr": "s:13LowCodeMobile11BannerModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LowCodeMobile.ContentCardStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ContentCardStyle",
+                    "printedName": "LowCodeMobile.ContentCardStyle",
+                    "usr": "s:13LowCodeMobile16ContentCardStyleV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((LowCodeMobile.BannerModel) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LowCodeMobile.BannerModel) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannerModel",
+                        "printedName": "LowCodeMobile.BannerModel",
+                        "usr": "s:13LowCodeMobile11BannerModelV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LowCodeMobile10BannerViewV5model5style5onTapAcA0D5ModelV_AA16ContentCardStyleVSgyAHcSgtcfc",
+            "mangledName": "$s13LowCodeMobile10BannerViewV5model5style5onTapAcA0D5ModelV_AA16ContentCardStyleVSgyAHcSgtcfc",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LowCodeMobile10BannerViewV4bodyQrvp",
+            "mangledName": "$s13LowCodeMobile10BannerViewV4bodyQrvp",
+            "moduleName": "LowCodeMobile",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LowCodeMobile10BannerViewV4bodyQrvg",
+                "mangledName": "$s13LowCodeMobile10BannerViewV4bodyQrvg",
+                "moduleName": "LowCodeMobile",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LowCodeMobile10BannerViewV",
+        "mangledName": "$s13LowCodeMobile10BannerViewV",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LowCodeMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Recs\/Recommendations.swift",
+      "kind": "StringLiteral",
+      "offset": 1230,
+      "length": 20,
+      "value": "\"SFPRecommendations\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 257,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 303,
+      "length": 2,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 350,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 399,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 440,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 483,
+      "length": 2,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 564,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 605,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 683,
+      "length": 4,
+      "value": "0x39"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "FloatLiteral",
+      "offset": 688,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 702,
+      "length": 4,
+      "value": "0x39"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "FloatLiteral",
+      "offset": 707,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 720,
+      "length": 4,
+      "value": "0x39"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "FloatLiteral",
+      "offset": 725,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 768,
+      "length": 4,
+      "value": "0x0B"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "FloatLiteral",
+      "offset": 773,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 787,
+      "length": 4,
+      "value": "0x5C"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "FloatLiteral",
+      "offset": 792,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 805,
+      "length": 4,
+      "value": "0xAB"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "FloatLiteral",
+      "offset": 810,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "FloatLiteral",
+      "offset": 3020,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3136,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3234,
+      "length": 3,
+      "value": "150"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Recs\/RecommendationsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 983,
+      "length": 4,
+      "value": "0x39"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Recs\/RecommendationsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 988,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Recs\/RecommendationsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1002,
+      "length": 4,
+      "value": "0x39"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Recs\/RecommendationsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1007,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Recs\/RecommendationsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1020,
+      "length": 4,
+      "value": "0x39"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Recs\/RecommendationsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1025,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/ContentZoneViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2122,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/ContentZoneViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 2939,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/ContentZoneViewModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 13292,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Common\/ContentItemValidation.swift",
+      "kind": "StringLiteral",
+      "offset": 934,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/OOTB\/Banner\/Banner.swift",
+      "kind": "StringLiteral",
+      "offset": 1114,
+      "length": 11,
+      "value": "\"SFPBanner\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/ContentZone.swift",
+      "kind": "FloatLiteral",
+      "offset": 5106,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/LowCodeMobile\/ContentZone.swift",
+      "kind": "FloatLiteral",
+      "offset": 8942,
+      "length": 3,
+      "value": "1.0"
+    }
+  ]
+}

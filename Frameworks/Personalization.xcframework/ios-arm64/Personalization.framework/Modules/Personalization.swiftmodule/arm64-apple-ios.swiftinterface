@@ -8,7 +8,6 @@ import Foundation
 @_exported import Personalization
 import SFMCSDK
 import Swift
-import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
@@ -36,13 +35,6 @@ public struct PreviewReceipt {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
-}
-@_Concurrency.MainActor @preconcurrency public struct RecommendationsView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(model: Personalization.RecommendationsModel, style: Personalization.RecommendationsStyle? = nil, onTap: ((Personalization.RecommendationTapEvent) -> Swift.Void)? = nil)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s15Personalization19RecommendationsViewV4bodyQrvp", 0) __
 }
 @_hasMissingDesignatedInitializers @objc(SFPTransformer) public class Transformer : ObjectiveC.NSObject, Swift.Codable {
   public static let transformerCategoryEmbeddedContent: Swift.String
@@ -156,29 +148,6 @@ public struct PreviewReceipt {
   @objc final public let attributes: [Swift.String : Any]
   @objc deinit
 }
-@_Concurrency.MainActor public struct ContentZone<Loading, Failed> : SwiftUICore.View where Loading : SwiftUICore.View, Failed : SwiftUICore.View {
-  @_Concurrency.MainActor public init(name: Swift.String, allowedComponents: [any Personalization.Component], timeoutSeconds: Foundation.TimeInterval = 10.0, @SwiftUICore.ViewBuilder loading: @escaping () -> Loading = { EmptyView() }, @SwiftUICore.ViewBuilder failed: @escaping (any Swift.Error) -> Failed = { _ in EmptyView() })
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s15Personalization11ContentZoneV4bodyQrvp", 0) __<Loading, Failed>
-}
-@_Concurrency.MainActor public struct MockDataContentZone<Loading, Failed> : SwiftUICore.View where Loading : SwiftUICore.View, Failed : SwiftUICore.View {
-  @_Concurrency.MainActor public init(name: Swift.String, allowedComponents: [any Personalization.Component], mockContent: @escaping () throws -> any Personalization.ComponentModel, mockLoadingSeconds: Foundation.TimeInterval = 1.0, @SwiftUICore.ViewBuilder loading: @escaping () -> Loading = { EmptyView() }, @SwiftUICore.ViewBuilder failed: @escaping (any Swift.Error) -> Failed = { _ in EmptyView() })
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s15Personalization19MockDataContentZoneV4bodyQrvp", 0) __<Loading, Failed>
-}
-public protocol ComponentModel : Swift.Decodable {
-}
-public protocol Component {
-  static var name: Swift.String { get }
-  associatedtype Content : SwiftUICore.View
-  associatedtype Model : Personalization.ComponentModel
-  func validateAndCreateComponentModel(from data: Foundation.Data) throws -> Self.Model
-  func compose(model: Self.Model, isPreview: Swift.Bool) -> Self.Content
-}
 public struct ContentZonePersonalization {
   public let componentJson: Foundation.Data
   public let componentName: Swift.String
@@ -223,30 +192,6 @@ public struct ContentZonePersonalization {
     @objc set
   }
   @objc deinit
-}
-public struct ContentCardStyle {
-  public let backgroundColor: SwiftUICore.Color?
-  public let headerTextColor: SwiftUICore.Color?
-  public let subheaderTextColor: SwiftUICore.Color?
-  public let ctaTextColor: SwiftUICore.Color?
-  public let contentPadding: CoreFoundation.CGFloat?
-  public let imageWidthFraction: Swift.Float?
-  public let maxImageSize: CoreFoundation.CGFloat?
-  public init(backgroundColor: SwiftUICore.Color? = nil, headerTextColor: SwiftUICore.Color? = nil, subheaderTextColor: SwiftUICore.Color? = nil, ctaTextColor: SwiftUICore.Color? = nil, contentPadding: CoreFoundation.CGFloat? = nil, imageWidthFraction: Swift.Float? = nil, maxImageSize: CoreFoundation.CGFloat? = nil)
-}
-public typealias BannerStyle = Personalization.ContentCardStyle
-public typealias RecsCardStyle = Personalization.ContentCardStyle
-public struct SectionHeaderStyle {
-  public let textColor: SwiftUICore.Color?
-  public let padding: CoreFoundation.CGFloat?
-  public let textStyle: SwiftUICore.Font?
-  public init(textColor: SwiftUICore.Color? = nil, padding: CoreFoundation.CGFloat? = nil, textStyle: SwiftUICore.Font? = nil)
-}
-public struct RecommendationsStyle {
-  public let sectionHeader: Personalization.SectionHeaderStyle?
-  public let cardSpacing: CoreFoundation.CGFloat?
-  public let card: Personalization.RecsCardStyle?
-  public init(sectionHeader: Personalization.SectionHeaderStyle? = nil, cardSpacing: CoreFoundation.CGFloat? = nil, card: Personalization.RecsCardStyle? = nil)
 }
 @_inheritsConvenienceInitializers @objc(SFPersonalizationConfigBuilder) public class PersonalizationConfigBuilder : ObjectiveC.NSObject {
   @discardableResult
@@ -327,76 +272,18 @@ public enum PersonalizationError : Swift.Error, Foundation.CustomNSError, Founda
   @objc public static func fetchDecisions(personalizationPointNames: [Swift.String], context: Personalization.DecisionsRequestContext? = nil, timeoutSeconds: Foundation.TimeInterval = 10) async throws -> Personalization.DecisionsResponse
   @objc public static func fetchDecisions(personalizationPointNames: [Swift.String], context: Personalization.DecisionsRequestContext?) async throws -> Personalization.DecisionsResponse
   public static func getContentZonePersonalization(contentZoneName: Swift.String, allowedComponentNames: [Swift.String] = [], context: Personalization.DecisionsRequestContext? = nil, timeoutSeconds: Foundation.TimeInterval = 10.0, isPreview: Swift.Bool = false) async throws -> Personalization.ContentZonePersonalization
-  public static var previewState: Combine.AnyPublisher<[Swift.String : Personalization.PreviewReceipt], Swift.Never> {
+  @_Concurrency.MainActor public static var previewStatePublisher: Combine.AnyPublisher<[Swift.String : Personalization.PreviewReceipt], Swift.Never> {
+    get
+  }
+  @_Concurrency.MainActor public static var previewStateCurrent: [Swift.String : Personalization.PreviewReceipt] {
     get
   }
   public static func handlePreviewURL(_ url: Foundation.URL)
   public static func handlePreviewURL(_ urlString: Swift.String)
   @objc deinit
 }
-public class Banner : Personalization.Component {
-  public static let name: Swift.String
-  public typealias Content = Personalization.BannerView
-  public typealias Model = Personalization.BannerModel
-  public init(style: Personalization.BannerStyle? = nil, onTap: ((Personalization.BannerTapEvent) -> Swift.Void)? = nil)
-  public func validateAndCreateComponentModel(from data: Foundation.Data) throws -> Personalization.BannerModel
-  public func compose(model: Personalization.BannerModel, isPreview: Swift.Bool) -> Personalization.Banner.Content
-  @objc deinit
-}
-public struct ContentItem : Swift.Codable {
-  public let id: Swift.String
-  public let header: Swift.String
-  public let subheader: Swift.String?
-  public let imageUrl: Swift.String
-  public let ctaText: Swift.String?
-  public let ctaUrl: Swift.String?
-  public init(id: Swift.String, header: Swift.String, subheader: Swift.String? = nil, imageUrl: Swift.String, ctaText: Swift.String? = nil, ctaUrl: Swift.String? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public class Recommendations : Personalization.Component {
-  public static let name: Swift.String
-  public typealias Content = Personalization.RecommendationsView
-  public typealias Model = Personalization.RecommendationsModel
-  public init(style: Personalization.RecommendationsStyle? = nil, onTap: ((Personalization.RecommendationTapEvent) -> Swift.Void)? = nil)
-  public func validateAndCreateComponentModel(from data: Foundation.Data) throws -> Personalization.RecommendationsModel
-  public func compose(model: Personalization.RecommendationsModel, isPreview: Swift.Bool) -> Personalization.Recommendations.Content
-  @objc deinit
-}
-@_Concurrency.MainActor @preconcurrency public struct BannerView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(model: Personalization.BannerModel, style: Personalization.BannerStyle? = nil, onTap: ((Personalization.BannerTapEvent) -> Swift.Void)? = nil)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s15Personalization10BannerViewV4bodyQrvp", 0) __
-}
-public struct RecommendationsModel : Personalization.ComponentModel {
-  public let sectionHeader: Swift.String?
-  public let items: [Personalization.ContentItem]
-  public init(sectionHeader: Swift.String? = nil, items: [Personalization.ContentItem])
-  public init(from decoder: any Swift.Decoder) throws
-}
-public typealias BannerTapEvent = Personalization.BannerModel
-public struct BannerModel : Personalization.ComponentModel {
-  public let header: Swift.String
-  public let subheader: Swift.String?
-  public let imageUrl: Swift.String
-  public let ctaText: Swift.String?
-  public let ctaUrl: Swift.String?
-  public init(header: Swift.String, subheader: Swift.String? = nil, imageUrl: Swift.String, ctaText: Swift.String? = nil, ctaUrl: Swift.String? = nil)
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct RecommendationTapEvent {
-  public let item: Personalization.ContentItem
-  public let index: Swift.Int
-  public init(item: Personalization.ContentItem, index: Swift.Int)
-}
-extension Personalization.RecommendationsView : Swift.Sendable {}
 extension Personalization.SubDefConfigType : Swift.Equatable {}
 extension Personalization.SubDefConfigType : Swift.Hashable {}
-extension Personalization.ContentZone : Swift.Sendable {}
-extension Personalization.MockDataContentZone : Swift.Sendable {}
 extension Personalization.PersonalizationErrorCode : Swift.Equatable {}
 extension Personalization.PersonalizationErrorCode : Swift.Hashable {}
 extension Personalization.PersonalizationErrorCode : Swift.RawRepresentable {}
-extension Personalization.BannerView : Swift.Sendable {}

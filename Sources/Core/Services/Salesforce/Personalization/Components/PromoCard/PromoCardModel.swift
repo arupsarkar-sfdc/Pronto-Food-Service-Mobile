@@ -1,7 +1,8 @@
 import Foundation
 import Personalization
+import LowCodeMobile
 
-public struct PromoCardModel: Personalization.ComponentModel {
+public struct PromoCardModel: ComponentModel {
 
     public let header: String?
     public let subheader: String?

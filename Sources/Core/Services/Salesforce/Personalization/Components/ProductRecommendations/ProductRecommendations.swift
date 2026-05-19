@@ -1,7 +1,8 @@
 import SwiftUI
 import Personalization
+import LowCodeMobile
 
-public class ProductRecommendations: Personalization.Component {
+public class ProductRecommendations: Component {
     public static let name = "ProductRecommendations"
     
     public typealias Content = ProductRecommendationsView
