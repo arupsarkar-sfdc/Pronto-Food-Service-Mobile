@@ -10350,14 +10350,14 @@
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Content\/ContentManager.swift",
       "kind": "Array",
-      "offset": 18473,
+      "offset": 19393,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Content\/ContentManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 22479,
+      "offset": 23399,
       "length": 2,
       "value": "10"
     },
@@ -10504,483 +10504,483 @@
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7138,
+      "offset": 7349,
       "length": 40,
       "value": "\"Personalization initialization failed.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7243,
+      "offset": 7454,
       "length": 63,
       "value": "\"Initializing Personalization Server App Config Manager failed\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7353,
+      "offset": 7564,
       "length": 43,
       "value": "\"Did not get network manager from SFMCSdk.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7442,
+      "offset": 7653,
       "length": 25,
       "value": "\"Cdp is not operational.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7512,
+      "offset": 7723,
       "length": 23,
       "value": "\"Cdp is deprovisioned.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7578,
+      "offset": 7789,
       "length": 31,
       "value": "\"Cannot obtain state from Cdp.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7652,
+      "offset": 7863,
       "length": 60,
       "value": "\"Dataspace cannot be empty or blank. Keeping current value.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7850,
+      "offset": 8061,
       "length": 27,
       "value": "\"Cdp consent not opted-in.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7916,
+      "offset": 8127,
       "length": 23,
       "value": "\"Cdp deviceId missing.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8094,
+      "offset": 8305,
       "length": 83,
       "value": "\"The 'personalizationPointNames' parameter must have 1+ valid (non-empty) strings.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8217,
+      "offset": 8428,
       "length": 15,
       "value": "\"Invalid JSON.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8276,
+      "offset": 8487,
       "length": 27,
       "value": "\"Could not serialize body.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8349,
+      "offset": 8560,
       "length": 54,
       "value": "\"SFMCSdk WrappedRequest.Builder build() returned nil.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8552,
+      "offset": 8763,
       "length": 41,
       "value": "\"Could not deserialize response to JSON.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8635,
+      "offset": 8846,
       "length": 31,
       "value": "\"Response was not JSON object.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8718,
+      "offset": 8929,
       "length": 71,
       "value": "\"Response 'personalizations' missing or not expected array of objects.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8842,
+      "offset": 9053,
       "length": 61,
       "value": "\"Response Personalization 'personalizationId' missing\/empty.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8960,
+      "offset": 9171,
       "length": 66,
       "value": "\"Response Personalization 'personalizationPointId' missing\/empty.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9086,
+      "offset": 9297,
       "length": 68,
       "value": "\"Response Personalization 'personalizationPointName' missing\/empty.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9200,
+      "offset": 9411,
       "length": 67,
       "value": "\"Response Personalization 'attributes' missing or unexpected type.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9307,
+      "offset": 9518,
       "length": 61,
       "value": "\"Response Personalization 'data' missing or unexpected type.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9413,
+      "offset": 9624,
       "length": 23,
       "value": "\"Request Id is missing\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9496,
+      "offset": 9707,
       "length": 83,
       "value": "\"Response Personalization Content Object 'personalizationContentId' missing\/empty.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9637,
+      "offset": 9848,
       "length": 65,
       "value": "\"Response Personalization has decisionId but no attributes\/data.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9848,
+      "offset": 10059,
       "length": 62,
       "value": "\"Timed out waiting for Personalization SDK initialized\/ready.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9945,
+      "offset": 10156,
       "length": 50,
       "value": "\"Timed out waiting for Cdp SDK initialized\/ready.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10039,
+      "offset": 10250,
       "length": 43,
       "value": "\"Timed out waiting for decisions response.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10130,
+      "offset": 10341,
       "length": 40,
       "value": "\"Invalid timeout TimeInterval provided.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10247,
+      "offset": 10458,
       "length": 42,
       "value": "\"Timed out waiting for Server App Config.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10446,
+      "offset": 10657,
       "length": 49,
       "value": "\"Invalid CDN URL for fetching Server App Config.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10531,
+      "offset": 10742,
       "length": 37,
       "value": "\"Could not deserialize file to JSON.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10610,
+      "offset": 10821,
       "length": 27,
       "value": "\"File was not JSON object.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10696,
+      "offset": 10907,
       "length": 69,
       "value": "\"Server App Config Response was missing after fetching from the CDN.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10816,
+      "offset": 11027,
       "length": 59,
       "value": "\"Personalization module is missing from Server App Config.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10923,
+      "offset": 11134,
       "length": 60,
       "value": "\"Transformer is disabled and thus not available to be used.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11038,
+      "offset": 11249,
       "length": 55,
       "value": "\"Transformer category is not valid for the Mobile SDK.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11144,
+      "offset": 11355,
       "length": 51,
       "value": "\"Transformer type is not valid for the Mobile SDK.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11246,
+      "offset": 11457,
       "length": 30,
       "value": "\"Transformer name is missing.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11336,
+      "offset": 11547,
       "length": 78,
       "value": "\"Transformer does not contain the name of the corresponding Mobile Component.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11484,
+      "offset": 11695,
       "length": 60,
       "value": "\"Transformer does not contain any substitution definitions.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11604,
+      "offset": 11815,
       "length": 92,
       "value": "\"The Transformer Substitution Definition Name does not meet the required naming convention.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11764,
+      "offset": 11975,
       "length": 101,
       "value": "\"The Transformer Substitution Definition Default Value does not meet the required naming convention.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11912,
+      "offset": 12123,
       "length": 82,
       "value": "\"Personalization Experience Config is disabled and thus not available to be used.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12052,
+      "offset": 12263,
       "length": 63,
       "value": "\"Personalization Experience Config is missing a Data Provider.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12177,
+      "offset": 12388,
       "length": 89,
       "value": "\"Personalization Experience Config's Data Provider Type is not valid for the Mobile SDK.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12335,
+      "offset": 12546,
       "length": 98,
       "value": "\"Personalization Experience Config's Data Provider Group By Type is not valid for the Mobile SDK.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12487,
+      "offset": 12698,
       "length": 95,
       "value": "\"Personalization Experience Config's Transformation When Type is not valid for the Mobile SDK.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12644,
+      "offset": 12855,
       "length": 94,
       "value": "\"Personalization Experience Config's Target Method Type Type is not valid for the Mobile SDK.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12803,
+      "offset": 13014,
       "length": 96,
       "value": "\"Personalization Experience Config's number of Transformations is not valid for the Mobile SDK.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12970,
+      "offset": 13181,
       "length": 74,
       "value": "\"Personalization Experience Config does not refer to a known Transformer.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13119,
+      "offset": 13330,
       "length": 81,
       "value": "\"Personalization Experience Config does not contain the name of the ContentZone.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13279,
+      "offset": 13490,
       "length": 92,
       "value": "\"The ContentZone referenced by the Personalization Experience Config has already been used.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13429,
+      "offset": 13640,
       "length": 86,
       "value": "\"Personalization Experience Config does not refer to a registered Mobile ContentZone.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13588,
+      "offset": 13799,
       "length": 111,
       "value": "\"Personalization Experience Config's ContentZOne does not support the Component referenced by its Transformer.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13760,
+      "offset": 13971,
       "length": 100,
       "value": "\"Personalization Experience Config contains substitution definitions with incompatible array paths.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13920,
+      "offset": 14131,
       "length": 87,
       "value": "\"Personalization Experience Config value does not meet the required naming convention.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14173,
+      "offset": 14384,
       "length": 85,
       "value": "\"The Component Transformer could not convert the Decisions Response into valid JSON.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14327,
+      "offset": 14538,
       "length": 102,
       "value": "\"The Component Transformer Substitution Definition Name does not meet the required naming convention.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14498,
+      "offset": 14709,
       "length": 65,
       "value": "\"The Component Transformer encountered an unsupported traversal.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14716,
+      "offset": 14927,
       "length": 53,
       "value": "\"The Server App Config was not able to be retrieved.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14820,
+      "offset": 15031,
       "length": 42,
       "value": "\"The name of the ContentZOne is required.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14911,
+      "offset": 15122,
       "length": 34,
       "value": "\"The ContentZone name is missing.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14996,
+      "offset": 15207,
       "length": 62,
       "value": "\"The list of allowed Components for a ContentZone is missing.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15105,
+      "offset": 15316,
       "length": 72,
       "value": "\"The list of configured Personalization Experience Configs is required.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15225,
+      "offset": 15436,
       "length": 50,
       "value": "\"The list of configured Transformers is required.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15330,
+      "offset": 15541,
       "length": 91,
       "value": "\"A Personalization Experience Config referencing the given ContentZone name was not found.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15476,
+      "offset": 15687,
       "length": 78,
       "value": "\"The Transformer referenced by the Personalization Experience Config was not.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15605,
+      "offset": 15816,
       "length": 75,
       "value": "\"The ContentZone did not result in personalization details being returned.\""
     },
     {
       "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15739,
+      "offset": 15950,
       "length": 96,
       "value": "\"The Component referenced by the Transformer was not found from the list of allowed Components.\""
     },

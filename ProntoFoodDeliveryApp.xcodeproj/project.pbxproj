@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51D940DF2FC0702100D5727A /* LowCodeMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EAFFCF2FBC4C8000C0B70C /* LowCodeMobile.xcframework */; };
+		51D940E02FC0702100D5727A /* LowCodeMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51EAFFCF2FBC4C8000C0B70C /* LowCodeMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51D940E22FC0704000D5727A /* Personalization.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; };
+		51D940E32FC0704000D5727A /* Personalization.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51EAFF992FB325E500C0B70C /* SalesforceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EAFF982FB325D700C0B70C /* SalesforceHelpers.swift */; };
 		51EAFFC52FB6521200C0B70C /* Cdp in Frameworks */ = {isa = PBXBuildFile; productRef = 51EAFFC42FB6521200C0B70C /* Cdp */; };
-		51EAFFD02FBC4C8000C0B70C /* LowCodeMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EAFFCF2FBC4C8000C0B70C /* LowCodeMobile.xcframework */; };
-		51EAFFD12FBC4C8000C0B70C /* LowCodeMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51EAFFCF2FBC4C8000C0B70C /* LowCodeMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		51EAFFD32FBC4C8E00C0B70C /* Personalization.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; };
-		51EAFFD42FBC4C8E00C0B70C /* Personalization.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E63AB2392FB18986003893C3 /* Personalization.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA0100012E000001E71CAD01 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100002E000000E71CAD01 /* Restaurant.swift */; };
 		AA0100032E000003E71CAD03 /* HomeCuisineFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100022E000002E71CAD02 /* HomeCuisineFilterBar.swift */; };
 		AA0100052E000005E71CAD05 /* HomeRestaurantGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0100042E000004E71CAD04 /* HomeRestaurantGrid.swift */; };
@@ -91,14 +91,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		51EAFFD22FBC4C8000C0B70C /* Embed Frameworks */ = {
+		51D940E12FC0702200D5727A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				51EAFFD42FBC4C8E00C0B70C /* Personalization.xcframework in Embed Frameworks */,
-				51EAFFD12FBC4C8000C0B70C /* LowCodeMobile.xcframework in Embed Frameworks */,
+				51D940E32FC0704000D5727A /* Personalization.xcframework in Embed Frameworks */,
+				51D940E02FC0702100D5727A /* LowCodeMobile.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,8 +217,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51EAFFD32FBC4C8E00C0B70C /* Personalization.xcframework in Frameworks */,
-				51EAFFD02FBC4C8000C0B70C /* LowCodeMobile.xcframework in Frameworks */,
+				51D940E22FC0704000D5727A /* Personalization.xcframework in Frameworks */,
+				51D940DF2FC0702100D5727A /* LowCodeMobile.xcframework in Frameworks */,
 				51EAFFC52FB6521200C0B70C /* Cdp in Frameworks */,
 				E6D3A7EB2F0C24AE0010D3F1 /* Swift-InAppMessaging in Frameworks */,
 			);
@@ -661,7 +661,7 @@
 				E6997DF92E8582CB0039AEBA /* Sources */,
 				E6997DFA2E8582CB0039AEBA /* Frameworks */,
 				E6997DFB2E8582CB0039AEBA /* Resources */,
-				51EAFFD22FBC4C8000C0B70C /* Embed Frameworks */,
+				51D940E12FC0702200D5727A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
