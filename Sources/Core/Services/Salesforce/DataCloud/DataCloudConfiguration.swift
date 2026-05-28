@@ -67,9 +67,9 @@ extension DataCloudConfiguration {
     /// Development environment configuration (fallback)
     private static var development: DataCloudConfiguration {
         DataCloudConfiguration(
-            appId: "YOUR_DEV_APP_ID", // Fallback - configure via Settings
-            endpoint: "YOUR_DEV_ENDPOINT", // Fallback - configure via Settings
-            cdpUrl: "YOUR_DEV_CDP_URL", // Fallback - configure via Settings
+            appId: "3f73fa6e-9382-494a-bdb8-958f379b038a", // Fallback - configure via Settings
+            endpoint: "gmytgzbsh0zdqmtcgbsgmztdgm.c360a.salesforce.com", // Fallback - configure via Settings
+            cdpUrl: "https://cdn.c360a.salesforce.com/beacon/module_configuration/3f73fa6e-9382-494a-bdb8-958f379b038a/config/app-config.json", // Fallback - configure via Settings
             trackScreens: true,
             trackLifecycle: true,
             sessionTimeoutInSeconds: 1800,
@@ -82,9 +82,9 @@ extension DataCloudConfiguration {
     /// Production environment configuration (fallback)
     private static var production: DataCloudConfiguration {
         DataCloudConfiguration(
-            appId: "YOUR_PROD_APP_ID", // Fallback - configure via Settings
-            endpoint: "YOUR_PROD_ENDPOINT", // Fallback - configure via Settings
-            cdpUrl: "YOUR_PROD_CDP_URL", // Fallback - configure via Settings
+            appId: "3f73fa6e-9382-494a-bdb8-958f379b038a", // Fallback - configure via Settings
+            endpoint: "gmytgzbsh0zdqmtcgbsgmztdgm.c360a.salesforce.com", // Fallback - configure via Settings
+            cdpUrl: "https://cdn.c360a.salesforce.com/beacon/module_configuration/3f73fa6e-9382-494a-bdb8-958f379b038a/config/app-config.json", // Fallback - configure via Settings
             trackScreens: true,
             trackLifecycle: true,
             sessionTimeoutInSeconds: 1800,

@@ -2,28 +2,28 @@ import SwiftUI
 import Personalization
 import LowCodeMobile
 
-public class ProductRecommendations: Component {
-    public static let name = "ProductRecommendations"
+public class PromotionsAndOffers: Component {
+    public static let name = "Promotions_and_Offers"
     
-    public typealias Content = ProductRecommendationsView
-    public typealias Model = ProductRecommendationsModel
+    public typealias Content = PromotionsAndOffersView
+    public typealias Model = PromotionsAndOffersModel
     
 
     public init() {}
     
 
-    public func validateAndCreateComponentModel(from data: Data) throws -> ProductRecommendationsModel {
+    public func validateAndCreateComponentModel(from data: Data) throws -> PromotionsAndOffersModel {
         // Step 1: Decode JSON to model (checks structure/types)
         let decoder = JSONDecoder()
-        let model = try decoder.decode(ProductRecommendationsModel.self, from: data)
+        let model = try decoder.decode(PromotionsAndOffersModel.self, from: data)
 
         return model
     }
     
     public func compose(
-        model: ProductRecommendationsModel,
+        model: PromotionsAndOffersModel,
         isPreview: Bool
     ) -> Content {
-        return ProductRecommendationsView(model: model)
+        return PromotionsAndOffersView(model: model)
     }
 }

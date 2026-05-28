@@ -16,6 +16,10 @@ struct HomeView: View {
         allowedComponents: [ProductRecommendations()]
     )
     
+    @State private var loyaltyZoneViewModel = ContentZoneViewModel(
+        contentZoneName: "Loyalty_Promotion",
+        allowedComponents: [PromotionsAndOffers()]
+    )
     
     var body: some View {
         NavigationView {
@@ -30,6 +34,13 @@ struct HomeView: View {
                             HomeCuisineFilterBar(selectedCuisine: $selectedCuisine)
                                 .padding(.top, 24)
                                 .padding(.bottom, 24)
+                            
+                            ContentZone(
+                                viewModel: loyaltyZoneViewModel
+                                ,loading: { ProgressView() }
+                            )
+                            .padding(.top, 10)
+                            .padding(.bottom, 20)
                             
                             ContentZone(
                                 viewModel: promoBannerZoneViewModel,
@@ -72,6 +83,7 @@ struct HomeView: View {
         .refreshable {
             await promoBannerZoneViewModel.reload()
             await productRecsZoneViewModel.reload()
+            await loyaltyZoneViewModel.reload()
         }
     }
 
