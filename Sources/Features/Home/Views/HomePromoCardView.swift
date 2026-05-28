@@ -19,19 +19,19 @@ struct HomePromoCardView: View {
             
             HStack {
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("New Year Offer")
+                    Text("Ready when you are")
                         .font(.system(size: 16, weight: .semibold, design: .rounded))
                         .foregroundStyle(.white)
                     
-                    Text("30% OFF")
+                    Text("Hot & Fresh")
                         .font(.system(size: 32, weight: .bold, design: .rounded))
                         .foregroundStyle(.white)
                     
-                    Text("16 - 31 Dec")
+                    Text("Delivered straight to your doorstep")
                         .font(.system(size: 12, weight: .medium, design: .rounded))
                         .foregroundStyle(.white.opacity(0.8))
                     
-                    Button("Get Now") {
+                    Button("Find Food") {
                         // Handle promo action
                     }
                     .font(.system(size: 14, weight: .semibold, design: .rounded))
@@ -44,7 +44,7 @@ struct HomePromoCardView: View {
                 
                 Spacer()
                 
-                Text("🍕")
+                Text("🥪")
                     .font(.system(size: 64))
                     .rotationEffect(.degrees(15))
             }
