@@ -63,13 +63,13 @@ struct ProntoFoodDeliveryAppApp: App {
         #endif
         
         // Check if credentials are configured
-        if !DataCloudConfiguration.isConfigured {
+        /*if !DataCloudConfiguration.isConfigured {
             #if DEBUG
             print("⚠️ Data Cloud credentials not configured")
             print("   Go to Profile → Settings gear icon to configure")
             #endif
             return
-        }
+        }*/
         
         // Configure Data Cloud with current environment settings
         let configuration = DataCloudConfiguration.current
