@@ -1,6 +1,15 @@
 {
-  "originHash" : "d385e9d1ed08c3ab85f68e10cc99f84e81dcd39f2a3826ced849894e3d1b1cf9",
+  "originHash" : "be0548dc1c54504b22d9eef8359bbe11aa84f67fd340198733dedbb0d60073da",
   "pins" : [
+    {
+      "identity" : "lowcode-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/salesforce-marketingcloud/LowCode-IOS",
+      "state" : {
+        "revision" : "a3ea8432ca77a2195b1df3388b049da3e5a60e3a",
+        "version" : "1.2.1"
+      }
+    },
     {
       "identity" : "mobile-sdk-cdp-ios",
       "kind" : "remoteSourceControl",
@@ -8,6 +17,15 @@
       "state" : {
         "revision" : "a5be38813f6fe38f2e857c6066d2aeb19a4c8976",
         "version" : "3.0.2"
+      }
+    },
+    {
+      "identity" : "personalization-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/salesforce-marketingcloud/Personalization-IOS",
+      "state" : {
+        "revision" : "f01271eaf4e1cf61b0fa48513ef04fe62f85ffe9",
+        "version" : "3.1.0"
       }
     },
     {

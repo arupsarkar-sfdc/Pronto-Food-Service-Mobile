@@ -159,6 +159,73 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "engagementEvents",
+            "printedName": "engagementEvents",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Personalization.EngagementEventDefinition]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngagementEventDefinition",
+                    "printedName": "Personalization.EngagementEventDefinition",
+                    "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Personalization@objc(cs)SFPServerP13nAppConfig(py)engagementEvents",
+            "mangledName": "$s15Personalization19ServerP13nAppConfigC16engagementEventsSayAA25EngagementEventDefinitionCGvp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Personalization.EngagementEventDefinition]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EngagementEventDefinition",
+                        "printedName": "Personalization.EngagementEventDefinition",
+                        "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Personalization@objc(cs)SFPServerP13nAppConfig(im)engagementEvents",
+                "mangledName": "$s15Personalization19ServerP13nAppConfigC16engagementEventsSayAA25EngagementEventDefinitionCGvg",
+                "moduleName": "Personalization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -187,7 +254,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(transformers:experiences:)",
+            "printedName": "init(transformers:experiences:engagementEvents:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -222,13 +289,28 @@
                   }
                 ],
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Personalization.EngagementEventDefinition]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngagementEventDefinition",
+                    "printedName": "Personalization.EngagementEventDefinition",
+                    "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@Personalization@objc(cs)SFPServerP13nAppConfig(im)initWithTransformers:experiences:",
-            "mangledName": "$s15Personalization19ServerP13nAppConfigC12transformers11experiencesACSayAA11TransformerCG_SayAA0a10ExperienceE0CGtcfc",
+            "usr": "c:@M@Personalization@objc(cs)SFPServerP13nAppConfig(im)initWithTransformers:experiences:engagementEvents:",
+            "mangledName": "$s15Personalization19ServerP13nAppConfigC12transformers11experiences16engagementEventsACSayAA11TransformerCG_SayAA0a10ExperienceE0CGSayAA25EngagementEventDefinitionCGtcfc",
             "moduleName": "Personalization",
-            "objc_name": "initWithTransformers:experiences:",
+            "objc_name": "initWithTransformers:experiences:engagementEvents:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -257,9 +339,10 @@
             "usr": "s:15Personalization19ServerP13nAppConfigC4fromACs7Decoder_p_tKcfc",
             "mangledName": "$s15Personalization19ServerP13nAppConfigC4fromACs7Decoder_p_tKcfc",
             "moduleName": "Personalization",
-            "implicit": true,
             "declAttributes": [
-              "Required"
+              "Required",
+              "AccessControl",
+              "RawDocComment"
             ],
             "throwing": true,
             "init_kind": "Designated"
@@ -2327,16 +2410,6 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Personalization"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Personalization",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -5348,9 +5421,115 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "personalizationId",
+            "printedName": "personalizationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Personalization011ContentZoneA0V17personalizationIdSSvp",
+            "mangledName": "$s15Personalization011ContentZoneA0V17personalizationIdSSvp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Personalization011ContentZoneA0V17personalizationIdSSvg",
+                "mangledName": "$s15Personalization011ContentZoneA0V17personalizationIdSSvg",
+                "moduleName": "Personalization",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "engagementPayloads",
+            "printedName": "engagementPayloads",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Personalization.EngagementPayloads?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngagementPayloads",
+                    "printedName": "Personalization.EngagementPayloads",
+                    "usr": "s:15Personalization18EngagementPayloadsC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Personalization011ContentZoneA0V18engagementPayloadsAA010EngagementE0CSgvp",
+            "mangledName": "$s15Personalization011ContentZoneA0V18engagementPayloadsAA010EngagementE0CSgvp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Personalization.EngagementPayloads?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EngagementPayloads",
+                        "printedName": "Personalization.EngagementPayloads",
+                        "usr": "s:15Personalization18EngagementPayloadsC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Personalization011ContentZoneA0V18engagementPayloadsAA010EngagementE0CSgvg",
+                "mangledName": "$s15Personalization011ContentZoneA0V18engagementPayloadsAA010EngagementE0CSgvg",
+                "moduleName": "Personalization",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(componentJson:componentName:)",
+            "printedName": "init(componentJson:componentName:personalizationId:engagementPayloads:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5369,15 +5548,35 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Personalization.EngagementPayloads?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngagementPayloads",
+                    "printedName": "Personalization.EngagementPayloads",
+                    "usr": "s:15Personalization18EngagementPayloadsC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15Personalization011ContentZoneA0V13componentJson0D4NameAC10Foundation4DataV_SStcfc",
-            "mangledName": "$s15Personalization011ContentZoneA0V13componentJson0D4NameAC10Foundation4DataV_SStcfc",
+            "usr": "s:15Personalization011ContentZoneA0V13componentJson0D4Name17personalizationId18engagementPayloadsAC10Foundation4DataV_S2SAA010EngagementJ0CSgtcfc",
+            "mangledName": "$s15Personalization011ContentZoneA0V13componentJson0D4Name17personalizationId18engagementPayloadsAC10Foundation4DataV_S2SAA010EngagementJ0CSgtcfc",
             "moduleName": "Personalization",
             "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           }
@@ -9663,1417 +9862,3331 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Personalization",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EngagementEventDefinition",
+        "printedName": "EngagementEventDefinition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isDefault",
+            "printedName": "isDefault",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition(py)isDefault",
+            "mangledName": "$s15Personalization25EngagementEventDefinitionC9isDefaultSbvp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition(im)isDefault",
+                "mangledName": "$s15Personalization25EngagementEventDefinitionC9isDefaultSbvg",
+                "moduleName": "Personalization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dataProviders",
+            "printedName": "dataProviders",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Personalization.DataProvider]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataProvider",
+                    "printedName": "Personalization.DataProvider",
+                    "usr": "c:@M@Personalization@objc(cs)SFPDataProvider"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition(py)dataProviders",
+            "mangledName": "$s15Personalization25EngagementEventDefinitionC13dataProvidersSayAA12DataProviderCGvp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Personalization.DataProvider]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DataProvider",
+                        "printedName": "Personalization.DataProvider",
+                        "usr": "c:@M@Personalization@objc(cs)SFPDataProvider"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition(im)dataProviders",
+                "mangledName": "$s15Personalization25EngagementEventDefinitionC13dataProvidersSayAA12DataProviderCGvg",
+                "moduleName": "Personalization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "actions",
+            "printedName": "actions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition(py)actions",
+            "mangledName": "$s15Personalization25EngagementEventDefinitionC7actionsSDyS2SGvp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition(im)actions",
+                "mangledName": "$s15Personalization25EngagementEventDefinitionC7actionsSDyS2SGvg",
+                "moduleName": "Personalization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fields",
+            "printedName": "fields",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Personalization.EngagementSubDefValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngagementSubDefValue",
+                    "printedName": "Personalization.EngagementSubDefValue",
+                    "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition(py)fields",
+            "mangledName": "$s15Personalization25EngagementEventDefinitionC6fieldsSDySSAA0B11SubDefValueCGvp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Personalization.EngagementSubDefValue]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EngagementSubDefValue",
+                        "printedName": "Personalization.EngagementSubDefValue",
+                        "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition(im)fields",
+                "mangledName": "$s15Personalization25EngagementEventDefinitionC6fieldsSDySSAA0B11SubDefValueCGvg",
+                "moduleName": "Personalization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isDefault:dataProviders:actions:fields:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EngagementEventDefinition",
+                "printedName": "Personalization.EngagementEventDefinition",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Personalization.DataProvider]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataProvider",
+                    "printedName": "Personalization.DataProvider",
+                    "usr": "c:@M@Personalization@objc(cs)SFPDataProvider"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Personalization.EngagementSubDefValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngagementSubDefValue",
+                    "printedName": "Personalization.EngagementSubDefValue",
+                    "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition(im)initWithIsDefault:dataProviders:actions:fields:",
+            "mangledName": "$s15Personalization25EngagementEventDefinitionC9isDefault13dataProviders7actions6fieldsACSb_SayAA12DataProviderCGSDyS2SGSDySSAA0B11SubDefValueCGtcfc",
+            "moduleName": "Personalization",
+            "objc_name": "initWithIsDefault:dataProviders:actions:fields:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EngagementEventDefinition",
+                "printedName": "Personalization.EngagementEventDefinition",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Personalization25EngagementEventDefinitionC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15Personalization25EngagementEventDefinitionC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EngagementEventDefinition",
+                "printedName": "Personalization.EngagementEventDefinition",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition(im)init",
+            "mangledName": "$s15Personalization25EngagementEventDefinitionCACycfc",
+            "moduleName": "Personalization",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Personalization25EngagementEventDefinitionC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15Personalization25EngagementEventDefinitionC6encode2toys7Encoder_p_tKF",
+            "moduleName": "Personalization",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Personalization@objc(cs)SFPEngagementEventDefinition",
+        "mangledName": "$s15Personalization25EngagementEventDefinitionC",
+        "moduleName": "Personalization",
+        "objc_name": "SFPEngagementEventDefinition",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Personalization",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EngagementSubDefConfigType",
+        "printedName": "EngagementSubDefConfigType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "schemaPath",
+            "printedName": "schemaPath",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Personalization.EngagementSubDefConfigType.Type) -> Personalization.EngagementSubDefConfigType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngagementSubDefConfigType",
+                    "printedName": "Personalization.EngagementSubDefConfigType",
+                    "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Personalization.EngagementSubDefConfigType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EngagementSubDefConfigType",
+                        "printedName": "Personalization.EngagementSubDefConfigType",
+                        "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType@SFPEngagementSubDefConfigTypeSchemaPath",
+            "mangledName": "$s15Personalization26EngagementSubDefConfigTypeO10schemaPathyA2CmF",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "staticValue",
+            "printedName": "staticValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Personalization.EngagementSubDefConfigType.Type) -> Personalization.EngagementSubDefConfigType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngagementSubDefConfigType",
+                    "printedName": "Personalization.EngagementSubDefConfigType",
+                    "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Personalization.EngagementSubDefConfigType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EngagementSubDefConfigType",
+                        "printedName": "Personalization.EngagementSubDefConfigType",
+                        "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType@SFPEngagementSubDefConfigTypeStaticValue",
+            "mangledName": "$s15Personalization26EngagementSubDefConfigTypeO11staticValueyA2CmF",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "action",
+            "printedName": "action",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Personalization.EngagementSubDefConfigType.Type) -> Personalization.EngagementSubDefConfigType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngagementSubDefConfigType",
+                    "printedName": "Personalization.EngagementSubDefConfigType",
+                    "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Personalization.EngagementSubDefConfigType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EngagementSubDefConfigType",
+                        "printedName": "Personalization.EngagementSubDefConfigType",
+                        "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType@SFPEngagementSubDefConfigTypeAction",
+            "mangledName": "$s15Personalization26EngagementSubDefConfigTypeO6actionyA2CmF",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Personalization26EngagementSubDefConfigTypeO8rawValueSSvp",
+            "mangledName": "$s15Personalization26EngagementSubDefConfigTypeO8rawValueSSvp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Personalization26EngagementSubDefConfigTypeO8rawValueSSvg",
+                "mangledName": "$s15Personalization26EngagementSubDefConfigTypeO8rawValueSSvg",
+                "moduleName": "Personalization",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EngagementSubDefConfigType",
+                "printedName": "Personalization.EngagementSubDefConfigType",
+                "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Personalization26EngagementSubDefConfigTypeO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15Personalization26EngagementSubDefConfigTypeO4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EngagementSubDefConfigType",
+                "printedName": "Personalization.EngagementSubDefConfigType",
+                "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Personalization26EngagementSubDefConfigTypeO8rawValueACSS_tcfc",
+            "mangledName": "$s15Personalization26EngagementSubDefConfigTypeO8rawValueACSS_tcfc",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Personalization26EngagementSubDefConfigTypeO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15Personalization26EngagementSubDefConfigTypeO6encode2toys7Encoder_p_tKF",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType",
+        "mangledName": "$s15Personalization26EngagementSubDefConfigTypeO",
+        "moduleName": "Personalization",
+        "objc_name": "SFPEngagementSubDefConfigType",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EngagementSubDefValue",
+        "printedName": "EngagementSubDefValue",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue(py)value",
+            "mangledName": "$s15Personalization21EngagementSubDefValueC5valueSSvp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue(im)value",
+                "mangledName": "$s15Personalization21EngagementSubDefValueC5valueSSvg",
+                "moduleName": "Personalization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "configType",
+            "printedName": "configType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EngagementSubDefConfigType",
+                "printedName": "Personalization.EngagementSubDefConfigType",
+                "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue(py)configType",
+            "mangledName": "$s15Personalization21EngagementSubDefValueC10configTypeAA0bcd6ConfigG0Ovp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EngagementSubDefConfigType",
+                    "printedName": "Personalization.EngagementSubDefConfigType",
+                    "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue(im)configType",
+                "mangledName": "$s15Personalization21EngagementSubDefValueC10configTypeAA0bcd6ConfigG0Ovg",
+                "moduleName": "Personalization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(value:configType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EngagementSubDefValue",
+                "printedName": "Personalization.EngagementSubDefValue",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EngagementSubDefConfigType",
+                "printedName": "Personalization.EngagementSubDefConfigType",
+                "usr": "c:@M@Personalization@E@SFPEngagementSubDefConfigType"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue(im)initWithValue:configType:",
+            "mangledName": "$s15Personalization21EngagementSubDefValueC5value10configTypeACSS_AA0bcd6ConfigH0Otcfc",
+            "moduleName": "Personalization",
+            "objc_name": "initWithValue:configType:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EngagementSubDefValue",
+                "printedName": "Personalization.EngagementSubDefValue",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Personalization21EngagementSubDefValueC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15Personalization21EngagementSubDefValueC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EngagementSubDefValue",
+                "printedName": "Personalization.EngagementSubDefValue",
+                "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue(im)init",
+            "mangledName": "$s15Personalization21EngagementSubDefValueCACycfc",
+            "moduleName": "Personalization",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Personalization21EngagementSubDefValueC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15Personalization21EngagementSubDefValueC6encode2toys7Encoder_p_tKF",
+            "moduleName": "Personalization",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Personalization@objc(cs)SFPEngagementSubDefValue",
+        "mangledName": "$s15Personalization21EngagementSubDefValueC",
+        "moduleName": "Personalization",
+        "objc_name": "SFPEngagementSubDefValue",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Personalization",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "Personalization"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EngagementPayloads",
+        "printedName": "EngagementPayloads",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Personalization18EngagementPayloadsC5trackyySDySSypGFZ",
+            "mangledName": "$s15Personalization18EngagementPayloadsC5trackyySDySSypGFZ",
+            "moduleName": "Personalization",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15Personalization18EngagementPayloadsC",
+        "mangledName": "$s15Personalization18EngagementPayloadsC",
+        "moduleName": "Personalization",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PerActionEngagementPayloads",
+        "printedName": "PerActionEngagementPayloads",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "payloadsPerAction",
+            "printedName": "payloadsPerAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : [Swift.String : Any]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Personalization27PerActionEngagementPayloadsC08payloadsbC0SDySSSDySSypGGvp",
+            "mangledName": "$s15Personalization27PerActionEngagementPayloadsC08payloadsbC0SDySSSDySSypGGvp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : [Swift.String : Any]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Personalization27PerActionEngagementPayloadsC08payloadsbC0SDySSSDySSypGGvg",
+                "mangledName": "$s15Personalization27PerActionEngagementPayloadsC08payloadsbC0SDySSSDySSypGGvg",
+                "moduleName": "Personalization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(payloadsPerAction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PerActionEngagementPayloads",
+                "printedName": "Personalization.PerActionEngagementPayloads",
+                "usr": "s:15Personalization27PerActionEngagementPayloadsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : [Swift.String : Any]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Personalization27PerActionEngagementPayloadsC08payloadsbC0ACSDySSSDySSypGG_tcfc",
+            "mangledName": "$s15Personalization27PerActionEngagementPayloadsC08payloadsbC0ACSDySSSDySSypGG_tcfc",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "payloadForAction",
+            "printedName": "payloadForAction(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Personalization27PerActionEngagementPayloadsC010payloadForC0ySDySSypGSgSSF",
+            "mangledName": "$s15Personalization27PerActionEngagementPayloadsC010payloadForC0ySDySSypGSgSSF",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15Personalization27PerActionEngagementPayloadsC",
+        "mangledName": "$s15Personalization27PerActionEngagementPayloadsC",
+        "moduleName": "Personalization",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:15Personalization18EngagementPayloadsC",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "Personalization.EngagementPayloads"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PerItemAndActionEngagementPayloads",
+        "printedName": "PerItemAndActionEngagementPayloads",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "payloadsPerItemAndAction",
+            "printedName": "payloadsPerItemAndAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[Swift.String : [Swift.String : Any]]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : [Swift.String : Any]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15Personalization34PerItemAndActionEngagementPayloadsC08payloadsbcdE0SaySDySSSDySSypGGGvp",
+            "mangledName": "$s15Personalization34PerItemAndActionEngagementPayloadsC08payloadsbcdE0SaySDySSSDySSypGGGvp",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[Swift.String : [Swift.String : Any]]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : [Swift.String : Any]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15Personalization34PerItemAndActionEngagementPayloadsC08payloadsbcdE0SaySDySSSDySSypGGGvg",
+                "mangledName": "$s15Personalization34PerItemAndActionEngagementPayloadsC08payloadsbcdE0SaySDySSSDySSypGGGvg",
+                "moduleName": "Personalization",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(payloadsPerItemAndAction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PerItemAndActionEngagementPayloads",
+                "printedName": "Personalization.PerItemAndActionEngagementPayloads",
+                "usr": "s:15Personalization34PerItemAndActionEngagementPayloadsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[Swift.String : [Swift.String : Any]]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : [Swift.String : Any]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15Personalization34PerItemAndActionEngagementPayloadsC08payloadsbcdE0ACSaySDySSSDySSypGGG_tcfc",
+            "mangledName": "$s15Personalization34PerItemAndActionEngagementPayloadsC08payloadsbcdE0ACSaySDySSSDySSypGGG_tcfc",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "payloadForItemIndexAndAction",
+            "printedName": "payloadForItemIndexAndAction(itemIndex:action:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15Personalization34PerItemAndActionEngagementPayloadsC010payloadForc5IndexdE004itemJ06actionSDySSypGSgSi_SStF",
+            "mangledName": "$s15Personalization34PerItemAndActionEngagementPayloadsC010payloadForc5IndexdE004itemJ06actionSDySSypGSgSi_SStF",
+            "moduleName": "Personalization",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15Personalization34PerItemAndActionEngagementPayloadsC",
+        "mangledName": "$s15Personalization34PerItemAndActionEngagementPayloadsC",
+        "moduleName": "Personalization",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:15Personalization18EngagementPayloadsC",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "Personalization.EngagementPayloads"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Personalization",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Extensions\/DataExtensions.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Extensions\/DataExtensions.swift",
       "kind": "IntegerLiteral",
       "offset": 1627,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Extensions\/DataExtensions.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Extensions\/DataExtensions.swift",
       "kind": "IntegerLiteral",
       "offset": 1631,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Extensions\/DataExtensions.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Extensions\/DataExtensions.swift",
       "kind": "IntegerLiteral",
       "offset": 1638,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
-      "kind": "StringLiteral",
-      "offset": 1190,
-      "length": 14,
-      "value": "\"exchange_url\""
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/ServerP13nAppConfig.swift",
+      "kind": "Array",
+      "offset": 974,
+      "length": 2,
+      "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
       "kind": "StringLiteral",
-      "offset": 1230,
+      "offset": 1183,
+      "length": 13,
+      "value": "\"preview_url\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
+      "kind": "StringLiteral",
+      "offset": 1222,
       "length": 12,
       "value": "\"expires_at\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
       "kind": "StringLiteral",
-      "offset": 1274,
+      "offset": 1266,
       "length": 5,
       "value": "\"czn\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
       "kind": "StringLiteral",
-      "offset": 2056,
-      "length": 5,
-      "value": "\"jti\""
-    },
-    {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2085,
-      "length": 5,
-      "value": "\"sub\""
-    },
-    {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2112,
-      "length": 8,
-      "value": "\"org_id\""
-    },
-    {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2185,
-      "length": 5,
-      "value": "\"iat\""
-    },
-    {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2217,
+      "offset": 2278,
       "length": 5,
       "value": "\"exp\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
       "kind": "StringLiteral",
-      "offset": 2259,
+      "offset": 2320,
       "length": 4,
       "value": "\"ec\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
-      "kind": "StringLiteral",
-      "offset": 2287,
-      "length": 5,
-      "value": "\"drb\""
-    },
-    {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3149,
-      "length": 3,
-      "value": "\"p\""
-    },
-    {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewModels.swift",
-      "kind": "StringLiteral",
-      "offset": 3176,
-      "length": 3,
-      "value": "\"c\""
-    },
-    {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
       "kind": "StringLiteral",
       "offset": 1216,
       "length": 13,
       "value": "\"Immediately\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
       "kind": "StringLiteral",
       "offset": 1289,
       "length": 20,
       "value": "\"ContentZoneHandler\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
       "kind": "Array",
       "offset": 1690,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
       "kind": "StringLiteral",
       "offset": 1768,
       "length": 6,
       "value": "\"when\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
       "kind": "StringLiteral",
       "offset": 1800,
       "length": 8,
       "value": "\"method\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
       "kind": "StringLiteral",
       "offset": 1843,
       "length": 17,
       "value": "\"transformations\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
       "kind": "Array",
       "offset": 1947,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformationConfig.swift",
       "kind": "Array",
       "offset": 2367,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
       "offset": 1455,
       "length": 32,
       "value": "\"^[A-Za-z0-9_\\-\\[\\]\\.\\*]+$\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "Array",
       "offset": 1498,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
       "offset": 1561,
       "length": 8,
       "value": "\"\u001F\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
       "offset": 1669,
       "length": 3,
       "value": "\"*\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
       "offset": 1733,
       "length": 17,
       "value": "\"EmbeddedContent\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
       "offset": 1800,
       "length": 11,
       "value": "\"Component\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "Dictionary",
       "offset": 2602,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "BooleanLiteral",
       "offset": 2675,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
       "offset": 2826,
       "length": 21,
       "value": "\"transformerCategory\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
       "offset": 2882,
       "length": 17,
       "value": "\"transformerType\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
       "offset": 2978,
       "length": 25,
       "value": "\"substitutionDefinitions\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
       "offset": 3061,
       "length": 11,
       "value": "\"isEnabled\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "Dictionary",
       "offset": 3330,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "BooleanLiteral",
       "offset": 3361,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "Dictionary",
       "offset": 4248,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "BooleanLiteral",
       "offset": 4279,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "Dictionary",
-      "offset": 25091,
+      "offset": 29430,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
-      "offset": 25542,
+      "offset": 29881,
       "length": 155,
       "value": "\"SFP: \""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
-      "offset": 25631,
+      "offset": 29970,
       "length": 2,
       "value": "\" -> Transformer \""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
-      "offset": 25665,
+      "offset": 30004,
       "length": 1,
       "value": "\", SubDef invalid: \""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
-      "offset": 25696,
+      "offset": 30035,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "BooleanLiteral",
-      "offset": 25739,
+      "offset": 30078,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "IntegerLiteral",
-      "offset": 25855,
+      "offset": 30194,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "Array",
-      "offset": 26426,
+      "offset": 30765,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "IntegerLiteral",
-      "offset": 26634,
+      "offset": 30973,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
-      "offset": 26738,
+      "offset": 31077,
       "length": 3,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
-      "offset": 26859,
+      "offset": 31198,
       "length": 167,
       "value": "\"SFP: \""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
-      "offset": 26948,
+      "offset": 31287,
       "length": 2,
       "value": "\" -> Transformer \""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
-      "offset": 26982,
+      "offset": 31321,
       "length": 1,
       "value": "\", Conflicting destination prefix: \""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "StringLiteral",
-      "offset": 27025,
+      "offset": 31364,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "BooleanLiteral",
-      "offset": 27068,
+      "offset": 31407,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformer.swift",
       "kind": "BooleanLiteral",
-      "offset": 27122,
+      "offset": 31461,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/SubDefConfigType.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/SubDefConfigType.swift",
       "kind": "IntegerLiteral",
       "offset": 615,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewStore.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Preview\/PreviewStore.swift",
       "kind": "Dictionary",
       "offset": 463,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Utils\/BehaviorManagerAdapter.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Utils\/BehaviorManagerAdapter.swift",
       "kind": "Array",
       "offset": 1294,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/ServerAppConfigManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/ServerAppConfigManager.swift",
       "kind": "IntegerLiteral",
       "offset": 5338,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/ServerAppConfigManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/ServerAppConfigManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11787,
+      "offset": 11752,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/ServerAppConfigManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/ServerAppConfigManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14561,
+      "offset": 15893,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
       "kind": "BooleanLiteral",
       "offset": 848,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
       "kind": "BooleanLiteral",
       "offset": 913,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
       "kind": "StringLiteral",
       "offset": 1003,
       "length": 12,
       "value": "\"configType\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
       "kind": "StringLiteral",
       "offset": 1074,
       "length": 13,
       "value": "\"overridable\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
       "kind": "StringLiteral",
       "offset": 1117,
       "length": 10,
       "value": "\"required\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
       "kind": "BooleanLiteral",
       "offset": 1277,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/TransformerSubDef.swift",
       "kind": "BooleanLiteral",
       "offset": 1311,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/DataProvider.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/DataProvider.swift",
       "kind": "StringLiteral",
       "offset": 334,
       "length": 22,
       "value": "\"PersonalizationPoint\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/DataProvider.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/DataProvider.swift",
       "kind": "StringLiteral",
       "offset": 414,
       "length": 11,
       "value": "\"DataGraph\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/DataProvider.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/DataProvider.swift",
       "kind": "StringLiteral",
       "offset": 970,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/DataProvider.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/DataProvider.swift",
       "kind": "StringLiteral",
       "offset": 1026,
       "length": 13,
       "value": "\"groupByType\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/PersonalizationExperienceConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/DataProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 2461,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/PersonalizationExperienceConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 1458,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/PersonalizationExperienceConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/PersonalizationExperienceConfig.swift",
       "kind": "StringLiteral",
       "offset": 1625,
       "length": 15,
       "value": "\"publishedDate\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/PersonalizationExperienceConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/PersonalizationExperienceConfig.swift",
       "kind": "StringLiteral",
       "offset": 1699,
       "length": 11,
       "value": "\"isEnabled\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/PersonalizationExperienceConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/PersonalizationExperienceConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 1884,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/PersonalizationExperienceConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/PersonalizationExperienceConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 2690,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformation.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformation.swift",
       "kind": "Dictionary",
       "offset": 699,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformation.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformation.swift",
       "kind": "StringLiteral",
-      "offset": 882,
+      "offset": 1783,
       "length": 20,
       "value": "\"substitutionValues\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/ServerAppConfig\/Transformation.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/Transformation.swift",
       "kind": "Dictionary",
-      "offset": 1031,
+      "offset": 1932,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/MobileSdk\/CdpInfo.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/MobileSdk\/CdpInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 186,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
       "kind": "StringLiteral",
       "offset": 773,
       "length": 17,
       "value": "\"Personalization\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 1030,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
       "kind": "StringLiteral",
       "offset": 2290,
       "length": 55,
       "value": "\"(dataspace: \""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
       "kind": "StringLiteral",
       "offset": 2315,
       "length": 1,
       "value": "\", cdnUrl: \""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
       "kind": "StringLiteral",
       "offset": 2337,
       "length": 5,
       "value": "\"nil\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Config\/PersonalizationConfig.swift",
       "kind": "StringLiteral",
       "offset": 2343,
       "length": 1,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Preview\/PreviewManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Preview\/PreviewManager.swift",
       "kind": "StringLiteral",
       "offset": 960,
       "length": 16,
       "value": "\"PreviewManager\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/Decisions.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Decisions\/Decisions.swift",
       "kind": "StringLiteral",
       "offset": 134,
       "length": 27,
       "value": "\"personalization\/decisions\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/Decisions.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Decisions\/Decisions.swift",
       "kind": "StringLiteral",
-      "offset": 204,
-      "length": 41,
-      "value": "\"personalization\/authenticated\/decisions\""
-    },
-    {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/Decisions.swift",
-      "kind": "StringLiteral",
-      "offset": 275,
+      "offset": 191,
       "length": 8,
       "value": "\"Mobile\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/Decisions.swift",
-      "kind": "Array",
-      "offset": 404,
-      "length": 42,
-      "value": "[\"dataspace\", \"channel\", \"channelContext\"]"
-    },
-    {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/Decisions.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Decisions\/Decisions.swift",
       "kind": "IntegerLiteral",
-      "offset": 895,
+      "offset": 419,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/Decisions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6198,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Decisions\/Decisions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4896,
+      "length": 2,
+      "value": "10"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Content\/ContentManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Content\/ContentManager.swift",
       "kind": "Array",
-      "offset": 2159,
+      "offset": 2783,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Content\/ContentManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Content\/ContentManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2280,
+      "offset": 2904,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Content\/ContentManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Content\/ContentManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2310,
+      "offset": 2934,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Content\/ContentManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Content\/ContentManager.swift",
       "kind": "Array",
-      "offset": 19393,
+      "offset": 19055,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Content\/ContentManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Content\/ContentManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 23399,
+      "offset": 22796,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/DecisionsResponseContentObject.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Content\/ContentManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24685,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Decisions\/DecisionsResponseContentObject.swift",
       "kind": "StringLiteral",
       "offset": 2302,
       "length": 26,
       "value": "\"personalizationContentId\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/DecisionsResponseContentObject.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Decisions\/DecisionsResponseContentObject.swift",
       "kind": "StringLiteral",
       "offset": 2344,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/DecisionsRequestContext.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Decisions\/DecisionsRequestContext.swift",
       "kind": "Dictionary",
       "offset": 2015,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Extensions\/JSON\/DateDecodingStrategy.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Extensions\/JSON\/DateDecodingStrategy.swift",
       "kind": "StringLiteral",
       "offset": 884,
       "length": 83,
       "value": "\"SFP: Unable to format invalid date: \""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Extensions\/JSON\/DateDecodingStrategy.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Extensions\/JSON\/DateDecodingStrategy.swift",
       "kind": "StringLiteral",
       "offset": 930,
       "length": 2,
       "value": "\" as iso 8601 with fractional seconds\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Extensions\/JSON\/DateDecodingStrategy.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Extensions\/JSON\/DateDecodingStrategy.swift",
       "kind": "StringLiteral",
       "offset": 1067,
       "length": 16,
       "value": "\"Invalid date: \""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/DecisionsResponse.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Decisions\/DecisionsResponse.swift",
       "kind": "Dictionary",
       "offset": 2989,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/DecisionsResponse.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Decisions\/DecisionsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3430,
       "length": 79,
       "value": "\"SFP: fetchDecisions: Duplicate personalizationPointName '\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/DecisionsResponse.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Decisions\/DecisionsResponse.swift",
       "kind": "StringLiteral",
       "offset": 3495,
       "length": 14,
       "value": "\"', last wins.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Utils\/Utils.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Utils\/Utils.swift",
       "kind": "IntegerLiteral",
       "offset": 204,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Utils\/Utils.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Utils\/Utils.swift",
       "kind": "IntegerLiteral",
       "offset": 209,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Utils\/Utils.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Utils\/Utils.swift",
       "kind": "IntegerLiteral",
       "offset": 214,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Utils\/Utils.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Utils\/Utils.swift",
       "kind": "BooleanLiteral",
-      "offset": 2836,
+      "offset": 2803,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Config\/PersonalizationConfigBuilder.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Config\/PersonalizationConfigBuilder.swift",
       "kind": "StringLiteral",
       "offset": 420,
       "length": 9,
       "value": "\"default\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "IntegerLiteral",
       "offset": 505,
       "length": 14,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "IntegerLiteral",
       "offset": 619,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "IntegerLiteral",
       "offset": 717,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "IntegerLiteral",
       "offset": 818,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "IntegerLiteral",
       "offset": 923,
       "length": 15,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "IntegerLiteral",
       "offset": 1015,
       "length": 7,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7349,
+      "offset": 7409,
       "length": 40,
       "value": "\"Personalization initialization failed.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7454,
+      "offset": 7514,
       "length": 63,
       "value": "\"Initializing Personalization Server App Config Manager failed\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7564,
+      "offset": 7624,
       "length": 43,
       "value": "\"Did not get network manager from SFMCSdk.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7653,
+      "offset": 7713,
       "length": 25,
       "value": "\"Cdp is not operational.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7723,
+      "offset": 7783,
       "length": 23,
       "value": "\"Cdp is deprovisioned.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7789,
+      "offset": 7849,
       "length": 31,
       "value": "\"Cannot obtain state from Cdp.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 7863,
+      "offset": 7923,
       "length": 60,
       "value": "\"Dataspace cannot be empty or blank. Keeping current value.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8061,
+      "offset": 8121,
       "length": 27,
       "value": "\"Cdp consent not opted-in.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8127,
+      "offset": 8187,
       "length": 23,
       "value": "\"Cdp deviceId missing.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8305,
+      "offset": 8365,
       "length": 83,
       "value": "\"The 'personalizationPointNames' parameter must have 1+ valid (non-empty) strings.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8428,
+      "offset": 8488,
       "length": 15,
       "value": "\"Invalid JSON.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8487,
+      "offset": 8547,
       "length": 27,
       "value": "\"Could not serialize body.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8560,
+      "offset": 8620,
       "length": 54,
       "value": "\"SFMCSdk WrappedRequest.Builder build() returned nil.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8763,
+      "offset": 8823,
       "length": 41,
       "value": "\"Could not deserialize response to JSON.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8846,
+      "offset": 8906,
       "length": 31,
       "value": "\"Response was not JSON object.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 8929,
+      "offset": 8989,
       "length": 71,
       "value": "\"Response 'personalizations' missing or not expected array of objects.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9053,
+      "offset": 9113,
       "length": 61,
       "value": "\"Response Personalization 'personalizationId' missing\/empty.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9171,
+      "offset": 9231,
       "length": 66,
       "value": "\"Response Personalization 'personalizationPointId' missing\/empty.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9297,
+      "offset": 9357,
       "length": 68,
       "value": "\"Response Personalization 'personalizationPointName' missing\/empty.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9411,
+      "offset": 9471,
       "length": 67,
       "value": "\"Response Personalization 'attributes' missing or unexpected type.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9518,
+      "offset": 9578,
       "length": 61,
       "value": "\"Response Personalization 'data' missing or unexpected type.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9624,
+      "offset": 9684,
       "length": 23,
       "value": "\"Request Id is missing\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9707,
+      "offset": 9767,
       "length": 83,
       "value": "\"Response Personalization Content Object 'personalizationContentId' missing\/empty.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 9848,
+      "offset": 9908,
       "length": 65,
       "value": "\"Response Personalization has decisionId but no attributes\/data.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10059,
+      "offset": 10119,
       "length": 62,
       "value": "\"Timed out waiting for Personalization SDK initialized\/ready.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10156,
+      "offset": 10216,
       "length": 50,
       "value": "\"Timed out waiting for Cdp SDK initialized\/ready.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10250,
+      "offset": 10310,
       "length": 43,
       "value": "\"Timed out waiting for decisions response.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10341,
+      "offset": 10401,
       "length": 40,
       "value": "\"Invalid timeout TimeInterval provided.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10458,
+      "offset": 10518,
       "length": 42,
       "value": "\"Timed out waiting for Server App Config.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10657,
+      "offset": 10717,
       "length": 49,
       "value": "\"Invalid CDN URL for fetching Server App Config.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10742,
+      "offset": 10802,
       "length": 37,
       "value": "\"Could not deserialize file to JSON.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10821,
+      "offset": 10881,
       "length": 27,
       "value": "\"File was not JSON object.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 10907,
+      "offset": 10967,
       "length": 69,
       "value": "\"Server App Config Response was missing after fetching from the CDN.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11027,
+      "offset": 11087,
       "length": 59,
       "value": "\"Personalization module is missing from Server App Config.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11134,
+      "offset": 11194,
       "length": 60,
       "value": "\"Transformer is disabled and thus not available to be used.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11249,
+      "offset": 11309,
       "length": 55,
       "value": "\"Transformer category is not valid for the Mobile SDK.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11355,
+      "offset": 11415,
       "length": 51,
       "value": "\"Transformer type is not valid for the Mobile SDK.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11457,
+      "offset": 11517,
       "length": 30,
       "value": "\"Transformer name is missing.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11547,
+      "offset": 11607,
       "length": 78,
       "value": "\"Transformer does not contain the name of the corresponding Mobile Component.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11695,
+      "offset": 11755,
       "length": 60,
       "value": "\"Transformer does not contain any substitution definitions.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11815,
+      "offset": 11875,
       "length": 92,
       "value": "\"The Transformer Substitution Definition Name does not meet the required naming convention.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 11975,
+      "offset": 12035,
       "length": 101,
       "value": "\"The Transformer Substitution Definition Default Value does not meet the required naming convention.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12123,
+      "offset": 12183,
       "length": 82,
       "value": "\"Personalization Experience Config is disabled and thus not available to be used.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12263,
+      "offset": 12323,
       "length": 63,
       "value": "\"Personalization Experience Config is missing a Data Provider.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12388,
+      "offset": 12448,
       "length": 89,
       "value": "\"Personalization Experience Config's Data Provider Type is not valid for the Mobile SDK.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12546,
+      "offset": 12606,
       "length": 98,
       "value": "\"Personalization Experience Config's Data Provider Group By Type is not valid for the Mobile SDK.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12698,
+      "offset": 12758,
       "length": 95,
       "value": "\"Personalization Experience Config's Transformation When Type is not valid for the Mobile SDK.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 12855,
+      "offset": 12915,
       "length": 94,
       "value": "\"Personalization Experience Config's Target Method Type Type is not valid for the Mobile SDK.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13014,
+      "offset": 13074,
       "length": 96,
       "value": "\"Personalization Experience Config's number of Transformations is not valid for the Mobile SDK.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13181,
+      "offset": 13241,
       "length": 74,
       "value": "\"Personalization Experience Config does not refer to a known Transformer.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13330,
+      "offset": 13390,
       "length": 81,
       "value": "\"Personalization Experience Config does not contain the name of the ContentZone.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13490,
+      "offset": 13550,
       "length": 92,
       "value": "\"The ContentZone referenced by the Personalization Experience Config has already been used.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13640,
+      "offset": 13700,
       "length": 86,
       "value": "\"Personalization Experience Config does not refer to a registered Mobile ContentZone.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13799,
+      "offset": 13859,
       "length": 111,
       "value": "\"Personalization Experience Config's ContentZOne does not support the Component referenced by its Transformer.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 13971,
+      "offset": 14031,
       "length": 100,
       "value": "\"Personalization Experience Config contains substitution definitions with incompatible array paths.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14131,
+      "offset": 14191,
       "length": 87,
       "value": "\"Personalization Experience Config value does not meet the required naming convention.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14384,
+      "offset": 14339,
+      "length": 62,
+      "value": "\"Engagement Event Definition is not valid for the Mobile SDK.\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "kind": "StringLiteral",
+      "offset": 14457,
+      "length": 68,
+      "value": "\"Engagement Event Definition field is not valid for the Mobile SDK.\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "kind": "StringLiteral",
+      "offset": 14582,
+      "length": 69,
+      "value": "\"Engagement Event Definition action is not valid for the Mobile SDK.\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "kind": "StringLiteral",
+      "offset": 14714,
+      "length": 76,
+      "value": "\"Engagement Event Definition Data Provider is not valid for the Mobile SDK.\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "kind": "StringLiteral",
+      "offset": 14850,
+      "length": 72,
+      "value": "\"Engagement Event Definition is missing the required 'eventType' field.\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "kind": "StringLiteral",
+      "offset": 15088,
       "length": 85,
       "value": "\"The Component Transformer could not convert the Decisions Response into valid JSON.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14538,
+      "offset": 15242,
       "length": 102,
       "value": "\"The Component Transformer Substitution Definition Name does not meet the required naming convention.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14709,
+      "offset": 15413,
       "length": 65,
       "value": "\"The Component Transformer encountered an unsupported traversal.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 14927,
+      "offset": 15631,
       "length": 53,
       "value": "\"The Server App Config was not able to be retrieved.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15031,
+      "offset": 15735,
       "length": 42,
       "value": "\"The name of the ContentZOne is required.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15122,
+      "offset": 15826,
       "length": 34,
       "value": "\"The ContentZone name is missing.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15207,
+      "offset": 15911,
       "length": 62,
       "value": "\"The list of allowed Components for a ContentZone is missing.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15316,
+      "offset": 16020,
       "length": 72,
       "value": "\"The list of configured Personalization Experience Configs is required.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15436,
+      "offset": 16140,
       "length": 50,
       "value": "\"The list of configured Transformers is required.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15541,
+      "offset": 16245,
       "length": 91,
       "value": "\"A Personalization Experience Config referencing the given ContentZone name was not found.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15687,
+      "offset": 16391,
       "length": 78,
       "value": "\"The Transformer referenced by the Personalization Experience Config was not.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15816,
+      "offset": 16520,
       "length": 75,
       "value": "\"The ContentZone did not result in personalization details being returned.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
       "kind": "StringLiteral",
-      "offset": 15950,
+      "offset": 16654,
       "length": 96,
       "value": "\"The Component referenced by the Transformer was not found from the list of allowed Components.\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Network\/PersonalizationNetworkManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Error\/PersonalizationError.swift",
+      "kind": "StringLiteral",
+      "offset": 16804,
+      "length": 97,
+      "value": "\"The Engagement Payloads for the personalization are not in the shape expected by the Component.\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Network\/PersonalizationNetworkManager.swift",
       "kind": "IntegerLiteral",
       "offset": 663,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Network\/PersonalizationNetworkManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Network\/PersonalizationNetworkManager.swift",
       "kind": "BooleanLiteral",
       "offset": 698,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Network\/PersonalizationNetworkManager.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Network\/PersonalizationNetworkManager.swift",
       "kind": "IntegerLiteral",
       "offset": 6390,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Extensions\/DateExtensions.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Extensions\/DateExtensions.swift",
       "kind": "StringLiteral",
       "offset": 1621,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Extensions\/DateExtensions.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Extensions\/DateExtensions.swift",
       "kind": "IntegerLiteral",
       "offset": 1684,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Extensions\/DateExtensions.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Extensions\/DateExtensions.swift",
       "kind": "StringLiteral",
       "offset": 1712,
       "length": 33,
       "value": "\"EEE, dd MMM yyyy HH:mm:ss 'GMT'\""
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/Decisions\/DecisionsRequestContextBuilder.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Decisions\/DecisionsRequestContextBuilder.swift",
       "kind": "Dictionary",
       "offset": 592,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/MobileSdk\/ModuleUtil.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/MobileSdk\/ModuleUtil.swift",
       "kind": "IntegerLiteral",
       "offset": 339,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/MobileSdk\/ModuleUtil.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/MobileSdk\/ModuleUtil.swift",
       "kind": "IntegerLiteral",
       "offset": 2325,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/PersonalizationModule.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/PersonalizationModule.swift",
       "kind": "IntegerLiteral",
-      "offset": 11649,
+      "offset": 11628,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/PersonalizationModule.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/PersonalizationModule.swift",
       "kind": "Array",
-      "offset": 14548,
+      "offset": 14527,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/PersonalizationModule.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/PersonalizationModule.swift",
       "kind": "FloatLiteral",
-      "offset": 14640,
+      "offset": 14619,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios\/Personalization\/Personalization\/PersonalizationModule.swift",
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/PersonalizationModule.swift",
       "kind": "BooleanLiteral",
-      "offset": 14672,
+      "offset": 14651,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/EngagementEventDefinition.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1558,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/EngagementEventDefinition.swift",
+      "kind": "Array",
+      "offset": 1605,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/EngagementEventDefinition.swift",
+      "kind": "StringLiteral",
+      "offset": 2853,
+      "length": 11,
+      "value": "\"eventType\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/EngagementEventDefinition.swift",
+      "kind": "StringLiteral",
+      "offset": 2898,
+      "length": 27,
+      "value": "\"EngagementEventDefinition\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/EngagementSubDefValue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1040,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/EngagementSubDefValue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1408,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/EngagementSubDefValue.swift",
+      "kind": "StringLiteral",
+      "offset": 3157,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/ServerAppConfig\/EngagementSubDefValue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4921,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Content\/EngagementPayloads.swift",
+      "kind": "StringLiteral",
+      "offset": 1780,
+      "length": 19,
+      "value": "\"personalizationId\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Content\/EngagementPayloads.swift",
+      "kind": "StringLiteral",
+      "offset": 1801,
+      "length": 26,
+      "value": "\"personalizationContentId\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Content\/EngagementPayloads.swift",
+      "kind": "StringLiteral",
+      "offset": 2585,
+      "length": 20,
+      "value": "\"EngagementPayloads\""
+    },
+    {
+      "filePath": "\/Users\/matt.mooney\/sources\/mobile-sp\/ios\/sdk-personalization-ios-feature\/Personalization\/Personalization\/Content\/EngagementTransformer.swift",
+      "kind": "StringLiteral",
+      "offset": 493,
+      "length": 23,
+      "value": "\"EngagementTransformer\""
     }
   ]
 }

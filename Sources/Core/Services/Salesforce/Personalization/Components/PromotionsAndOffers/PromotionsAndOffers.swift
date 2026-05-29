@@ -12,18 +12,18 @@ public class PromotionsAndOffers: Component {
     public init() {}
     
 
-    public func validateAndCreateComponentModel(from data: Data) throws -> PromotionsAndOffersModel {
+    public func validateAndCreateComponentModel(unvalidatedJson: Data, componentContext: ComponentContext) throws -> PromotionsAndOffersModel {
         // Step 1: Decode JSON to model (checks structure/types)
         let decoder = JSONDecoder()
-        let model = try decoder.decode(PromotionsAndOffersModel.self, from: data)
+        let model = try decoder.decode(PromotionsAndOffersModel.self, from: unvalidatedJson)
 
         return model
     }
     
     public func compose(
         model: PromotionsAndOffersModel,
-        isPreview: Bool
+        componentContext: ComponentContext
     ) -> Content {
-        return PromotionsAndOffersView(model: model)
+        return PromotionsAndOffersView(model: model, context: componentContext)
     }
 }

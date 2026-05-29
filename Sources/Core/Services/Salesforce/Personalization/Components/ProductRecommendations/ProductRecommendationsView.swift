@@ -1,7 +1,9 @@
 import SwiftUI
+import LowCodeMobile
 
 public struct ProductRecommendationsView: View {
     let model: ProductRecommendationsModel
+    let context: ComponentContext
     
     @State private var pressedRestaurantId: String? = nil
 
@@ -25,8 +27,9 @@ public struct ProductRecommendationsView: View {
         return result
     }
 
-    public init(model: ProductRecommendationsModel) {
+    public init(model: ProductRecommendationsModel, context: ComponentContext) {
         self.model = model
+        self.context = context
     }
     
     public var body: some View {

@@ -38,7 +38,12 @@ final class SalesforceHelpers {
                 "email": emailAddress,
                 "firstName": firstName,
                 "lastName": "",
-                "isAnonymous": "0"
+                "isAnonymous": "0",
+                "userId": "12345",
+                "IDName": "MC Subscriber Key",
+                "IDType": "Person Identifier",
+                
+                "profileId": "afsdsd"
             ])
             return identityModifier
         }

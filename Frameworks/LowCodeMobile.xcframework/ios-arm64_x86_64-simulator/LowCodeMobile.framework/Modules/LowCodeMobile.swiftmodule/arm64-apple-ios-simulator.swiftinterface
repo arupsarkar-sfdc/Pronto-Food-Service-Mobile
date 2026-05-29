@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LowCodeMobile
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import Combine
 import Foundation
 import Personalization
@@ -54,12 +54,12 @@ public struct BannerModel : LowCodeMobile.ComponentModel {
   public typealias Content = LowCodeMobile.RecommendationsView
   public typealias Model = LowCodeMobile.RecommendationsModel
   @_Concurrency.MainActor public init(style: LowCodeMobile.RecommendationsStyle? = nil, onTap: ((LowCodeMobile.RecommendationTapEvent) -> Swift.Void)? = nil)
-  @_Concurrency.MainActor public func validateAndCreateComponentModel(from data: Foundation.Data) throws -> LowCodeMobile.RecommendationsModel
-  @_Concurrency.MainActor public func compose(model: LowCodeMobile.RecommendationsModel, isPreview: Swift.Bool) -> LowCodeMobile.Recommendations.Content
+  @_Concurrency.MainActor public func validateAndCreateComponentModel(unvalidatedJson: Foundation.Data, context: LowCodeMobile.ComponentContext) throws -> LowCodeMobile.RecommendationsModel
+  @_Concurrency.MainActor public func compose(model: LowCodeMobile.RecommendationsModel, context: LowCodeMobile.ComponentContext) -> LowCodeMobile.Recommendations.Content
   @objc deinit
 }
 @_Concurrency.MainActor @preconcurrency public struct RecommendationsView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(model: LowCodeMobile.RecommendationsModel, style: LowCodeMobile.RecommendationsStyle? = nil, onTap: ((LowCodeMobile.RecommendationTapEvent) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(model: LowCodeMobile.RecommendationsModel, componentContext: LowCodeMobile.ComponentContext, style: LowCodeMobile.RecommendationsStyle? = nil, onTap: ((LowCodeMobile.RecommendationTapEvent) -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -71,27 +71,14 @@ public struct RecommendationsModel : LowCodeMobile.ComponentModel {
   public init(sectionHeader: Swift.String? = nil, items: [LowCodeMobile.ContentItem])
   public init(from decoder: any Swift.Decoder) throws
 }
-@_Concurrency.MainActor public class ContentZoneViewModel : Combine.ObservableObject {
-  @_Concurrency.MainActor final public let contentZoneName: Swift.String
-  @_Concurrency.MainActor final public let allowedComponents: [any LowCodeMobile.Component]
-  @_Concurrency.MainActor final public let timeoutSeconds: Foundation.TimeInterval
-  @_Concurrency.MainActor public init(contentZoneName: Swift.String, allowedComponents: [any LowCodeMobile.Component], timeoutSeconds: Foundation.TimeInterval = 10.0)
-  @objc deinit
-  @_Concurrency.MainActor public func reload() async
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-}
-@_Concurrency.MainActor public class MockDataContentZoneViewModel : LowCodeMobile.ContentZoneViewModel {
-  @_Concurrency.MainActor public init(contentZoneName: Swift.String, allowedComponents: [any LowCodeMobile.Component], mockContent: @escaping () throws -> any LowCodeMobile.ComponentModel, mockLoadingSeconds: Foundation.TimeInterval = 10.0)
-  @objc deinit
-}
 public protocol ComponentModel : Swift.Decodable {
 }
 @_Concurrency.MainActor public protocol Component {
   @_Concurrency.MainActor static var name: Swift.String { get }
   associatedtype Content : SwiftUICore.View
   associatedtype Model : LowCodeMobile.ComponentModel
-  @_Concurrency.MainActor func validateAndCreateComponentModel(from data: Foundation.Data) throws -> Self.Model
-  @_Concurrency.MainActor func compose(model: Self.Model, isPreview: Swift.Bool) -> Self.Content
+  @_Concurrency.MainActor func validateAndCreateComponentModel(unvalidatedJson: Foundation.Data, context: LowCodeMobile.ComponentContext) throws -> Self.Model
+  @_Concurrency.MainActor func compose(model: Self.Model, context: LowCodeMobile.ComponentContext) -> Self.Content
 }
 public struct ContentItem : Swift.Codable {
   public let id: Swift.String
@@ -109,38 +96,59 @@ public struct ContentItem : Swift.Codable {
   public typealias Content = LowCodeMobile.BannerView
   public typealias Model = LowCodeMobile.BannerModel
   @_Concurrency.MainActor public init(style: LowCodeMobile.BannerStyle? = nil, onTap: ((LowCodeMobile.BannerTapEvent) -> Swift.Void)? = nil)
-  @_Concurrency.MainActor public func validateAndCreateComponentModel(from data: Foundation.Data) throws -> LowCodeMobile.BannerModel
-  @_Concurrency.MainActor public func compose(model: LowCodeMobile.BannerModel, isPreview: Swift.Bool) -> LowCodeMobile.Banner.Content
+  @_Concurrency.MainActor public func validateAndCreateComponentModel(unvalidatedJson: Foundation.Data, context: LowCodeMobile.ComponentContext) throws -> LowCodeMobile.BannerModel
+  @_Concurrency.MainActor public func compose(model: LowCodeMobile.BannerModel, context: LowCodeMobile.ComponentContext) -> LowCodeMobile.Banner.Content
   @objc deinit
 }
 @_Concurrency.MainActor public struct ContentZone<Loading, Failed> : SwiftUICore.View where Loading : SwiftUICore.View, Failed : SwiftUICore.View {
-  @_Concurrency.MainActor public init(name: Swift.String, allowedComponents: [any LowCodeMobile.Component], timeoutSeconds: Foundation.TimeInterval = 10.0, @SwiftUICore.ViewBuilder loading: @escaping () -> Loading = { EmptyView() }, @SwiftUICore.ViewBuilder failed: @escaping (any Swift.Error) -> Failed = { _ in EmptyView() })
-  @_Concurrency.MainActor public init(viewModel: LowCodeMobile.ContentZoneViewModel, @SwiftUICore.ViewBuilder loading: @escaping () -> Loading = { EmptyView() }, @SwiftUICore.ViewBuilder failed: @escaping (any Swift.Error) -> Failed = { _ in EmptyView() })
+  @_Concurrency.MainActor public init(name: Swift.String, allowedComponents: [any LowCodeMobile.Component], timeoutSeconds: Foundation.TimeInterval = 10.0, controller: LowCodeMobile.ContentZoneController? = nil, @SwiftUICore.ViewBuilder loading: @escaping () -> Loading = { EmptyView() }, @SwiftUICore.ViewBuilder failed: @escaping (any Swift.Error) -> Failed = { _ in EmptyView() })
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s13LowCodeMobile11ContentZoneV4bodyQrvp", 0) __<Loading, Failed>
 }
 @_Concurrency.MainActor public struct MockDataContentZone<Loading, Failed> : SwiftUICore.View where Loading : SwiftUICore.View, Failed : SwiftUICore.View {
-  @_Concurrency.MainActor public init(name: Swift.String, allowedComponents: [any LowCodeMobile.Component], mockContent: @escaping () throws -> any LowCodeMobile.ComponentModel, mockLoadingSeconds: Foundation.TimeInterval = 1.0, @SwiftUICore.ViewBuilder loading: @escaping () -> Loading = { EmptyView() }, @SwiftUICore.ViewBuilder failed: @escaping (any Swift.Error) -> Failed = { _ in EmptyView() })
-  @_Concurrency.MainActor public init(viewModel: LowCodeMobile.MockDataContentZoneViewModel, @SwiftUICore.ViewBuilder loading: @escaping () -> Loading = { EmptyView() }, @SwiftUICore.ViewBuilder failed: @escaping (any Swift.Error) -> Failed = { _ in EmptyView() })
+  @_Concurrency.MainActor public init(name: Swift.String, allowedComponents: [any LowCodeMobile.Component], mockContent: @escaping () throws -> any LowCodeMobile.ComponentModel, mockLoadingSeconds: Foundation.TimeInterval = 1.0, controller: LowCodeMobile.ContentZoneController? = nil, @SwiftUICore.ViewBuilder loading: @escaping () -> Loading = { EmptyView() }, @SwiftUICore.ViewBuilder failed: @escaping (any Swift.Error) -> Failed = { _ in EmptyView() })
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s13LowCodeMobile19MockDataContentZoneV4bodyQrvp", 0) __<Loading, Failed>
 }
 @_Concurrency.MainActor @preconcurrency public struct BannerView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(model: LowCodeMobile.BannerModel, style: LowCodeMobile.BannerStyle? = nil, onTap: ((LowCodeMobile.BannerTapEvent) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(model: LowCodeMobile.BannerModel, componentContext: LowCodeMobile.ComponentContext, style: LowCodeMobile.BannerStyle? = nil, onTap: ((LowCodeMobile.BannerTapEvent) -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s13LowCodeMobile10BannerViewV4bodyQrvp", 0) __
 }
+@_Concurrency.MainActor final public class ContentZoneController {
+  @_Concurrency.MainActor public init()
+  @_Concurrency.MainActor final public func refresh(withLoadingState: Swift.Bool = false) async
+  @objc deinit
+}
 public typealias BannerTapEvent = LowCodeMobile.BannerModel
+public enum ContentSource {
+  case production
+  case mock
+  case preview
+  public static func == (a: LowCodeMobile.ContentSource, b: LowCodeMobile.ContentSource) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ComponentContext {
+  public let contentSource: LowCodeMobile.ContentSource
+  public let personalizationId: Swift.String
+  public let engagementPayloads: Personalization.EngagementPayloads?
+  public init(contentSource: LowCodeMobile.ContentSource, personalizationId: Swift.String, engagementPayloads: Personalization.EngagementPayloads? = nil)
+}
 extension LowCodeMobile.Recommendations : Swift.Sendable {}
 extension LowCodeMobile.RecommendationsView : Swift.Sendable {}
-extension LowCodeMobile.ContentZoneViewModel : Swift.Sendable {}
 extension LowCodeMobile.Banner : Swift.Sendable {}
 extension LowCodeMobile.ContentZone : Swift.Sendable {}
 extension LowCodeMobile.MockDataContentZone : Swift.Sendable {}
 extension LowCodeMobile.BannerView : Swift.Sendable {}
+extension LowCodeMobile.ContentZoneController : Swift.Sendable {}
+extension LowCodeMobile.ContentSource : Swift.Equatable {}
+extension LowCodeMobile.ContentSource : Swift.Hashable {}

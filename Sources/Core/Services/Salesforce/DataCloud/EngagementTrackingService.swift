@@ -293,6 +293,8 @@ public final class EngagementTrackingService {
         }
         
         SFMCSdk.track(event: event)
+        
+        
 
         if enableLogging {
             print("✅ CustomEvent '\(name)' tracked to Data Cloud")

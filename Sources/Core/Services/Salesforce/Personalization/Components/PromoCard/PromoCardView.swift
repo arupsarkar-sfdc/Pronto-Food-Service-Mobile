@@ -1,11 +1,15 @@
 import SwiftUI
+import Personalization
+import LowCodeMobile
 
 // MARK: - Home Promo Card View
 public struct PromoCardView: View {
     let model: PromoCardModel
+    let componentContext: ComponentContext
     
-    public init(model: PromoCardModel) {
+    public init(model: PromoCardModel, componentContext: ComponentContext) {
         self.model = model
+        self.componentContext = componentContext
     }
 
     func getColor(from name: String) -> Color {

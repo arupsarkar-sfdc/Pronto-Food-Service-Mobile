@@ -117,7 +117,7 @@ public final class PersonalizationService: PersonalizationServiceProtocol {
             // Fetch decisions from Personalization SDK
             let response = try await PersonalizationModule.fetchDecisions(
                 personalizationPointNames: personalizationPointNames,
-                context: decisionsContext,
+                //context: decisionsContext,
                 timeoutSeconds: timeoutSeconds
             )
             

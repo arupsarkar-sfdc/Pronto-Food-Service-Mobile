@@ -6,20 +6,11 @@ import LowCodeMobile
 struct HomeView: View {
     @State private var selectedCuisine: String? = nil
 
-    @State private var promoBannerZoneViewModel = ContentZoneViewModel(
-        contentZoneName: "Promo_Card",
-        allowedComponents: [PromoCard()]
-    )
+    @State private var promoBannerZoneController = ContentZoneController()
     
-    @State private var productRecsZoneViewModel = ContentZoneViewModel(
-        contentZoneName: "Product_Recommendations",
-        allowedComponents: [ProductRecommendations()]
-    )
+    @State private var productRecsZoneController = ContentZoneController()
     
-    @State private var loyaltyZoneViewModel = ContentZoneViewModel(
-        contentZoneName: "Loyalty_Promotion",
-        allowedComponents: [PromotionsAndOffers()]
-    )
+    @State private var loyaltyZoneController = ContentZoneController()
     
     var body: some View {
         NavigationView {
@@ -36,16 +27,22 @@ struct HomeView: View {
                                 .padding(.bottom, 24)
                             
                             ContentZone(
-                                viewModel: loyaltyZoneViewModel
-                                ,loading: { ProgressView() }
+                                name: "Loyalty_Promotion",
+                                allowedComponents: [PromotionsAndOffers()],
+                                controller: loyaltyZoneController,
+                                loading: { ProgressView() }
                             )
                             .padding(.top, 10)
                             .padding(.bottom, 20)
                             
                             ContentZone(
-                                viewModel: promoBannerZoneViewModel,
+                                name: "Promo_Card",
+                                allowedComponents: [PromoCard()],
+                                controller: promoBannerZoneController,
+                                
                                 loading: { ProgressView() },
-                                failed: { error in
+                                
+                                fallback: { error in
                                     HomePromoCardView()
                                 }
                             )
@@ -53,10 +50,11 @@ struct HomeView: View {
                             .padding(.bottom, 10)
                             
                             ContentZone(
-                                viewModel: productRecsZoneViewModel,
-                                loading: { ProgressView() },
-                                failed: { error in
-                                    
+                                name: "Product_Recommendations",
+                                allowedComponents: [ProductRecommendations()],
+                                controller: productRecsZoneController,
+                                loading: {
+                                    ProgressView()
                                 }
                             )
                             .padding(.top, 32)
@@ -81,9 +79,18 @@ struct HomeView: View {
         }
 
         .refreshable {
-            await promoBannerZoneViewModel.reload()
-            await productRecsZoneViewModel.reload()
-            await loyaltyZoneViewModel.reload()
+            /*
+            async let promoBannerZoneRefresh = promoBannerZoneController.refresh(withLoadingState: true)
+            async let productRecsZoneRefresh = productRecsZoneController.refresh(withLoadingState: true)
+            async let loyaltyZoneRefresh =  loyaltyZoneController.refresh(withLoadingState: true)
+
+            let (_, _, _) = await (promoBannerZoneRefresh, productRecsZoneRefresh, loyaltyZoneRefresh)*/
+            
+            await (
+                promoBannerZoneController.refresh(withLoadingState: true),
+                productRecsZoneController.refresh(withLoadingState: true),
+                loyaltyZoneController.refresh(withLoadingState: true)
+            )
         }
     }
 

@@ -8,7 +8,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.salesforce.pronto</string>
+			<string>com.bizcuit.pronto</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>prontoapp</string>

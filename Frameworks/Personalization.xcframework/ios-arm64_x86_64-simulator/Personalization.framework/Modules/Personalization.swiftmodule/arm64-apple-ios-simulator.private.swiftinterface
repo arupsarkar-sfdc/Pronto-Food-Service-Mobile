@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Personalization
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import Cdp
 import Combine
 import Foundation
@@ -16,11 +16,12 @@ import zlib
 @_inheritsConvenienceInitializers @objc(SFPServerP13nAppConfig) public class ServerP13nAppConfig : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let transformers: [Personalization.Transformer]
   @objc final public let experiences: [Personalization.PersonalizationExperienceConfig]
+  @objc final public let engagementEvents: [Personalization.EngagementEventDefinition]
   @objc override dynamic public init()
-  @objc public init(transformers: [Personalization.Transformer], experiences: [Personalization.PersonalizationExperienceConfig])
+  @objc public init(transformers: [Personalization.Transformer], experiences: [Personalization.PersonalizationExperienceConfig], engagementEvents: [Personalization.EngagementEventDefinition] = [])
+  required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
 }
 public struct PreviewReceipt {
   public let timestamp: Foundation.TimeInterval
@@ -151,7 +152,9 @@ public struct PreviewReceipt {
 public struct ContentZonePersonalization {
   public let componentJson: Foundation.Data
   public let componentName: Swift.String
-  public init(componentJson: Foundation.Data, componentName: Swift.String)
+  public let personalizationId: Swift.String
+  public let engagementPayloads: Personalization.EngagementPayloads?
+  public init(componentJson: Foundation.Data, componentName: Swift.String, personalizationId: Swift.String, engagementPayloads: Personalization.EngagementPayloads? = nil)
 }
 @_hasMissingDesignatedInitializers @objc(SFPDecisionsResponseContentObject) public class DecisionsResponseContentObject : ObjectiveC.NSObject {
   @objc public var personalizationContentId: Swift.String {
@@ -282,8 +285,58 @@ public enum PersonalizationError : Swift.Error, Foundation.CustomNSError, Founda
   public static func handlePreviewURL(_ urlString: Swift.String)
   @objc deinit
 }
+@objc(SFPEngagementEventDefinition) public class EngagementEventDefinition : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let isDefault: Swift.Bool
+  @objc final public let dataProviders: [Personalization.DataProvider]
+  @objc final public let actions: [Swift.String : Swift.String]
+  @objc final public let fields: [Swift.String : Personalization.EngagementSubDefValue]
+  @objc public init(isDefault: Swift.Bool = false, dataProviders: [Personalization.DataProvider] = [], actions: [Swift.String : Swift.String], fields: [Swift.String : Personalization.EngagementSubDefValue])
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc(SFPEngagementSubDefConfigType) public enum EngagementSubDefConfigType : Swift.Int, Swift.Codable, Swift.RawRepresentable {
+  public typealias RawValue = Swift.String
+  case schemaPath
+  case staticValue
+  case action
+  public var rawValue: Personalization.EngagementSubDefConfigType.RawValue {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+  public init(rawValue: Personalization.EngagementSubDefConfigType.RawValue)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc(SFPEngagementSubDefValue) public class EngagementSubDefValue : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let value: Swift.String
+  @objc final public let configType: Personalization.EngagementSubDefConfigType
+  @objc public init(value: Swift.String = "", configType: Personalization.EngagementSubDefConfigType)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public typealias EngagementPayload = [Swift.String : Any]
+public typealias EngagementPayloadsByAction = [Swift.String : Personalization.EngagementPayload]
+@_hasMissingDesignatedInitializers public class EngagementPayloads {
+  public static func track(_ payload: Personalization.EngagementPayload)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class PerActionEngagementPayloads : Personalization.EngagementPayloads {
+  final public let payloadsPerAction: Personalization.EngagementPayloadsByAction
+  public init(payloadsPerAction: Personalization.EngagementPayloadsByAction)
+  final public func payloadForAction(_ action: Swift.String) -> Personalization.EngagementPayload?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class PerItemAndActionEngagementPayloads : Personalization.EngagementPayloads {
+  final public let payloadsPerItemAndAction: [Personalization.EngagementPayloadsByAction]
+  public init(payloadsPerItemAndAction: [Personalization.EngagementPayloadsByAction])
+  final public func payloadForItemIndexAndAction(itemIndex: Swift.Int, action: Swift.String) -> Personalization.EngagementPayload?
+  @objc deinit
+}
 extension Personalization.SubDefConfigType : Swift.Equatable {}
 extension Personalization.SubDefConfigType : Swift.Hashable {}
 extension Personalization.PersonalizationErrorCode : Swift.Equatable {}
 extension Personalization.PersonalizationErrorCode : Swift.Hashable {}
 extension Personalization.PersonalizationErrorCode : Swift.RawRepresentable {}
+extension Personalization.EngagementSubDefConfigType : Swift.Equatable {}
+extension Personalization.EngagementSubDefConfigType : Swift.Hashable {}
